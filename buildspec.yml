@@ -11,3 +11,6 @@ phases:
   post_build:
     commands:
       - make docker/push/ubuntu
+  artifacts:
+    files:
+      - 'dist/*'
