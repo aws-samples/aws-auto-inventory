@@ -1,0 +1,53 @@
+logo:
+  url: https://images.unsplash.com/photo-1606041505251-43e5868fc52f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxOTEyNTB8MHwxfHJhbmRvbXx8fHx8fHx8&ixlib=rb-1.2.1&q=80&w=1080
+  label: logo
+app:
+  name: Application
+  function: Lorem ipsum dolor
+  id: application-id
+screenshots:
+- caption: How to build
+  label: how-to-build
+  url: https://via.placeholder.com/512x256.png
+- caption: How to run
+  label: how-to-run
+  url: https://via.placeholder.com/512x256.png
+usage: |-
+  For development you will need to install `git-remote-codecommit`
+  ```
+  pip install git-remote-codecommit
+  ```
+  Convallis posuere morbi leo urna molestie at.
+prerequisites:
+- description: Nisi quis eleifend quam adipiscing.Lacus vel facilisis volutpat est
+    velit egestas dui id.
+  name: Eget arcu dictum
+  url: https://
+installing: |-
+  Donec adipiscing tristique risus nec feugiat.
+  ```
+  $ sudo apt-get install vim
+  ```
+testing: |-
+  Varius morbi enim nunc faucibus a pellentesque.
+  ```
+  $ app test
+  ```
+deployment: |-
+  Adipiscing bibendum est ultricies integer.
+  ```
+  $ app deploy
+  ```
+contributors:
+- name: LastName, FirstName
+  role: Job Role
+  email: name@email.com
+acknowledgments:
+- name: LastName, FirstName
+  role: Job Role
+references:
+- description: Cloud Engineer CLI
+  name: clencli
+  url: https://github.com/awslabs/clencli
+license: This project is licensed under the Apache License 2.0.
+copyright: Company, Inc. or its affiliates. All Rights Reserved.
