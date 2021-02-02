@@ -1,5 +1,5 @@
 # You can change this tag to suit your needs
-TAG=$(shell date +%Y%m%d%H%M)
+TAG=$(shell date +%Y%m%d)
 .PHONY: init
 init:
 	python3 -m venv .venv
