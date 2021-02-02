@@ -64,7 +64,7 @@ def write_to_excel(sheet_name, data, mode):
         df.transpose().to_excel(writer, sheet_name=sheet_name)
     log.info('Finished: writing document {} on sheet {}'.format(file_name, sheet_name))
 
-def write_data(data):
+def write_data(transpose, data):
     file_path = _config.filepath
     file_name = _config.file_name
 
@@ -74,7 +74,7 @@ def write_data(data):
     writer = pd.ExcelWriter('{}{}'.format(file_path, file_name), engine='xlsxwriter')
     workbook  = writer.book
 
-    transpose = _config.settings.config['excel']['transpose'].get()
+    # transpose = _config.settings.config['excel']['transpose'].get()
 
     dfs=[]
     for d in data:
@@ -84,9 +84,7 @@ def write_data(data):
         for col in df.select_dtypes(['datetimetz']).columns:
             df[col] = df[col].dt.tz_convert(None)
 
-        for k,v in d['Inventory'].items():
-                sheet_name=v['name']
-
+        sheet_name = d['Name']
         if transpose:
             df.transpose().to_excel(writer, sheet_name=sheet_name)
             worksheet = writer.sheets[sheet_name]

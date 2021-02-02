@@ -13,17 +13,18 @@
 #   limitations under the License.
 
 
+import sys
 import configparser
 import boto3
 import logging
-import confuse
+import confuse as _confuse
 
 log = logging.getLogger('aai.settings')
 
 class Settings:
     __instance = None
 
-    config = confuse.Configuration('aws-auto-inventory', __name__)
+    config = _confuse.Configuration('aws-auto-inventory', __name__)
 
     @staticmethod
     def get_instance():
@@ -48,16 +49,24 @@ class Settings:
 
     @staticmethod
     def get_aws_profile():
-        log.info('Getting AWS Profile from config.ini')
+        log.info('Getting AWS Profile')
         profile_name = Settings.config['aws']['profile'].get()
         log.info('Current AWS Profile: {}'.format(profile_name))
         return profile_name
 
     @staticmethod
-    def get_inventories():
-        log.info('Getting inventories')
-        inventories = Settings.config['inventory'].get()
-        log.info('Current inventories:{}'.format(inventories))
-        return inventories
+    def get_inventory(name):
+        log.info('Getting inventories {}'.format(name))
 
-    
+        try:    
+            all_inventories = Settings.config['inventories'].get()
+        except _confuse.exceptions.NotFoundError:
+            print('Field inventories not found in configuration')
+            sys.exit(1)
+
+        log.info('Current inventories:{}'.format(all_inventories))
+
+        for i in all_inventories:
+            if i['name'] == name:
+                return i
+        return {}

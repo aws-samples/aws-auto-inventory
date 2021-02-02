@@ -21,12 +21,12 @@ from aai import config as _config
 
 log = logging.getLogger('aai.aws')
 
-def fetch(region_name, service, function, result_key, parameters):
+def fetch(profile_name, region_name, service, function, result_key, parameters):
     log.info('Started: {}:{}:{}:{}:{}'.format(region_name, service, function, result_key, parameters))
     response = ""
 
     try:
-        session = get_session()
+        session = boto3.Session(profile_name=profile_name)
         client = session.client(service, region_name=region_name)
     
         if parameters is not None:
@@ -60,33 +60,25 @@ def get_read_methods(client):
             l.append(method)
     return l
 
-def get(region_name, inventory):
+def get(profile_name, region_name, sheet):
     # results = []
-    
-    for key, value in inventory.items():
-        service = value['service']
-        function = value['function']
-        
-        if 'result_key' in value:
-            result_key = value['result_key']
-        else:
-            result_key = None   
 
-        if 'parameters' in value:
-            parameters = value['parameters']
-        else:
-            parameters=None
+    service = sheet['service']
+    function = sheet['function']
 
-    log.info('Started:{}:{}:{}:{}'.format(region_name, service, function, result_key))
-    result = fetch(region_name=region_name, service=service, function=function, result_key=result_key, parameters=parameters)
+    # optional
+    result_key = sheet.get('result_key', None)
+    parameters = sheet.get('parameters', None)
+
+    log.info('Started:{}:{}:{}:{}:{}'.format(profile_name, region_name, service, function, result_key))
+    result = fetch(profile_name=profile_name, region_name=region_name, service=service, function=function, result_key=result_key, parameters=parameters)
     # results.append(result)
     log.info('Result:{{{}}}'.format(result))
     log.info('Finished:{}:{}:{}:{}'.format(region_name, service, function, result_key))
 
     return result
 
-def get_session():
-    profile_name = _config.settings.get_aws_profile()
+def get_session(profile_name):
     session = boto3.Session(profile_name=profile_name)
     return session
 

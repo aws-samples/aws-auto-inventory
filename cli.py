@@ -9,11 +9,10 @@ text = 'This is a test program. It demonstrates how to use the argparse module w
 parser = argparse.ArgumentParser(description=text)
 
 # Add long and short argument
-parser.add_argument("--config", "-c", help="Inventory configuration", required=True)
+parser.add_argument("--name", "-n", help="inventory name", required=True)
 
 # Read arguments from the command line
 args = parser.parse_args()
 
-if args.config:
-    print("using configuration %s" % args.config)
-    run.Execute(config=args.config)
+if args.name:
+    run.Execute(name=args.name)

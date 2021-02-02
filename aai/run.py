@@ -14,7 +14,6 @@
 #   See the License for the specific language governing permissions and
 #   limitations under the License.
 
-import confuse as _confuse
 import logging
 
 from aai import config as _config
@@ -22,51 +21,34 @@ from aai import converter as _converter
 from aai import aws as _aws
 from aai import doc as _doc
 
-
-# from utils import aws
-# from utils import doc
-# from utils import converter
-
-# import config as config
-# from python import language_server  # noqa will suppress the linting message for this line
-
 log = logging.getLogger('aai.main')
 
-def get_inventory(region_name, inventory):
-    response = _aws.get(region_name=region_name, inventory=inventory)
+def get_inventory(profile_name, region_name, sheet):
+    response = _aws.get(profile_name=profile_name, region_name=region_name, sheet=sheet)
     dic = _converter.flatten_list(response, '.')
     return dic
 
-
-def get_filters(f):
-    if not f:
-        return []
-    filters=[]
-    for od in f:
-        dct={}
-        for k, v in od.items():
-            dct[k]=v
-        filters.append(dct)
-    return filters
-
-def Execute(config):
+def Execute(name):
     log.info('Started: AWS Auto Inventory')
 
-    print("Executing with configuration {}".format(config))
-    inventories = _config.settings.get_inventories()
+    log.info("Generating inventory {}".format(name))
+    inventory = _config.settings.get_inventory(name)
+    if inventory != {}:
+        log.info('Inventory {} was found'.format(inventory['name']))
+        log.info('AWS CLI profile {} will be used'.format(inventory['aws']['profile']))
+        log.info('AWS Regions {} will be scanned'.format(inventory['aws']['region']))
+        profile_name=inventory['aws']['profile']
 
-    # try to get the 
-    try:
-        regions = _config.settings.config['aws']['region'].get()
-    except _confuse.exceptions.NotFoundError:
-        regions=[]
-
-    data=[]
-    for region in regions:
-        for inventory in inventories:
-            result = get_inventory(region_name=region, inventory=inventory)
-            data.append({'Inventory': inventory, 'Result': result})
-    
-    _doc.write_data(data)
+        data=[]
+        for region in inventory['aws']['region']:
+            for sheet in inventory['sheets']:
+                name = sheet['name']
+                result = get_inventory(profile_name=profile_name, region_name=region, sheet=sheet)
+                data.append({'Name': name, 'Result': result})
+        
+        transpose = inventory['excel']['transpose']
+        _doc.write_data(transpose=transpose, data=data)
+    else:
+        print("No inventory named {} was found".format(name))
 
     log.info('Finished: AWS Auto Inventory')
