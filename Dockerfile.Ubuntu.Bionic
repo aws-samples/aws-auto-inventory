@@ -15,7 +15,7 @@ RUN apt-get install -y python3-venv
 
 FROM python AS tools
 
-# Install tools for testing
+# Install tools
 RUN apt-get install -y build-essential
 
 FROM tools AS app
@@ -36,10 +36,7 @@ RUN /bin/bash -c "source ${VIRTUAL_ENV}/bin/activate" \
     && pip install --upgrade pyinstaller \
     && pip install -r requirements.txt
 
+# make dist
+
 RUN /bin/bash -c "source ${VIRTUAL_ENV}/bin/activate" \
     && pyinstaller --name aws-auto-inventory-linux-amd64 --clean --onefile --hidden-import cmath --log-level=DEBUG cli.py
-
-
-# RUN /bin/bash -c "source ${VIRTUAL_ENV}/bin/activate" \
-    # && pip install --upgrade pip \
-    # && pip install -r requirements.txt
