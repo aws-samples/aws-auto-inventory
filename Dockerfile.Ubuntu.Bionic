@@ -1,0 +1,47 @@
+FROM ubuntu:bionic AS base
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Updating the image
+RUN apt-get update -y
+RUN apt-get install -y tzdata
+
+FROM base AS python
+
+# Install Python
+RUN apt-get install -y python3
+RUN apt-get install -y python3-dev
+RUN apt-get install -y python3-venv
+
+FROM python AS tools
+
+# Install tools for testing
+RUN apt-get install -y build-essential
+RUN apt-get install -y awscli
+RUN apt-get install -y vim
+
+FROM tools AS app
+
+WORKDIR /opt/aws-auto-inventory/
+COPY . .
+
+RUN python3 --version
+
+ENV VIRTUAL_ENV=/opt/aws-auto-inventory/.venv
+ENV PATH="${VIRTUAL_ENV}/bin:$PATH"
+
+# make init
+
+RUN python3 -m venv ${VIRTUAL_ENV}
+RUN /bin/bash -c "source ${VIRTUAL_ENV}/bin/activate" \
+    && pip install --upgrade pip \
+    && pip install --upgrade pyinstaller \
+    && pip install -r requirements.txt
+
+RUN /bin/bash -c "source ${VIRTUAL_ENV}/bin/activate" \
+    && pyinstaller --name aws-auto-inventory-linux-amd64 --clean --onefile --hidden-import cmath --log-level=DEBUG cli.py
+
+
+# RUN /bin/bash -c "source ${VIRTUAL_ENV}/bin/activate" \
+    # && pip install --upgrade pip \
+    # && pip install -r requirements.txt
