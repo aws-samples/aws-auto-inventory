@@ -16,4 +16,4 @@ args = parser.parse_args()
 
 if args.config:
     print("using configuration %s" % args.config)
-    run.Execute()
+    run.Execute(config=args.config)

@@ -14,8 +14,14 @@
 #   See the License for the specific language governing permissions and
 #   limitations under the License.
 
-from aai import logger
+import confuse as _confuse
 import logging
+
+from aai import config as _config
+from aai import converter as _converter
+from aai import aws as _aws
+from aai import doc as _doc
+
 
 # from utils import aws
 # from utils import doc
@@ -26,11 +32,10 @@ import logging
 
 log = logging.getLogger('aai.main')
 
-
-# def get_inventory(region_name, inventory):
-#     response = aws.get(region_name=region_name, inventory=inventory)
-#     dic = converter.flatten_list(response, '.')
-#     return dic
+def get_inventory(region_name, inventory):
+    response = _aws.get(region_name=region_name, inventory=inventory)
+    dic = _converter.flatten_list(response, '.')
+    return dic
 
 
 def get_filters(f):
@@ -44,19 +49,24 @@ def get_filters(f):
         filters.append(dct)
     return filters
 
-
-def Execute():
+def Execute(config):
     log.info('Started: AWS Auto Inventory')
 
-    # inventories = config.settings.get_inventories()
-    # regions = config.settings.config['aws']['region'].get()
+    print("Executing with configuration {}".format(config))
+    inventories = _config.settings.get_inventories()
 
-    # data=[]
-    # for region in regions:
-    #     for inventory in inventories:
-    #             result = get_inventory(region_name=region, inventory=inventory)
-    #             data.append({'Inventory': inventory, 'Result': result})
+    # try to get the 
+    try:
+        regions = _config.settings.config['aws']['region'].get()
+    except _confuse.exceptions.NotFoundError:
+        regions=[]
+
+    data=[]
+    for region in regions:
+        for inventory in inventories:
+            result = get_inventory(region_name=region, inventory=inventory)
+            data.append({'Inventory': inventory, 'Result': result})
     
-    # doc.write_data(data)
+    _doc.write_data(data)
 
     log.info('Finished: AWS Auto Inventory')

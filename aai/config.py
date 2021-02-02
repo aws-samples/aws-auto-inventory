@@ -20,6 +20,8 @@ import os
 import boto3
 from time import gmtime, strftime
 
+from aai import settings as _settings
+
 t = gmtime()
 timestamp = strftime("%Y%m%d%H%M%S", t)
 file_name = 'AWS_Inventory_{}.xlsx'.format(timestamp)
@@ -51,3 +53,5 @@ ch.setFormatter(formatter)
 # add the handlers to the logger
 logger.addHandler(fh)
 logger.addHandler(ch)
+
+settings = _settings.Settings()
