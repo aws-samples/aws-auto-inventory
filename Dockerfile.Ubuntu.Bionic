@@ -17,8 +17,6 @@ FROM python AS tools
 
 # Install tools for testing
 RUN apt-get install -y build-essential
-RUN apt-get install -y awscli
-RUN apt-get install -y vim
 
 FROM tools AS app
 
