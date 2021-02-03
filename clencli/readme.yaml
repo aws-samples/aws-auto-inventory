@@ -56,29 +56,89 @@ installing: |-
           result_key: Volumes
   ```
 testing: |-
-  AWS-Auto-Inventory uses [boto3][boto3].
+  AWS-Auto-Inventory uses [boto3](https://github.com/boto/boto3).
   You can use any service that contains any list or describe method to fetch information about your resources.
-  For example, let's say I have the following configuration:
+
+  ### Parameters
+  You can use [boto3](https://github.com/boto/boto3) parameters to narrow down your search results.
+
+  #### Filter by tag:Name
 
   ```
-  aws:
-    profile: my-aws-profile
-    region:
-      - us-east-1
+  sheets:
+    - name: VPC
+      service: ec2
+      function: describe_vpcs
+      result_key: Vpcs
+      parameters:
+        Filters:
+          - Name: tag:Name
+            Values:
+              - my-vpc
+  ```
 
-  inventory:
-    - sheet1:
-        name: EC2
-        service: ec2
-        function: describe_instances
+  ### Filter by vpc-id
+
+  ```
+  sheets:
+    - name: Subnets
+      service: ec2
+      function: describe_subnets
+      result_key: Subnets
+      parameters:
+        Filters:
+          - Name: vpc-id
+            Values:
+              - vpc-xxx
+  ```
+
+  ### Find a particular RDS instance
+
+  ```
+  sheets:
+    - name: RDS
+      service: rds
+      function: describe_db_instances
+      result_key: DBInstances
+      parameters:
+        DBInstanceIdentifier: the-name-of-my-rds-instance
+  ```
+
+  ### Find EC2 instances by a particular tag
+
+  ```
+  sheets:
+    - name: EC2
+      service: ec2
+      function: describe_instances
+      result_key: Reservations
+      parameters:
+        Filters:
+          - Name: tag:ApplicationName
+            Values:
+              - my-application
+  ```
+
+  ### Find a particular IAM Role
+  ```
+  sheets:
+    - name: IAM.Role
+      service: iam
+      function: get_role
+      result_key: Role
+      parameters:
+        RoleName: my-role
   ```
 contributors:
 - name: Silva, Valter
-  role: Cloud Architect
+  role: AWS Professional Services - Cloud Architect
   email: valterh@amazon.com
 references:
 - description: Cloud Engineer CLI
   name: clencli
   url: https://github.com/awslabs/clencli
+- description: Boto3
+  name: boto3
+  url: https://github.com/boto/boto3
 license: This project is licensed under the Apache License 2.0.
 copyright: Amazon, Inc. or its affiliates. All Rights Reserved.
