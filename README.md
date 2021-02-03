@@ -43,9 +43,13 @@ Automates creation of detailed inventories from AWS resources.
   <summary>Expand</summary>
 
 
-| ![how-to-run](https://via.placeholder.com/512x256.png) |
+| ![how-to-run](clencli/terminalizer/run.gif) |
 |:--:| 
 | *How to run* |
+
+| ![ec2-inventory-result](clencli/media/ec2-inventory-result.png) |
+|:--:| 
+| *EC2 Inventory Result* |
 
 </details>
 

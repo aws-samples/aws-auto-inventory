@@ -8,7 +8,10 @@ app:
 screenshots:
 - caption: How to run
   label: how-to-run
-  url: https://via.placeholder.com/512x256.png
+  url: clencli/terminalizer/run.gif
+- caption: EC2 Inventory Result
+  label: ec2-inventory-result
+  url: clencli/media/ec2-inventory-result.png
 usage: |-
   ```
   aws-auto-inventory --help

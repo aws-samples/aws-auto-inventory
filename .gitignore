@@ -416,3 +416,4 @@ $RECYCLE.BIN/
 
 build.txt
 output/*.xlsx
+aws-auto-inventory-report/
