@@ -21,7 +21,7 @@ from aai import converter as _converter
 from aai import aws as _aws
 from aai import doc as _doc
 
-log = logging.getLogger('aai.main')
+log = logging.getLogger('aws-auto-inventory.main')
 
 def get_inventory(profile_name, region_name, sheet):
     response = _aws.get(profile_name=profile_name, region_name=region_name, sheet=sheet)

@@ -19,7 +19,7 @@ from aai import config as _config
 
 # import utils.aws as aws
 
-log = logging.getLogger('aai.aws')
+log = logging.getLogger('aws-auto-inventory.aws')
 
 def fetch(profile_name, region_name, service, function, result_key, parameters):
     log.info('Started: {}:{}:{}:{}:{}'.format(region_name, service, function, result_key, parameters))

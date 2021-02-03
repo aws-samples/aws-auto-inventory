@@ -19,7 +19,7 @@ import logging
 
 from aai import config as _config
 
-log = logging.getLogger('aai.doc')
+log = logging.getLogger('aws-auto-inventory.doc')
 
 def write_worksheet(df):
 

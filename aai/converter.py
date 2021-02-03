@@ -15,7 +15,7 @@
 import logging
 import collections
 
-log = logging.getLogger('aai.converter')
+log = logging.getLogger('aws-auto-inventory.converter')
 
 
 def flatten(d,sep="_"):

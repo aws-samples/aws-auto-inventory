@@ -25,20 +25,16 @@ from aai import settings as _settings
 t = gmtime()
 timestamp = strftime("%Y%m%d%H%M%S", t)
 file_name = '_{}.xlsx'.format(timestamp)
-filepath = "./output/"
+filepath = "./aws-auto-inventory-report/"
 os.makedirs(filepath, exist_ok=True)
 
 # --- logging variables
 
-log_filepath    = "./log/"
-os.makedirs(log_filepath, exist_ok=True)
-
-# create logger with 'aai_application'
-logger = logging.getLogger('aai')
+logger = logging.getLogger('aws-auto-inventory')
 logger.setLevel(logging.DEBUG)
 
 # create file handler which logs even debug messages
-fh = logging.FileHandler(log_filepath+'aai.log')
+fh = logging.FileHandler(filepath+'log.txt')
 fh.setLevel(logging.DEBUG)
 
 # create console handler with a higher log level
