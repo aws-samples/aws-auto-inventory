@@ -5,10 +5,12 @@ phases:
     commands:
       - echo 'Install Make'
       - apt-get install -y build-essential
-      - make init
   build:
     commands:
-      - make build
+      - make docker/build/ubuntu
+  post_build:
+    commands:
+      - make docker/push/ubuntu
 artifacts:
   files:
     - 'dist/*'
