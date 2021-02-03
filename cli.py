@@ -3,10 +3,10 @@ import argparse
 from aai import run
  
 # Define the program description
-text = 'Automates creation of detailed inventories from AWS resources.'
+description = 'Automates creation of detailed inventories from AWS resources.'
 
 # Initiate the parser with a description
-parser = argparse.ArgumentParser(description=text)
+parser = argparse.ArgumentParser(description=description)
 
 # Add long and short argument
 parser.add_argument("--name", "-n", help="inventory name", required=True)
