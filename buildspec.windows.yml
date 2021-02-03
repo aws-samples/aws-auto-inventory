@@ -7,8 +7,8 @@ phases:
   build:
     commands:
       - Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
-      - choco install python --confirm --silent
-      - choco install curl
+      - choco install python --confirm --no-progress
+      - choco install curl --confirm --no-progress
       - curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
       - python.exe get-pip.py
       - python.exe -m venv .venv
