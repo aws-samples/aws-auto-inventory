@@ -24,7 +24,7 @@ from aai import settings as _settings
 
 t = gmtime()
 timestamp = strftime("%Y%m%d%H%M%S", t)
-file_name = 'AWS_Inventory_{}.xlsx'.format(timestamp)
+file_name = '_{}.xlsx'.format(timestamp)
 filepath = "./output/"
 os.makedirs(filepath, exist_ok=True)
 

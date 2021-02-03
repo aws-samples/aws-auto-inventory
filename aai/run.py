@@ -34,10 +34,12 @@ def Execute(name):
     log.info("Generating inventory {}".format(name))
     inventory = _config.settings.get_inventory(name)
     if inventory != {}:
-        log.info('Inventory {} was found'.format(inventory['name']))
-        log.info('AWS CLI profile {} will be used'.format(inventory['aws']['profile']))
-        log.info('AWS Regions {} will be scanned'.format(inventory['aws']['region']))
+        inventory_name = inventory['name']
         profile_name=inventory['aws']['profile']
+
+        log.info('Inventory {} was found'.format(inventory_name))
+        log.info('AWS CLI profile {} will be used'.format(profile_name))
+        log.info('AWS Regions {} will be scanned'.format(inventory['aws']['region']))
 
         data=[]
         for region in inventory['aws']['region']:
@@ -47,7 +49,7 @@ def Execute(name):
                 data.append({'Name': name, 'Result': result})
         
         transpose = inventory['excel']['transpose']
-        _doc.write_data(transpose=transpose, data=data)
+        _doc.write_data(inventory_name, transpose=transpose, data=data)
     else:
         print("No inventory named {} was found".format(name))
 

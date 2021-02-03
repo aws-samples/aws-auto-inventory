@@ -49,24 +49,10 @@ def write_worksheet(df):
     # Close the Pandas Excel writer and output the Excel file.
     writer.save()
 
-def write_to_excel(sheet_name, data, mode):
 
-    file_name = _config.file_name
-    log.info('Started: writing document {} on sheet {}'.format(file_name, sheet_name))
-    # df = pd.DataFrame([data])
-    df = pd.DataFrame(data)
-    
-    # fix: Excel does not support datetimes with timezones. Please ensure that datetimes are timezone unaware before writing to Excel.
-    for col in df.select_dtypes(['datetimetz']).columns:
-        df[col] = df[col].dt.tz_convert(None)
-
-    with pd.ExcelWriter('output/{}'.format(file_name), engine='openpyxl', mode=mode) as writer:  
-        df.transpose().to_excel(writer, sheet_name=sheet_name)
-    log.info('Finished: writing document {} on sheet {}'.format(file_name, sheet_name))
-
-def write_data(transpose, data):
+def write_data(name, transpose, data):
     file_path = _config.filepath
-    file_name = _config.file_name
+    file_name = name + _config.file_name
 
     # log.info('Started: writing document {} on sheet {}'.format(file_name, sheet_name))
     
