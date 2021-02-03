@@ -14,8 +14,8 @@ init:
 clean:
 	@rm -rf build/ dist/ *.spec log/ output/ build.txt __pycache__/ aai/__pycache__/ 
 
-.PHONY: dist
-dist: clean
+.PHONY: build
+build: clean
 	@( \
        source .venv/bin/activate; \
 	   pyinstaller --name aws-auto-inventory --clean --onefile --hidden-import cmath --log-level=DEBUG cli.py 2> build.txt; \
