@@ -15,7 +15,7 @@ phases:
       - python get-pip.py
       - pip install --upgrade pyinstaller
       - pip install -r requirements.txt
-
+      - pyinstaller --name aws-auto-inventory-windows-amd64 --clean --onefile --hidden-import cmath --log-level=DEBUG cli.py
 artifacts:
   files:
     - dist\*
