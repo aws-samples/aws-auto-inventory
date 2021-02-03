@@ -4,7 +4,7 @@ TAG=$(shell date +%Y%m%d)
 init:
 	python3 -m venv .venv
 	@( \
-       source .venv/bin/activate; \
+       . .venv/bin/activate; \
 	   pip install --upgrade pip ; \
 	   pip install --upgrade pyinstaller ; \
        pip install -r requirements.txt; \
@@ -17,7 +17,7 @@ clean:
 .PHONY: build
 build: clean
 	@( \
-       source .venv/bin/activate; \
+       . .venv/bin/activate; \
 	   pyinstaller --name aws-auto-inventory --clean --onefile --hidden-import cmath --log-level=DEBUG cli.py 2> build.txt; \
     )
 
