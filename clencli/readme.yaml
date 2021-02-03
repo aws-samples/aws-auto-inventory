@@ -1,5 +1,5 @@
 logo:
-  url: https://images.unsplash.com/photo-1441986300917-64674bd600d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxOTEyNTB8MHwxfHJhbmRvbXx8fHx8fHx8&ixlib=rb-1.2.1&q=80&w=1080
+  url: https://images.unsplash.com/photo-1546198632-9ef6368bef12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxOTEyNTB8MHwxfGFsbHx8fHx8fHx8&ixlib=rb-1.2.1&q=80&w=1080
   label: logo
 app:
   name: AWS Automated Inventory
