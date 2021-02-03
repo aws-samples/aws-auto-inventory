@@ -1,53 +1,84 @@
 logo:
-  url: https://images.unsplash.com/photo-1606041505251-43e5868fc52f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxOTEyNTB8MHwxfHJhbmRvbXx8fHx8fHx8&ixlib=rb-1.2.1&q=80&w=1080
+  url: https://images.unsplash.com/photo-1441986300917-64674bd600d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxOTEyNTB8MHwxfHJhbmRvbXx8fHx8fHx8&ixlib=rb-1.2.1&q=80&w=1080
   label: logo
 app:
-  name: Application
-  function: Lorem ipsum dolor
-  id: application-id
+  name: AWS Automated Inventory
+  function: Automates creation of detailed inventories from AWS resources.
+  id: aws-auto-inventory
 screenshots:
-- caption: How to build
-  label: how-to-build
-  url: https://via.placeholder.com/512x256.png
 - caption: How to run
   label: how-to-run
   url: https://via.placeholder.com/512x256.png
 usage: |-
-  For development you will need to install `git-remote-codecommit`
   ```
-  pip install git-remote-codecommit
+  aws-auto-inventory --help
+  usage: aws-auto-inventory [-h] --name NAME
+
+  Automates creation of detailed inventories from AWS resources.
+
+  optional arguments:
+    -h, --help            show this help message and exit
+    --name NAME, -n NAME  inventory name
   ```
-  Convallis posuere morbi leo urna molestie at.
-prerequisites:
-- description: Nisi quis eleifend quam adipiscing.Lacus vel facilisis volutpat est
-    velit egestas dui id.
-  name: Eget arcu dictum
-  url: https://
+  ### Problem
+  Projects usually have several resources and fetching all the information manually is a very time-consuming task.
+  This issue is intensified when the same project have multiple environments, e.g.: NonProd, QA and/or Prod.
+
+  ### Solution
+  Provide a simple way to fetch the required information and generate a spreadsheet.
+  The information can be filtered, e.g. filter results by tag:x, vpc, subnets, etc.
 installing: |-
-  Donec adipiscing tristique risus nec feugiat.
+  Download the binary according to your operating system and platform. After you can execute it directly.
+  You will need to create a `config.yaml` file in order to tell the tool how to generate your inventory, here are the default search paths for each platform:
+
+  * OS X: `~/.config/aws-auto-inventory/config.yaml` or  `~/Library/Application Support/aws-auto-inventory/config.yaml`
+  * Other Unix: `$XDG_CONFIG_HOME/aws-auto-inventory/config.yaml` or  `~/.config/aws-auto-inventory/config.yaml`
+  * Windows: `%APPDATA%\aws-auto-inventory\config.yaml` where the `APPDATA` environment variable falls back to `%HOME%\AppData\Roaming\config.yaml` if undefined
+
+  You can use the [config-sample](config-sample.yaml) as an example. A snippet can be found below:
   ```
-  $ sudo apt-get install vim
+  inventories:
+    - name: your-inventory-name
+      aws:
+        profile: your-aws-profile
+        region:
+          - us-east-1
+      excel:
+        transpose: true
+      sheets:
+        - name: EC2 # sheet name on Excel
+          service: ec2 # the boto3 client of an AWS service
+          function: describe_instances # the client method of the service defined above
+          result_key: Reservations # [optional]: The first key of the response dict
+        - name: EBS
+          service: ec2
+          function: describe_volumes
+          result_key: Volumes
   ```
 testing: |-
-  Varius morbi enim nunc faucibus a pellentesque.
+  AWS-Auto-Inventory uses [boto3][boto3].
+  You can use any service that contains any list or describe method to fetch information about your resources.
+  For example, let's say I have the following configuration:
+
   ```
-  $ app test
-  ```
-deployment: |-
-  Adipiscing bibendum est ultricies integer.
-  ```
-  $ app deploy
+  aws:
+    profile: my-aws-profile
+    region:
+      - us-east-1
+
+  inventory:
+    - sheet1:
+        name: EC2
+        service: ec2
+        function: describe_instances
   ```
 contributors:
-- name: LastName, FirstName
-  role: Job Role
-  email: name@email.com
-acknowledgments:
-- name: LastName, FirstName
-  role: Job Role
+- name: Silva, Valter
+  role: Cloud Architect
+  email: valterh@amazon.com
 references:
 - description: Cloud Engineer CLI
   name: clencli
   url: https://github.com/awslabs/clencli
 license: This project is licensed under the Apache License 2.0.
-copyright: Company, Inc. or its affiliates. All Rights Reserved.
+copyright: Amazon, Inc. or its affiliates. All Rights Reserved.
