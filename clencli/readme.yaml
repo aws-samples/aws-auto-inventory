@@ -1,6 +1,6 @@
 logo:
-  url: https://images.unsplash.com/photo-1546198632-9ef6368bef12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxOTEyNTB8MHwxfGFsbHx8fHx8fHx8&ixlib=rb-1.2.1&q=80&w=1080
-  label: logo
+  url: clencli/logo.jpeg
+  label: Photo by [Denny Müller](https://unsplash.com/redaquamedia) on [Unsplash](https://unsplash.com)
 app:
   name: AWS Automated Inventory
   function: Automates creation of detailed inventories from AWS resources.
