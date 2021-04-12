@@ -75,12 +75,21 @@ optional arguments:
   --name NAME, -n NAME  inventory name
 ```
 ### Problem
-Projects usually have several resources and fetching all the information manually is a very time-consuming task.
-This issue is intensified when the same project have multiple environments, e.g.: NonProd, QA and/or Prod.
+Projects usually have several resources and fetching all the information about these resources manually is a very time-consuming task.
+This issue is intensified when the same project have multiple account and/or environments, e.g.: NonProd, QA and/or Prod.
 
 ### Solution
 Provide a simple way to fetch the required information and generate a spreadsheet.
 The information can be filtered, e.g. filter results by tag:x, vpc, subnets, etc.
+Additionally, inventories can be generated related to many services, which are collected and organized per sheet in the spreadsheet.
+
+### Development
+```
+# Linux/MacOS:
+# clone the project and enter cloned directory
+make init build
+./dist/aws-auto-inventory --name <your-inventory-name>
+```
 </details>
 
 
@@ -92,7 +101,6 @@ The information can be filtered, e.g. filter results by tag:x, vpc, subnets, etc
 <details open>
   <summary>Expand</summary>
 
-Download the binary according to your operating system and platform. After you can execute it directly.
 You will need to create a `config.yaml` file in order to tell the tool how to generate your inventory, here are the default search paths for each platform:
 
 * OS X: `~/.config/aws-auto-inventory/config.yaml` or  `~/Library/Application Support/aws-auto-inventory/config.yaml`
@@ -119,6 +127,9 @@ inventories:
         function: describe_volumes
         result_key: Volumes
 ```
+
+Now, download the binary according to your operating system and platform and execute it, informing which inventory you want to generate.
+The tool will create a folder `aws-auto-inventory-report`, in the current path, with the inventory report inside.
 </details>
 
 
