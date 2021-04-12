@@ -27,7 +27,7 @@ RUN python3 -m venv ${VIRTUAL_ENV}
 RUN /bin/bash -c "source ${VIRTUAL_ENV}/bin/activate" \
     && pip install --upgrade pip \
     && pip install --upgrade pyinstaller \
-    && pip install -r requirements.txt
+    && pip install -r requirements-minimal.txt
 
 # make dist
 
