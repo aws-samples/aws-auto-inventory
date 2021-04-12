@@ -1,5 +1,8 @@
 # You can change this tag to suit your needs
 TAG=$(shell date +%Y%m%d)
+OS=$(shell uname -s | tr A-Z a-z)
+ARCH=$(shell uname -m | tr A-Z a-z)
+
 .PHONY: init
 init:
 	python3 -m venv .venv
@@ -18,7 +21,7 @@ clean:
 build: clean
 	@( \
        . .venv/bin/activate; \
-	   pyinstaller --name aws-auto-inventory --clean --onefile --hidden-import cmath --log-level=DEBUG cli.py 2> build.txt; \
+	   pyinstaller --name aws-auto-inventory-$(OS)-$(ARCH) --clean --onefile --hidden-import cmath --log-level=DEBUG cli.py 2> build.txt; \
     )
 
 # Build the Docker image, create a container, extract the binary and copy it under dist/, stop and delete the container
@@ -38,6 +41,6 @@ docker/run/ubuntu:
 
 .PHONY: docker/push/ubuntu
 docker/push/ubuntu:
-	@aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 875835244221.dkr.ecr.us-east-1.amazonaws.com \
-	&& docker tag aws-auto-inventory:$(TAG) 875835244221.dkr.ecr.us-east-1.amazonaws.com/aws-auto-inventory:$(TAG) \
-	&& docker push 875835244221.dkr.ecr.us-east-1.amazonaws.com/aws-auto-inventory:$(TAG) ;\
+	@aws ecr get-login-password --region $(AWS_REGION) | docker login --username AWS --password-stdin $(ECR_REPO_ID).dkr.ecr.$(AWS_REGION).amazonaws.com \
+	&& docker tag aws-auto-inventory:$(TAG) $(ECR_REPO_ID).dkr.ecr.$(AWS_REGION).amazonaws.com/aws-auto-inventory:$(TAG) \
+	&& docker push $(ECR_REPO_ID).dkr.ecr.$(AWS_REGION).amazonaws.com/aws-auto-inventory:$(TAG) ;\
