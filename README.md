@@ -232,6 +232,10 @@ sheets:
 </details>
 
 
+## Security
+
+See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
+
 
 
 
@@ -251,6 +255,8 @@ sheets:
 ## License
 ---
 This project is licensed under the Apache License 2.0.
+
+For more information please read [LICENSE](LICENSE).
 
 
 
