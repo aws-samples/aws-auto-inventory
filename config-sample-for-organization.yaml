@@ -1,0 +1,123 @@
+---
+meta: |
+  Your AWS Credentials file (~/.aws/credentials) looks like the following snippet
+
+  [your-org-master]
+  aws_access_key_id = your-access-key-id
+  aws_secret_access_key = your-secret-access-key
+  [your-org-account1]
+  role_arn = arn:aws:iam::account1-id:role/OrganizationAccountAccessRole
+  source_profile = your-org-master
+  [your-org-account1]
+  role_arn = arn:aws:iam::account2-id:role/OrganizationAccountAccessRole
+  source_profile = your-org-master
+
+  Notes:
+
+  - Please make sure to replace the following values:
+    - your-org-*  -> with your actual AWS profile names
+    - region      -> with the target AWS region that you want to add to the inventory
+
+  - In case you want to add/remove AWS resources, please update the Sheets section
+    and it will be applied to all of your organization accounts while you still
+    have the flexibility to use a customer sheets configurations (AWS Resources)
+    for specific AWS account by changing 'sheets: *sheets' to your custom sheets array
+
+Sheets: &sheets
+  - name: EC2Instances # sheet name on Excel
+    service: ec2 # the boto3 client of an AWS service
+    function: describe_instances # the client method of the service defined above
+    result_key: Reservations # [optional]: The first key of the response dict
+
+  - name: EBSVolumes
+    service: ec2
+    function: describe_volumes
+    result_key: Volumes
+
+  - name: VPCs
+    service: ec2
+    function: describe_vpcs
+    result_key: Vpcs
+
+  - name: RDSInstances
+    service: rds
+    function: describe_db_instances
+    result_key: DBInstances
+
+  - name: IAMUsers
+    service: iam
+    function: list_users
+    result_key: Users
+
+  - name: IAMGroups
+    service: iam
+    function: list_groups
+    result_key: Groups
+
+  - name: CodeCommitRepos
+    service: codecommit
+    function: list_repositories
+    result_key: repositories
+
+  - name: LambdaFunctions
+    service: lambda
+    function: list_functions
+    result_key: Functions
+
+  - name: CloudWatchLogGroups
+    service: logs
+    function: describe_log_groups
+    result_key: logGroups
+
+  - name: CloudFrontDistros
+    service: cloudfront
+    function: list_distributions
+    result_key: DistributionList
+
+  - name: LoadBalancers
+    service: elbv2
+    function: describe_load_balancers
+    result_key: LoadBalancers
+
+  - name: ECR
+    service: ecr
+    function: describe_repositories
+    result_key: repositories
+
+  - name: NatGWs
+    service: ec2
+    function: describe_nat_gateways
+    result_key: repositories
+
+  - name: S3Buckets
+    service: s3
+    function: list_buckets
+    result_key: Buckets
+
+inventories:
+  - name: your-org-master
+    aws:
+      profile: your-org
+      region:
+        - us-east-1
+    excel:
+      transpose: true
+    sheets: *sheets
+
+  - name: your-org-account1
+    aws:
+      profile: your-org-account1
+      region:
+        - us-east-1
+    excel:
+      transpose: true
+    sheets: *sheets
+
+  - name: your-org-account2
+    aws:
+      profile: your-org-account2
+      region:
+        - us-east-1
+    excel:
+      transpose: true
+    sheets: *sheets

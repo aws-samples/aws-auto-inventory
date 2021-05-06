@@ -108,7 +108,7 @@ You will need to create a `config.yaml` file in order to tell the tool how to ge
 * Windows: `%APPDATA%\aws-auto-inventory\config.yaml` where the `APPDATA` environment variable falls back to `%HOME%\AppData\Roaming\config.yaml` if undefined
 
 You can use the [config-sample](config-sample.yaml) as an example. A snippet can be found below:
-```
+```yaml
 inventories:
   - name: your-inventory-name
     aws:
@@ -126,6 +126,56 @@ inventories:
         service: ec2
         function: describe_volumes
         result_key: Volumes
+```
+
+If you are interested in building an inventory for multiple AWS Accounts
+(within your AWS organization) with the same sheets, you can use the 
+[config-sample-for-organization](config-sample-for-organization.yaml) for simplicity.
+Code snippet:
+```yaml
+Sheets: &sheets
+  - name: CloudFrontDistros
+    service: cloudfront
+    function: list_distributions
+    result_key: DistributionList
+  - name: S3Buckets
+    service: s3
+    function: list_buckets
+    result_key: Buckets
+
+inventories:
+  - name: your-org-master
+    aws:
+      profile: your-org
+      region:
+        - us-east-1
+    excel:
+      transpose: true
+    sheets: *sheets
+
+  - name: your-org-account1
+    aws:
+      profile: your-org-account1
+      region:
+        - us-east-1
+    excel:
+      transpose: true
+    sheets: *sheets
+
+  - name: your-org-account2
+    aws:
+      profile: your-org-account2
+      region:
+        - us-east-1
+    excel:
+      transpose: true
+    sheets: *sheets
+```
+Then you need to run the auto-inventory script multiple times for your accounts as follows:
+```shell
+./dist/aws-auto-inventory --name your-org-master
+./dist/aws-auto-inventory --name your-org-account1
+./dist/aws-auto-inventory --name your-org-account1
 ```
 
 Now, download the binary according to your operating system and platform and execute it, informing which inventory you want to generate.
