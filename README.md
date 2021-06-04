@@ -35,7 +35,7 @@ Automates creation of detailed inventories from AWS resources.
  - [Testing](#testing) 
 
 
- - [Contributors](#contributors) 
+
  - [References](#references) 
  - [License](#license) 
  - [Copyright](#copyright) 
@@ -108,7 +108,7 @@ You will need to create a `config.yaml` file in order to tell the tool how to ge
 * Windows: `%APPDATA%\aws-auto-inventory\config.yaml` where the `APPDATA` environment variable falls back to `%HOME%\AppData\Roaming\config.yaml` if undefined
 
 You can use the [config-sample](config-sample.yaml) as an example. A snippet can be found below:
-```yaml
+```
 inventories:
   - name: your-inventory-name
     aws:
@@ -129,7 +129,7 @@ inventories:
 ```
 
 If you are interested in building an inventory for multiple AWS Accounts
-(within your AWS organization) with the same sheets, you can use the 
+(within your AWS organization) with the same sheets, you can use the
 [config-sample-for-organization](config-sample-for-organization.yaml) for simplicity.
 Code snippet:
 ```yaml
@@ -270,17 +270,6 @@ sheets:
 
 
 
-## Contributors
----
-<details open>
-  <summary>Expand</summary>
-
-|     Name     |         Email        |       Role      |
-|:------------:|:--------------------:|:---------------:|
-|  Silva, Valter  |  valterh@amazon.com  |  AWS Professional Services - Cloud Architect  |
-
-</details>
-
 
 ## Security
 
@@ -315,5 +304,4 @@ For more information please read [LICENSE](LICENSE).
 ```
 Amazon, Inc. or its affiliates. All Rights Reserved.
 ```
-
 
