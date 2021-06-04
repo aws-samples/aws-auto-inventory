@@ -38,27 +38,22 @@ jobs:
       - uses: actions/download-artifact@v2
         with:
           name: aws-auto-inventory-${{ matrix.os }}
-
-      # - name: Create Release
-      #   id: create_release
-      #   uses: actions/create-release@v1
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
-      #   with:
-      #     tag_name: ${{ github.ref }}
-      #     release_name: Release ${{ github.ref }}
-      #     draft: false # true to create a draft (unpublished) release, false to create a published one. Default: false
-      #     prerelease: false # true to identify the release as a prerelease. false to identify the release as a full release. Default: false
-      # - name: Upload Release Asset (aws-auto-inventory)
-      #   id: upload-release-asset-aws-auto-inventory
-      #   uses: actions/upload-release-asset@v1
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #   with:
-      #     upload_url: ${{ steps.create_release.outputs.upload_url }}
-      #     asset_path: ./dist/aws-auto-inventory
-      #     asset_name: aws-auto-inventory
-      #     asset_content_type: application/x-aws-auto-inventory
+      - uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          draft: false # true to create a draft (unpublished) release, false to create a published one. Default: false
+          prerelease: false # true to identify the release as a prerelease. false to identify the release as a full release. Default: false
+      - uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./aws-auto-inventory-${{ matrix.os }}
+          asset_name: aws-auto-inventory-${{ matrix.os }}
+          asset_content_type: application/x-aws-auto-inventory-${{ matrix.os }}
 
   # windows-release:
   #   runs-on: windows-latest
