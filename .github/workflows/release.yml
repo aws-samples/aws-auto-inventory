@@ -1,0 +1,40 @@
+name: Release
+on:
+  push:
+    # Sequence of patterns matched against refs/tags
+    tags:
+      - '*' # Push events to matching v*, i.e. v1.0, v20.15.10
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+          architecture: 'x64' 
+      - run: python3 --version
+      - run: pip install --upgrade pip
+      - run: pip install --upgrade pyinstaller
+      - run: pip install -r requirements.txt
+      - run: pyinstaller --name aws-auto-inventory-linux-amd64 --clean --onefile --hidden-import cmath --log-level=DEBUG cli.py
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          draft: false # true to create a draft (unpublished) release, false to create a published one. Default: false
+          prerelease: false # true to identify the release as a prerelease. false to identify the release as a full release. Default: false
+      - name: Upload Release Asset (aws-auto-inventory-linux-amd64)
+        id: upload-release-asset-aws-auto-inventory-linux-amd64
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./dist/aws-auto-inventory-linux-amd64-x86_64
+          asset_name: aws-auto-inventory-linux-amd64-x86_64
+          asset_content_type: application/x-aws-auto-inventory-linux-amd64-x86_64
