@@ -27,6 +27,7 @@ jobs:
 
   release:
     needs: build
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/create-release@v1
         env:
