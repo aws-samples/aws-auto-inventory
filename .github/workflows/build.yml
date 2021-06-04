@@ -13,6 +13,7 @@ jobs:
       - run: pip install --upgrade pip
       - run: pip install --upgrade pyinstaller
       - run: pip install -r requirements.txt
+      - run: pyinstaller --name aws-auto-inventory-linux-amd64 --clean --onefile --hidden-import cmath --log-level=DEBUG cli.py
 
   windows-build:
     runs-on: windows-latest
@@ -26,3 +27,4 @@ jobs:
       - run: pip install --upgrade pip
       - run: pip install --upgrade pyinstaller
       - run: pip install -r requirements.txt
+      - run: pyinstaller --name aws-auto-inventory-linux-amd64 --clean --onefile --hidden-import cmath --log-level=DEBUG cli.py
