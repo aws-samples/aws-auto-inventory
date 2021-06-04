@@ -29,10 +29,10 @@ jobs:
 
   release:
     runs-on: ${{ matrix.os }}
-      strategy:
-        matrix:
-          os: [ubuntu-latest, macos-latest, windows-latest]
-          python-version: [3.9]
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        python-version: [3.9]
       steps:
         - uses: actions/download-artifact@v2
           with:
