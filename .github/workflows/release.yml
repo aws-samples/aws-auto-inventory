@@ -38,6 +38,8 @@ jobs:
       - uses: actions/download-artifact@v2
         with:
           name: aws-auto-inventory-${{ matrix.os }}
+      - run: ls -ltha
+      - run: tree -a ./
       - uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
@@ -46,7 +48,6 @@ jobs:
           release_name: Release ${{ github.ref }}
           draft: false # true to create a draft (unpublished) release, false to create a published one. Default: false
           prerelease: false # true to identify the release as a prerelease. false to identify the release as a full release. Default: false
-      - run: ls -ltha
       # - uses: actions/upload-release-asset@v1
       #   env:
       #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
