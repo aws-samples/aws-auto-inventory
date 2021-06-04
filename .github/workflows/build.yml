@@ -9,7 +9,7 @@ jobs:
         with:
           python-version: '3.x'
           architecture: 'x64' 
-      - run: python3 --version
+        run: python3 --version
 
   windows-build:
     runs-on: windows-latest
