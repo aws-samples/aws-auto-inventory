@@ -18,7 +18,7 @@ jobs:
       - run: pip install --upgrade pyinstaller
       - run: pip install -r requirements.txt
       - run: pyinstaller --name aws-auto-inventory-linux-amd64 --clean --onefile --hidden-import cmath --log-level=DEBUG cli.py
-      - run: ls -ltha
+      - run: ls -ltha dist/
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
