@@ -18,6 +18,7 @@ jobs:
       - run: pip install --upgrade pyinstaller
       - run: pip install -r requirements.txt
       - run: pyinstaller --name aws-auto-inventory-linux-amd64 --clean --onefile --hidden-import cmath --log-level=DEBUG cli.py
+      - run: ls -ltha
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
@@ -35,6 +36,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./aws-auto-inventory-linux-amd64-x86_64
+          asset_path: aws-auto-inventory-linux-amd64-x86_64
           asset_name: aws-auto-inventory-linux-amd64-x86_64
           asset_content_type: application/x-aws-auto-inventory-linux-amd64-x86_64
