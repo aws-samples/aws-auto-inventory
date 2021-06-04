@@ -8,7 +8,7 @@ on: [push]
 #       - '*' # Push events to matching v*, i.e. v1.0, v20.15.10
 
 jobs:
-  release:
+  build:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -21,27 +21,33 @@ jobs:
       - run: pip install --upgrade pip
       - run: pip install --upgrade pyinstaller
       - run: pip install -r requirements.txt
-      - run: pyinstaller --name aws-auto-inventory --clean --onefile --hidden-import cmath --log-level=DEBUG cli.py
-      - name: Create Release
-        id: create_release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+      - run: pyinstaller --name aws-auto-inventory-${{ matrix.os }} --clean --onefile --hidden-import cmath --log-level=DEBUG cli.py
+      - uses: actions/upload-artifact@v2
         with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
-          draft: false # true to create a draft (unpublished) release, false to create a published one. Default: false
-          prerelease: false # true to identify the release as a prerelease. false to identify the release as a full release. Default: false
-      - name: Upload Release Asset (aws-auto-inventory)
-        id: upload-release-asset-aws-auto-inventory
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./dist/aws-auto-inventory
-          asset_name: aws-auto-inventory
-          asset_content_type: application/x-aws-auto-inventory
+          name: aws-auto-inventory-${{ matrix.os }}
+          path: ./dist/aws-auto-inventory-${{ matrix.os }}
+
+      # - name: Create Release
+      #   id: create_release
+      #   uses: actions/create-release@v1
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+      #   with:
+      #     tag_name: ${{ github.ref }}
+      #     release_name: Release ${{ github.ref }}
+      #     draft: false # true to create a draft (unpublished) release, false to create a published one. Default: false
+      #     prerelease: false # true to identify the release as a prerelease. false to identify the release as a full release. Default: false
+      # - name: Upload Release Asset (aws-auto-inventory)
+      #   id: upload-release-asset-aws-auto-inventory
+      #   uses: actions/upload-release-asset@v1
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   with:
+      #     upload_url: ${{ steps.create_release.outputs.upload_url }}
+      #     asset_path: ./dist/aws-auto-inventory
+      #     asset_name: aws-auto-inventory
+      #     asset_content_type: application/x-aws-auto-inventory
+
   # windows-release:
   #   runs-on: windows-latest
   #   steps:
