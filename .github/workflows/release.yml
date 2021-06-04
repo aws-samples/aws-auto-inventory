@@ -28,6 +28,7 @@ jobs:
           path: ./dist/aws-auto-inventory-${{ matrix.os }}
 
   release:
+    needs: build
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
