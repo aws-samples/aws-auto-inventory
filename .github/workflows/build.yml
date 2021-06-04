@@ -10,6 +10,8 @@ jobs:
           python-version: '3.x'
           architecture: 'x64' 
       - run: python3 --version
+      - run: pip install --upgrade pip
+      - run: pip install --upgrade pyinstaller
 
   windows-build:
     runs-on: windows-latest
