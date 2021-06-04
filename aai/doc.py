@@ -86,3 +86,4 @@ def write_data(name, transpose, data):
 
     # Close the Pandas Excel writer and output the Excel file.
     writer.save()
+    print('Report generated successfully at: {}{}'.format(file_path, file_name))
