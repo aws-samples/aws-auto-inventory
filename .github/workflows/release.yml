@@ -27,8 +27,14 @@ jobs:
 
   release:
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
     steps:
+      - uses: actions/download-artifact@v2
+        with:
+          name: aws-auto-inventory-${{ matrix.os }}
       - uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
@@ -36,19 +42,7 @@ jobs:
           tag_name: ${{ github.ref }}
           release_name: Release ${{ github.ref }}
           draft: true # true to create a draft (unpublished) release, false to create a published one. Default: false
-          prerelease: true # true to identify the release as a prerelease. false to identify the release as a full release. Default: false
-      - run: echo "URL:${{ steps.create_release.outputs.upload_url }}"
-  upload:
-    needs: [build, release]
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [ubuntu-latest, macos-latest, windows-latest]
-        python-version: [3.9]
-    steps:
-      - uses: actions/download-artifact@v2
-        with:
-          name: aws-auto-inventory-${{ matrix.os }}
+          prerelease: true # true to identify the release as a prerelease. false to identify the release as a full release. Default: false          
       - uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
