@@ -3,7 +3,7 @@ on:
   push:
     # Sequence of patterns matched against refs/tags
     tags:
-      - '*' # Push events to matching v*, i.e. v1.0, v20.15.10
+      - '*' # Push events to matching any tags, 0.1.0
 
 jobs:
   build:
@@ -44,6 +44,9 @@ jobs:
       - uses: actions/download-artifact@v2
         with:
           name: aws-auto-inventory-windows-latest
+      - run: mv aws-auto-inventory-ubuntu-latest aws-auto-inventory-ubuntu
+      - run: mv aws-auto-inventory-macos-latest aws-auto-inventory-macos
+      - run: mv aws-auto-inventory-windows-latest.exe aws-auto-inventory-windows.exe
       - name: Release
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
@@ -51,8 +54,8 @@ jobs:
           prerelease: true
           draft: true
           files: |
-            aws-auto-inventory-ubuntu-latest
-            aws-auto-inventory-macos-latest
-            aws-auto-inventory-windows-latest.exe
+            aws-auto-inventory-ubuntu
+            aws-auto-inventory-macos
+            aws-auto-inventory-windows.exe
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
