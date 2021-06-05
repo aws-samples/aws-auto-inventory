@@ -20,7 +20,13 @@ jobs:
       - run: pip install --upgrade pyinstaller
       - run: pip install -r requirements.txt
       - run: pyinstaller --name aws-auto-inventory-${{ matrix.os }} --clean --onefile --hidden-import cmath --log-level=DEBUG cli.py
-      - uses: actions/upload-artifact@v2
+      - if: matrix.os == 'windows-latest'
+        uses: actions/upload-artifact@v2
+        with:
+          name: aws-auto-inventory-${{ matrix.os }}
+          path: dist\aws-auto-inventory-windows-latest.exe
+      - if: matrix.os != 'windows-latest'
+        uses: actions/upload-artifact@v2
         with:
           name: aws-auto-inventory-${{ matrix.os }}
           path: ./dist/aws-auto-inventory-${{ matrix.os }}
