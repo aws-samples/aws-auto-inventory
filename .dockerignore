@@ -1,6 +1,0 @@
-.venv/*
-build/*
-dist/*
-aai.log
-aws-auto-inventory.spec
-build.txt
