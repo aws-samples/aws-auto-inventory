@@ -37,7 +37,7 @@ jobs:
           release_name: Release ${{ github.ref }}
           draft: true # true to create a draft (unpublished) release, false to create a published one. Default: false
           prerelease: true # true to identify the release as a prerelease. false to identify the release as a full release. Default: false
-
+      - run: echo "URL:${{ steps.create_release.outputs.upload_url }}"
   upload:
     needs: [build, release]
     runs-on: ${{ matrix.os }}
