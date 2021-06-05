@@ -27,14 +27,17 @@ jobs:
 
   release:
     needs: build
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [ubuntu-latest, macos-latest, windows-latest]
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/download-artifact@v2
         with:
-          name: aws-auto-inventory-${{ matrix.os }}
+          name: aws-auto-inventory-ubuntu-latest
+      - uses: actions/download-artifact@v2
+        with:
+          name: aws-auto-inventory-macos-latest
+      - uses: actions/download-artifact@v2
+        with:
+          name: aws-auto-inventory-windows-latest
       - uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
@@ -48,9 +51,25 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./aws-auto-inventory-${{ matrix.os }}
-          asset_name: aws-auto-inventory-${{ matrix.os }}
-          asset_content_type: application/x-aws-auto-inventory-${{ matrix.os }}
+          asset_path: ./aws-auto-inventory-ubuntu-latest
+          asset_name: aws-auto-inventory-ubuntu-latest
+          asset_content_type: application/x-aws-auto-inventory-ubuntu-latest
+      - uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./aws-auto-inventory-macos-latest
+          asset_name: aws-auto-inventory-macos-latest
+          asset_content_type: application/x-aws-auto-inventory-macos-latest
+      - uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./aws-auto-inventory-windows-latest
+          asset_name: aws-auto-inventory-windows-latest
+          asset_content_type: application/x-aws-auto-inventory-windows-latest
 
   # windows-release:
   #   runs-on: windows-latest
