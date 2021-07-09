@@ -47,7 +47,7 @@ repos:
     # Detects the presence of private keys
     - id: detect-private-key
     # This hook replaces double quoted strings with single quoted strings
-    - id: double-quote-string-fixer
+    # - id: double-quote-string-fixer
     # Ensures that a file is either empty, or ends with one newline.
     - id: end-of-file-fixer
     # Sort the lines in specified files (defaults to alphabetical). You must provide list of target files as input in your .pre-commit-config.yaml file.
@@ -70,10 +70,10 @@ repos:
     - id: sort-simple-yaml
     # This hook trims trailing whitespace.
     - id: trailing-whitespace
-- repo: https://github.com/pre-commit/mirrors-autopep8
-  rev: 'v1.5.7'  # Use the sha / tag you want to point at
-  hooks:
-  - id: autopep8
+# - repo: https://github.com/pre-commit/mirrors-autopep8
+  # rev: 'v1.5.7'  # Use the sha / tag you want to point at
+  # hooks:
+  # - id: autopep8
 - repo: https://github.com/psf/black
   rev: '21.6b0'
   hooks:
