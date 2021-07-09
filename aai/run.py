@@ -1,13 +1,13 @@
 #/usr/bin/python3
 
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
-  
+
 #   Licensed under the Apache License, Version 2.0 (the "License").
 #   You may not use this file except in compliance with the License.
 #   You may obtain a copy of the License at
-  
+
 #       http://www.apache.org/licenses/LICENSE-2.0
-  
+
 #   Unless required by applicable law or agreed to in writing, software
 #   distributed under the License is distributed on an "AS IS" BASIS,
 #   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -47,7 +47,7 @@ def Execute(name):
                 name = sheet['name']
                 result = get_inventory(profile_name=profile_name, region_name=region, sheet=sheet)
                 data.append({'Name': name, 'Result': result})
-        
+
         transpose = inventory['excel']['transpose']
         _doc.write_data(inventory_name, transpose=transpose, data=data)
     else:

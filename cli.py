@@ -1,7 +1,7 @@
 # Include standard modules
 import argparse
 from aai import run
- 
+
 # Define the program description
 description = 'Automates creation of detailed inventories from AWS resources.'
 

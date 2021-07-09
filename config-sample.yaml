@@ -2,7 +2,7 @@ inventories:
   - name: your-inventory-name
     aws:
       profile: your-aws-profile
-      region: 
+      region:
         - us-east-1
     excel:
       transpose: true
@@ -18,7 +18,7 @@ inventories:
   - name: your-second-inventory
     aws:
       profile: your-second-aws-profile
-      region: 
+      region:
         - us-east-1
     sheets:
       - name: EC2

@@ -1,11 +1,11 @@
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
-  
+
 #   Licensed under the Apache License, Version 2.0 (the "License").
 #   You may not use this file except in compliance with the License.
 #   You may obtain a copy of the License at
-  
+
 #       http://www.apache.org/licenses/LICENSE-2.0
-  
+
 #   Unless required by applicable law or agreed to in writing, software
 #   distributed under the License is distributed on an "AS IS" BASIS,
 #   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -28,7 +28,7 @@ def fetch(profile_name, region_name, service, function, result_key, parameters):
     try:
         session = boto3.Session(profile_name=profile_name)
         client = session.client(service, region_name=region_name)
-    
+
         if parameters is not None:
             if result_key:
                 response = client.__getattribute__(function)(**parameters).get(result_key)
@@ -44,7 +44,7 @@ def fetch(profile_name, region_name, service, function, result_key, parameters):
     except Exception as e:
         log.error("Error while processing {}, {}.\n{}".format(service, region_name, e))
 
-    
+
     log.info('Finished:{}:{}:{}:{}'.format(service, region_name, function, result_key))
     return response
 
@@ -84,16 +84,16 @@ def get_session(profile_name):
 
 def get_account_id():
     log.info('Started: get_caller_identity')
-    
+
     client = aws.get_session().client('sts')
     response = client.get_caller_identity()
     account = response['Account']
     user_id = response['UserId']
     arn = response['Arn']
-    
+
     log.info('Account: {}'.format(account))
     log.info('UserId: {}'.format(user_id))
     log.info('Arn: {}'.format(arn))
-    
+
     log.info('Finished: get_caller_identity')
     return account
