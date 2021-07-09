@@ -22,6 +22,7 @@ import confuse as _confuse
 
 log = logging.getLogger('aws-auto-inventory.settings')
 
+
 class Settings:
     __instance = None
 

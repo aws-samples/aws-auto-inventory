@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-#/usr/bin/python3
+# /usr/bin/python3
 
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 
@@ -24,10 +24,13 @@ from aai import doc as _doc
 
 log = logging.getLogger('aws-auto-inventory.main')
 
+
 def get_inventory(profile_name, region_name, sheet):
-    response = _aws.get(profile_name=profile_name, region_name=region_name, sheet=sheet)
+    response = _aws.get(profile_name=profile_name,
+                        region_name=region_name, sheet=sheet)
     dic = _converter.flatten_list(response, '.')
     return dic
+
 
 def Execute(name):
     log.info('Started: AWS Auto Inventory')
@@ -36,17 +39,19 @@ def Execute(name):
     inventory = _config.settings.get_inventory(name)
     if inventory != {}:
         inventory_name = inventory['name']
-        profile_name=inventory['aws']['profile']
+        profile_name = inventory['aws']['profile']
 
         log.info('Inventory {} was found'.format(inventory_name))
         log.info('AWS CLI profile {} will be used'.format(profile_name))
-        log.info('AWS Regions {} will be scanned'.format(inventory['aws']['region']))
+        log.info('AWS Regions {} will be scanned'.format(
+            inventory['aws']['region']))
 
-        data=[]
+        data = []
         for region in inventory['aws']['region']:
             for sheet in inventory['sheets']:
                 name = sheet['name']
-                result = get_inventory(profile_name=profile_name, region_name=region, sheet=sheet)
+                result = get_inventory(
+                    profile_name=profile_name, region_name=region, sheet=sheet)
                 data.append({'Name': name, 'Result': result})
 
         transpose = inventory['excel']['transpose']

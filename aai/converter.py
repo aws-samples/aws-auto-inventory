@@ -19,25 +19,26 @@ import collections
 log = logging.getLogger('aws-auto-inventory.converter')
 
 
-def flatten(d,sep='_'):
+def flatten(d, sep='_'):
     import collections
 
-    obj={}
+    obj = {}
 
-    def recurse(t,parent_key=''):
+    def recurse(t, parent_key=''):
 
         if 'Tags' in parent_key:
             if isinstance(t, list):
                 for i in t:
                     if isinstance(i, dict):
-                        obj['tag:{}'.format(i['Key'])]=i['Value']
+                        obj['tag:{}'.format(i['Key'])] = i['Value']
         else:
-            if isinstance(t,list):
+            if isinstance(t, list):
                 for i in range(len(t)):
-                    recurse(t[i],parent_key + sep + str(i) if parent_key else str(i))
-            elif isinstance(t,dict):
-                for k,v in t.items():
-                    recurse(v,parent_key + sep + k if parent_key else k)
+                    recurse(t[i], parent_key + sep + str(i)
+                            if parent_key else str(i))
+            elif isinstance(t, dict):
+                for k, v in t.items():
+                    recurse(v, parent_key + sep + k if parent_key else k)
             else:
                 obj[parent_key] = t
 
@@ -45,9 +46,10 @@ def flatten(d,sep='_'):
 
     return obj
 
+
 def flatten_list(response, sep):
     if isinstance(response, list):
-        result = [ flatten(x,sep) for x in response ]
+        result = [flatten(x, sep) for x in response]
         return result
     else:
         return [flatten(response, sep)]
