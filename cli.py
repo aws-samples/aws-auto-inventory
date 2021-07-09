@@ -1,9 +1,10 @@
+# -*- coding: utf-8 -*-
 # Include standard modules
 import argparse
 from aai import run
- 
+
 # Define the program description
-description = 'Automates creation of detailed inventories from AWS resources.'
+description = "Automates creation of detailed inventories from AWS resources."
 
 # Initiate the parser with a description
 parser = argparse.ArgumentParser(description=description)

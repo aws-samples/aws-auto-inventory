@@ -1,0 +1,84 @@
+default_language_version:
+  python: python3.9
+fail_fast: true
+minimum_pre_commit_version: 2.13.0
+repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.0.1
+  hooks:
+    # Prevent giant files from being committed
+    - id: check-added-large-files
+    # Simply check whether the files parse as valid python.
+    - id: check-ast
+    # forbid files which have a UTF-8 byte-order marker
+    - id: check-byte-order-marker
+    # Require literal syntax when initializing empty or zero Python builtin types.
+    - id: check-builtin-literals
+    # Check for files that would conflict in case-insensitive filesystems
+    - id: check-case-conflict
+    # Checks a common error of defining a docstring after code.
+    - id: check-docstring-first
+    # Ensures that (non-binary) executables have a shebang.
+    - id: check-executables-have-shebangs
+    # This hook checks json files for parseable syntax.
+    - id: check-json
+    # Ensures that (non-binary) files with a shebang are executable.
+    - id: check-shebang-scripts-are-executable
+    # This hook sets a standard for formatting JSON files.
+    - id: pretty-format-json
+    # Check for files that contain merge conflict strings.
+    - id: check-merge-conflict
+    # Checks for symlinks which do not point to anything.
+    - id: check-symlinks
+    # This hook checks toml files for parseable syntax.
+    - id: check-toml
+    # Ensures that links to vcs websites are permalinks.
+    - id: check-vcs-permalinks
+    # This hook checks xml files for parseable syntax.
+    - id: check-xml
+    # This hook checks yaml files for parseable syntax.
+    - id: check-yaml
+    # Check for debugger imports and py37+ `breakpoint()` calls in python source.
+    - id: debug-statements
+    # Detects symlinks which are changed to regular files with a content of a path which that symlink was pointing to.
+    - id: destroyed-symlinks
+    # Detects *your* aws credentials from the aws cli credentials file
+    - id: detect-aws-credentials
+    # Detects the presence of private keys
+    - id: detect-private-key
+    # Ensures that a file is either empty, or ends with one newline.
+    - id: end-of-file-fixer
+    # Sort the lines in specified files (defaults to alphabetical). You must provide list of target files as input in your .pre-commit-config.yaml file.
+    - id: file-contents-sorter
+    # removes UTF-8 byte order marker
+    - id: fix-byte-order-marker
+    # Add # -*- coding: utf-8 -*- to the top of python files
+    - id: fix-encoding-pragma
+    # Prevent addition of new git submodules
+    - id: forbid-new-submodules
+    # Replaces or checks mixed line ending
+    - id: mixed-line-ending
+    # This verifies that test files are named correctly
+    - id: name-tests-test
+    # Don't commit to branch
+    - id: no-commit-to-branch
+    # Sorts entries in requirements.txt
+    - id: requirements-txt-fixer
+    # Sorts simple YAML files which consist only of top-level keys, preserving comments and blocks.
+    - id: sort-simple-yaml
+    # This hook trims trailing whitespace.
+    - id: trailing-whitespace
+- repo: https://github.com/psf/black
+  rev: '21.6b0'
+  hooks:
+    - id: black
+- repo: https://github.com/PyCQA/flake8
+  rev: '3.9.2'
+  hooks:
+    - id: flake8
+      args: ['--ignore=E501']
+- repo: https://github.com/jendrikseipp/vulture
+  rev: 'v2.3'  # or any later Vulture version
+  hooks:
+    - id: vulture
+      args: ['cli.py', 'aai/']
