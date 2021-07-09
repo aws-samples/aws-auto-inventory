@@ -14,11 +14,10 @@
 #   limitations under the License.
 
 
-import time
 import logging
-import json
+
 import os
-import boto3
+
 from time import gmtime, strftime
 
 from aai import settings as _settings

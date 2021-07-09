@@ -15,7 +15,7 @@
 
 
 import pandas as pd
-import openpyxl
+
 import logging
 
 from aai import config as _config
@@ -60,11 +60,9 @@ def write_data(name, transpose, data):
 
     # Create a Pandas Excel writer using XlsxWriter as the engine.
     writer = pd.ExcelWriter("{}{}".format(file_path, file_name), engine="xlsxwriter")
-    workbook = writer.book
 
     # transpose = _config.settings.config['excel']['transpose'].get()
 
-    dfs = []
     for d in data:
         df = pd.DataFrame(d["Result"])
 

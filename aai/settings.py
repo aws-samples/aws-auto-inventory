@@ -15,8 +15,6 @@
 
 
 import sys
-import configparser
-import boto3
 import logging
 import confuse as _confuse
 
@@ -31,13 +29,13 @@ class Settings:
     @staticmethod
     def get_instance():
         """Static access method."""
-        if Settings.__instance == None:
+        if Settings.__instance is None:
             Settings()
         return Settings.__instance
 
     def __init__(self):
         """Virtually private constructor."""
-        if Settings.__instance != None:
+        if Settings.__instance is not None:
             raise Exception("This class is a Singleton!")
         else:
             Settings.__instance = self

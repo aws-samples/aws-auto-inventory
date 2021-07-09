@@ -16,9 +16,6 @@
 import boto3
 import logging
 
-from aai import config as _config
-
-# import utils.aws as aws
 
 log = logging.getLogger("aws-auto-inventory.aws")
 
@@ -62,12 +59,12 @@ def get_methods(client):
 
 
 def get_read_methods(client):
-    l = []
+    list = []
     methods = get_methods(client)
     for method in methods:
         if "describe" in method or "list" in method:
-            l.append(method)
-    return l
+            list.append(method)
+    return list
 
 
 def get(profile_name, region_name, sheet):
@@ -105,10 +102,11 @@ def get_session(profile_name):
     return session
 
 
-def get_account_id():
-    log.info("Started: get_caller_identity")
+def get_account_id(profile_name):
+    log.info("Started:get_caller_identity")
 
-    client = aws.get_session().client("sts")
+    session = boto3.Session(profile_name=profile_name)
+    client = session.client(service_name="sts")
     response = client.get_caller_identity()
     account = response["Account"]
     user_id = response["UserId"]

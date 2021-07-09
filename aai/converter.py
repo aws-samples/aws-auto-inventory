@@ -14,14 +14,11 @@
 #   limitations under the License.
 
 import logging
-import collections
 
 log = logging.getLogger("aws-auto-inventory.converter")
 
 
 def flatten(d, sep="_"):
-    import collections
-
     obj = {}
 
     def recurse(t, parent_key=""):
