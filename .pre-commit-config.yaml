@@ -74,3 +74,7 @@ repos:
   rev: 'v1.5.7'  # Use the sha / tag you want to point at
   hooks:
   - id: autopep8
+- repo: https://github.com/psf/black
+  rev: '21.6b0'
+  hooks:
+    - id: black
