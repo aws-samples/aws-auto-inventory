@@ -1,6 +1,6 @@
 boto3
 confuse
-pylint
-pandas
 openpyxl
+pandas
+pylint
 xlsxwriter
