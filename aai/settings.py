@@ -20,55 +20,55 @@ import boto3
 import logging
 import confuse as _confuse
 
-log = logging.getLogger('aws-auto-inventory.settings')
+log = logging.getLogger("aws-auto-inventory.settings")
 
 
 class Settings:
     __instance = None
 
-    config = _confuse.Configuration('aws-auto-inventory', __name__)
+    config = _confuse.Configuration("aws-auto-inventory", __name__)
 
     @staticmethod
     def get_instance():
-        """ Static access method. """
+        """Static access method."""
         if Settings.__instance == None:
             Settings()
         return Settings.__instance
 
     def __init__(self):
-        """ Virtually private constructor. """
+        """Virtually private constructor."""
         if Settings.__instance != None:
-            raise Exception('This class is a Singleton!')
+            raise Exception("This class is a Singleton!")
         else:
             Settings.__instance = self
 
     @staticmethod
     def get_aws_region():
-        log.info('Getting AWS Region from config.ini')
-        region_name = Settings.config['aws']['region'].get()
-        log.info('Current AWS Region: {}'.format(region_name))
+        log.info("Getting AWS Region from config.ini")
+        region_name = Settings.config["aws"]["region"].get()
+        log.info("Current AWS Region: {}".format(region_name))
         return region_name
 
     @staticmethod
     def get_aws_profile():
-        log.info('Getting AWS Profile')
-        profile_name = Settings.config['aws']['profile'].get()
-        log.info('Current AWS Profile: {}'.format(profile_name))
+        log.info("Getting AWS Profile")
+        profile_name = Settings.config["aws"]["profile"].get()
+        log.info("Current AWS Profile: {}".format(profile_name))
         return profile_name
 
     @staticmethod
     def get_inventory(name):
-        log.info('Getting inventories {}'.format(name))
+        log.info("Getting inventories {}".format(name))
 
         try:
-            all_inventories = Settings.config['inventories'].get()
+            all_inventories = Settings.config["inventories"].get()
         except _confuse.exceptions.NotFoundError:
-            print('Field inventories not found in configuration')
+            print("Field inventories not found in configuration")
             sys.exit(1)
 
-        log.info('Current inventories:{}'.format(all_inventories))
+        log.info("Current inventories:{}".format(all_inventories))
 
         for i in all_inventories:
-            if i['name'] == name:
+            if i["name"] == name:
                 return i
         return {}

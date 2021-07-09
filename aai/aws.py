@@ -20,13 +20,16 @@ from aai import config as _config
 
 # import utils.aws as aws
 
-log = logging.getLogger('aws-auto-inventory.aws')
+log = logging.getLogger("aws-auto-inventory.aws")
 
 
 def fetch(profile_name, region_name, service, function, result_key, parameters):
-    log.info('Started: {}:{}:{}:{}:{}'.format(
-        region_name, service, function, result_key, parameters))
-    response = ''
+    log.info(
+        "Started: {}:{}:{}:{}:{}".format(
+            region_name, service, function, result_key, parameters
+        )
+    )
+    response = ""
 
     try:
         session = boto3.Session(profile_name=profile_name)
@@ -34,8 +37,9 @@ def fetch(profile_name, region_name, service, function, result_key, parameters):
 
         if parameters is not None:
             if result_key:
-                response = client.__getattribute__(
-                    function)(**parameters).get(result_key)
+                response = client.__getattribute__(function)(**parameters).get(
+                    result_key
+                )
             else:
                 response = client.__getattribute__(function)(**parameters)
         elif result_key:
@@ -43,14 +47,12 @@ def fetch(profile_name, region_name, service, function, result_key, parameters):
         else:
             response = client.__getattribute__(function)()
             # Remove ResponseMetadata as it's not useful
-            response.pop('ResponseMetadata', None)
+            response.pop("ResponseMetadata", None)
 
     except Exception as e:
-        log.error('Error while processing {}, {}.\n{}'.format(
-            service, region_name, e))
+        log.error("Error while processing {}, {}.\n{}".format(service, region_name, e))
 
-    log.info('Finished:{}:{}:{}:{}'.format(
-        service, region_name, function, result_key))
+    log.info("Finished:{}:{}:{}:{}".format(service, region_name, function, result_key))
     return response
 
 
@@ -63,7 +65,7 @@ def get_read_methods(client):
     l = []
     methods = get_methods(client)
     for method in methods:
-        if 'describe' in method or 'list' in method:
+        if "describe" in method or "list" in method:
             l.append(method)
     return l
 
@@ -71,21 +73,29 @@ def get_read_methods(client):
 def get(profile_name, region_name, sheet):
     # results = []
 
-    service = sheet['service']
-    function = sheet['function']
+    service = sheet["service"]
+    function = sheet["function"]
 
     # optional
-    result_key = sheet.get('result_key', None)
-    parameters = sheet.get('parameters', None)
+    result_key = sheet.get("result_key", None)
+    parameters = sheet.get("parameters", None)
 
-    log.info('Started:{}:{}:{}:{}:{}'.format(
-        profile_name, region_name, service, function, result_key))
-    result = fetch(profile_name=profile_name, region_name=region_name, service=service,
-                   function=function, result_key=result_key, parameters=parameters)
+    log.info(
+        "Started:{}:{}:{}:{}:{}".format(
+            profile_name, region_name, service, function, result_key
+        )
+    )
+    result = fetch(
+        profile_name=profile_name,
+        region_name=region_name,
+        service=service,
+        function=function,
+        result_key=result_key,
+        parameters=parameters,
+    )
     # results.append(result)
-    log.info('Result:{{{}}}'.format(result))
-    log.info('Finished:{}:{}:{}:{}'.format(
-        region_name, service, function, result_key))
+    log.info("Result:{{{}}}".format(result))
+    log.info("Finished:{}:{}:{}:{}".format(region_name, service, function, result_key))
 
     return result
 
@@ -96,17 +106,17 @@ def get_session(profile_name):
 
 
 def get_account_id():
-    log.info('Started: get_caller_identity')
+    log.info("Started: get_caller_identity")
 
-    client = aws.get_session().client('sts')
+    client = aws.get_session().client("sts")
     response = client.get_caller_identity()
-    account = response['Account']
-    user_id = response['UserId']
-    arn = response['Arn']
+    account = response["Account"]
+    user_id = response["UserId"]
+    arn = response["Arn"]
 
-    log.info('Account: {}'.format(account))
-    log.info('UserId: {}'.format(user_id))
-    log.info('Arn: {}'.format(arn))
+    log.info("Account: {}".format(account))
+    log.info("UserId: {}".format(user_id))
+    log.info("Arn: {}".format(arn))
 
-    log.info('Finished: get_caller_identity')
+    log.info("Finished: get_caller_identity")
     return account

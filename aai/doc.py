@@ -20,33 +20,33 @@ import logging
 
 from aai import config as _config
 
-log = logging.getLogger('aws-auto-inventory.doc')
+log = logging.getLogger("aws-auto-inventory.doc")
 
 
 def write_worksheet(df):
 
     # Create a Pandas Excel writer using XlsxWriter as the engine.
-    writer = pd.ExcelWriter('pandas_column_formats.xlsx', engine='xlsxwriter')
+    writer = pd.ExcelWriter("pandas_column_formats.xlsx", engine="xlsxwriter")
 
     # Convert the dataframe to an XlsxWriter Excel object.
-    df.to_excel(writer, sheet_name='Sheet1')
+    df.to_excel(writer, sheet_name="Sheet1")
 
     # Get the xlsxwriter workbook and worksheet objects.
     workbook = writer.book
-    worksheet = writer.sheets['Sheet1']
+    worksheet = writer.sheets["Sheet1"]
 
     # Add some cell formats.
-    format1 = workbook.add_format({'num_format': '#,##0.00'})
-    format2 = workbook.add_format({'num_format': '0%'})
+    format1 = workbook.add_format({"num_format": "#,##0.00"})
+    format2 = workbook.add_format({"num_format": "0%"})
 
     # Note: It isn't possible to format any cells that already have a format such
     # as the index or headers or any cells that contain dates or datetimes.
 
     # Set the column width and format.
-    worksheet.set_column('B:B', 18, format1)
+    worksheet.set_column("B:B", 18, format1)
 
     # Set the format but not the column width.
-    worksheet.set_column('C:C', None, format2)
+    worksheet.set_column("C:C", None, format2)
 
     # Close the Pandas Excel writer and output the Excel file.
     writer.save()
@@ -59,36 +59,33 @@ def write_data(name, transpose, data):
     # log.info('Started: writing document {} on sheet {}'.format(file_name, sheet_name))
 
     # Create a Pandas Excel writer using XlsxWriter as the engine.
-    writer = pd.ExcelWriter('{}{}'.format(
-        file_path, file_name), engine='xlsxwriter')
+    writer = pd.ExcelWriter("{}{}".format(file_path, file_name), engine="xlsxwriter")
     workbook = writer.book
 
     # transpose = _config.settings.config['excel']['transpose'].get()
 
     dfs = []
     for d in data:
-        df = pd.DataFrame(d['Result'])
+        df = pd.DataFrame(d["Result"])
 
         # fix: Excel does not support datetimes with timezones. Please ensure that datetimes are timezone unaware before writing to Excel.
-        for col in df.select_dtypes(['datetimetz']).columns:
+        for col in df.select_dtypes(["datetimetz"]).columns:
             df[col] = df[col].dt.tz_convert(None)
 
-        sheet_name = d['Name']
+        sheet_name = d["Name"]
         if transpose:
             df.transpose().to_excel(writer, sheet_name=sheet_name)
             worksheet = writer.sheets[sheet_name]
             # Adjust at least the first column width
-            worksheet.set_column('A:A', 60)
+            worksheet.set_column("A:A", 60)
         else:
             df.to_excel(writer, sheet_name=sheet_name)
             # Adjust all columns widths
             for column in df:
-                column_length = max(df[column].astype(
-                    str).map(len).max(), len(column))
+                column_length = max(df[column].astype(str).map(len).max(), len(column))
                 col_idx = df.columns.get_loc(column)
-                writer.sheets[sheet_name].set_column(
-                    col_idx, col_idx, column_length)
+                writer.sheets[sheet_name].set_column(col_idx, col_idx, column_length)
 
     # Close the Pandas Excel writer and output the Excel file.
     writer.save()
-    print('Report generated successfully at: {}{}'.format(file_path, file_name))
+    print("Report generated successfully at: {}{}".format(file_path, file_name))
