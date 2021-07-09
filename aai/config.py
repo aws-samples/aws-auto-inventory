@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 
 #   Licensed under the Apache License, Version 2.0 (the "License").
@@ -23,9 +24,9 @@ from time import gmtime, strftime
 from aai import settings as _settings
 
 t = gmtime()
-timestamp = strftime("%Y%m%d%H%M%S", t)
+timestamp = strftime('%Y%m%d%H%M%S', t)
 file_name = '_{}.xlsx'.format(timestamp)
-filepath = "./aws-auto-inventory-report/"
+filepath = './aws-auto-inventory-report/'
 os.makedirs(filepath, exist_ok=True)
 
 # --- logging variables

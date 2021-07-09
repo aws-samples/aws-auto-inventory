@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 #/usr/bin/python3
 
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
@@ -31,7 +32,7 @@ def get_inventory(profile_name, region_name, sheet):
 def Execute(name):
     log.info('Started: AWS Auto Inventory')
 
-    log.info("Generating inventory {}".format(name))
+    log.info('Generating inventory {}'.format(name))
     inventory = _config.settings.get_inventory(name)
     if inventory != {}:
         inventory_name = inventory['name']
@@ -51,6 +52,6 @@ def Execute(name):
         transpose = inventory['excel']['transpose']
         _doc.write_data(inventory_name, transpose=transpose, data=data)
     else:
-        print("No inventory named {} was found".format(name))
+        print('No inventory named {} was found'.format(name))
 
     log.info('Finished: AWS Auto Inventory')

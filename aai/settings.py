@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 
 #   Licensed under the Apache License, Version 2.0 (the "License").
@@ -36,7 +37,7 @@ class Settings:
     def __init__(self):
         """ Virtually private constructor. """
         if Settings.__instance != None:
-            raise Exception("This class is a Singleton!")
+            raise Exception('This class is a Singleton!')
         else:
             Settings.__instance = self
 

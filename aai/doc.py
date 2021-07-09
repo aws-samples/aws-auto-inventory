@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 
 #   Licensed under the Apache License, Version 2.0 (the "License").
@@ -24,7 +25,7 @@ log = logging.getLogger('aws-auto-inventory.doc')
 def write_worksheet(df):
 
     # Create a Pandas Excel writer using XlsxWriter as the engine.
-    writer = pd.ExcelWriter("pandas_column_formats.xlsx", engine='xlsxwriter')
+    writer = pd.ExcelWriter('pandas_column_formats.xlsx', engine='xlsxwriter')
 
     # Convert the dataframe to an XlsxWriter Excel object.
     df.to_excel(writer, sheet_name='Sheet1')

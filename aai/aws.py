@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 
 #   Licensed under the Apache License, Version 2.0 (the "License").
@@ -23,7 +24,7 @@ log = logging.getLogger('aws-auto-inventory.aws')
 
 def fetch(profile_name, region_name, service, function, result_key, parameters):
     log.info('Started: {}:{}:{}:{}:{}'.format(region_name, service, function, result_key, parameters))
-    response = ""
+    response = ''
 
     try:
         session = boto3.Session(profile_name=profile_name)
@@ -42,7 +43,7 @@ def fetch(profile_name, region_name, service, function, result_key, parameters):
             response.pop('ResponseMetadata', None)
 
     except Exception as e:
-        log.error("Error while processing {}, {}.\n{}".format(service, region_name, e))
+        log.error('Error while processing {}, {}.\n{}'.format(service, region_name, e))
 
 
     log.info('Finished:{}:{}:{}:{}'.format(service, region_name, function, result_key))
