@@ -70,3 +70,7 @@ repos:
     - id: sort-simple-yaml
     # This hook trims trailing whitespace.
     - id: trailing-whitespace
+- repo: https://github.com/pre-commit/mirrors-autopep8
+  rev: 'v1.5.7'  # Use the sha / tag you want to point at
+  hooks:
+  - id: autopep8
