@@ -53,18 +53,18 @@ def fetch(profile_name, region_name, service, function, result_key, parameters):
     return response
 
 
-def get_methods(client):
-    methods = dir(client)
-    return methods
+# def get_methods(client):
+#     methods = dir(client)
+#     return methods
 
 
-def get_read_methods(client):
-    list = []
-    methods = get_methods(client)
-    for method in methods:
-        if "describe" in method or "list" in method:
-            list.append(method)
-    return list
+# def get_read_methods(client):
+#     list = []
+#     methods = get_methods(client)
+#     for method in methods:
+#         if "describe" in method or "list" in method:
+#             list.append(method)
+#     return list
 
 
 def get(profile_name, region_name, sheet):
@@ -97,24 +97,24 @@ def get(profile_name, region_name, sheet):
     return result
 
 
-def get_session(profile_name):
-    session = boto3.Session(profile_name=profile_name)
-    return session
+# def get_session(profile_name):
+#     session = boto3.Session(profile_name=profile_name)
+#     return session
 
 
-def get_account_id(profile_name):
-    log.info("Started:get_caller_identity")
+# def get_account_id(profile_name):
+#     log.info("Started:get_caller_identity")
 
-    session = boto3.Session(profile_name=profile_name)
-    client = session.client(service_name="sts")
-    response = client.get_caller_identity()
-    account = response["Account"]
-    user_id = response["UserId"]
-    arn = response["Arn"]
+#     session = boto3.Session(profile_name=profile_name)
+#     client = session.client(service_name="sts")
+#     response = client.get_caller_identity()
+#     account = response["Account"]
+#     user_id = response["UserId"]
+#     arn = response["Arn"]
 
-    log.info("Account: {}".format(account))
-    log.info("UserId: {}".format(user_id))
-    log.info("Arn: {}".format(arn))
+#     log.info("Account: {}".format(account))
+#     log.info("UserId: {}".format(user_id))
+#     log.info("Arn: {}".format(arn))
 
-    log.info("Finished: get_caller_identity")
-    return account
+#     log.info("Finished: get_caller_identity")
+#     return account

@@ -26,12 +26,12 @@ class Settings:
 
     config = _confuse.Configuration("aws-auto-inventory", __name__)
 
-    @staticmethod
-    def get_instance():
-        """Static access method."""
-        if Settings.__instance is None:
-            Settings()
-        return Settings.__instance
+    # @staticmethod
+    # def get_instance():
+    #     """Static access method."""
+    #     if Settings.__instance is None:
+    #         Settings()
+    #     return Settings.__instance
 
     def __init__(self):
         """Virtually private constructor."""
@@ -40,19 +40,19 @@ class Settings:
         else:
             Settings.__instance = self
 
-    @staticmethod
-    def get_aws_region():
-        log.info("Getting AWS Region from config.ini")
-        region_name = Settings.config["aws"]["region"].get()
-        log.info("Current AWS Region: {}".format(region_name))
-        return region_name
+    # @staticmethod
+    # def get_aws_region():
+    #     log.info("Getting AWS Region from config.ini")
+    #     region_name = Settings.config["aws"]["region"].get()
+    #     log.info("Current AWS Region: {}".format(region_name))
+    #     return region_name
 
-    @staticmethod
-    def get_aws_profile():
-        log.info("Getting AWS Profile")
-        profile_name = Settings.config["aws"]["profile"].get()
-        log.info("Current AWS Profile: {}".format(profile_name))
-        return profile_name
+    # @staticmethod
+    # def get_aws_profile():
+    #     log.info("Getting AWS Profile")
+    #     profile_name = Settings.config["aws"]["profile"].get()
+    #     log.info("Current AWS Profile: {}".format(profile_name))
+    #     return profile_name
 
     @staticmethod
     def get_inventory(name):
