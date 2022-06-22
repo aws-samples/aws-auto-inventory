@@ -10,7 +10,7 @@ jmespath==0.10.0
 lazy-object-proxy==1.4.3
 macholib==1.14
 mccabe==0.6.1
-numpy==1.20.0
+numpy==1.22.0
 openpyxl==3.0.6
 pandas==1.2.1
 pyinstaller==4.2
