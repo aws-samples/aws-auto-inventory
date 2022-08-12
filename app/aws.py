@@ -13,8 +13,8 @@
 #   See the License for the specific language governing permissions and
 #   limitations under the License.
 
-import boto3
 import logging
+import boto3
 
 
 log = logging.getLogger("aws-auto-inventory.aws")

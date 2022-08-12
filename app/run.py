@@ -17,32 +17,34 @@
 
 import logging
 
-from aai import config as _config
-from aai import converter as _converter
-from aai import aws as _aws
-from aai import doc as _doc
+import config as _config
+import converter as _converter
+import aws as _aws
+import doc as _doc
 
 log = logging.getLogger("aws-auto-inventory.main")
 
 
 def get_inventory(profile_name, region_name, sheet):
+    """Return an inventory configuration"""
     response = _aws.get(profile_name=profile_name, region_name=region_name, sheet=sheet)
     dic = _converter.flatten_list(response, ".")
     return dic
 
 
-def Execute(name):
+def execute(name):
+    """Generates a new report with the given :name"""
     log.info("Started: AWS Auto Inventory")
 
-    log.info("Generating inventory {}".format(name))
+    log.info("Generating inventory: %s", name)
     inventory = _config.settings.get_inventory(name)
     if inventory != {}:
         inventory_name = inventory["name"]
         profile_name = inventory["aws"]["profile"]
 
-        log.info("Inventory {} was found".format(inventory_name))
-        log.info("AWS CLI profile {} will be used".format(profile_name))
-        log.info("AWS Regions {} will be scanned".format(inventory["aws"]["region"]))
+        log.info("Inventory %s was found", inventory_name)
+        log.info("AWS CLI profile %s will be used", profile_name)
+        log.info("AWS Regions %s will be scanned", inventory["aws"]["region"])
 
         data = []
         for region in inventory["aws"]["region"]:
@@ -56,6 +58,6 @@ def Execute(name):
         transpose = inventory["excel"]["transpose"]
         _doc.write_data(inventory_name, transpose=transpose, data=data)
     else:
-        print("No inventory named {} was found".format(name))
+        print("No inventory named %s was found", name)
 
     log.info("Finished: AWS Auto Inventory")

@@ -11,7 +11,8 @@
     "vscode": {
       "extensions": [
         "ms-python.python",
-        "ms-python.vscode-pylance"
+        "ms-python.vscode-pylance",
+        "cweijan.vscode-office"
       ],
       "settings": {
         "python.defaultInterpreterPath": "/usr/local/bin/python",

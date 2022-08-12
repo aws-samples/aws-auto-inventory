@@ -53,5 +53,6 @@ python/version:
 	@echo "--- PIP ---"
 	@pip3 --version
 
-aws-auto-inventory/run:
-	@python cli.py
+.PHONY: app/run
+app/run:
+	@python app/cli.py --name=learning

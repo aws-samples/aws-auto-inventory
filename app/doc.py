@@ -18,7 +18,7 @@ import pandas as pd
 
 import logging
 
-from aai import config as _config
+import config as _config
 
 log = logging.getLogger("aws-auto-inventory.doc")
 
@@ -54,7 +54,7 @@ log = logging.getLogger("aws-auto-inventory.doc")
 
 def write_data(name, transpose, data):
     file_path = _config.filepath
-    file_name = name + _config.file_name
+    file_name = name + _config.FILE_NAME
 
     # log.info('Started: writing document {} on sheet {}'.format(file_name, sheet_name))
 

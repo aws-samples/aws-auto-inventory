@@ -80,4 +80,4 @@ repos:
   rev: 'v2.5'  # or any later Vulture version
   hooks:
     - id: vulture
-      args: ['cli.py', 'aai/']
+      args: ['app/']
