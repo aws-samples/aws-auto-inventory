@@ -26,6 +26,7 @@ repos:
     - id: check-shebang-scripts-are-executable
     # This hook sets a standard for formatting JSON files.
     - id: pretty-format-json
+      args: ['--autofix']
     # Check for files that contain merge conflict strings.
     - id: check-merge-conflict
     # Checks for symlinks which do not point to anything.
