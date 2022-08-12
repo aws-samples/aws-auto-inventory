@@ -20,7 +20,7 @@ import boto3
 log = logging.getLogger("aws-auto-inventory.aws")
 
 
-def fetch(profile_name, region_name, service, function, result_key, parameters):
+def fetch(session, region_name, service, function, result_key, parameters):
     log.info(
         "Started: {}:{}:{}:{}:{}".format(
             region_name, service, function, result_key, parameters
@@ -29,7 +29,7 @@ def fetch(profile_name, region_name, service, function, result_key, parameters):
     response = ""
 
     try:
-        session = boto3.Session(profile_name=profile_name)
+        # session = boto3.Session(profile_name=profile_name)
         client = session.client(service, region_name=region_name)
 
         if parameters is not None:
@@ -67,7 +67,7 @@ def fetch(profile_name, region_name, service, function, result_key, parameters):
 #     return list
 
 
-def get(profile_name, region_name, sheet):
+def get(session, region_name, sheet):
     # results = []
 
     service = sheet["service"]
@@ -77,13 +77,12 @@ def get(profile_name, region_name, sheet):
     result_key = sheet.get("result_key", None)
     parameters = sheet.get("parameters", None)
 
-    log.info(
-        "Started:{}:{}:{}:{}:{}".format(
-            profile_name, region_name, service, function, result_key
-        )
-    )
+    # log.info(
+    #     "Started:{}:{}:{}:{}:{}".format(region_name, service, function, result_key)
+    # )
+
     result = fetch(
-        profile_name=profile_name,
+        session=session,
         region_name=region_name,
         service=service,
         function=function,
@@ -97,9 +96,18 @@ def get(profile_name, region_name, sheet):
     return result
 
 
-# def get_session(profile_name):
-#     session = boto3.Session(profile_name=profile_name)
-#     return session
+def get_session():
+    """Return an AWS session"""
+
+    log.info("Started: Get AWS Session")
+    session = boto3.Session()
+    # session = boto3.Session(profile_name=profile_name)
+    client = session.client("sts")
+    response = client.get_caller_identity()
+    log.info("Response: %s", response)
+
+    log.info("Started: Get AWS Session")
+    return session
 
 
 # def get_account_id(profile_name):

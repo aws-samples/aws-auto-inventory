@@ -25,9 +25,9 @@ import doc as _doc
 log = logging.getLogger("aws-auto-inventory.main")
 
 
-def get_inventory(profile_name, region_name, sheet):
+def get_inventory(session, region_name, sheet):
     """Return an inventory configuration"""
-    response = _aws.get(profile_name=profile_name, region_name=region_name, sheet=sheet)
+    response = _aws.get(session, region_name=region_name, sheet=sheet)
     dic = _converter.flatten_list(response, ".")
     return dic
 
@@ -40,19 +40,33 @@ def execute(name):
     inventory = _config.settings.get_inventory(name)
     if inventory != {}:
         inventory_name = inventory["name"]
-        profile_name = inventory["aws"]["profile"]
+        session = _aws.get_session()
+        # if os.environ['AWS_ACCESS_KEY_ID']:
+        #     print('AWS_ACCESS_KEY_ID found')
+
+        # if os.environ['AWS_SECRET_ACCESS_KEY']:
+        #     print('AWS_SECRET_ACCESS_KEY found')
+
+        # if 'AWS_DEFAULT_REGION' in os.environ.items:
+        #     print('AWS_DEFAULT_REGION found')
+
+        # if os.environ['AWS_PROFILE']:
+        #     print('AWS_PROFILE found')
+
+        # if os.environ['AWS_SESSION_TOKEN']:
+        #     print('AWS_SESSION_TOKEN')
+
+        # profile_name = inventory["aws"]["profile"]  # optional
 
         log.info("Inventory %s was found", inventory_name)
-        log.info("AWS CLI profile %s will be used", profile_name)
-        log.info("AWS Regions %s will be scanned", inventory["aws"]["region"])
+        # log.info("AWS CLI profile %s will be used", profile_name) # optional
+        # log.info("AWS Regions %s will be scanned", inventory["aws"]["region"])
 
         data = []
         for region in inventory["aws"]["region"]:
             for sheet in inventory["sheets"]:
                 name = sheet["name"]
-                result = get_inventory(
-                    profile_name=profile_name, region_name=region, sheet=sheet
-                )
+                result = get_inventory(session=session, region_name=region, sheet=sheet)
                 data.append({"Name": name, "Result": result})
 
         transpose = inventory["excel"]["transpose"]

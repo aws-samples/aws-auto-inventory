@@ -53,7 +53,7 @@ log = logging.getLogger("aws-auto-inventory.doc")
 
 
 def write_data(name, transpose, data):
-    file_path = _config.filepath
+    file_path = _config.FILEPATH
     file_name = name + _config.FILE_NAME
 
     # log.info('Started: writing document {} on sheet {}'.format(file_name, sheet_name))
