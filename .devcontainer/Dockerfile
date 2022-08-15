@@ -24,7 +24,14 @@ RUN /usr/local/bin/python -m pip install --upgrade pip
 # Install pre-commit
 RUN /usr/local/bin/python -m pip install pre-commit
 
+# Install pyinstaller
+RUN /usr/local/bin/python -m pip install pyinstaller
+
 # Gitignore CLI
 ARG REMOTE_USER=vscode
 RUN echo "function gi() { curl -sL https://www.toptal.com/developers/gitignore/api/\$@ ;}" >> /home/${REMOTE_USER}/.bashrc
 RUN echo "function gi() { curl -sLw "\n" https://www.toptal.com/developers/gitignore/api/\$@ ;}" >> /home/${REMOTE_USER}/.zshrc
+
+RUN mkdir -p /home/${REMOTE_USER}/.config/aws-auto-inventory
+COPY .devcontainer/config.yaml /home/${REMOTE_USER}/.config/aws-auto-inventory/
+RUN chown -R ${REMOTE_USER}:${REMOTE_USER} /home/${REMOTE_USER}
