@@ -13,11 +13,8 @@
 #   See the License for the specific language governing permissions and
 #   limitations under the License.
 
-
 import pandas as pd
-
 import logging
-
 import config as _config
 
 log = logging.getLogger("aws-auto-inventory.doc")
