@@ -13,19 +13,107 @@
 #   See the License for the specific language governing permissions and
 #   limitations under the License.
 
+import sys
 import logging
 import boto3
+import botocore
 
+import converter as _converter
+import settings as _settings
 
 log = logging.getLogger("aws-auto-inventory.aws")
 
 
-def fetch(session, region_name, service, function, result_key, parameters):
+def _get_session(inventory):
+    """Returns an AWS session"""
+
+    log.info("Started: Get AWS Session")
+    try:
+        # environment variables overrides values loaded from a profile
+        # https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html
+        session = boto3.Session()
+        client = session.client("sts")
+        client.get_caller_identity()  # test credentials
+    except botocore.exceptions.NoCredentialsError:
+        profile_name = _settings.Settings.get_aws_profile(inventory)
+        if not profile_name:
+            log.error("AWS Profile not found in config.yaml, exitting...")
+            sys.exit(1)
+        try:
+            session = boto3.Session(profile_name=profile_name)
+        except botocore.exceptions.ProfileNotFound:
+            log.critical("The config profile (%s) could not be found", profile_name)
+            sys.exit(1)
+        client = session.client("sts")  # test credentials
+        client.get_caller_identity()
+
+    log.info("Finished: Get AWS Session")
+    return session
+
+
+def _display_account_info(inventory):
+    """Display an AWS Account Information"""
+
+    log.info("Started:AWS Display Account Info")
+
+    session = _get_session(inventory)
+
+    client = session.client(service_name="sts")
+    response = client.get_caller_identity()
+    account = response["Account"]
+    user_id = response["UserId"]
+    arn = response["Arn"]
+
+    print(f"Account: {account}")
+    print(f"UserId: {user_id}")
+    print(f"Arn: {arn}")
+
+    log.info("Finished:AWS Display Account Info")
+
+
+def get_data(inventory):
+    """Get AWS data from specified inventory"""
+    log.info("Started: AWS Get Data")
+
+    _display_account_info(inventory)
+    settings = _settings.Settings.get_instance()
+
+    regions = settings.get_regions(inventory["name"])  # try config
+
+    data = []
+    if regions:
+        for region_name in regions:
+            for sheet in inventory["sheets"]:
+                session = _get_session(
+                    inventory
+                )  # for a whole region, session might expire
+
+                name = sheet["name"]
+                response = _get_service_data(
+                    session, region_name=region_name, sheet=sheet
+                )
+                result = _converter.flatten_list(response, ".")
+                data.append({"Name": name, "Result": result})
+    return data
+
+
+def _get_service_data(session, region_name, sheet):
+    """Get information about a service described on :sheet allocated on a :region_name"""
+    log.info("Started: AWS Get Service Data")
+    service = sheet["service"]
+    function = sheet["function"]
+
+    # optional
+    result_key = sheet.get("result_key", None)
+    parameters = sheet.get("parameters", None)
+
     log.info(
-        "Started: {}:{}:{}:{}:{}".format(
-            region_name, service, function, result_key, parameters
-        )
+        "Getting data on service %s with function %s in region %s",
+        service,
+        function,
+        region_name,
     )
+
     response = ""
 
     try:
@@ -45,84 +133,11 @@ def fetch(session, region_name, service, function, result_key, parameters):
             response = client.__getattribute__(function)()
             # Remove ResponseMetadata as it's not useful
             response.pop("ResponseMetadata", None)
+    except Exception as exception:
+        log.error("Error while processing %s, %s.\n%s", service, region_name, exception)
 
-    except Exception as e:
-        log.error("Error while processing {}, {}.\n{}".format(service, region_name, e))
+    log.debug("Result:{{%s}}", response)
 
-    log.info("Finished:{}:{}:{}:{}".format(service, region_name, function, result_key))
+    log.info("Finished: AWS Get Service Data")
+
     return response
-
-
-# def get_methods(client):
-#     methods = dir(client)
-#     return methods
-
-
-# def get_read_methods(client):
-#     list = []
-#     methods = get_methods(client)
-#     for method in methods:
-#         if "describe" in method or "list" in method:
-#             list.append(method)
-#     return list
-
-
-def get(session, region_name, sheet):
-    # results = []
-
-    service = sheet["service"]
-    function = sheet["function"]
-
-    # optional
-    result_key = sheet.get("result_key", None)
-    parameters = sheet.get("parameters", None)
-
-    # log.info(
-    #     "Started:{}:{}:{}:{}:{}".format(region_name, service, function, result_key)
-    # )
-
-    result = fetch(
-        session=session,
-        region_name=region_name,
-        service=service,
-        function=function,
-        result_key=result_key,
-        parameters=parameters,
-    )
-    # results.append(result)
-    log.info("Result:{{{}}}".format(result))
-    log.info("Finished:{}:{}:{}:{}".format(region_name, service, function, result_key))
-
-    return result
-
-
-def get_session():
-    """Return an AWS session"""
-
-    log.info("Started: Get AWS Session")
-    session = boto3.Session()
-    # session = boto3.Session(profile_name=profile_name)
-    client = session.client("sts")
-    response = client.get_caller_identity()
-    log.info("Response: %s", response)
-
-    log.info("Started: Get AWS Session")
-    return session
-
-
-# def get_account_id(profile_name):
-#     log.info("Started:get_caller_identity")
-
-#     session = boto3.Session(profile_name=profile_name)
-#     client = session.client(service_name="sts")
-#     response = client.get_caller_identity()
-#     account = response["Account"]
-#     user_id = response["UserId"]
-#     arn = response["Arn"]
-
-#     log.info("Account: {}".format(account))
-#     log.info("UserId: {}".format(user_id))
-#     log.info("Arn: {}".format(arn))
-
-#     log.info("Finished: get_caller_identity")
-#     return account

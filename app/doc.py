@@ -52,7 +52,9 @@ log = logging.getLogger("aws-auto-inventory.doc")
 #     writer.save()
 
 
-def write_data(name, transpose, data):
+def write_data(name, inventory, data):
+    transpose = inventory["excel"]["transpose"]
+
     file_path = _config.FILEPATH
     file_name = name + _config.FILE_NAME
 

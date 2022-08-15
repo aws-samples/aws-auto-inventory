@@ -22,16 +22,18 @@ log = logging.getLogger("aws-auto-inventory.settings")
 
 
 class Settings:
+    """Manages the config.yaml user settings"""
+
     __instance = None
 
     config = _confuse.Configuration("aws-auto-inventory", __name__)
 
-    # @staticmethod
-    # def get_instance():
-    #     """Static access method."""
-    #     if Settings.__instance is None:
-    #         Settings()
-    #     return Settings.__instance
+    @staticmethod
+    def get_instance():
+        """Static access method."""
+        if Settings.__instance is None:
+            Settings()
+        return Settings.__instance
 
     def __init__(self):
         """Virtually private constructor."""
@@ -40,23 +42,42 @@ class Settings:
         else:
             Settings.__instance = self
 
-    # @staticmethod
-    # def get_aws_region():
-    #     log.info("Getting AWS Region from config.ini")
-    #     region_name = Settings.config["aws"]["region"].get()
-    #     log.info("Current AWS Region: {}".format(region_name))
-    #     return region_name
+    @staticmethod
+    def get_regions(inventory_name):
+        """Return AWS Regions defined by user on settings"""
+        log.info("Started: Seetings Get AWS Regions")
+        inventory = Settings.get_inventory(inventory_name)
+        regions = []
+        if "aws" in inventory:
+            regions = inventory.get("aws", None).get("region", None)
+            if not regions:
+                log.info("AWS Region(s) not found in config.yaml, skipping...")
 
-    # @staticmethod
-    # def get_aws_profile():
-    #     log.info("Getting AWS Profile")
-    #     profile_name = Settings.config["aws"]["profile"].get()
-    #     log.info("Current AWS Profile: {}".format(profile_name))
-    #     return profile_name
+        if len(regions) == 0:
+            regions.append("us-east-1")  # default region
+
+        log.info("Finished: Seetings Get AWS Regions")
+        return regions
+
+    @staticmethod
+    def get_aws_profile(inventory):
+        """Return the AWS Profile defined by user on settings"""
+        log.info("Started: Settings Get AWS Profile")
+
+        profile = None
+        if "aws" in inventory:
+            profile = inventory.get("aws", None).get("profile", None)
+
+        if profile:
+            log.info("Current AWS Profile: %s", profile)
+
+        log.info("Finished: Settings Get AWS Profile")
+        return profile
 
     @staticmethod
     def get_inventory(name):
-        log.info("Getting inventories {}".format(name))
+        """Find and return an inventory"""
+        log.info("Getting inventories %s", name)
 
         try:
             all_inventories = Settings.config["inventories"].get()
