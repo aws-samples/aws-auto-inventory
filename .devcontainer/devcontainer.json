@@ -19,6 +19,7 @@
         "python.formatting.autopep8Path": "/usr/local/py-utils/bin/autopep8",
         "python.formatting.blackPath": "/usr/local/py-utils/bin/black",
         "python.formatting.yapfPath": "/usr/local/py-utils/bin/yapf",
+        "python.languageServer": "Pylance",
         "python.linting.banditPath": "/usr/local/py-utils/bin/bandit",
         "python.linting.enabled": true,
         "python.linting.flake8Path": "/usr/local/py-utils/bin/flake8",
@@ -29,6 +30,9 @@
         "python.linting.pylintPath": "/usr/local/py-utils/bin/pylint"
       }
     }
+  },
+  "features": {
+    "aws-cli": "latest"
   },
   "name": "AWS Auto Inventory",
   "postCreateCommand": "figlet 'AWS Auto Inventory' && devcontainer-info",
