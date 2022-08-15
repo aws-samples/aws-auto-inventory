@@ -35,3 +35,7 @@ RUN echo "function gi() { curl -sLw "\n" https://www.toptal.com/developers/gitig
 RUN mkdir -p /home/${REMOTE_USER}/.config/aws-auto-inventory
 COPY .devcontainer/config.yaml /home/${REMOTE_USER}/.config/aws-auto-inventory/
 RUN chown -R ${REMOTE_USER}:${REMOTE_USER} /home/${REMOTE_USER}
+
+RUN wget --quiet https://github.com/awslabs/clencli/releases/download/0.3.6/clencli-linux-amd64 \
+    && mv clencli-linux-amd64 /usr/local/bin/clencli \
+    && chmod +x /usr/local/bin/clencli
