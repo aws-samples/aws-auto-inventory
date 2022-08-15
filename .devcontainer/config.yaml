@@ -1,0 +1,31 @@
+inventories:
+  - name: learning
+    aws:
+      profile: your-aws-profile
+      region:
+        - us-east-1
+    excel:
+      transpose: true
+    sheets:
+      - name: EC2 # sheet name on Excel
+        service: ec2 # the boto3 client of an AWS service
+        function: describe_instances # the client method of the service defined above
+        result_key: Reservations # [optional]: The first key of the response dict
+      - name: EBS
+        service: ec2
+        function: describe_volumes
+        result_key: Volumes
+  - name: your-second-inventory
+    aws:
+      profile: your-second-aws-profile
+      region:
+        - us-east-1
+    sheets:
+      - name: EC2
+        service: ec2
+        function: describe_instances
+        result_key: Reservations
+      - name: EBS
+        service: ec2
+        function: describe_volumes
+        result_key: Volumes
