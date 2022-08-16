@@ -15,7 +15,7 @@ init:
 
 .PHONY: clean
 clean:
-	@rm -rf build/ dist/ *.spec log/ output/ build.txt __pycache__/ aai/__pycache__/
+	@rm -rf build/ dist/ *.spec log/ output/ build.txt __pycache__/ aai/__pycache__/ output/
 
 .PHONY: build
 build: clean

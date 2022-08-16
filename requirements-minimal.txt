@@ -1,0 +1,6 @@
+boto3
+confuse
+openpyxl
+pandas
+pylint
+xlsxwriter

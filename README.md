@@ -82,14 +82,6 @@ This issue is intensified when the same project have multiple account and/or env
 Provide a simple way to fetch the required information and generate a spreadsheet.
 The information can be filtered, e.g. filter results by tag:x, vpc, subnets, etc.
 Additionally, inventories can be generated related to many services, which are collected and organized per sheet in the spreadsheet.
-
-### Development
-```
-# Linux/MacOS:
-# clone the project and enter cloned directory
-make init build
-./dist/aws-auto-inventory --name <your-inventory-name>
-```
 </details>
 
 
@@ -108,12 +100,12 @@ You will need to create a `config.yaml` file in order to tell the tool how to ge
 * Windows: `%APPDATA%\aws-auto-inventory\config.yaml` where the `APPDATA` environment variable falls back to `%HOME%\AppData\Roaming\config.yaml` if undefined
 
 You can use the [config-sample](config-sample.yaml) as an example. A snippet can be found below:
-```
+```yaml
 inventories:
   - name: your-inventory-name
-    aws:
-      profile: your-aws-profile
-      region:
+    aws: # optional
+      profile: your-aws-profile # if not provided, the AWS environment variables will be used instead
+      region: # if not provided, 'us-east-1' will be used as default region
         - us-east-1
     excel:
       transpose: true
@@ -261,6 +253,14 @@ sheets:
     result_key: Role
     parameters:
       RoleName: my-role
+```
+
+  ### Development
+```
+# Linux/MacOS:
+# clone the project and enter cloned directory
+make init build
+./dist/aws-auto-inventory --name <your-inventory-name>
 ```
 </details>
 

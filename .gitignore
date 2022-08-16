@@ -415,6 +415,5 @@ $RECYCLE.BIN/
 # End of https://www.toptal.com/developers/gitignore/api/go,java,linux,macos,python,windows,virtualenv,visualstudiocode,terraform,intellij
 
 build.txt
-output/*.xlsx
-aws-auto-inventory-report/
+output/
 clencli/log.json

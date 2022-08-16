@@ -13,11 +13,8 @@
 #   See the License for the specific language governing permissions and
 #   limitations under the License.
 
-
 import pandas as pd
-
 import logging
-
 import config as _config
 
 log = logging.getLogger("aws-auto-inventory.doc")
@@ -52,8 +49,10 @@ log = logging.getLogger("aws-auto-inventory.doc")
 #     writer.save()
 
 
-def write_data(name, transpose, data):
-    file_path = _config.filepath
+def write_data(name, inventory, data):
+    transpose = inventory["excel"]["transpose"]
+
+    file_path = _config.FILEPATH
     file_name = name + _config.FILE_NAME
 
     # log.info('Started: writing document {} on sheet {}'.format(file_name, sheet_name))

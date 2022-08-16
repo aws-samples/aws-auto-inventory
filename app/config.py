@@ -13,19 +13,15 @@
 #   See the License for the specific language governing permissions and
 #   limitations under the License.
 
-
 import logging
-
 import os
-
 from time import gmtime, strftime
-
 import settings as _settings
 
 t = gmtime()
 timestamp = strftime("%Y%m%d%H%M%S", t)
 FILE_NAME = f"_{timestamp}.xlsx"
-FILEPATH = "./aws-auto-inventory-report/"
+FILEPATH = "./output/"
 os.makedirs(FILEPATH, exist_ok=True)
 
 # --- logging variables
