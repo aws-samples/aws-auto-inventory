@@ -15,7 +15,7 @@ init:
 
 .PHONY: clean
 clean:
-	@rm -rf build/ dist/ *.spec log/ output/ build.txt __pycache__/ aai/__pycache__/
+	@rm -rf build/ dist/ *.spec log/ output/ build.txt __pycache__/ aai/__pycache__/ output/
 
 .PHONY: build
 build: clean
@@ -24,23 +24,35 @@ build: clean
 	   pyinstaller --name aws-auto-inventory-$(OS)-$(ARCH) --clean --onefile --hidden-import cmath --log-level=DEBUG cli.py 2> build.txt; \
     )
 
-# Build the Docker image, create a container, extract the binary and copy it under dist/, stop and delete the container
-.PHONY: docker/build/ubuntu
-docker/build/ubuntu:
-	@docker build -f Dockerfile.Ubuntu.Bionic -t aws-auto-inventory:$(TAG) . \
-	&& docker create -ti --name aws-auto-inventory aws-auto-inventory:$(TAG) bash \
-	&& mkdir -p dist && docker cp aws-auto-inventory:/opt/aws-auto-inventory/dist/aws-auto-inventory-linux-amd64 dist/aws-auto-inventory-linux-amd64 \
-	&& docker container stop aws-auto-inventory \
-	&& docker container rm aws-auto-inventory ;\
+.PHONY: pre-commit/install-hooks
+## Install pre-commit hooks
+pre-commit/install-hooks:
+	pre-commit install
 
-.PHONY: docker/run/ubuntu
-docker/run/ubuntu:
-	@docker container run -it "aws-auto-inventory:$(TAG)" /bin/bash
+.PHONY: pre-commit/update
+##  Update pre-commit-config.yml with the latest version
+pre-commit/update:
+	pre-commit autoupdate
 
-# TODO: assume virtual environment when executing container, and push container to ECR
+.PHONY: pre-commit/run
+## Execute pre-commit hooks on all files
+pre-commit/run:
+	pre-commit run --all-files
 
-.PHONY: docker/push/ubuntu
-docker/push/ubuntu:
-	@aws ecr get-login-password --region $(AWS_REGION) | docker login --username AWS --password-stdin $(ECR_REPO_ID).dkr.ecr.$(AWS_REGION).amazonaws.com \
-	&& docker tag aws-auto-inventory:$(TAG) $(ECR_REPO_ID).dkr.ecr.$(AWS_REGION).amazonaws.com/aws-auto-inventory:$(TAG) \
-	&& docker push $(ECR_REPO_ID).dkr.ecr.$(AWS_REGION).amazonaws.com/aws-auto-inventory:$(TAG) ;\
+.PHONY: pre-commit/version
+## Display pre-commit version
+pre-commit/version:
+	@echo "--- PRE-COMMIT ---"
+	@pre-commit --version
+
+.PHONY: python/version
+## Display Python & Pip version
+python/version:
+	@echo "--- PYTHON 3 ---"
+	@python3 --version
+	@echo "--- PIP ---"
+	@pip3 --version
+
+.PHONY: app/run
+app/run:
+	@python app/cli.py --name=learning

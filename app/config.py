@@ -13,20 +13,16 @@
 #   See the License for the specific language governing permissions and
 #   limitations under the License.
 
-
 import logging
-
 import os
-
 from time import gmtime, strftime
-
-from aai import settings as _settings
+import settings as _settings
 
 t = gmtime()
 timestamp = strftime("%Y%m%d%H%M%S", t)
-file_name = "_{}.xlsx".format(timestamp)
-filepath = "./aws-auto-inventory-report/"
-os.makedirs(filepath, exist_ok=True)
+FILE_NAME = f"_{timestamp}.xlsx"
+FILEPATH = "./output/"
+os.makedirs(FILEPATH, exist_ok=True)
 
 # --- logging variables
 
@@ -34,7 +30,7 @@ logger = logging.getLogger("aws-auto-inventory")
 logger.setLevel(logging.DEBUG)
 
 # create file handler which logs even debug messages
-fh = logging.FileHandler(filepath + "log.txt")
+fh = logging.FileHandler(FILEPATH + "log.txt")
 fh.setLevel(logging.DEBUG)
 
 # create console handler with a higher log level
