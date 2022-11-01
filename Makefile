@@ -20,10 +20,13 @@ clean:
 .PHONY: build
 build: clean
 	@( \
-       . .venv/bin/activate; \
+       . $(WORKSPACE)/.venv/bin/activate; \
 	   pyinstaller --name aws-auto-inventory-$(OS)-$(ARCH) --clean --onefile --hidden-import cmath --log-level=DEBUG cli.py 2> build.txt; \
     )
 
 .PHONY: run
 run:
-	@python app/cli.py --name=learning
+	@( \
+       . $(WORKSPACE)/.venv/bin/activate; \
+		python app/cli.py --name=learning; \
+	)
