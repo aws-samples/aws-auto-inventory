@@ -1,0 +1,120 @@
+url: https:// # required
+logo: https://via.placeholder.com/1280x640 # required
+
+# optional
+# badges:
+#   # optional
+#   custom:
+#     - title: lorem # required
+#       icon: https:// # required
+#       url: https:// # required
+#   # optional
+#   workflows:
+#     - name: hygiene # optional, needs to match filename on .github/workflows/
+
+title: The project name # required
+
+# required
+description: |-
+  The project description
+
+# optional
+screenshots:
+  - label: placeholder # required
+    caption: Placeholder # required
+    url: https://via.placeholder.com/150 # required
+
+# optional
+getting_started: |-
+  This is an example of how you may give instructions on setting up your project locally.
+  To get a local copy up and running follow these simple example steps.
+
+  ```bash
+  echo 'hello world'
+  ```
+
+# required
+prerequisites:
+  # required
+  content: |-
+    A list of things you need, or how to install them.
+
+    ```bash
+    npm install npm@latest -g
+    ```
+
+  # optional
+  references:
+    - name: PreRequisite 1
+      description: Description about the prerequisite
+      url: https://github.com/
+
+# optional
+installation: |-
+  Below is an example of how you can instruct your audience on installing and setting up your app.
+
+  1. Get a free API Key at [GitHub][project]
+
+  2. Clone the repo
+  ```bash
+  git clone https://github.com/your_username_/Project-Name.git
+  ```
+
+  3. Install NPM packages
+  ```bash
+  npm install
+  ```
+
+  4. Enter your API in config.js
+  ```bash
+  const API_KEY = 'ENTER YOUR API';
+  ```
+
+# required
+usage: |-
+  Use this space to show useful examples of how a project can be used.
+  Additional screenshots, code examples and demos work well in this space.
+  You may also link to more resources.
+
+# optional
+# how_tos:
+#   - title: How to import environment variables
+#     content: |-
+#       Lorem ipsum dolor
+
+# optional
+testing: |-
+  Explain how to test the project
+
+  ```bash
+  pytest test_assert1.py
+  ```
+
+# optional
+deployment: |-
+  Explain how the project is being deployed
+
+# optional
+contacts:
+  - name: Jon Doe # required
+    email: email@email.com # required
+
+# optional
+references:
+  - name: lorem # required
+    description: Lorem ipsum dolor sit amet # required
+    url: https:// # required
+
+#  optional
+# license: MIT-0
+
+#  optional
+#copyright: Copyright . All Rights Reserved.
+
+# string [yes|no] | optional
+trademark: no
+
+# optional
+anchors:
+  - name: sample # required
+    url: https:// # required
