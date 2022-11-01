@@ -14,10 +14,18 @@
 
 Automates creation of detailed inventories from AWS resources.
 
+### Problem
+Projects usually have several resources and fetching all the information about these resources manually is a very time-consuming task.
+This issue is intensified when the same project have multiple account and/or environments, e.g.: NonProd, QA and/or Prod.
+
+### Solution
+Provide a simple way to fetch the required information and generate a spreadsheet.
+The information can be filtered, e.g. filter results by tag:x, vpc, subnets, etc.
+Additionally, inventories can be generated related to many services, which are collected and organized per sheet in the spreadsheet.
+
 
 ## Table of Contents
 
-- [Getting Started](#getting-started)
 
 - [Prerequisites](#prerequisites)
 
@@ -29,17 +37,6 @@ Automates creation of detailed inventories from AWS resources.
 - [Testing](#testing)
 
 
-## Getting Started
-
-```
-aws-auto-inventory --help
-usage: aws-auto-inventory [-h] --name NAME
-Automates creation of detailed inventories from AWS resources.
-optional arguments:
-  -h, --help            show this help message and exit
-  --name NAME, -n NAME  inventory name
-```
-
 
 ## Prerequisites
   A list of things you need, or how to install them.
@@ -48,18 +45,18 @@ optional arguments:
 
 
 ## Installation
-Download the binary under [releases](https://github.com/aws-samples/aws-auto-inventory/releases):
+Download the binary under [releases](https://github.com/aws-samples/aws-auto-inventory/releases).
 
 
 ## Usage
-### Problem
-Projects usually have several resources and fetching all the information about these resources manually is a very time-consuming task.
-This issue is intensified when the same project have multiple account and/or environments, e.g.: NonProd, QA and/or Prod.
-
-### Solution
-Provide a simple way to fetch the required information and generate a spreadsheet.
-The information can be filtered, e.g. filter results by tag:x, vpc, subnets, etc.
-Additionally, inventories can be generated related to many services, which are collected and organized per sheet in the spreadsheet.
+```
+aws-auto-inventory --help
+usage: aws-auto-inventory [-h] --name NAME
+Automates creation of detailed inventories from AWS resources.
+optional arguments:
+  -h, --help            show this help message and exit
+  --name NAME, -n NAME  inventory name
+```
 
 
 ## Testing

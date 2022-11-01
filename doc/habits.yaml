@@ -15,10 +15,20 @@ logo: doc/logo.png
 title: AWS Automated Inventory
 
 # required
-description: Automates creation of detailed inventories from AWS resources.
+description: |-
+  Automates creation of detailed inventories from AWS resources.
+
+  ### Problem
+  Projects usually have several resources and fetching all the information about these resources manually is a very time-consuming task.
+  This issue is intensified when the same project have multiple account and/or environments, e.g.: NonProd, QA and/or Prod.
+
+  ### Solution
+  Provide a simple way to fetch the required information and generate a spreadsheet.
+  The information can be filtered, e.g. filter results by tag:x, vpc, subnets, etc.
+  Additionally, inventories can be generated related to many services, which are collected and organized per sheet in the spreadsheet.
 
 # optional
-getting_started: |-
+usage: |-
   ```
   aws-auto-inventory --help
   usage: aws-auto-inventory [-h] --name NAME
@@ -36,21 +46,8 @@ prerequisites:
       description: Python is a high-level, general-purpose programming language.
       url: https://www.python.org
 
-
-# optional
 installation: |-
-  Download the binary under [releases](https://github.com/aws-samples/aws-auto-inventory/releases):
-
-# required
-usage: |-
-  ### Problem
-  Projects usually have several resources and fetching all the information about these resources manually is a very time-consuming task.
-  This issue is intensified when the same project have multiple account and/or environments, e.g.: NonProd, QA and/or Prod.
-
-  ### Solution
-  Provide a simple way to fetch the required information and generate a spreadsheet.
-  The information can be filtered, e.g. filter results by tag:x, vpc, subnets, etc.
-  Additionally, inventories can be generated related to many services, which are collected and organized per sheet in the spreadsheet.
+  Download the binary under [releases](https://github.com/aws-samples/aws-auto-inventory/releases).
 
 installing: |-
   You will need to create a `config.yaml` file in order to tell the tool how to generate your inventory, here are the default search paths for each platform:
