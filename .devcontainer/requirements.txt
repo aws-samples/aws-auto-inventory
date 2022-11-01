@@ -1,0 +1,4 @@
+ansible
+pre-commit
+pyinstaller
+virtualenv
