@@ -11,15 +11,13 @@
     "vscode": {
       "extensions": [
         "ms-python.python",
-        "ms-python.vscode-pylance",
-        "cweijan.vscode-office"
+        "ms-python.vscode-pylance"
       ],
       "settings": {
         "python.defaultInterpreterPath": "/usr/local/bin/python",
         "python.formatting.autopep8Path": "/usr/local/py-utils/bin/autopep8",
         "python.formatting.blackPath": "/usr/local/py-utils/bin/black",
         "python.formatting.yapfPath": "/usr/local/py-utils/bin/yapf",
-        "python.languageServer": "Pylance",
         "python.linting.banditPath": "/usr/local/py-utils/bin/bandit",
         "python.linting.enabled": true,
         "python.linting.flake8Path": "/usr/local/py-utils/bin/flake8",
@@ -31,10 +29,7 @@
       }
     }
   },
-  "features": {
-    "aws-cli": "latest"
-  },
   "name": "AWS Auto Inventory",
-  "postCreateCommand": "figlet 'AWS Auto Inventory' && devcontainer-info",
+  "postCreateCommand": "devcontainer-info",
   "remoteUser": "vscode"
 }
