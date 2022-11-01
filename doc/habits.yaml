@@ -1,28 +1,48 @@
-logo:
-  url: clencli/logo.jpeg
-  label: Photo by [Denny Müller](https://unsplash.com/redaquamedia) on [Unsplash](https://unsplash.com)
-app:
-  name: AWS Automated Inventory
-  function: Automates creation of detailed inventories from AWS resources.
-  id: aws-auto-inventory
-screenshots:
-- caption: How to run
-  label: how-to-run
-  url: clencli/terminalizer/run.gif
-- caption: EC2 Inventory Result
-  label: ec2-inventory-result
-  url: clencli/media/ec2-inventory-result.png
-usage: |-
+url: https://github.com/aws-samples/aws-auto-inventory
+logo: doc/logo.png
+
+# optional
+# badges:
+#   # optional
+#   custom:
+#     - title: lorem
+#       icon: https://
+#       url: https://
+#   # optional
+#   workflows:
+#     - name: hygiene # optional, needs to match filename on .github/workflows/
+
+title: AWS Automated Inventory
+
+# required
+description: Automates creation of detailed inventories from AWS resources.
+
+# optional
+getting_started: |-
   ```
   aws-auto-inventory --help
   usage: aws-auto-inventory [-h] --name NAME
-
   Automates creation of detailed inventories from AWS resources.
-
   optional arguments:
     -h, --help            show this help message and exit
     --name NAME, -n NAME  inventory name
   ```
+
+prerequisites:
+  content: |-
+    A list of things you need, or how to install them.
+  references:
+    - name: Python 3
+      description: Python is a high-level, general-purpose programming language.
+      url: https://www.python.org
+
+
+# optional
+installation: |-
+  Download the binary under [releases](https://github.com/aws-samples/aws-auto-inventory/releases):
+
+# required
+usage: |-
   ### Problem
   Projects usually have several resources and fetching all the information about these resources manually is a very time-consuming task.
   This issue is intensified when the same project have multiple account and/or environments, e.g.: NonProd, QA and/or Prod.
@@ -31,13 +51,12 @@ usage: |-
   Provide a simple way to fetch the required information and generate a spreadsheet.
   The information can be filtered, e.g. filter results by tag:x, vpc, subnets, etc.
   Additionally, inventories can be generated related to many services, which are collected and organized per sheet in the spreadsheet.
+
 installing: |-
   You will need to create a `config.yaml` file in order to tell the tool how to generate your inventory, here are the default search paths for each platform:
-
   * OS X: `~/.config/aws-auto-inventory/config.yaml` or  `~/Library/Application Support/aws-auto-inventory/config.yaml`
   * Other Unix: `$XDG_CONFIG_HOME/aws-auto-inventory/config.yaml` or  `~/.config/aws-auto-inventory/config.yaml`
   * Windows: `%APPDATA%\aws-auto-inventory\config.yaml` where the `APPDATA` environment variable falls back to `%HOME%\AppData\Roaming\config.yaml` if undefined
-
   You can use the [config-sample](config-sample.yaml) as an example. A snippet can be found below:
   ```yaml
   inventories:
@@ -58,7 +77,6 @@ installing: |-
           function: describe_volumes
           result_key: Volumes
   ```
-
   If you are interested in building an inventory for multiple AWS Accounts
   (within your AWS organization) with the same sheets, you can use the
   [config-sample-for-organization](config-sample-for-organization.yaml) for simplicity.
@@ -73,7 +91,6 @@ installing: |-
       service: s3
       function: list_buckets
       result_key: Buckets
-
   inventories:
     - name: your-org-master
       aws:
@@ -83,7 +100,6 @@ installing: |-
       excel:
         transpose: true
       sheets: *sheets
-
     - name: your-org-account1
       aws:
         profile: your-org-account1
@@ -92,7 +108,6 @@ installing: |-
       excel:
         transpose: true
       sheets: *sheets
-
     - name: your-org-account2
       aws:
         profile: your-org-account2
@@ -108,18 +123,15 @@ installing: |-
   ./dist/aws-auto-inventory --name your-org-account1
   ./dist/aws-auto-inventory --name your-org-account1
   ```
-
   Now, download the binary according to your operating system and platform and execute it, informing which inventory you want to generate.
   The tool will create a folder `aws-auto-inventory-report`, in the current path, with the inventory report inside.
+
 testing: |-
   AWS-Auto-Inventory uses [boto3](https://github.com/boto/boto3).
   You can use any service that contains any list or describe method to fetch information about your resources.
-
   ### Parameters
   You can use [boto3](https://github.com/boto/boto3) parameters to narrow down your search results.
-
   #### Filter by tag:Name
-
   ```
   sheets:
     - name: VPC
@@ -132,9 +144,7 @@ testing: |-
             Values:
               - my-vpc
   ```
-
   ### Filter by vpc-id
-
   ```
   sheets:
     - name: Subnets
@@ -147,9 +157,7 @@ testing: |-
             Values:
               - vpc-xxx
   ```
-
   ### Find a particular RDS instance
-
   ```
   sheets:
     - name: RDS
@@ -159,9 +167,7 @@ testing: |-
       parameters:
         DBInstanceIdentifier: the-name-of-my-rds-instance
   ```
-
   ### Find EC2 instances by a particular tag
-
   ```
   sheets:
     - name: EC2
@@ -174,7 +180,6 @@ testing: |-
             Values:
               - my-application
   ```
-
   ### Find a particular IAM Role
   ```
   sheets:
@@ -185,7 +190,6 @@ testing: |-
       parameters:
         RoleName: my-role
   ```
-
     ### Development
   ```
   # Linux/MacOS:
@@ -193,12 +197,13 @@ testing: |-
   make init build
   ./dist/aws-auto-inventory --name <your-inventory-name>
   ```
-references:
-- description: Cloud Engineer CLI
-  name: clencli
-  url: https://github.com/awslabs/clencli
-- description: Boto3
-  name: boto3
-  url: https://github.com/boto/boto3
-license: This project is licensed under the Apache License 2.0.
-copyright: Amazon, Inc. or its affiliates. All Rights Reserved.
+
+license: Apache License 2.0
+
+copyright: Copyright Amazon, Inc. or its affiliates. All Rights Reserved.
+
+trademark: no
+
+anchors:
+  - name: habits
+    url: https://github.com/awslabs/aws-code-habits

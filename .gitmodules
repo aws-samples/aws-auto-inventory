@@ -1,0 +1,4 @@
+[submodule "habits"]
+	path = habits
+	url = https://github.com/awslabs/aws-code-habits.git
+	branch = main

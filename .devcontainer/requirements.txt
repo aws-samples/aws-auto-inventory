@@ -1,4 +1,10 @@
 ansible
+boto3
+confuse
+openpyxl
+pandas
 pre-commit
 pyinstaller
+pylint
 virtualenv
+xlsxwriter
