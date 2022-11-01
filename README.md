@@ -44,7 +44,7 @@ optional arguments:
 ## Prerequisites
   A list of things you need, or how to install them.
 
-- [Python 3](https://www.python.org) - Whether you're new to programming or an experienced developer, it's easy to learn and use Python.
+- [Python 3](https://www.python.org) - Python is a high-level, general-purpose programming language.
 
 
 ## Installation

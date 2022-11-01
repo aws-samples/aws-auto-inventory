@@ -33,7 +33,7 @@ prerequisites:
     A list of things you need, or how to install them.
   references:
     - name: Python 3
-      description: Whether you're new to programming or an experienced developer, it's easy to learn and use Python.
+      description: Python is a high-level, general-purpose programming language.
       url: https://www.python.org
 
 
