@@ -1,120 +1,209 @@
-url: https:// # required
-logo: https://via.placeholder.com/1280x640 # required
+url: https://github.com/aws-samples/aws-auto-inventory
+logo: doc/logo.png
 
 # optional
 # badges:
 #   # optional
 #   custom:
-#     - title: lorem # required
-#       icon: https:// # required
-#       url: https:// # required
+#     - title: lorem
+#       icon: https://
+#       url: https://
 #   # optional
 #   workflows:
 #     - name: hygiene # optional, needs to match filename on .github/workflows/
 
-title: The project name # required
+title: AWS Automated Inventory
 
 # required
-description: |-
-  The project description
-
-# optional
-screenshots:
-  - label: placeholder # required
-    caption: Placeholder # required
-    url: https://via.placeholder.com/150 # required
+description: Automates creation of detailed inventories from AWS resources.
 
 # optional
 getting_started: |-
-  This is an example of how you may give instructions on setting up your project locally.
-  To get a local copy up and running follow these simple example steps.
-
-  ```bash
-  echo 'hello world'
+  ```
+  aws-auto-inventory --help
+  usage: aws-auto-inventory [-h] --name NAME
+  Automates creation of detailed inventories from AWS resources.
+  optional arguments:
+    -h, --help            show this help message and exit
+    --name NAME, -n NAME  inventory name
   ```
 
-# required
 prerequisites:
-  # required
   content: |-
     A list of things you need, or how to install them.
-
-    ```bash
-    npm install npm@latest -g
-    ```
-
-  # optional
   references:
-    - name: PreRequisite 1
-      description: Description about the prerequisite
-      url: https://github.com/
+    - name: Python 3
+      description: Whether you're new to programming or an experienced developer, it's easy to learn and use Python.
+      url: https://www.python.org
+
 
 # optional
 installation: |-
-  Below is an example of how you can instruct your audience on installing and setting up your app.
-
-  1. Get a free API Key at [GitHub][project]
-
-  2. Clone the repo
-  ```bash
-  git clone https://github.com/your_username_/Project-Name.git
-  ```
-
-  3. Install NPM packages
-  ```bash
-  npm install
-  ```
-
-  4. Enter your API in config.js
-  ```bash
-  const API_KEY = 'ENTER YOUR API';
-  ```
+  Download the binary under [releases](https://github.com/aws-samples/aws-auto-inventory/releases):
 
 # required
 usage: |-
-  Use this space to show useful examples of how a project can be used.
-  Additional screenshots, code examples and demos work well in this space.
-  You may also link to more resources.
+  ### Problem
+  Projects usually have several resources and fetching all the information about these resources manually is a very time-consuming task.
+  This issue is intensified when the same project have multiple account and/or environments, e.g.: NonProd, QA and/or Prod.
 
-# optional
-# how_tos:
-#   - title: How to import environment variables
-#     content: |-
-#       Lorem ipsum dolor
+  ### Solution
+  Provide a simple way to fetch the required information and generate a spreadsheet.
+  The information can be filtered, e.g. filter results by tag:x, vpc, subnets, etc.
+  Additionally, inventories can be generated related to many services, which are collected and organized per sheet in the spreadsheet.
 
-# optional
+installing: |-
+  You will need to create a `config.yaml` file in order to tell the tool how to generate your inventory, here are the default search paths for each platform:
+  * OS X: `~/.config/aws-auto-inventory/config.yaml` or  `~/Library/Application Support/aws-auto-inventory/config.yaml`
+  * Other Unix: `$XDG_CONFIG_HOME/aws-auto-inventory/config.yaml` or  `~/.config/aws-auto-inventory/config.yaml`
+  * Windows: `%APPDATA%\aws-auto-inventory\config.yaml` where the `APPDATA` environment variable falls back to `%HOME%\AppData\Roaming\config.yaml` if undefined
+  You can use the [config-sample](config-sample.yaml) as an example. A snippet can be found below:
+  ```yaml
+  inventories:
+    - name: your-inventory-name
+      aws: # optional
+        profile: your-aws-profile # if not provided, the AWS environment variables will be used instead
+        region: # if not provided, 'us-east-1' will be used as default region
+          - us-east-1
+      excel:
+        transpose: true
+      sheets:
+        - name: EC2 # sheet name on Excel
+          service: ec2 # the boto3 client of an AWS service
+          function: describe_instances # the client method of the service defined above
+          result_key: Reservations # [optional]: The first key of the response dict
+        - name: EBS
+          service: ec2
+          function: describe_volumes
+          result_key: Volumes
+  ```
+  If you are interested in building an inventory for multiple AWS Accounts
+  (within your AWS organization) with the same sheets, you can use the
+  [config-sample-for-organization](config-sample-for-organization.yaml) for simplicity.
+  Code snippet:
+  ```yaml
+  Sheets: &sheets
+    - name: CloudFrontDistros
+      service: cloudfront
+      function: list_distributions
+      result_key: DistributionList
+    - name: S3Buckets
+      service: s3
+      function: list_buckets
+      result_key: Buckets
+  inventories:
+    - name: your-org-master
+      aws:
+        profile: your-org
+        region:
+          - us-east-1
+      excel:
+        transpose: true
+      sheets: *sheets
+    - name: your-org-account1
+      aws:
+        profile: your-org-account1
+        region:
+          - us-east-1
+      excel:
+        transpose: true
+      sheets: *sheets
+    - name: your-org-account2
+      aws:
+        profile: your-org-account2
+        region:
+          - us-east-1
+      excel:
+        transpose: true
+      sheets: *sheets
+  ```
+  Then you need to run the auto-inventory script multiple times for your accounts as follows:
+  ```shell
+  ./dist/aws-auto-inventory --name your-org-master
+  ./dist/aws-auto-inventory --name your-org-account1
+  ./dist/aws-auto-inventory --name your-org-account1
+  ```
+  Now, download the binary according to your operating system and platform and execute it, informing which inventory you want to generate.
+  The tool will create a folder `aws-auto-inventory-report`, in the current path, with the inventory report inside.
+
 testing: |-
-  Explain how to test the project
-
-  ```bash
-  pytest test_assert1.py
+  AWS-Auto-Inventory uses [boto3](https://github.com/boto/boto3).
+  You can use any service that contains any list or describe method to fetch information about your resources.
+  ### Parameters
+  You can use [boto3](https://github.com/boto/boto3) parameters to narrow down your search results.
+  #### Filter by tag:Name
+  ```
+  sheets:
+    - name: VPC
+      service: ec2
+      function: describe_vpcs
+      result_key: Vpcs
+      parameters:
+        Filters:
+          - Name: tag:Name
+            Values:
+              - my-vpc
+  ```
+  ### Filter by vpc-id
+  ```
+  sheets:
+    - name: Subnets
+      service: ec2
+      function: describe_subnets
+      result_key: Subnets
+      parameters:
+        Filters:
+          - Name: vpc-id
+            Values:
+              - vpc-xxx
+  ```
+  ### Find a particular RDS instance
+  ```
+  sheets:
+    - name: RDS
+      service: rds
+      function: describe_db_instances
+      result_key: DBInstances
+      parameters:
+        DBInstanceIdentifier: the-name-of-my-rds-instance
+  ```
+  ### Find EC2 instances by a particular tag
+  ```
+  sheets:
+    - name: EC2
+      service: ec2
+      function: describe_instances
+      result_key: Reservations
+      parameters:
+        Filters:
+          - Name: tag:ApplicationName
+            Values:
+              - my-application
+  ```
+  ### Find a particular IAM Role
+  ```
+  sheets:
+    - name: IAM.Role
+      service: iam
+      function: get_role
+      result_key: Role
+      parameters:
+        RoleName: my-role
+  ```
+    ### Development
+  ```
+  # Linux/MacOS:
+  # clone the project and enter cloned directory
+  make init build
+  ./dist/aws-auto-inventory --name <your-inventory-name>
   ```
 
-# optional
-deployment: |-
-  Explain how the project is being deployed
+license: Apache License 2.0
 
-# optional
-contacts:
-  - name: Jon Doe # required
-    email: email@email.com # required
+copyright: Copyright Amazon, Inc. or its affiliates. All Rights Reserved.
 
-# optional
-references:
-  - name: lorem # required
-    description: Lorem ipsum dolor sit amet # required
-    url: https:// # required
-
-#  optional
-# license: MIT-0
-
-#  optional
-#copyright: Copyright . All Rights Reserved.
-
-# string [yes|no] | optional
 trademark: no
 
-# optional
 anchors:
-  - name: sample # required
-    url: https:// # required
+  - name: habits
+    url: https://github.com/awslabs/aws-code-habits
