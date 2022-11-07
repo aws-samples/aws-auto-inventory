@@ -12,6 +12,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+        with:
+          submodules: "true"
 
       - name: Set up Python 3.10
         uses: actions/setup-python@v4
@@ -32,6 +34,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+        with:
+          submodules: "true"
 
       - name: Install dependencies
         run: |
