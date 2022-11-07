@@ -18,7 +18,7 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 USER vscode
 
 # Add pip requirements
-COPY requirements.txt /tmp/
+COPY ../requirements.txt /tmp/
 RUN pip3 --disable-pip-version-check --no-cache-dir install -r /tmp/requirements.txt \
    && rm -rf /tmp/pip-tmp
 
