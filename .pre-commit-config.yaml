@@ -1,5 +1,5 @@
 default_language_version:
-  python: python3.9
+  python: python3
 fail_fast: true
 minimum_pre_commit_version: 2.13.0
 repos:
