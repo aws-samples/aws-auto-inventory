@@ -21,7 +21,7 @@ clean:
 build: clean
 	@( \
        . $(WORKSPACE)/.venv/bin/activate; \
-	   pyinstaller --name aws-auto-inventory-$(OS)-$(ARCH) --clean --onefile --hidden-import cmath --log-level=DEBUG cli.py 2> build.txt; \
+	   pyinstaller --name aws-auto-inventory-$(OS)-$(ARCH) --clean --onefile --hidden-import cmath --log-level=DEBUG app/cli.py 2> build.txt; \
     )
 
 .PHONY: run
