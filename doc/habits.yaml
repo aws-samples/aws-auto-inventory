@@ -12,6 +12,11 @@ logo: doc/logo.png
 #   workflows:
 #     - name: hygiene # optional, needs to match filename on .github/workflows/
 
+screenshots:
+- caption: EC2 Inventory Result
+  label: ec2-inventory-result
+  url: doc/screenshots/1.png
+
 title: AWS Automated Inventory
 
 # required
@@ -49,7 +54,6 @@ prerequisites:
 installation: |-
   Download the binary under [releases](https://github.com/aws-samples/aws-auto-inventory/releases).
 
-installing: |-
   You will need to create a `config.yaml` file in order to tell the tool how to generate your inventory, here are the default search paths for each platform:
   * OS X: `~/.config/aws-auto-inventory/config.yaml` or  `~/Library/Application Support/aws-auto-inventory/config.yaml`
   * Other Unix: `$XDG_CONFIG_HOME/aws-auto-inventory/config.yaml` or  `~/.config/aws-auto-inventory/config.yaml`
