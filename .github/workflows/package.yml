@@ -1,4 +1,4 @@
-name: Release
+name: Package
 on:
   push:
     # Sequence of patterns matched against refs/tags
