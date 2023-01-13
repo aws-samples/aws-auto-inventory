@@ -32,9 +32,6 @@ jobs:
         with:
           submodules: "true"
 
-      - name: Create virtualenv
-        run: python -m venv .venv
-
       - name: Build documentation
         run: make doc/build
 
