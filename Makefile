@@ -1,32 +1,30 @@
 export WORKSPACE=$(shell pwd)
 export HABITS = $(WORKSPACE)/habits
 
-#include $(WORKSPACE)/tools.env # pin the version of your tools
-#include $(WORKSPACE)/dev.env # don't store secrets in git
-#include $(WORKSPACE)/dev.secrets.env # remember to add *.secrets.env to .gitignore
-
 include $(HABITS)/lib/make/Makefile
 include $(HABITS)/lib/make/*/Makefile
 
 # You can change this tag to suit your needs
-TAG=$(shell date +%Y%m%d)
-OS=$(shell uname -s | tr A-Z a-z)
-ARCH=$(shell uname -m | tr A-Z a-z)
+TAG?=$(shell date +%Y%m%d)
+OS?=$(shell uname -s | tr A-Z a-z)
+ARCH?=$(shell uname -m | tr A-Z a-z)
 
-.PHONY: clean
-clean:
+.PHONY: app/clean
+##
+app/clean:
 	@rm -rf build/ dist/ *.spec log/ output/ build.txt __pycache__/ aai/__pycache__/ output/
 
-.PHONY: build
-build: clean
-	@( \
-       . $(WORKSPACE)/.venv/bin/activate; \
-	   pyinstaller --name aws-auto-inventory-$(OS)-$(ARCH) --clean --onefile --hidden-import cmath --log-level=DEBUG app/cli.py 2> build.txt; \
-    )
+.PHONY: app/build
+app/build: app/clean
+	@pyinstaller --name aws-auto-inventory-$(OS)-$(ARCH) --clean --onefile --hidden-import cmath --log-level=DEBUG app/cli.py 2> build.log
 
-.PHONY: run
-run:
-	@( \
-       . $(WORKSPACE)/.venv/bin/activate; \
-		python app/cli.py --name=learning; \
-	)
+.PHONY: app/run
+app/run:
+	@python3 app/cli.py --name=learning
+
+.PHONY: app/run/build
+app/run/build:
+	@dist/aws-auto-inventory-$(OS)-$(ARCH) --name=learning
+
+.PHONY: hygiene
+hygiene: doc/build pre-commit/run

@@ -47,6 +47,79 @@ Additionally, inventories can be generated related to many services, which are c
 ## Installation
 Download the binary under [releases](https://github.com/aws-samples/aws-auto-inventory/releases).
 
+You will need to create a `config.yaml` file in order to tell the tool how to generate your inventory, here are the default search paths for each platform:
+* OS X: `~/.config/aws-auto-inventory/config.yaml` or  `~/Library/Application Support/aws-auto-inventory/config.yaml`
+* Other Unix: `$XDG_CONFIG_HOME/aws-auto-inventory/config.yaml` or  `~/.config/aws-auto-inventory/config.yaml`
+* Windows: `%APPDATA%\aws-auto-inventory\config.yaml` where the `APPDATA` environment variable falls back to `%HOME%\AppData\Roaming\config.yaml` if undefined
+You can use the [config-sample](config-sample.yaml) as an example. A snippet can be found below:
+```yaml
+inventories:
+  - name: your-inventory-name
+    aws: # optional
+      profile: your-aws-profile # if not provided, the AWS environment variables will be used instead
+      region: # if not provided, 'us-east-1' will be used as default region
+        - us-east-1
+    excel:
+      transpose: true
+    sheets:
+      - name: EC2 # sheet name on Excel
+        service: ec2 # the boto3 client of an AWS service
+        function: describe_instances # the client method of the service defined above
+        result_key: Reservations # [optional]: The first key of the response dict
+      - name: EBS
+        service: ec2
+        function: describe_volumes
+        result_key: Volumes
+```
+If you are interested in building an inventory for multiple AWS Accounts
+(within your AWS organization) with the same sheets, you can use the
+[config-sample-for-organization](config-sample-for-organization.yaml) for simplicity.
+Code snippet:
+```yaml
+Sheets: &sheets
+  - name: CloudFrontDistros
+    service: cloudfront
+    function: list_distributions
+    result_key: DistributionList
+  - name: S3Buckets
+    service: s3
+    function: list_buckets
+    result_key: Buckets
+inventories:
+  - name: your-org-master
+    aws:
+      profile: your-org
+      region:
+        - us-east-1
+    excel:
+      transpose: true
+    sheets: *sheets
+  - name: your-org-account1
+    aws:
+      profile: your-org-account1
+      region:
+        - us-east-1
+    excel:
+      transpose: true
+    sheets: *sheets
+  - name: your-org-account2
+    aws:
+      profile: your-org-account2
+      region:
+        - us-east-1
+    excel:
+      transpose: true
+    sheets: *sheets
+```
+Then you need to run the auto-inventory script multiple times for your accounts as follows:
+```shell
+./dist/aws-auto-inventory --name your-org-master
+./dist/aws-auto-inventory --name your-org-account1
+./dist/aws-auto-inventory --name your-org-account1
+```
+Now, download the binary according to your operating system and platform and execute it, informing which inventory you want to generate.
+The tool will create a folder `aws-auto-inventory-report`, in the current path, with the inventory report inside.
+
 
 ## Usage
 ```
