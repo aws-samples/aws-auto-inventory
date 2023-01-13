@@ -12,11 +12,6 @@ logo: doc/logo.png
 #   workflows:
 #     - name: hygiene # optional, needs to match filename on .github/workflows/
 
-screenshots:
-- caption: EC2 Inventory Result
-  label: ec2-inventory-result
-  url: doc/screenshots/1.png
-
 title: AWS Automated Inventory
 
 # required

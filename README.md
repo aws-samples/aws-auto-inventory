@@ -23,10 +23,6 @@ Provide a simple way to fetch the required information and generate a spreadshee
 The information can be filtered, e.g. filter results by tag:x, vpc, subnets, etc.
 Additionally, inventories can be generated related to many services, which are collected and organized per sheet in the spreadsheet.
 
-| ![ec2-inventory-result](doc/screenshots/1.png) |
-|:--:|
-| *EC2 Inventory Result* |
-
 
 ## Table of Contents
 
