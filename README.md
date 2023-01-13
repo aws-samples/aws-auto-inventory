@@ -23,6 +23,10 @@ Provide a simple way to fetch the required information and generate a spreadshee
 The information can be filtered, e.g. filter results by tag:x, vpc, subnets, etc.
 Additionally, inventories can be generated related to many services, which are collected and organized per sheet in the spreadsheet.
 
+| ![ec2-inventory-result](doc/screenshots/1.png) |
+|:--:|
+| *EC2 Inventory Result* |
+
 
 ## Table of Contents
 
@@ -206,7 +210,9 @@ make init build
 
 
 
-- [AWS Code Habits][aws-code-habits] - A library with Make targets, Ansible playbooks, Jinja templates (and more) designed to boost common software development tasks and enhance governance.
+## References
+- [AWS Code Habits](https://github.com/awslabs/aws-code-habits) - A library with Make targets, Ansible playbooks, Jinja templates (and more) designed to boost common software development tasks and enhance governance.
+
 
 ## License
 This project is licensed under the Apache License 2.0 License. See the [LICENSE](LICENSE) file.
@@ -217,7 +223,5 @@ Copyright Amazon, Inc. or its affiliates. All Rights Reserved.
 
 [repo]: https://github.com/aws-samples/aws-auto-inventory
 [logo]: doc/logo.png
-
-[aws-code-habits]: https://github.com/awslabs/aws-code-habits
 
 [habits]: https://github.com/awslabs/aws-code-habits

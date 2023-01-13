@@ -12,6 +12,11 @@ logo: doc/logo.png
 #   workflows:
 #     - name: hygiene # optional, needs to match filename on .github/workflows/
 
+screenshots:
+  - label: ec2-inventory-result
+    url: doc/screenshots/1.png
+    caption: EC2 Inventory Result
+
 title: AWS Automated Inventory
 
 # required
@@ -193,6 +198,11 @@ testing: |-
   make init build
   ./dist/aws-auto-inventory --name <your-inventory-name>
   ```
+
+references:
+  - name: AWS Code Habits
+    url:  https://github.com/awslabs/aws-code-habits
+    description: A library with Make targets, Ansible playbooks, Jinja templates (and more) designed to boost common software development tasks and enhance governance.
 
 license: Apache License 2.0
 
