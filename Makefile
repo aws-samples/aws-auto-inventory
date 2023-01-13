@@ -25,3 +25,6 @@ app/run:
 .PHONY: app/run/build
 app/run/build:
 	@dist/aws-auto-inventory-$(OS)-$(ARCH) --name=learning
+
+.PHONY: hygiene
+hygiene: doc/build pre-commit/run
