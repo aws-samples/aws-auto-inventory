@@ -57,8 +57,6 @@ repos:
     - id: mixed-line-ending
     # This verifies that test files are named correctly
     - id: name-tests-test
-    # Don't commit to branch
-    - id: no-commit-to-branch
     # Sorts entries in requirements.txt
     - id: requirements-txt-fixer
     # Sorts simple YAML files which consist only of top-level keys, preserving comments and blocks.
