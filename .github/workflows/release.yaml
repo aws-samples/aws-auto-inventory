@@ -1,0 +1,14 @@
+on:
+  push:
+    branches:
+      - main
+
+name: Release
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: google-github-actions/release-please-action@v3
+        with:
+          release-type: python
+          package-name: aws-auto-inventory
