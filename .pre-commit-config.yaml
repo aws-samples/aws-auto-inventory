@@ -10,8 +10,6 @@ repos:
     - id: check-added-large-files
     # Simply check whether the files parse as valid python.
     - id: check-ast
-    # forbid files which have a UTF-8 byte-order marker
-    - id: check-byte-order-marker
     # Require literal syntax when initializing empty or zero Python builtin types.
     - id: check-builtin-literals
     # Check for files that would conflict in case-insensitive filesystems
