@@ -3,7 +3,7 @@ on:
   push:
     # Sequence of patterns matched against refs/tags
     tags:
-      - '*' # Push events to matching any tags, 0.1.0
+      - 'v*' # Push events to matching any tags, 0.1.0
 
 jobs:
   build:
