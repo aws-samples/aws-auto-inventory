@@ -1,5 +1,10 @@
 name: Build
-on: [push]
+on:
+  push:
+    branches:
+    - 'feat/***'
+    - 'fix/***'
+
 jobs:
   build:
     runs-on: ${{ matrix.os }}
