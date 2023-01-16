@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.0](https://github.com/aws-samples/aws-auto-inventory/compare/v0.5.3...v0.6.0) (2023-01-16)
+
+
+### Features
+
+* use personal access token ([062e5e3](https://github.com/aws-samples/aws-auto-inventory/commit/062e5e3b860ff2bd84861846ed44f917998f83fb))
+
 ## [0.5.2](https://github.com/aws-samples/aws-auto-inventory/compare/v0.5.1...v0.5.2) (2023-01-16)
 
 
