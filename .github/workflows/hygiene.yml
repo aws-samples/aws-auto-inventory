@@ -2,6 +2,9 @@ name: Hygiene
 
 on:
   push:
+    branches:
+      - 'feat/**'
+      - 'fix/**'
 
 permissions:
   contents: read
