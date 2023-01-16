@@ -3,8 +3,8 @@ name: Hygiene
 on:
   push:
     branches:
-      - 'feat/***'
-      - 'fix/***'
+      - 'feat/**'
+      - 'fix/**'
 
 permissions:
   contents: read

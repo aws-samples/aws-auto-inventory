@@ -2,8 +2,8 @@ name: Build
 on:
   push:
     branches:
-    - 'feat/***'
-    - 'fix/***'
+    - 'feat/**'
+    - 'fix/**'
 
 jobs:
   build:
