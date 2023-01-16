@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.2](https://github.com/aws-samples/aws-auto-inventory/compare/v0.5.1...v0.5.2) (2023-01-16)
+
+
+### Bug Fixes
+
+* use v* as tag prefix ([39d1937](https://github.com/aws-samples/aws-auto-inventory/commit/39d19374a350761202999c21b6b15b18672fcb11))
+
 ## [0.5.1](https://github.com/aws-samples/aws-auto-inventory/compare/v0.5.0...v0.5.1) (2023-01-16)
 
 
