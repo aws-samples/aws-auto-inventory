@@ -12,3 +12,4 @@ jobs:
         with:
           release-type: python
           package-name: aws-auto-inventory
+          token: ${{ secrets.TOKEN }}
