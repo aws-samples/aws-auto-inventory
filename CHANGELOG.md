@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.1](https://github.com/aws-samples/aws-auto-inventory/compare/v0.5.0...v0.5.1) (2023-01-16)
+
+
+### Bug Fixes
+
+* use correct tag format ([18da1b6](https://github.com/aws-samples/aws-auto-inventory/commit/18da1b6e2ad904a465c3e4841a369990d1264d86))
+
 ## [0.5.0](https://github.com/aws-samples/aws-auto-inventory/compare/v0.4.0...v0.5.0) (2023-01-16)
 
 
