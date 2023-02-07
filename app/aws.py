@@ -42,7 +42,7 @@ def _get_session(inventory):
         try:
             session = boto3.Session(profile_name=profile_name)
         except botocore.exceptions.ProfileNotFound:
-            log.critical("The config profile (%s) could not be found", profile_name)
+            log.critical(f"The config profile ({profile_name}) could not be found")
             sys.exit(1)
         client = session.client("sts")  # test credentials
         client.get_caller_identity()
