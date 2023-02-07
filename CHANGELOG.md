@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.7.0](https://github.com/aws-samples/aws-auto-inventory/compare/v0.6.0...v0.7.0) (2023-02-07)
+
+
+### Features
+
+* only build and hygiene if feat/ or fix/ branches ([042af58](https://github.com/aws-samples/aws-auto-inventory/commit/042af58f709b0cd10b7085674d868bae174ae10a))
+
+
+### Bug Fixes
+
+* correct glob pattern ([bbbb7e4](https://github.com/aws-samples/aws-auto-inventory/commit/bbbb7e443699a47e4a6b491f1713d028987680c2))
+* use main branch, and fix workflow schedule ([acf19d5](https://github.com/aws-samples/aws-auto-inventory/commit/acf19d5b11fc4680c094d0e7d8a8fe2a09d60614))
+
 ## [0.6.0](https://github.com/aws-samples/aws-auto-inventory/compare/v0.5.3...v0.6.0) (2023-01-16)
 
 
