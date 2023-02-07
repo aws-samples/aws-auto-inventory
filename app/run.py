@@ -27,19 +27,18 @@ log = logging.getLogger("aws-auto-inventory.main")
 def execute(name):
     """Generates a new report with the given :name"""
     log.info("Started: AWS Auto Inventory")
-    log.info("Generating inventory: %s", name)
+    log.info(f"Generating inventory: {name}")
 
     inventory = _config.settings.get_inventory(name)
     if inventory != {}:
         inventory_name = inventory["name"]
-        log.info("Inventory %s was found", inventory_name)
+        log.info(f"Inventory {inventory_name} was found")
 
-        data = _aws.get_data(inventory)
-        if data:
+        if data := _aws.get_data(inventory):
             _doc.write_data(inventory_name, inventory, data)
         else:
             log.info("No data to be saved")
     else:
-        print("No inventory named %s was found", name)
+        print(f"No inventory named {name} was found")
 
     log.info("Finished: AWS Auto Inventory")

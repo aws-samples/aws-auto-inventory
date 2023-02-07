@@ -34,7 +34,7 @@ class Settings:
             Settings()
         return Settings.__instance
 
-    def __init__(self):
+    def __init__(self):  # sourcery skip: raise-specific-error
         """Virtually private constructor."""
         if Settings.__instance is not None:
             raise Exception("This class is a Singleton!")
@@ -84,9 +84,6 @@ class Settings:
             print("Field inventories not found in configuration")
             sys.exit(1)
 
-        log.info("Current inventories:{}".format(all_inventories))
+        log.info(f"Current inventories:{all_inventories}")
 
-        for i in all_inventories:
-            if i["name"] == name:
-                return i
-        return {}
+        return next((i for i in all_inventories if i["name"] == name), {})
