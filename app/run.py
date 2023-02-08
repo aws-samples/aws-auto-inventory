@@ -24,21 +24,24 @@ import doc as _doc
 log = logging.getLogger("aws-auto-inventory.main")
 
 
-def execute(name):
+def execute(name, profile):
     """Generates a new report with the given :name"""
     log.info("Started: AWS Auto Inventory")
     log.info(f"Generating inventory: {name}")
 
     inventory = _config.settings.get_inventory(name)
-    if inventory != {}:
+    if inventory == {}:
+        print(f"No inventory named {name} was found")
+
+    session = _aws._get_session(inventory, profile)
+    if _aws.check_aws_credentials(session):
         inventory_name = inventory["name"]
         log.info(f"Inventory {inventory_name} was found")
 
-        if data := _aws.get_data(inventory):
+        if data := _aws.get_data(inventory, session):
             _doc.write_data(inventory_name, inventory, data)
         else:
             log.info("No data to be saved")
     else:
-        print(f"No inventory named {name} was found")
-
+        log.error("No AWS credential was found")
     log.info("Finished: AWS Auto Inventory")
