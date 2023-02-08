@@ -20,11 +20,11 @@ app/build: app/clean
 
 .PHONY: dev/app/run
 dev/app/run:
-	@python3 app/cli.py --name=learning
+	@python3 app/cli.py --name=your-inventory-name
 
 .PHONY: dev/app/run/build
 dev/app/run/build:
-	@dist/aws-auto-inventory-$(OS)-$(ARCH) --name=learning
+	@dist/aws-auto-inventory-$(OS)-$(ARCH) --name=your-inventory-name
 
 .PHONY: hygiene
 hygiene: doc/build pre-commit/run
