@@ -24,9 +24,10 @@ parser = argparse.ArgumentParser(description=DESCRIPTION)
 
 # Add long and short argument
 parser.add_argument("--name", "-n", help="inventory name", required=True)
+parser.add_argument("--profile", "-p", help="aws profile name", required=False)
 
 # Read arguments from the command line
 args = parser.parse_args()
 
 if args.name:
-    run.execute(name=args.name)
+    run.execute(name=args.name, profile=args.profile)
