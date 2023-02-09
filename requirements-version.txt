@@ -1,5 +1,5 @@
 altgraph==0.17.3
-ansible==6.5.0
+ansible==7.0.0
 ansible-core==2.13.5
 astroid==2.14.1
 attrs==22.1.0
