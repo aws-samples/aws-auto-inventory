@@ -34,7 +34,7 @@ class Settings:
             Settings()
         return Settings.__instance
 
-    def __init__(self):
+    def __init__(self):  # sourcery skip: raise-specific-error
         """Virtually private constructor."""
         if Settings.__instance is not None:
             raise Exception("This class is a Singleton!")
@@ -44,7 +44,7 @@ class Settings:
     @staticmethod
     def get_regions(inventory_name):
         """Return AWS Regions defined by user on settings"""
-        log.info("Started: Seetings Get AWS Regions")
+        log.info("Started: Settings Get AWS Regions")
         inventory = Settings.get_inventory(inventory_name)
         regions = []
         if "aws" in inventory:
@@ -52,31 +52,16 @@ class Settings:
             if not regions:
                 log.info("AWS Region(s) not found in config.yaml, skipping...")
 
-        if len(regions) == 0:
+        if regions and len(regions) == 0:
             regions.append("us-east-1")  # default region
 
         log.info("Finished: Seetings Get AWS Regions")
         return regions
 
     @staticmethod
-    def get_aws_profile(inventory):
-        """Return the AWS Profile defined by user on settings"""
-        log.info("Started: Settings Get AWS Profile")
-
-        profile = None
-        if "aws" in inventory:
-            profile = inventory.get("aws", None).get("profile", None)
-
-        if profile:
-            log.info("Current AWS Profile: %s", profile)
-
-        log.info("Finished: Settings Get AWS Profile")
-        return profile
-
-    @staticmethod
     def get_inventory(name):
         """Find and return an inventory"""
-        log.info("Getting inventories %s", name)
+        log.info(f"Searching for inventory {name}")
 
         try:
             all_inventories = Settings.config["inventories"].get()
@@ -84,9 +69,6 @@ class Settings:
             print("Field inventories not found in configuration")
             sys.exit(1)
 
-        log.info("Current inventories:{}".format(all_inventories))
+        log.debug(f"Current inventories:{all_inventories}")
 
-        for i in all_inventories:
-            if i["name"] == name:
-                return i
-        return {}
+        return next((i for i in all_inventories if i["name"] == name), {})

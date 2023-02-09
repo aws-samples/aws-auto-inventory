@@ -3,10 +3,23 @@
     {
       "args": [
         "--name",
-        "learning"
+        "your-inventory-name"
       ],
       "console": "integratedTerminal",
-      "name": "Python: CLI",
+      "name": "Name Only",
+      "program": "app/cli.py",
+      "request": "launch",
+      "type": "python"
+    },
+    {
+      "args": [
+        "--name",
+        "your-inventory-name",
+        "--profile",
+        "your-aws-profile"
+      ],
+      "console": "integratedTerminal",
+      "name": "Name and Profile",
       "program": "app/cli.py",
       "request": "launch",
       "type": "python"

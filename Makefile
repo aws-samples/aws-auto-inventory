@@ -18,13 +18,13 @@ app/clean:
 app/build: app/clean
 	@pyinstaller --name aws-auto-inventory-$(OS)-$(ARCH) --clean --onefile --hidden-import cmath --log-level=DEBUG app/cli.py 2> build.log
 
-.PHONY: app/run
-app/run:
-	@python3 app/cli.py --name=learning
+.PHONY: dev/app/run
+dev/app/run:
+	@python3 app/cli.py --name=your-inventory-name
 
-.PHONY: app/run/build
-app/run/build:
-	@dist/aws-auto-inventory-$(OS)-$(ARCH) --name=learning
+.PHONY: dev/app/run/build
+dev/app/run/build:
+	@dist/aws-auto-inventory-$(OS)-$(ARCH) --name=your-inventory-name
 
 .PHONY: hygiene
 hygiene: doc/build pre-commit/run

@@ -22,7 +22,6 @@ def flatten(d, sep="_"):
     obj = {}
 
     def recurse(t, parent_key=""):
-
         if "Tags" in parent_key:
             if isinstance(t, list):
                 for i in t:
@@ -45,7 +44,6 @@ def flatten(d, sep="_"):
 
 def flatten_list(response, sep):
     if isinstance(response, list):
-        result = [flatten(x, sep) for x in response]
-        return result
+        return [flatten(x, sep) for x in response]
     else:
         return [flatten(response, sep)]

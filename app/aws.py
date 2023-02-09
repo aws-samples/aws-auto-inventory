@@ -13,10 +13,9 @@
 #   See the License for the specific language governing permissions and
 #   limitations under the License.
 
-import sys
+import os
 import logging
 import boto3
-import botocore
 
 import converter as _converter
 import settings as _settings
@@ -24,39 +23,70 @@ import settings as _settings
 log = logging.getLogger("aws-auto-inventory.aws")
 
 
-def _get_session(inventory):
+def _get_session(inventory, profile):
     """Returns an AWS session"""
 
     log.info("Started: Get AWS Session")
-    try:
-        # environment variables overrides values loaded from a profile
-        # https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html
-        session = boto3.Session()
-        client = session.client("sts")
-        client.get_caller_identity()  # test credentials
-    except botocore.exceptions.NoCredentialsError:
-        profile_name = _settings.Settings.get_aws_profile(inventory)
-        if not profile_name:
-            log.error("AWS Profile not found in config.yaml, exitting...")
-            sys.exit(1)
-        try:
-            session = boto3.Session(profile_name=profile_name)
-        except botocore.exceptions.ProfileNotFound:
-            log.critical("The config profile (%s) could not be found", profile_name)
-            sys.exit(1)
-        client = session.client("sts")  # test credentials
-        client.get_caller_identity()
 
-    log.info("Finished: Get AWS Session")
+    accessKeyId = os.getenv("AWS_ACCESS_KEY_ID")
+    secretAccessKey = os.environ.get("AWS_SECRET_ACCESS_KEY")
+    sessionToken = os.environ.get("AWS_SESSION_TOKEN")
+    regionName = os.environ.get("AWS_DEFAULT_REGION")
+
+    session = None
+    if accessKeyId and secretAccessKey and sessionToken and regionName:
+        session = boto3.Session(
+            aws_access_key_id=accessKeyId,
+            aws_secret_access_key=secretAccessKey,
+            aws_session_token=sessionToken,
+            region_name=regionName,
+        )
+    elif accessKeyId and secretAccessKey and sessionToken:
+        session = boto3.Session(
+            aws_access_key_id=accessKeyId,
+            aws_secret_access_key=secretAccessKey,
+            aws_session_token=sessionToken,
+        )
+    elif accessKeyId and secretAccessKey and regionName:
+        session = boto3.Session(
+            aws_access_key_id=accessKeyId,
+            aws_secret_access_key=secretAccessKey,
+            region_name=regionName,
+        )
+    elif accessKeyId and secretAccessKey:
+        session = boto3.Session(
+            aws_access_key_id=accessKeyId, aws_secret_access_key=secretAccessKey
+        )
+    elif profile:
+        session = boto3.Session(profile_name=profile)
+    elif inventory != {}:
+        if _aws := inventory.get("aws", None):
+            if inventory_profile := _aws.get("profile", None):
+                # get from inventory
+                session = boto3.Session(profile_name=inventory_profile)
+        else:
+            # get default credentials
+            session = boto3.Session()
+
     return session
 
 
-def _display_account_info(inventory):
+def check_aws_credentials(session):
+    try:
+        client = session.client("sts")
+        client.get_caller_identity()
+        log.info("Valid AWS credentials")
+        return True
+    except Exception:
+        log.error("Something is wrong with the AWS credentials")
+
+    return False
+
+
+def _display_account_info(session):
     """Display an AWS Account Information"""
 
     log.info("Started:AWS Display Account Info")
-
-    session = _get_session(inventory)
 
     client = session.client(service_name="sts")
     response = client.get_caller_identity()
@@ -71,23 +101,25 @@ def _display_account_info(inventory):
     log.info("Finished:AWS Display Account Info")
 
 
-def get_data(inventory):
+def get_data(inventory, session):
     """Get AWS data from specified inventory"""
     log.info("Started: AWS Get Data")
 
-    _display_account_info(inventory)
+    _display_account_info(session)
     settings = _settings.Settings.get_instance()
 
-    regions = settings.get_regions(inventory["name"])  # try config
+    regions = []
+    if regionName := os.environ.get("AWS_DEFAULT_REGION", None):
+        regions.append(regionName)
+    elif session.region_name:
+        regions.append(session.region_name)
+    else:
+        regions = settings.get_regions(inventory["name"])  # try config
 
     data = []
     if regions:
         for region_name in regions:
             for sheet in inventory["sheets"]:
-                session = _get_session(
-                    inventory
-                )  # for a whole region, session might expire
-
                 name = sheet["name"]
                 response = _get_service_data(
                     session, region_name=region_name, sheet=sheet
