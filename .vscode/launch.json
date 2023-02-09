@@ -3,7 +3,7 @@
     {
       "args": [
         "--name",
-        "your-inventory-name",
+        "your-inventory-name"
       ],
       "console": "integratedTerminal",
       "name": "Name Only",
