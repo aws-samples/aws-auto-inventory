@@ -13,8 +13,10 @@
 #   See the License for the specific language governing permissions and
 #   limitations under the License.
 
-import pandas as pd
+
 import logging
+import json
+import pandas as pd
 import config as _config
 
 log = logging.getLogger("aws-auto-inventory.doc")
@@ -48,8 +50,7 @@ log = logging.getLogger("aws-auto-inventory.doc")
 #     # Close the Pandas Excel writer and output the Excel file.
 #     writer.save()
 
-
-def write_data(name, inventory, data):
+def write_excel(name, inventory, data):
     transpose = inventory["excel"]["transpose"]
 
     file_path = _config.FILEPATH
@@ -58,7 +59,8 @@ def write_data(name, inventory, data):
     # log.info('Started: writing document {} on sheet {}'.format(file_name, sheet_name))
 
     # Create a Pandas Excel writer using XlsxWriter as the engine.
-    writer = pd.ExcelWriter("{}{}".format(file_path, file_name), engine="xlsxwriter")
+    writer = pd.ExcelWriter("{}{}.xlsx".format(
+        file_path, file_name), engine="xlsxwriter")
 
     # transpose = _config.settings.config['excel']['transpose'].get()
 
@@ -79,10 +81,30 @@ def write_data(name, inventory, data):
             df.to_excel(writer, sheet_name=sheet_name)
             # Adjust all columns widths
             for column in df:
-                column_length = max(df[column].astype(str).map(len).max(), len(column))
+                column_length = max(df[column].astype(
+                    str).map(len).max(), len(column))
                 col_idx = df.columns.get_loc(column)
-                writer.sheets[sheet_name].set_column(col_idx, col_idx, column_length)
+                writer.sheets[sheet_name].set_column(
+                    col_idx, col_idx, column_length)
 
     # Close the Pandas Excel writer and output the Excel file.
     writer.save()
     print("Report generated successfully at: {}{}".format(file_path, file_name))
+
+
+def write_json(name, inventory, data):
+    file_path = _config.FILEPATH
+    file_name = name + _config.FILE_NAME
+
+    json_config = inventory.get("json")
+
+    with open(f"{file_path}{file_name}.json", "w") as outfile:
+        json.dump(data, outfile, indent=json_config.get("indent", 4),
+                  sort_keys=json_config.get("sort_keys", False), default=str)
+
+
+def write_data(name, inventory, data):
+    if(inventory.get("json")):
+        write_json(name, inventory, data)
+    else:
+        write_excel(name, inventory, data)
