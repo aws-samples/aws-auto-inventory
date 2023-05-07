@@ -96,7 +96,6 @@ def write_json(name, inventory, data):
     file_path = _config.FILEPATH
     file_name = name + _config.FILE_NAME
 
-
     json_config = inventory.get("json")
 
     with open(f"{file_path}{file_name}.json", "w") as outfile:
