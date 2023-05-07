@@ -20,7 +20,7 @@ import settings as _settings
 
 t = gmtime()
 timestamp = strftime("%Y%m%d%H%M%S", t)
-FILE_NAME = f"_{timestamp}.xlsx"
+FILE_NAME = f"_{timestamp}"
 FILEPATH = "./output/"
 os.makedirs(FILEPATH, exist_ok=True)
 
