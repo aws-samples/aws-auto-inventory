@@ -396,3 +396,4 @@ $RECYCLE.BIN/
 # End of https://www.toptal.com/developers/gitignore/api/macos,windows,linux,visualstudiocode,python,node
 output/
 *.xlsx
+inventory.json
