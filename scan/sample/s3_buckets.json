@@ -1,0 +1,7 @@
+[
+    {
+        "service": "s3",
+        "function": "list_buckets",
+        "result_key": "Buckets"
+    }
+]
