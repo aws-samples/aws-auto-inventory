@@ -3,7 +3,23 @@ import logging
 import json
 import argparse
 import concurrent.futures
+import os
 from datetime import datetime
+
+# Create a logger
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
+
+# Create a file handler
+handler = logging.FileHandler('logfile.log')
+handler.setLevel(logging.INFO)
+
+# Create a logging format
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+handler.setFormatter(formatter)
+
+# Add the handlers to the logger
+logger.addHandler(handler)
 
 logging.basicConfig(level=logging.INFO)
 log = logging.getLogger(__name__)
@@ -17,7 +33,6 @@ class DateTimeEncoder(json.JSONEncoder):
 
 def _get_service_data(session, region_name, sheet):
     """Get information about a service described on :sheet allocated on a :region_name"""
-    log.info("Started: AWS Get Service Data")
     service = sheet["service"]
     function = sheet["function"]
 
@@ -32,33 +47,34 @@ def _get_service_data(session, region_name, sheet):
         region_name,
     )
 
-    response = ""
-
     try:
-        # session = boto3.Session(profile_name=profile_name)
         client = session.client(service, region_name=region_name)
+        
+        if not hasattr(client, function):
+            log.warning(f"Function {function} does not exist for service {service} in region {region_name}")
+            return None
 
         if parameters is not None:
             if result_key:
-                response = client.__getattribute__(function)(**parameters).get(
-                    result_key
-                )
+                response = getattr(client, function)(**parameters).get(result_key)
             else:
-                response = client.__getattribute__(function)(**parameters)
+                response = getattr(client, function)(**parameters)
         elif result_key:
-            response = client.__getattribute__(function)().get(result_key)
+            response = getattr(client, function)().get(result_key)
         else:
-            response = client.__getattribute__(function)()
-            # Remove ResponseMetadata as it's not useful
-            response.pop("ResponseMetadata", None)
+            response = getattr(client, function)()
+            if isinstance(response, dict):
+                # Remove ResponseMetadata as it's not useful
+                response.pop("ResponseMetadata", None)
     except Exception as exception:
-        log.error("Error while processing %s, %s.\n%s", service, region_name, exception)
-
-    log.debug("Result:{{%s}}", response)
+        log.error("Error while processing %s, %s.\n%s: %s", service, region_name, type(exception).__name__, exception)
+        return None
 
     log.info("Finished: AWS Get Service Data")
+    log.debug("Result for %s, function %s, region %s: %s", service, function, region_name, response)
 
     return response
+
 
 def process_region(region, services, session):
     region_results = []
@@ -79,7 +95,8 @@ def process_region(region, services, session):
     log.info(f'Finished processing for region: {region}')
     return region_results
 
-def main(services_sheet, output_file):
+def main(services_sheet):
+    timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
     session = boto3.Session()
 
     with open(services_sheet, 'r') as f:
@@ -95,16 +112,23 @@ def main(services_sheet, output_file):
         for future in concurrent.futures.as_completed(future_to_region):
             region = future_to_region[future]
             try:
-                results.extend(future.result())
+                region_results = future.result()
+                results.extend(region_results)
+
+                # Save results for each region
+                for service_result in region_results:
+                    directory = os.path.join('output', timestamp, region, service_result['service'])
+                    os.makedirs(directory, exist_ok=True)
+                    with open(os.path.join(directory, 'result.json'), 'w') as f:
+                        json.dump(service_result['result'], f, cls=DateTimeEncoder)
+
             except Exception as exc:
                 log.error('%r generated an exception: %s' % (region, exc))
 
-    with open(output_file, 'w') as f:
-        json.dump(results, f, cls=DateTimeEncoder)
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='List all resources in all AWS services and regions.')
-    parser.add_argument('services_sheet', type=str, help='Path to the services sheet JSON file')
-    parser.add_argument('output_file', type=str, help='Path to the output JSON file')
+
+    parser.add_argument('-s', '--services_sheet', help='JSON file containing the AWS services to scan', required=True)
+
     args = parser.parse_args()
-    main(args.services_sheet, args.output_file)
+    main(args.services_sheet)
