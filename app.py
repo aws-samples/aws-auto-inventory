@@ -2,6 +2,7 @@ import boto3
 import logging
 import json
 import argparse
+import concurrent.futures
 from datetime import datetime
 
 logging.basicConfig(level=logging.INFO)
@@ -60,6 +61,20 @@ def _get_service_data(session, region_name, sheet):
     return response
 
 
+def process_region(region, services, session):
+    region_results = []
+
+    for service in services:
+        result = _get_service_data(session, region, service)
+        if result:
+            region_results.append({
+                'region': region,
+                'service': service['service'],
+                'result': result
+            })
+
+    return region_results
+
 def main(services_sheet, output_file):
     session = boto3.Session()
 
@@ -70,15 +85,14 @@ def main(services_sheet, output_file):
 
     results = []
 
-    for region in regions:
-        for service in services:
-            result = _get_service_data(session, region, service)
-            if result:
-                results.append({
-                    'region': region,
-                    'service': service['service'],
-                    'result': result
-                })
+    with concurrent.futures.ThreadPoolExecutor() as executor:
+        future_to_region = {executor.submit(process_region, region, services, session): region for region in regions}
+        for future in concurrent.futures.as_completed(future_to_region):
+            region = future_to_region[future]
+            try:
+                results.extend(future.result())
+            except Exception as exc:
+                log.error('%r generated an exception: %s' % (region, exc))
 
     with open(output_file, 'w') as f:
         json.dump(results, f, cls=DateTimeEncoder)
