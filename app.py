@@ -60,11 +60,12 @@ def _get_service_data(session, region_name, sheet):
 
     return response
 
-
 def process_region(region, services, session):
     region_results = []
+    log.info(f'Started processing for region: {region}')
 
     for service in services:
+        log.info(f'Started processing for service: {service["service"]}')
         result = _get_service_data(session, region, service)
         if result:
             region_results.append({
@@ -72,7 +73,10 @@ def process_region(region, services, session):
                 'service': service['service'],
                 'result': result
             })
-
+            log.info(f'Successfully processed service: {service["service"]}')
+        else:
+            log.info(f'No data found for service: {service["service"]}')
+    log.info(f'Finished processing for region: {region}')
     return region_results
 
 def main(services_sheet, output_file):
@@ -81,7 +85,8 @@ def main(services_sheet, output_file):
     with open(services_sheet, 'r') as f:
         services = json.load(f)
 
-    regions = [region['RegionName'] for region in session.client('ec2').describe_regions()['Regions']]
+    ec2_client = session.client('ec2')
+    regions = [region['RegionName'] for region in ec2_client.describe_regions()['Regions'] if region['OptInStatus'] == 'opt-in-not-required' or region['OptInStatus'] == 'opted-in']
 
     results = []
 
