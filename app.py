@@ -51,7 +51,7 @@ def _get_service_data(session, region_name, sheet):
 
     return response
 
-def main(services_sheet):
+def main(services_sheet, output_file):
     session = boto3.Session()
 
     with open(services_sheet, 'r') as f:
@@ -59,12 +59,24 @@ def main(services_sheet):
 
     regions = [region['RegionName'] for region in session.client('ec2').describe_regions()['Regions']]
 
+    results = []
+
     for region in regions:
         for service in services:
-            _get_service_data(session, region, service)
+            result = _get_service_data(session, region, service)
+            if result:
+                results.append({
+                    'region': region,
+                    'service': service['service'],
+                    'result': result
+                })
+
+    with open(output_file, 'w') as f:
+        json.dump(results, f)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='List all resources in all AWS services and regions.')
     parser.add_argument('services_sheet', type=str, help='Path to the services sheet JSON file')
+    parser.add_argument('output_file', type=str, help='Path to the output JSON file')
     args = parser.parse_args()
-    main(args.services_sheet)
+    main(args.services_sheet, args.output_file)
