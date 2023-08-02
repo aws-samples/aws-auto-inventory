@@ -2,9 +2,17 @@ import boto3
 import logging
 import json
 import argparse
+from datetime import datetime
 
 logging.basicConfig(level=logging.INFO)
 log = logging.getLogger(__name__)
+
+class DateTimeEncoder(json.JSONEncoder):
+    def default(self, o):
+        if isinstance(o, datetime):
+            return o.isoformat()
+
+        return super().default(o)
 
 def _get_service_data(session, region_name, sheet):
     """Get information about a service described on :sheet allocated on a :region_name"""
@@ -51,6 +59,7 @@ def _get_service_data(session, region_name, sheet):
 
     return response
 
+
 def main(services_sheet, output_file):
     session = boto3.Session()
 
@@ -72,7 +81,7 @@ def main(services_sheet, output_file):
                 })
 
     with open(output_file, 'w') as f:
-        json.dump(results, f)
+        json.dump(results, f, cls=DateTimeEncoder)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='List all resources in all AWS services and regions.')
