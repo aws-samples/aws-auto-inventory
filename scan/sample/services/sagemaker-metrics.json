@@ -1,0 +1,1 @@
+[{"service": "sagemaker-metrics", "function": "get_paginator"}, {"service": "sagemaker-metrics", "function": "get_waiter"}]

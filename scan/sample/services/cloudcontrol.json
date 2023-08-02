@@ -1,0 +1,1 @@
+[{"service": "cloudcontrol", "function": "get_paginator"}, {"service": "cloudcontrol", "function": "get_resource"}, {"service": "cloudcontrol", "function": "get_resource_request_status"}, {"service": "cloudcontrol", "function": "get_waiter"}, {"service": "cloudcontrol", "function": "list_resource_requests"}, {"service": "cloudcontrol", "function": "list_resources"}]

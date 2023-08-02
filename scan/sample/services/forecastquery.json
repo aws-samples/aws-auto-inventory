@@ -1,0 +1,1 @@
+[{"service": "forecastquery", "function": "get_paginator"}, {"service": "forecastquery", "function": "get_waiter"}]

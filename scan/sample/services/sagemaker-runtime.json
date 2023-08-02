@@ -1,0 +1,1 @@
+[{"service": "sagemaker-runtime", "function": "get_paginator"}, {"service": "sagemaker-runtime", "function": "get_waiter"}]

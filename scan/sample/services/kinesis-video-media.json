@@ -1,0 +1,1 @@
+[{"service": "kinesis-video-media", "function": "get_media"}, {"service": "kinesis-video-media", "function": "get_paginator"}, {"service": "kinesis-video-media", "function": "get_waiter"}]

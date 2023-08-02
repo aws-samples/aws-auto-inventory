@@ -1,0 +1,1 @@
+[{"service": "lex-runtime", "function": "get_paginator"}, {"service": "lex-runtime", "function": "get_session"}, {"service": "lex-runtime", "function": "get_waiter"}]

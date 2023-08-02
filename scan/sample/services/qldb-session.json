@@ -1,0 +1,1 @@
+[{"service": "qldb-session", "function": "get_paginator"}, {"service": "qldb-session", "function": "get_waiter"}]

@@ -1,0 +1,1 @@
+[{"service": "rds-data", "function": "get_paginator"}, {"service": "rds-data", "function": "get_waiter"}]

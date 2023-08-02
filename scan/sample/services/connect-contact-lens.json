@@ -1,0 +1,1 @@
+[{"service": "connect-contact-lens", "function": "get_paginator"}, {"service": "connect-contact-lens", "function": "get_waiter"}, {"service": "connect-contact-lens", "function": "list_realtime_contact_analysis_segments"}]
