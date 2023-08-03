@@ -48,8 +48,19 @@ pip install -r requirements.txt
 You can run the AWS Auto Inventory using the command line. Here is the general syntax:
 
 ```bash
-python scan.py -s <scanfile> [options]
+python scan.py -s <scanfile> [parameters]
 ```
+
+**Parameters:**
+
+* `--scan`: Path to the JSON file containing the AWS services to scan. This is a required parameter.
+* `--regions`: Optional parameter specifying a list of AWS regions to scan. If not provided, all accessible regions will be scanned.
+* `--output_dir`: Optional parameter specifying the directory to store the results. Default is "output".
+* `--log_level`: Optional parameter to set the logging level (e.g., DEBUG, INFO, WARNING, ERROR, CRITICAL). Default is "INFO".
+* `--max-retries`: Optional parameter to set the maximum number of retries for each service. Default is 3.
+* `--retry-delay`: Optional parameter to set the delay (in seconds) before each retry. Default is 2.
+* `--concurrent-regions`: Optional parameter to set the number of regions to process concurrently. Default is None, which means the script will use as many as possible.
+* `--concurrent-services`: Optional parameter to set the number of services to process concurrently for each region. Default is None, which means the script will use as many as possible.
 
 ### Examples
 
