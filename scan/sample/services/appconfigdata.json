@@ -1,1 +1,14 @@
-[{"service": "appconfigdata", "function": "get_latest_configuration"}, {"service": "appconfigdata", "function": "get_paginator"}, {"service": "appconfigdata", "function": "get_waiter"}]
+[
+  {
+    "function": "get_latest_configuration",
+    "service": "appconfigdata"
+  },
+  {
+    "function": "get_paginator",
+    "service": "appconfigdata"
+  },
+  {
+    "function": "get_waiter",
+    "service": "appconfigdata"
+  }
+]

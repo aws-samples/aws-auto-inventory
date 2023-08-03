@@ -1,1 +1,10 @@
-[{"service": "kinesis-video-webrtc-storage", "function": "get_paginator"}, {"service": "kinesis-video-webrtc-storage", "function": "get_waiter"}]
+[
+  {
+    "function": "get_paginator",
+    "service": "kinesis-video-webrtc-storage"
+  },
+  {
+    "function": "get_waiter",
+    "service": "kinesis-video-webrtc-storage"
+  }
+]

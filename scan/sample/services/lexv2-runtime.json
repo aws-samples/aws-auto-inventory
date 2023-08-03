@@ -1,1 +1,14 @@
-[{"service": "lexv2-runtime", "function": "get_paginator"}, {"service": "lexv2-runtime", "function": "get_session"}, {"service": "lexv2-runtime", "function": "get_waiter"}]
+[
+  {
+    "function": "get_paginator",
+    "service": "lexv2-runtime"
+  },
+  {
+    "function": "get_session",
+    "service": "lexv2-runtime"
+  },
+  {
+    "function": "get_waiter",
+    "service": "lexv2-runtime"
+  }
+]

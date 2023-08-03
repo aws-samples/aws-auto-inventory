@@ -1,1 +1,10 @@
-[{"service": "ec2-instance-connect", "function": "get_paginator"}, {"service": "ec2-instance-connect", "function": "get_waiter"}]
+[
+  {
+    "function": "get_paginator",
+    "service": "ec2-instance-connect"
+  },
+  {
+    "function": "get_waiter",
+    "service": "ec2-instance-connect"
+  }
+]

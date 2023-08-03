@@ -1,1 +1,22 @@
-[{"service": "pipes", "function": "describe_pipe"}, {"service": "pipes", "function": "get_paginator"}, {"service": "pipes", "function": "get_waiter"}, {"service": "pipes", "function": "list_pipes"}, {"service": "pipes", "function": "list_tags_for_resource"}]
+[
+  {
+    "function": "describe_pipe",
+    "service": "pipes"
+  },
+  {
+    "function": "get_paginator",
+    "service": "pipes"
+  },
+  {
+    "function": "get_waiter",
+    "service": "pipes"
+  },
+  {
+    "function": "list_pipes",
+    "service": "pipes"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "pipes"
+  }
+]

@@ -1,1 +1,22 @@
-[{"service": "dlm", "function": "get_lifecycle_policies"}, {"service": "dlm", "function": "get_lifecycle_policy"}, {"service": "dlm", "function": "get_paginator"}, {"service": "dlm", "function": "get_waiter"}, {"service": "dlm", "function": "list_tags_for_resource"}]
+[
+  {
+    "function": "get_lifecycle_policies",
+    "service": "dlm"
+  },
+  {
+    "function": "get_lifecycle_policy",
+    "service": "dlm"
+  },
+  {
+    "function": "get_paginator",
+    "service": "dlm"
+  },
+  {
+    "function": "get_waiter",
+    "service": "dlm"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "dlm"
+  }
+]

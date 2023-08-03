@@ -1,1 +1,10 @@
-[{"service": "sagemaker-runtime", "function": "get_paginator"}, {"service": "sagemaker-runtime", "function": "get_waiter"}]
+[
+  {
+    "function": "get_paginator",
+    "service": "sagemaker-runtime"
+  },
+  {
+    "function": "get_waiter",
+    "service": "sagemaker-runtime"
+  }
+]

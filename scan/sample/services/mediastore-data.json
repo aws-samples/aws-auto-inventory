@@ -1,1 +1,22 @@
-[{"service": "mediastore-data", "function": "describe_object"}, {"service": "mediastore-data", "function": "get_object"}, {"service": "mediastore-data", "function": "get_paginator"}, {"service": "mediastore-data", "function": "get_waiter"}, {"service": "mediastore-data", "function": "list_items"}]
+[
+  {
+    "function": "describe_object",
+    "service": "mediastore-data"
+  },
+  {
+    "function": "get_object",
+    "service": "mediastore-data"
+  },
+  {
+    "function": "get_paginator",
+    "service": "mediastore-data"
+  },
+  {
+    "function": "get_waiter",
+    "service": "mediastore-data"
+  },
+  {
+    "function": "list_items",
+    "service": "mediastore-data"
+  }
+]

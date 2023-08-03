@@ -1,1 +1,10 @@
-[{"service": "sso-oidc", "function": "get_paginator"}, {"service": "sso-oidc", "function": "get_waiter"}]
+[
+  {
+    "function": "get_paginator",
+    "service": "sso-oidc"
+  },
+  {
+    "function": "get_waiter",
+    "service": "sso-oidc"
+  }
+]

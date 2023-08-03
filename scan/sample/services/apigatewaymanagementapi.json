@@ -1,1 +1,14 @@
-[{"service": "apigatewaymanagementapi", "function": "get_connection"}, {"service": "apigatewaymanagementapi", "function": "get_paginator"}, {"service": "apigatewaymanagementapi", "function": "get_waiter"}]
+[
+  {
+    "function": "get_connection",
+    "service": "apigatewaymanagementapi"
+  },
+  {
+    "function": "get_paginator",
+    "service": "apigatewaymanagementapi"
+  },
+  {
+    "function": "get_waiter",
+    "service": "apigatewaymanagementapi"
+  }
+]

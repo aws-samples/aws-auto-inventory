@@ -1,12 +1,17 @@
 [
-    {
-        "service": "ec2",
-        "function": "describe_instances",
-        "result_key": "Reservations",
-        "parameters": {
-            "Filters": [
-                {"Name": "instance-state-name", "Values": ["running"]}
-            ]
+  {
+    "function": "describe_instances",
+    "parameters": {
+      "Filters": [
+        {
+          "Name": "instance-state-name",
+          "Values": [
+            "running"
+          ]
         }
-    }
+      ]
+    },
+    "result_key": "Reservations",
+    "service": "ec2"
+  }
 ]

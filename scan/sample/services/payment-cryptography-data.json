@@ -1,1 +1,10 @@
-[{"service": "payment-cryptography-data", "function": "get_paginator"}, {"service": "payment-cryptography-data", "function": "get_waiter"}]
+[
+  {
+    "function": "get_paginator",
+    "service": "payment-cryptography-data"
+  },
+  {
+    "function": "get_waiter",
+    "service": "payment-cryptography-data"
+  }
+]

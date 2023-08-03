@@ -4,9 +4,9 @@ export HABITS = $(WORKSPACE)/habits
 include $(HABITS)/lib/make/Makefile
 include $(HABITS)/lib/make/*/Makefile
 
-.PHONY: app/clean
+.PHONY: clean
 ## Clean project
-app/clean:
+clean:
 	@rm -rf output/
 
 .PHONY: hygiene

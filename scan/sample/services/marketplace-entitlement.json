@@ -1,1 +1,14 @@
-[{"service": "marketplace-entitlement", "function": "get_entitlements"}, {"service": "marketplace-entitlement", "function": "get_paginator"}, {"service": "marketplace-entitlement", "function": "get_waiter"}]
+[
+  {
+    "function": "get_entitlements",
+    "service": "marketplace-entitlement"
+  },
+  {
+    "function": "get_paginator",
+    "service": "marketplace-entitlement"
+  },
+  {
+    "function": "get_waiter",
+    "service": "marketplace-entitlement"
+  }
+]
