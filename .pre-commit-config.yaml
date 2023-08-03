@@ -76,4 +76,4 @@ repos:
   rev: 'v2.7'  # or any later Vulture version
   hooks:
     - id: vulture
-      args: ['app.py', ]
+      args: ['scan.py', ]
