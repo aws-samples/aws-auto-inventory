@@ -210,6 +210,19 @@ def display_time(seconds):
     return f"{int(hours)}h:{int(minutes)}m:{int(seconds)}s"
 
 
+def check_aws_credentials(session):
+    """Check AWS credentials by calling the STS GetCallerIdentity operation."""
+    try:
+        sts = session.client("sts")
+        identity = sts.get_caller_identity()
+        print(f"Authenticated as: {identity['Arn']}")
+    except botocore.exceptions.BotoCoreError as error:
+        print(f"Error verifying AWS credentials: {error}")
+        return False
+
+    return True
+
+
 def main(
     scan,
     regions,
@@ -235,6 +248,10 @@ def main(
     """
 
     session = boto3.Session()
+    if not check_aws_credentials(session):
+        print("Invalid AWS credentials. Please configure your credentials.")
+        return
+
     log = setup_logging(output_dir, log_level)
 
     with open(scan, "r") as f:
