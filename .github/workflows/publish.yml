@@ -20,6 +20,7 @@ jobs:
 
       - run: python3 --version
       - run: pip install -r requirements.txt
+      - run: pip install pyinstaller
       - run: pyinstaller --name aws-auto-inventory-${{ matrix.os }} --onefile scan.py
 
       - uses: actions/upload-artifact@v3
