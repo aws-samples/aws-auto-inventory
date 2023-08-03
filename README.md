@@ -1,3 +1,5 @@
+![logo][logo]
+
 # AWS Auto Inventory
 
 This script scans your AWS resources across multiple regions and services, and generates a detailed inventory of them. It's written in Python, and leverages Boto3, the official Amazon Web Services (AWS) SDK for Python, to interact with AWS services.
