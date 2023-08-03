@@ -1,0 +1,90 @@
+[
+  {
+    "function": "get_analysis_template",
+    "service": "cleanrooms"
+  },
+  {
+    "function": "get_collaboration",
+    "service": "cleanrooms"
+  },
+  {
+    "function": "get_collaboration_analysis_template",
+    "service": "cleanrooms"
+  },
+  {
+    "function": "get_configured_table",
+    "service": "cleanrooms"
+  },
+  {
+    "function": "get_configured_table_analysis_rule",
+    "service": "cleanrooms"
+  },
+  {
+    "function": "get_configured_table_association",
+    "service": "cleanrooms"
+  },
+  {
+    "function": "get_membership",
+    "service": "cleanrooms"
+  },
+  {
+    "function": "get_paginator",
+    "service": "cleanrooms"
+  },
+  {
+    "function": "get_protected_query",
+    "service": "cleanrooms"
+  },
+  {
+    "function": "get_schema",
+    "service": "cleanrooms"
+  },
+  {
+    "function": "get_schema_analysis_rule",
+    "service": "cleanrooms"
+  },
+  {
+    "function": "get_waiter",
+    "service": "cleanrooms"
+  },
+  {
+    "function": "list_analysis_templates",
+    "service": "cleanrooms"
+  },
+  {
+    "function": "list_collaboration_analysis_templates",
+    "service": "cleanrooms"
+  },
+  {
+    "function": "list_collaborations",
+    "service": "cleanrooms"
+  },
+  {
+    "function": "list_configured_table_associations",
+    "service": "cleanrooms"
+  },
+  {
+    "function": "list_configured_tables",
+    "service": "cleanrooms"
+  },
+  {
+    "function": "list_members",
+    "service": "cleanrooms"
+  },
+  {
+    "function": "list_memberships",
+    "service": "cleanrooms"
+  },
+  {
+    "function": "list_protected_queries",
+    "service": "cleanrooms"
+  },
+  {
+    "function": "list_schemas",
+    "service": "cleanrooms"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "cleanrooms"
+  }
+]

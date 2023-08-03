@@ -1,0 +1,26 @@
+[
+  {
+    "function": "get_access_key_info",
+    "service": "sts"
+  },
+  {
+    "function": "get_caller_identity",
+    "service": "sts"
+  },
+  {
+    "function": "get_federation_token",
+    "service": "sts"
+  },
+  {
+    "function": "get_paginator",
+    "service": "sts"
+  },
+  {
+    "function": "get_session_token",
+    "service": "sts"
+  },
+  {
+    "function": "get_waiter",
+    "service": "sts"
+  }
+]

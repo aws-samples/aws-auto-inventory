@@ -1,0 +1,46 @@
+[
+  {
+    "function": "get_datastore",
+    "service": "medical-imaging"
+  },
+  {
+    "function": "get_dicom_import_job",
+    "service": "medical-imaging"
+  },
+  {
+    "function": "get_image_frame",
+    "service": "medical-imaging"
+  },
+  {
+    "function": "get_image_set",
+    "service": "medical-imaging"
+  },
+  {
+    "function": "get_image_set_metadata",
+    "service": "medical-imaging"
+  },
+  {
+    "function": "get_paginator",
+    "service": "medical-imaging"
+  },
+  {
+    "function": "get_waiter",
+    "service": "medical-imaging"
+  },
+  {
+    "function": "list_datastores",
+    "service": "medical-imaging"
+  },
+  {
+    "function": "list_dicom_import_jobs",
+    "service": "medical-imaging"
+  },
+  {
+    "function": "list_image_set_versions",
+    "service": "medical-imaging"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "medical-imaging"
+  }
+]

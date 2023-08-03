@@ -1,0 +1,10 @@
+[
+  {
+    "function": "get_paginator",
+    "service": "meteringmarketplace"
+  },
+  {
+    "function": "get_waiter",
+    "service": "meteringmarketplace"
+  }
+]

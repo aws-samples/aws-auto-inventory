@@ -1,0 +1,266 @@
+[
+  {
+    "function": "get_active_names",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_alarms",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_auto_snapshots",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_blueprints",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_bucket_access_keys",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_bucket_bundles",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_bucket_metric_data",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_buckets",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_bundles",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_certificates",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_cloud_formation_stack_records",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_contact_methods",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_container_api_metadata",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_container_images",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_container_log",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_container_service_deployments",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_container_service_metric_data",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_container_service_powers",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_container_services",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_cost_estimate",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_disk",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_disk_snapshot",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_disk_snapshots",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_disks",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_distribution_bundles",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_distribution_latest_cache_reset",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_distribution_metric_data",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_distributions",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_domain",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_domains",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_export_snapshot_records",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_instance",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_instance_access_details",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_instance_metric_data",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_instance_port_states",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_instance_snapshot",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_instance_snapshots",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_instance_state",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_instances",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_key_pair",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_key_pairs",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_load_balancer",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_load_balancer_metric_data",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_load_balancer_tls_certificates",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_load_balancer_tls_policies",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_load_balancers",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_operation",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_operations",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_operations_for_resource",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_paginator",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_regions",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_relational_database",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_relational_database_blueprints",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_relational_database_bundles",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_relational_database_events",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_relational_database_log_events",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_relational_database_log_streams",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_relational_database_master_user_password",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_relational_database_metric_data",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_relational_database_parameters",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_relational_database_snapshot",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_relational_database_snapshots",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_relational_databases",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_static_ip",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_static_ips",
+    "service": "lightsail"
+  },
+  {
+    "function": "get_waiter",
+    "service": "lightsail"
+  }
+]

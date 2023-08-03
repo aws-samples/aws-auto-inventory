@@ -6,21 +6,19 @@
         "your-inventory-name"
       ],
       "console": "integratedTerminal",
-      "name": "Name Only",
-      "program": "app/cli.py",
+      "name": "Empty",
+      "program": "scan.py",
       "request": "launch",
       "type": "python"
     },
     {
       "args": [
-        "--name",
-        "your-inventory-name",
-        "--profile",
-        "your-aws-profile"
+        "--scan",
+        "scan/sample/services/iam.json"
       ],
       "console": "integratedTerminal",
-      "name": "Name and Profile",
-      "program": "app/cli.py",
+      "name": "Scan",
+      "program": "scan.py",
       "request": "launch",
       "type": "python"
     }

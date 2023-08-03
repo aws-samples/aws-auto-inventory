@@ -1,0 +1,98 @@
+[
+  {
+    "function": "get_campaign",
+    "service": "iotfleetwise"
+  },
+  {
+    "function": "get_decoder_manifest",
+    "service": "iotfleetwise"
+  },
+  {
+    "function": "get_fleet",
+    "service": "iotfleetwise"
+  },
+  {
+    "function": "get_logging_options",
+    "service": "iotfleetwise"
+  },
+  {
+    "function": "get_model_manifest",
+    "service": "iotfleetwise"
+  },
+  {
+    "function": "get_paginator",
+    "service": "iotfleetwise"
+  },
+  {
+    "function": "get_register_account_status",
+    "service": "iotfleetwise"
+  },
+  {
+    "function": "get_signal_catalog",
+    "service": "iotfleetwise"
+  },
+  {
+    "function": "get_vehicle",
+    "service": "iotfleetwise"
+  },
+  {
+    "function": "get_vehicle_status",
+    "service": "iotfleetwise"
+  },
+  {
+    "function": "get_waiter",
+    "service": "iotfleetwise"
+  },
+  {
+    "function": "list_campaigns",
+    "service": "iotfleetwise"
+  },
+  {
+    "function": "list_decoder_manifest_network_interfaces",
+    "service": "iotfleetwise"
+  },
+  {
+    "function": "list_decoder_manifest_signals",
+    "service": "iotfleetwise"
+  },
+  {
+    "function": "list_decoder_manifests",
+    "service": "iotfleetwise"
+  },
+  {
+    "function": "list_fleets",
+    "service": "iotfleetwise"
+  },
+  {
+    "function": "list_fleets_for_vehicle",
+    "service": "iotfleetwise"
+  },
+  {
+    "function": "list_model_manifest_nodes",
+    "service": "iotfleetwise"
+  },
+  {
+    "function": "list_model_manifests",
+    "service": "iotfleetwise"
+  },
+  {
+    "function": "list_signal_catalog_nodes",
+    "service": "iotfleetwise"
+  },
+  {
+    "function": "list_signal_catalogs",
+    "service": "iotfleetwise"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "iotfleetwise"
+  },
+  {
+    "function": "list_vehicles",
+    "service": "iotfleetwise"
+  },
+  {
+    "function": "list_vehicles_in_fleet",
+    "service": "iotfleetwise"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "function": "get_account_settings",
+    "service": "lambda"
+  },
+  {
+    "function": "get_alias",
+    "service": "lambda"
+  },
+  {
+    "function": "get_code_signing_config",
+    "service": "lambda"
+  },
+  {
+    "function": "get_event_source_mapping",
+    "service": "lambda"
+  },
+  {
+    "function": "get_function",
+    "service": "lambda"
+  },
+  {
+    "function": "get_function_code_signing_config",
+    "service": "lambda"
+  },
+  {
+    "function": "get_function_concurrency",
+    "service": "lambda"
+  },
+  {
+    "function": "get_function_configuration",
+    "service": "lambda"
+  },
+  {
+    "function": "get_function_event_invoke_config",
+    "service": "lambda"
+  },
+  {
+    "function": "get_function_url_config",
+    "service": "lambda"
+  },
+  {
+    "function": "get_layer_version",
+    "service": "lambda"
+  },
+  {
+    "function": "get_layer_version_by_arn",
+    "service": "lambda"
+  },
+  {
+    "function": "get_layer_version_policy",
+    "service": "lambda"
+  },
+  {
+    "function": "get_paginator",
+    "service": "lambda"
+  },
+  {
+    "function": "get_policy",
+    "service": "lambda"
+  },
+  {
+    "function": "get_provisioned_concurrency_config",
+    "service": "lambda"
+  },
+  {
+    "function": "get_runtime_management_config",
+    "service": "lambda"
+  },
+  {
+    "function": "get_waiter",
+    "service": "lambda"
+  },
+  {
+    "function": "list_aliases",
+    "service": "lambda"
+  },
+  {
+    "function": "list_code_signing_configs",
+    "service": "lambda"
+  },
+  {
+    "function": "list_event_source_mappings",
+    "service": "lambda"
+  },
+  {
+    "function": "list_function_event_invoke_configs",
+    "service": "lambda"
+  },
+  {
+    "function": "list_function_url_configs",
+    "service": "lambda"
+  },
+  {
+    "function": "list_functions",
+    "service": "lambda"
+  },
+  {
+    "function": "list_functions_by_code_signing_config",
+    "service": "lambda"
+  },
+  {
+    "function": "list_layer_versions",
+    "service": "lambda"
+  },
+  {
+    "function": "list_layers",
+    "service": "lambda"
+  },
+  {
+    "function": "list_provisioned_concurrency_configs",
+    "service": "lambda"
+  },
+  {
+    "function": "list_tags",
+    "service": "lambda"
+  },
+  {
+    "function": "list_versions_by_function",
+    "service": "lambda"
+  }
+]

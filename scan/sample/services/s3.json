@@ -1,0 +1,174 @@
+[
+  {
+    "function": "get_bucket_accelerate_configuration",
+    "service": "s3"
+  },
+  {
+    "function": "get_bucket_acl",
+    "service": "s3"
+  },
+  {
+    "function": "get_bucket_analytics_configuration",
+    "service": "s3"
+  },
+  {
+    "function": "get_bucket_cors",
+    "service": "s3"
+  },
+  {
+    "function": "get_bucket_encryption",
+    "service": "s3"
+  },
+  {
+    "function": "get_bucket_intelligent_tiering_configuration",
+    "service": "s3"
+  },
+  {
+    "function": "get_bucket_inventory_configuration",
+    "service": "s3"
+  },
+  {
+    "function": "get_bucket_lifecycle",
+    "service": "s3"
+  },
+  {
+    "function": "get_bucket_lifecycle_configuration",
+    "service": "s3"
+  },
+  {
+    "function": "get_bucket_location",
+    "service": "s3"
+  },
+  {
+    "function": "get_bucket_logging",
+    "service": "s3"
+  },
+  {
+    "function": "get_bucket_metrics_configuration",
+    "service": "s3"
+  },
+  {
+    "function": "get_bucket_notification",
+    "service": "s3"
+  },
+  {
+    "function": "get_bucket_notification_configuration",
+    "service": "s3"
+  },
+  {
+    "function": "get_bucket_ownership_controls",
+    "service": "s3"
+  },
+  {
+    "function": "get_bucket_policy",
+    "service": "s3"
+  },
+  {
+    "function": "get_bucket_policy_status",
+    "service": "s3"
+  },
+  {
+    "function": "get_bucket_replication",
+    "service": "s3"
+  },
+  {
+    "function": "get_bucket_request_payment",
+    "service": "s3"
+  },
+  {
+    "function": "get_bucket_tagging",
+    "service": "s3"
+  },
+  {
+    "function": "get_bucket_versioning",
+    "service": "s3"
+  },
+  {
+    "function": "get_bucket_website",
+    "service": "s3"
+  },
+  {
+    "function": "get_object",
+    "service": "s3"
+  },
+  {
+    "function": "get_object_acl",
+    "service": "s3"
+  },
+  {
+    "function": "get_object_attributes",
+    "service": "s3"
+  },
+  {
+    "function": "get_object_legal_hold",
+    "service": "s3"
+  },
+  {
+    "function": "get_object_lock_configuration",
+    "service": "s3"
+  },
+  {
+    "function": "get_object_retention",
+    "service": "s3"
+  },
+  {
+    "function": "get_object_tagging",
+    "service": "s3"
+  },
+  {
+    "function": "get_object_torrent",
+    "service": "s3"
+  },
+  {
+    "function": "get_paginator",
+    "service": "s3"
+  },
+  {
+    "function": "get_public_access_block",
+    "service": "s3"
+  },
+  {
+    "function": "get_waiter",
+    "service": "s3"
+  },
+  {
+    "function": "list_bucket_analytics_configurations",
+    "service": "s3"
+  },
+  {
+    "function": "list_bucket_intelligent_tiering_configurations",
+    "service": "s3"
+  },
+  {
+    "function": "list_bucket_inventory_configurations",
+    "service": "s3"
+  },
+  {
+    "function": "list_bucket_metrics_configurations",
+    "service": "s3"
+  },
+  {
+    "function": "list_buckets",
+    "service": "s3"
+  },
+  {
+    "function": "list_multipart_uploads",
+    "service": "s3"
+  },
+  {
+    "function": "list_object_versions",
+    "service": "s3"
+  },
+  {
+    "function": "list_objects",
+    "service": "s3"
+  },
+  {
+    "function": "list_objects_v2",
+    "service": "s3"
+  },
+  {
+    "function": "list_parts",
+    "service": "s3"
+  }
+]

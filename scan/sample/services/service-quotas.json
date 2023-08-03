@@ -1,0 +1,58 @@
+[
+  {
+    "function": "get_association_for_service_quota_template",
+    "service": "service-quotas"
+  },
+  {
+    "function": "get_aws_default_service_quota",
+    "service": "service-quotas"
+  },
+  {
+    "function": "get_paginator",
+    "service": "service-quotas"
+  },
+  {
+    "function": "get_requested_service_quota_change",
+    "service": "service-quotas"
+  },
+  {
+    "function": "get_service_quota",
+    "service": "service-quotas"
+  },
+  {
+    "function": "get_service_quota_increase_request_from_template",
+    "service": "service-quotas"
+  },
+  {
+    "function": "get_waiter",
+    "service": "service-quotas"
+  },
+  {
+    "function": "list_aws_default_service_quotas",
+    "service": "service-quotas"
+  },
+  {
+    "function": "list_requested_service_quota_change_history",
+    "service": "service-quotas"
+  },
+  {
+    "function": "list_requested_service_quota_change_history_by_quota",
+    "service": "service-quotas"
+  },
+  {
+    "function": "list_service_quota_increase_requests_in_template",
+    "service": "service-quotas"
+  },
+  {
+    "function": "list_service_quotas",
+    "service": "service-quotas"
+  },
+  {
+    "function": "list_services",
+    "service": "service-quotas"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "service-quotas"
+  }
+]

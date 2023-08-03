@@ -1,0 +1,38 @@
+[
+  {
+    "function": "describe_application",
+    "service": "kinesisanalyticsv2"
+  },
+  {
+    "function": "describe_application_snapshot",
+    "service": "kinesisanalyticsv2"
+  },
+  {
+    "function": "describe_application_version",
+    "service": "kinesisanalyticsv2"
+  },
+  {
+    "function": "get_paginator",
+    "service": "kinesisanalyticsv2"
+  },
+  {
+    "function": "get_waiter",
+    "service": "kinesisanalyticsv2"
+  },
+  {
+    "function": "list_application_snapshots",
+    "service": "kinesisanalyticsv2"
+  },
+  {
+    "function": "list_application_versions",
+    "service": "kinesisanalyticsv2"
+  },
+  {
+    "function": "list_applications",
+    "service": "kinesisanalyticsv2"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "kinesisanalyticsv2"
+  }
+]

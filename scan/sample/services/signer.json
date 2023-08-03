@@ -1,0 +1,46 @@
+[
+  {
+    "function": "describe_signing_job",
+    "service": "signer"
+  },
+  {
+    "function": "get_paginator",
+    "service": "signer"
+  },
+  {
+    "function": "get_revocation_status",
+    "service": "signer"
+  },
+  {
+    "function": "get_signing_platform",
+    "service": "signer"
+  },
+  {
+    "function": "get_signing_profile",
+    "service": "signer"
+  },
+  {
+    "function": "get_waiter",
+    "service": "signer"
+  },
+  {
+    "function": "list_profile_permissions",
+    "service": "signer"
+  },
+  {
+    "function": "list_signing_jobs",
+    "service": "signer"
+  },
+  {
+    "function": "list_signing_platforms",
+    "service": "signer"
+  },
+  {
+    "function": "list_signing_profiles",
+    "service": "signer"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "signer"
+  }
+]

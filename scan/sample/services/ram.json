@@ -1,0 +1,66 @@
+[
+  {
+    "function": "get_paginator",
+    "service": "ram"
+  },
+  {
+    "function": "get_permission",
+    "service": "ram"
+  },
+  {
+    "function": "get_resource_policies",
+    "service": "ram"
+  },
+  {
+    "function": "get_resource_share_associations",
+    "service": "ram"
+  },
+  {
+    "function": "get_resource_share_invitations",
+    "service": "ram"
+  },
+  {
+    "function": "get_resource_shares",
+    "service": "ram"
+  },
+  {
+    "function": "get_waiter",
+    "service": "ram"
+  },
+  {
+    "function": "list_pending_invitation_resources",
+    "service": "ram"
+  },
+  {
+    "function": "list_permission_associations",
+    "service": "ram"
+  },
+  {
+    "function": "list_permission_versions",
+    "service": "ram"
+  },
+  {
+    "function": "list_permissions",
+    "service": "ram"
+  },
+  {
+    "function": "list_principals",
+    "service": "ram"
+  },
+  {
+    "function": "list_replace_permission_associations_work",
+    "service": "ram"
+  },
+  {
+    "function": "list_resource_share_permissions",
+    "service": "ram"
+  },
+  {
+    "function": "list_resource_types",
+    "service": "ram"
+  },
+  {
+    "function": "list_resources",
+    "service": "ram"
+  }
+]

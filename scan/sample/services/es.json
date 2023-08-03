@@ -1,0 +1,110 @@
+[
+  {
+    "function": "describe_domain_auto_tunes",
+    "service": "es"
+  },
+  {
+    "function": "describe_domain_change_progress",
+    "service": "es"
+  },
+  {
+    "function": "describe_elasticsearch_domain",
+    "service": "es"
+  },
+  {
+    "function": "describe_elasticsearch_domain_config",
+    "service": "es"
+  },
+  {
+    "function": "describe_elasticsearch_domains",
+    "service": "es"
+  },
+  {
+    "function": "describe_elasticsearch_instance_type_limits",
+    "service": "es"
+  },
+  {
+    "function": "describe_inbound_cross_cluster_search_connections",
+    "service": "es"
+  },
+  {
+    "function": "describe_outbound_cross_cluster_search_connections",
+    "service": "es"
+  },
+  {
+    "function": "describe_packages",
+    "service": "es"
+  },
+  {
+    "function": "describe_reserved_elasticsearch_instance_offerings",
+    "service": "es"
+  },
+  {
+    "function": "describe_reserved_elasticsearch_instances",
+    "service": "es"
+  },
+  {
+    "function": "describe_vpc_endpoints",
+    "service": "es"
+  },
+  {
+    "function": "get_compatible_elasticsearch_versions",
+    "service": "es"
+  },
+  {
+    "function": "get_package_version_history",
+    "service": "es"
+  },
+  {
+    "function": "get_paginator",
+    "service": "es"
+  },
+  {
+    "function": "get_upgrade_history",
+    "service": "es"
+  },
+  {
+    "function": "get_upgrade_status",
+    "service": "es"
+  },
+  {
+    "function": "get_waiter",
+    "service": "es"
+  },
+  {
+    "function": "list_domain_names",
+    "service": "es"
+  },
+  {
+    "function": "list_domains_for_package",
+    "service": "es"
+  },
+  {
+    "function": "list_elasticsearch_instance_types",
+    "service": "es"
+  },
+  {
+    "function": "list_elasticsearch_versions",
+    "service": "es"
+  },
+  {
+    "function": "list_packages_for_domain",
+    "service": "es"
+  },
+  {
+    "function": "list_tags",
+    "service": "es"
+  },
+  {
+    "function": "list_vpc_endpoint_access",
+    "service": "es"
+  },
+  {
+    "function": "list_vpc_endpoints",
+    "service": "es"
+  },
+  {
+    "function": "list_vpc_endpoints_for_domain",
+    "service": "es"
+  }
+]

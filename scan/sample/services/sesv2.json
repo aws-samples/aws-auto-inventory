@@ -1,0 +1,138 @@
+[
+  {
+    "function": "get_account",
+    "service": "sesv2"
+  },
+  {
+    "function": "get_blacklist_reports",
+    "service": "sesv2"
+  },
+  {
+    "function": "get_configuration_set",
+    "service": "sesv2"
+  },
+  {
+    "function": "get_configuration_set_event_destinations",
+    "service": "sesv2"
+  },
+  {
+    "function": "get_contact",
+    "service": "sesv2"
+  },
+  {
+    "function": "get_contact_list",
+    "service": "sesv2"
+  },
+  {
+    "function": "get_custom_verification_email_template",
+    "service": "sesv2"
+  },
+  {
+    "function": "get_dedicated_ip",
+    "service": "sesv2"
+  },
+  {
+    "function": "get_dedicated_ip_pool",
+    "service": "sesv2"
+  },
+  {
+    "function": "get_dedicated_ips",
+    "service": "sesv2"
+  },
+  {
+    "function": "get_deliverability_dashboard_options",
+    "service": "sesv2"
+  },
+  {
+    "function": "get_deliverability_test_report",
+    "service": "sesv2"
+  },
+  {
+    "function": "get_domain_deliverability_campaign",
+    "service": "sesv2"
+  },
+  {
+    "function": "get_domain_statistics_report",
+    "service": "sesv2"
+  },
+  {
+    "function": "get_email_identity",
+    "service": "sesv2"
+  },
+  {
+    "function": "get_email_identity_policies",
+    "service": "sesv2"
+  },
+  {
+    "function": "get_email_template",
+    "service": "sesv2"
+  },
+  {
+    "function": "get_import_job",
+    "service": "sesv2"
+  },
+  {
+    "function": "get_paginator",
+    "service": "sesv2"
+  },
+  {
+    "function": "get_suppressed_destination",
+    "service": "sesv2"
+  },
+  {
+    "function": "get_waiter",
+    "service": "sesv2"
+  },
+  {
+    "function": "list_configuration_sets",
+    "service": "sesv2"
+  },
+  {
+    "function": "list_contact_lists",
+    "service": "sesv2"
+  },
+  {
+    "function": "list_contacts",
+    "service": "sesv2"
+  },
+  {
+    "function": "list_custom_verification_email_templates",
+    "service": "sesv2"
+  },
+  {
+    "function": "list_dedicated_ip_pools",
+    "service": "sesv2"
+  },
+  {
+    "function": "list_deliverability_test_reports",
+    "service": "sesv2"
+  },
+  {
+    "function": "list_domain_deliverability_campaigns",
+    "service": "sesv2"
+  },
+  {
+    "function": "list_email_identities",
+    "service": "sesv2"
+  },
+  {
+    "function": "list_email_templates",
+    "service": "sesv2"
+  },
+  {
+    "function": "list_import_jobs",
+    "service": "sesv2"
+  },
+  {
+    "function": "list_recommendations",
+    "service": "sesv2"
+  },
+  {
+    "function": "list_suppressed_destinations",
+    "service": "sesv2"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "sesv2"
+  }
+]

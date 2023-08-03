@@ -1,0 +1,26 @@
+[
+  {
+    "function": "get_paginator",
+    "service": "elastictranscoder"
+  },
+  {
+    "function": "get_waiter",
+    "service": "elastictranscoder"
+  },
+  {
+    "function": "list_jobs_by_pipeline",
+    "service": "elastictranscoder"
+  },
+  {
+    "function": "list_jobs_by_status",
+    "service": "elastictranscoder"
+  },
+  {
+    "function": "list_pipelines",
+    "service": "elastictranscoder"
+  },
+  {
+    "function": "list_presets",
+    "service": "elastictranscoder"
+  }
+]

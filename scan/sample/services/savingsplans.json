@@ -1,0 +1,30 @@
+[
+  {
+    "function": "describe_savings_plan_rates",
+    "service": "savingsplans"
+  },
+  {
+    "function": "describe_savings_plans",
+    "service": "savingsplans"
+  },
+  {
+    "function": "describe_savings_plans_offering_rates",
+    "service": "savingsplans"
+  },
+  {
+    "function": "describe_savings_plans_offerings",
+    "service": "savingsplans"
+  },
+  {
+    "function": "get_paginator",
+    "service": "savingsplans"
+  },
+  {
+    "function": "get_waiter",
+    "service": "savingsplans"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "savingsplans"
+  }
+]

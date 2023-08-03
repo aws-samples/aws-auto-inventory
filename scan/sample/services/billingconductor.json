@@ -1,0 +1,54 @@
+[
+  {
+    "function": "get_paginator",
+    "service": "billingconductor"
+  },
+  {
+    "function": "get_waiter",
+    "service": "billingconductor"
+  },
+  {
+    "function": "list_account_associations",
+    "service": "billingconductor"
+  },
+  {
+    "function": "list_billing_group_cost_reports",
+    "service": "billingconductor"
+  },
+  {
+    "function": "list_billing_groups",
+    "service": "billingconductor"
+  },
+  {
+    "function": "list_custom_line_item_versions",
+    "service": "billingconductor"
+  },
+  {
+    "function": "list_custom_line_items",
+    "service": "billingconductor"
+  },
+  {
+    "function": "list_pricing_plans",
+    "service": "billingconductor"
+  },
+  {
+    "function": "list_pricing_plans_associated_with_pricing_rule",
+    "service": "billingconductor"
+  },
+  {
+    "function": "list_pricing_rules",
+    "service": "billingconductor"
+  },
+  {
+    "function": "list_pricing_rules_associated_to_pricing_plan",
+    "service": "billingconductor"
+  },
+  {
+    "function": "list_resources_associated_to_custom_line_item",
+    "service": "billingconductor"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "billingconductor"
+  }
+]

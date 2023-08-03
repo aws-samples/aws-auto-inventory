@@ -1,0 +1,70 @@
+[
+  {
+    "function": "describe_gateway_route",
+    "service": "appmesh"
+  },
+  {
+    "function": "describe_mesh",
+    "service": "appmesh"
+  },
+  {
+    "function": "describe_route",
+    "service": "appmesh"
+  },
+  {
+    "function": "describe_virtual_gateway",
+    "service": "appmesh"
+  },
+  {
+    "function": "describe_virtual_node",
+    "service": "appmesh"
+  },
+  {
+    "function": "describe_virtual_router",
+    "service": "appmesh"
+  },
+  {
+    "function": "describe_virtual_service",
+    "service": "appmesh"
+  },
+  {
+    "function": "get_paginator",
+    "service": "appmesh"
+  },
+  {
+    "function": "get_waiter",
+    "service": "appmesh"
+  },
+  {
+    "function": "list_gateway_routes",
+    "service": "appmesh"
+  },
+  {
+    "function": "list_meshes",
+    "service": "appmesh"
+  },
+  {
+    "function": "list_routes",
+    "service": "appmesh"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "appmesh"
+  },
+  {
+    "function": "list_virtual_gateways",
+    "service": "appmesh"
+  },
+  {
+    "function": "list_virtual_nodes",
+    "service": "appmesh"
+  },
+  {
+    "function": "list_virtual_routers",
+    "service": "appmesh"
+  },
+  {
+    "function": "list_virtual_services",
+    "service": "appmesh"
+  }
+]

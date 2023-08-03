@@ -1,0 +1,42 @@
+[
+  {
+    "function": "get_match_id",
+    "service": "entityresolution"
+  },
+  {
+    "function": "get_matching_job",
+    "service": "entityresolution"
+  },
+  {
+    "function": "get_matching_workflow",
+    "service": "entityresolution"
+  },
+  {
+    "function": "get_paginator",
+    "service": "entityresolution"
+  },
+  {
+    "function": "get_schema_mapping",
+    "service": "entityresolution"
+  },
+  {
+    "function": "get_waiter",
+    "service": "entityresolution"
+  },
+  {
+    "function": "list_matching_jobs",
+    "service": "entityresolution"
+  },
+  {
+    "function": "list_matching_workflows",
+    "service": "entityresolution"
+  },
+  {
+    "function": "list_schema_mappings",
+    "service": "entityresolution"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "entityresolution"
+  }
+]

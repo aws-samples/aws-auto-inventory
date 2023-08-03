@@ -1,0 +1,82 @@
+[
+  {
+    "function": "describe_organization_configuration",
+    "service": "inspector2"
+  },
+  {
+    "function": "get_configuration",
+    "service": "inspector2"
+  },
+  {
+    "function": "get_delegated_admin_account",
+    "service": "inspector2"
+  },
+  {
+    "function": "get_ec2_deep_inspection_configuration",
+    "service": "inspector2"
+  },
+  {
+    "function": "get_encryption_key",
+    "service": "inspector2"
+  },
+  {
+    "function": "get_findings_report_status",
+    "service": "inspector2"
+  },
+  {
+    "function": "get_member",
+    "service": "inspector2"
+  },
+  {
+    "function": "get_paginator",
+    "service": "inspector2"
+  },
+  {
+    "function": "get_sbom_export",
+    "service": "inspector2"
+  },
+  {
+    "function": "get_waiter",
+    "service": "inspector2"
+  },
+  {
+    "function": "list_account_permissions",
+    "service": "inspector2"
+  },
+  {
+    "function": "list_coverage",
+    "service": "inspector2"
+  },
+  {
+    "function": "list_coverage_statistics",
+    "service": "inspector2"
+  },
+  {
+    "function": "list_delegated_admin_accounts",
+    "service": "inspector2"
+  },
+  {
+    "function": "list_filters",
+    "service": "inspector2"
+  },
+  {
+    "function": "list_finding_aggregations",
+    "service": "inspector2"
+  },
+  {
+    "function": "list_findings",
+    "service": "inspector2"
+  },
+  {
+    "function": "list_members",
+    "service": "inspector2"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "inspector2"
+  },
+  {
+    "function": "list_usage_totals",
+    "service": "inspector2"
+  }
+]

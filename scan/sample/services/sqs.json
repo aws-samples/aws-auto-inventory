@@ -1,0 +1,34 @@
+[
+  {
+    "function": "get_paginator",
+    "service": "sqs"
+  },
+  {
+    "function": "get_queue_attributes",
+    "service": "sqs"
+  },
+  {
+    "function": "get_queue_url",
+    "service": "sqs"
+  },
+  {
+    "function": "get_waiter",
+    "service": "sqs"
+  },
+  {
+    "function": "list_dead_letter_source_queues",
+    "service": "sqs"
+  },
+  {
+    "function": "list_message_move_tasks",
+    "service": "sqs"
+  },
+  {
+    "function": "list_queue_tags",
+    "service": "sqs"
+  },
+  {
+    "function": "list_queues",
+    "service": "sqs"
+  }
+]

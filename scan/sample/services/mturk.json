@@ -1,0 +1,74 @@
+[
+  {
+    "function": "get_account_balance",
+    "service": "mturk"
+  },
+  {
+    "function": "get_assignment",
+    "service": "mturk"
+  },
+  {
+    "function": "get_file_upload_url",
+    "service": "mturk"
+  },
+  {
+    "function": "get_hit",
+    "service": "mturk"
+  },
+  {
+    "function": "get_paginator",
+    "service": "mturk"
+  },
+  {
+    "function": "get_qualification_score",
+    "service": "mturk"
+  },
+  {
+    "function": "get_qualification_type",
+    "service": "mturk"
+  },
+  {
+    "function": "get_waiter",
+    "service": "mturk"
+  },
+  {
+    "function": "list_assignments_for_hit",
+    "service": "mturk"
+  },
+  {
+    "function": "list_bonus_payments",
+    "service": "mturk"
+  },
+  {
+    "function": "list_hits",
+    "service": "mturk"
+  },
+  {
+    "function": "list_hits_for_qualification_type",
+    "service": "mturk"
+  },
+  {
+    "function": "list_qualification_requests",
+    "service": "mturk"
+  },
+  {
+    "function": "list_qualification_types",
+    "service": "mturk"
+  },
+  {
+    "function": "list_review_policy_results_for_hit",
+    "service": "mturk"
+  },
+  {
+    "function": "list_reviewable_hits",
+    "service": "mturk"
+  },
+  {
+    "function": "list_worker_blocks",
+    "service": "mturk"
+  },
+  {
+    "function": "list_workers_with_qualification_type",
+    "service": "mturk"
+  }
+]

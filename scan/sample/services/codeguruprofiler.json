@@ -1,0 +1,50 @@
+[
+  {
+    "function": "describe_profiling_group",
+    "service": "codeguruprofiler"
+  },
+  {
+    "function": "get_findings_report_account_summary",
+    "service": "codeguruprofiler"
+  },
+  {
+    "function": "get_notification_configuration",
+    "service": "codeguruprofiler"
+  },
+  {
+    "function": "get_paginator",
+    "service": "codeguruprofiler"
+  },
+  {
+    "function": "get_policy",
+    "service": "codeguruprofiler"
+  },
+  {
+    "function": "get_profile",
+    "service": "codeguruprofiler"
+  },
+  {
+    "function": "get_recommendations",
+    "service": "codeguruprofiler"
+  },
+  {
+    "function": "get_waiter",
+    "service": "codeguruprofiler"
+  },
+  {
+    "function": "list_findings_reports",
+    "service": "codeguruprofiler"
+  },
+  {
+    "function": "list_profile_times",
+    "service": "codeguruprofiler"
+  },
+  {
+    "function": "list_profiling_groups",
+    "service": "codeguruprofiler"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "codeguruprofiler"
+  }
+]

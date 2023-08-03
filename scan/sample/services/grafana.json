@@ -1,0 +1,38 @@
+[
+  {
+    "function": "describe_workspace",
+    "service": "grafana"
+  },
+  {
+    "function": "describe_workspace_authentication",
+    "service": "grafana"
+  },
+  {
+    "function": "describe_workspace_configuration",
+    "service": "grafana"
+  },
+  {
+    "function": "get_paginator",
+    "service": "grafana"
+  },
+  {
+    "function": "get_waiter",
+    "service": "grafana"
+  },
+  {
+    "function": "list_permissions",
+    "service": "grafana"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "grafana"
+  },
+  {
+    "function": "list_versions",
+    "service": "grafana"
+  },
+  {
+    "function": "list_workspaces",
+    "service": "grafana"
+  }
+]

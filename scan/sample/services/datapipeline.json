@@ -1,0 +1,26 @@
+[
+  {
+    "function": "describe_objects",
+    "service": "datapipeline"
+  },
+  {
+    "function": "describe_pipelines",
+    "service": "datapipeline"
+  },
+  {
+    "function": "get_paginator",
+    "service": "datapipeline"
+  },
+  {
+    "function": "get_pipeline_definition",
+    "service": "datapipeline"
+  },
+  {
+    "function": "get_waiter",
+    "service": "datapipeline"
+  },
+  {
+    "function": "list_pipelines",
+    "service": "datapipeline"
+  }
+]

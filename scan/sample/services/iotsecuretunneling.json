@@ -1,0 +1,22 @@
+[
+  {
+    "function": "describe_tunnel",
+    "service": "iotsecuretunneling"
+  },
+  {
+    "function": "get_paginator",
+    "service": "iotsecuretunneling"
+  },
+  {
+    "function": "get_waiter",
+    "service": "iotsecuretunneling"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "iotsecuretunneling"
+  },
+  {
+    "function": "list_tunnels",
+    "service": "iotsecuretunneling"
+  }
+]

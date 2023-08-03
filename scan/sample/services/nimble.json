@@ -1,0 +1,102 @@
+[
+  {
+    "function": "get_eula",
+    "service": "nimble"
+  },
+  {
+    "function": "get_launch_profile",
+    "service": "nimble"
+  },
+  {
+    "function": "get_launch_profile_details",
+    "service": "nimble"
+  },
+  {
+    "function": "get_launch_profile_initialization",
+    "service": "nimble"
+  },
+  {
+    "function": "get_launch_profile_member",
+    "service": "nimble"
+  },
+  {
+    "function": "get_paginator",
+    "service": "nimble"
+  },
+  {
+    "function": "get_streaming_image",
+    "service": "nimble"
+  },
+  {
+    "function": "get_streaming_session",
+    "service": "nimble"
+  },
+  {
+    "function": "get_streaming_session_backup",
+    "service": "nimble"
+  },
+  {
+    "function": "get_streaming_session_stream",
+    "service": "nimble"
+  },
+  {
+    "function": "get_studio",
+    "service": "nimble"
+  },
+  {
+    "function": "get_studio_component",
+    "service": "nimble"
+  },
+  {
+    "function": "get_studio_member",
+    "service": "nimble"
+  },
+  {
+    "function": "get_waiter",
+    "service": "nimble"
+  },
+  {
+    "function": "list_eula_acceptances",
+    "service": "nimble"
+  },
+  {
+    "function": "list_eulas",
+    "service": "nimble"
+  },
+  {
+    "function": "list_launch_profile_members",
+    "service": "nimble"
+  },
+  {
+    "function": "list_launch_profiles",
+    "service": "nimble"
+  },
+  {
+    "function": "list_streaming_images",
+    "service": "nimble"
+  },
+  {
+    "function": "list_streaming_session_backups",
+    "service": "nimble"
+  },
+  {
+    "function": "list_streaming_sessions",
+    "service": "nimble"
+  },
+  {
+    "function": "list_studio_components",
+    "service": "nimble"
+  },
+  {
+    "function": "list_studio_members",
+    "service": "nimble"
+  },
+  {
+    "function": "list_studios",
+    "service": "nimble"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "nimble"
+  }
+]

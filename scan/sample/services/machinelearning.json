@@ -1,0 +1,46 @@
+[
+  {
+    "function": "describe_batch_predictions",
+    "service": "machinelearning"
+  },
+  {
+    "function": "describe_data_sources",
+    "service": "machinelearning"
+  },
+  {
+    "function": "describe_evaluations",
+    "service": "machinelearning"
+  },
+  {
+    "function": "describe_ml_models",
+    "service": "machinelearning"
+  },
+  {
+    "function": "describe_tags",
+    "service": "machinelearning"
+  },
+  {
+    "function": "get_batch_prediction",
+    "service": "machinelearning"
+  },
+  {
+    "function": "get_data_source",
+    "service": "machinelearning"
+  },
+  {
+    "function": "get_evaluation",
+    "service": "machinelearning"
+  },
+  {
+    "function": "get_ml_model",
+    "service": "machinelearning"
+  },
+  {
+    "function": "get_paginator",
+    "service": "machinelearning"
+  },
+  {
+    "function": "get_waiter",
+    "service": "machinelearning"
+  }
+]

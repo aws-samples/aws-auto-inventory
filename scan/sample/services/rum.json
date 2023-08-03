@@ -1,0 +1,30 @@
+[
+  {
+    "function": "get_app_monitor",
+    "service": "rum"
+  },
+  {
+    "function": "get_app_monitor_data",
+    "service": "rum"
+  },
+  {
+    "function": "get_paginator",
+    "service": "rum"
+  },
+  {
+    "function": "get_waiter",
+    "service": "rum"
+  },
+  {
+    "function": "list_app_monitors",
+    "service": "rum"
+  },
+  {
+    "function": "list_rum_metrics_destinations",
+    "service": "rum"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "rum"
+  }
+]

@@ -1,0 +1,178 @@
+[
+  {
+    "function": "get_account_settings",
+    "service": "devicefarm"
+  },
+  {
+    "function": "get_device",
+    "service": "devicefarm"
+  },
+  {
+    "function": "get_device_instance",
+    "service": "devicefarm"
+  },
+  {
+    "function": "get_device_pool",
+    "service": "devicefarm"
+  },
+  {
+    "function": "get_device_pool_compatibility",
+    "service": "devicefarm"
+  },
+  {
+    "function": "get_instance_profile",
+    "service": "devicefarm"
+  },
+  {
+    "function": "get_job",
+    "service": "devicefarm"
+  },
+  {
+    "function": "get_network_profile",
+    "service": "devicefarm"
+  },
+  {
+    "function": "get_offering_status",
+    "service": "devicefarm"
+  },
+  {
+    "function": "get_paginator",
+    "service": "devicefarm"
+  },
+  {
+    "function": "get_project",
+    "service": "devicefarm"
+  },
+  {
+    "function": "get_remote_access_session",
+    "service": "devicefarm"
+  },
+  {
+    "function": "get_run",
+    "service": "devicefarm"
+  },
+  {
+    "function": "get_suite",
+    "service": "devicefarm"
+  },
+  {
+    "function": "get_test",
+    "service": "devicefarm"
+  },
+  {
+    "function": "get_test_grid_project",
+    "service": "devicefarm"
+  },
+  {
+    "function": "get_test_grid_session",
+    "service": "devicefarm"
+  },
+  {
+    "function": "get_upload",
+    "service": "devicefarm"
+  },
+  {
+    "function": "get_vpce_configuration",
+    "service": "devicefarm"
+  },
+  {
+    "function": "get_waiter",
+    "service": "devicefarm"
+  },
+  {
+    "function": "list_artifacts",
+    "service": "devicefarm"
+  },
+  {
+    "function": "list_device_instances",
+    "service": "devicefarm"
+  },
+  {
+    "function": "list_device_pools",
+    "service": "devicefarm"
+  },
+  {
+    "function": "list_devices",
+    "service": "devicefarm"
+  },
+  {
+    "function": "list_instance_profiles",
+    "service": "devicefarm"
+  },
+  {
+    "function": "list_jobs",
+    "service": "devicefarm"
+  },
+  {
+    "function": "list_network_profiles",
+    "service": "devicefarm"
+  },
+  {
+    "function": "list_offering_promotions",
+    "service": "devicefarm"
+  },
+  {
+    "function": "list_offering_transactions",
+    "service": "devicefarm"
+  },
+  {
+    "function": "list_offerings",
+    "service": "devicefarm"
+  },
+  {
+    "function": "list_projects",
+    "service": "devicefarm"
+  },
+  {
+    "function": "list_remote_access_sessions",
+    "service": "devicefarm"
+  },
+  {
+    "function": "list_runs",
+    "service": "devicefarm"
+  },
+  {
+    "function": "list_samples",
+    "service": "devicefarm"
+  },
+  {
+    "function": "list_suites",
+    "service": "devicefarm"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "devicefarm"
+  },
+  {
+    "function": "list_test_grid_projects",
+    "service": "devicefarm"
+  },
+  {
+    "function": "list_test_grid_session_actions",
+    "service": "devicefarm"
+  },
+  {
+    "function": "list_test_grid_session_artifacts",
+    "service": "devicefarm"
+  },
+  {
+    "function": "list_test_grid_sessions",
+    "service": "devicefarm"
+  },
+  {
+    "function": "list_tests",
+    "service": "devicefarm"
+  },
+  {
+    "function": "list_unique_problems",
+    "service": "devicefarm"
+  },
+  {
+    "function": "list_uploads",
+    "service": "devicefarm"
+  },
+  {
+    "function": "list_vpce_configurations",
+    "service": "devicefarm"
+  }
+]

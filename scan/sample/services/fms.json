@@ -1,0 +1,102 @@
+[
+  {
+    "function": "get_admin_account",
+    "service": "fms"
+  },
+  {
+    "function": "get_admin_scope",
+    "service": "fms"
+  },
+  {
+    "function": "get_apps_list",
+    "service": "fms"
+  },
+  {
+    "function": "get_compliance_detail",
+    "service": "fms"
+  },
+  {
+    "function": "get_notification_channel",
+    "service": "fms"
+  },
+  {
+    "function": "get_paginator",
+    "service": "fms"
+  },
+  {
+    "function": "get_policy",
+    "service": "fms"
+  },
+  {
+    "function": "get_protection_status",
+    "service": "fms"
+  },
+  {
+    "function": "get_protocols_list",
+    "service": "fms"
+  },
+  {
+    "function": "get_resource_set",
+    "service": "fms"
+  },
+  {
+    "function": "get_third_party_firewall_association_status",
+    "service": "fms"
+  },
+  {
+    "function": "get_violation_details",
+    "service": "fms"
+  },
+  {
+    "function": "get_waiter",
+    "service": "fms"
+  },
+  {
+    "function": "list_admin_accounts_for_organization",
+    "service": "fms"
+  },
+  {
+    "function": "list_admins_managing_account",
+    "service": "fms"
+  },
+  {
+    "function": "list_apps_lists",
+    "service": "fms"
+  },
+  {
+    "function": "list_compliance_status",
+    "service": "fms"
+  },
+  {
+    "function": "list_discovered_resources",
+    "service": "fms"
+  },
+  {
+    "function": "list_member_accounts",
+    "service": "fms"
+  },
+  {
+    "function": "list_policies",
+    "service": "fms"
+  },
+  {
+    "function": "list_protocols_lists",
+    "service": "fms"
+  },
+  {
+    "function": "list_resource_set_resources",
+    "service": "fms"
+  },
+  {
+    "function": "list_resource_sets",
+    "service": "fms"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "fms"
+  },
+  {
+    "function": "list_third_party_firewall_firewall_policies",
+    "service": "fms"
+  }
+]

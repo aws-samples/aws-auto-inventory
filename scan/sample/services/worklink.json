@@ -1,0 +1,66 @@
+[
+  {
+    "function": "describe_audit_stream_configuration",
+    "service": "worklink"
+  },
+  {
+    "function": "describe_company_network_configuration",
+    "service": "worklink"
+  },
+  {
+    "function": "describe_device",
+    "service": "worklink"
+  },
+  {
+    "function": "describe_device_policy_configuration",
+    "service": "worklink"
+  },
+  {
+    "function": "describe_domain",
+    "service": "worklink"
+  },
+  {
+    "function": "describe_fleet_metadata",
+    "service": "worklink"
+  },
+  {
+    "function": "describe_identity_provider_configuration",
+    "service": "worklink"
+  },
+  {
+    "function": "describe_website_certificate_authority",
+    "service": "worklink"
+  },
+  {
+    "function": "get_paginator",
+    "service": "worklink"
+  },
+  {
+    "function": "get_waiter",
+    "service": "worklink"
+  },
+  {
+    "function": "list_devices",
+    "service": "worklink"
+  },
+  {
+    "function": "list_domains",
+    "service": "worklink"
+  },
+  {
+    "function": "list_fleets",
+    "service": "worklink"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "worklink"
+  },
+  {
+    "function": "list_website_authorization_providers",
+    "service": "worklink"
+  },
+  {
+    "function": "list_website_certificate_authorities",
+    "service": "worklink"
+  }
+]

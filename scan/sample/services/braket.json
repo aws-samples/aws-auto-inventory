@@ -1,0 +1,26 @@
+[
+  {
+    "function": "get_device",
+    "service": "braket"
+  },
+  {
+    "function": "get_job",
+    "service": "braket"
+  },
+  {
+    "function": "get_paginator",
+    "service": "braket"
+  },
+  {
+    "function": "get_quantum_task",
+    "service": "braket"
+  },
+  {
+    "function": "get_waiter",
+    "service": "braket"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "braket"
+  }
+]

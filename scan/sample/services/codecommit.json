@@ -1,0 +1,122 @@
+[
+  {
+    "function": "describe_merge_conflicts",
+    "service": "codecommit"
+  },
+  {
+    "function": "describe_pull_request_events",
+    "service": "codecommit"
+  },
+  {
+    "function": "get_approval_rule_template",
+    "service": "codecommit"
+  },
+  {
+    "function": "get_blob",
+    "service": "codecommit"
+  },
+  {
+    "function": "get_branch",
+    "service": "codecommit"
+  },
+  {
+    "function": "get_comment",
+    "service": "codecommit"
+  },
+  {
+    "function": "get_comment_reactions",
+    "service": "codecommit"
+  },
+  {
+    "function": "get_comments_for_compared_commit",
+    "service": "codecommit"
+  },
+  {
+    "function": "get_comments_for_pull_request",
+    "service": "codecommit"
+  },
+  {
+    "function": "get_commit",
+    "service": "codecommit"
+  },
+  {
+    "function": "get_differences",
+    "service": "codecommit"
+  },
+  {
+    "function": "get_file",
+    "service": "codecommit"
+  },
+  {
+    "function": "get_folder",
+    "service": "codecommit"
+  },
+  {
+    "function": "get_merge_commit",
+    "service": "codecommit"
+  },
+  {
+    "function": "get_merge_conflicts",
+    "service": "codecommit"
+  },
+  {
+    "function": "get_merge_options",
+    "service": "codecommit"
+  },
+  {
+    "function": "get_paginator",
+    "service": "codecommit"
+  },
+  {
+    "function": "get_pull_request",
+    "service": "codecommit"
+  },
+  {
+    "function": "get_pull_request_approval_states",
+    "service": "codecommit"
+  },
+  {
+    "function": "get_pull_request_override_state",
+    "service": "codecommit"
+  },
+  {
+    "function": "get_repository",
+    "service": "codecommit"
+  },
+  {
+    "function": "get_repository_triggers",
+    "service": "codecommit"
+  },
+  {
+    "function": "get_waiter",
+    "service": "codecommit"
+  },
+  {
+    "function": "list_approval_rule_templates",
+    "service": "codecommit"
+  },
+  {
+    "function": "list_associated_approval_rule_templates_for_repository",
+    "service": "codecommit"
+  },
+  {
+    "function": "list_branches",
+    "service": "codecommit"
+  },
+  {
+    "function": "list_pull_requests",
+    "service": "codecommit"
+  },
+  {
+    "function": "list_repositories",
+    "service": "codecommit"
+  },
+  {
+    "function": "list_repositories_for_approval_rule_template",
+    "service": "codecommit"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "codecommit"
+  }
+]

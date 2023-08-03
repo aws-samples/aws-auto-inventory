@@ -1,0 +1,98 @@
+[
+  {
+    "function": "describe_cluster",
+    "service": "kafka"
+  },
+  {
+    "function": "describe_cluster_operation",
+    "service": "kafka"
+  },
+  {
+    "function": "describe_cluster_operation_v2",
+    "service": "kafka"
+  },
+  {
+    "function": "describe_cluster_v2",
+    "service": "kafka"
+  },
+  {
+    "function": "describe_configuration",
+    "service": "kafka"
+  },
+  {
+    "function": "describe_configuration_revision",
+    "service": "kafka"
+  },
+  {
+    "function": "describe_vpc_connection",
+    "service": "kafka"
+  },
+  {
+    "function": "get_bootstrap_brokers",
+    "service": "kafka"
+  },
+  {
+    "function": "get_cluster_policy",
+    "service": "kafka"
+  },
+  {
+    "function": "get_compatible_kafka_versions",
+    "service": "kafka"
+  },
+  {
+    "function": "get_paginator",
+    "service": "kafka"
+  },
+  {
+    "function": "get_waiter",
+    "service": "kafka"
+  },
+  {
+    "function": "list_client_vpc_connections",
+    "service": "kafka"
+  },
+  {
+    "function": "list_cluster_operations",
+    "service": "kafka"
+  },
+  {
+    "function": "list_cluster_operations_v2",
+    "service": "kafka"
+  },
+  {
+    "function": "list_clusters",
+    "service": "kafka"
+  },
+  {
+    "function": "list_clusters_v2",
+    "service": "kafka"
+  },
+  {
+    "function": "list_configuration_revisions",
+    "service": "kafka"
+  },
+  {
+    "function": "list_configurations",
+    "service": "kafka"
+  },
+  {
+    "function": "list_kafka_versions",
+    "service": "kafka"
+  },
+  {
+    "function": "list_nodes",
+    "service": "kafka"
+  },
+  {
+    "function": "list_scram_secrets",
+    "service": "kafka"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "kafka"
+  },
+  {
+    "function": "list_vpc_connections",
+    "service": "kafka"
+  }
+]

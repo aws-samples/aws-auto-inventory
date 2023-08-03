@@ -1,0 +1,54 @@
+[
+  {
+    "function": "describe_identity",
+    "service": "cognito-identity"
+  },
+  {
+    "function": "describe_identity_pool",
+    "service": "cognito-identity"
+  },
+  {
+    "function": "get_credentials_for_identity",
+    "service": "cognito-identity"
+  },
+  {
+    "function": "get_id",
+    "service": "cognito-identity"
+  },
+  {
+    "function": "get_identity_pool_roles",
+    "service": "cognito-identity"
+  },
+  {
+    "function": "get_open_id_token",
+    "service": "cognito-identity"
+  },
+  {
+    "function": "get_open_id_token_for_developer_identity",
+    "service": "cognito-identity"
+  },
+  {
+    "function": "get_paginator",
+    "service": "cognito-identity"
+  },
+  {
+    "function": "get_principal_tag_attribute_map",
+    "service": "cognito-identity"
+  },
+  {
+    "function": "get_waiter",
+    "service": "cognito-identity"
+  },
+  {
+    "function": "list_identities",
+    "service": "cognito-identity"
+  },
+  {
+    "function": "list_identity_pools",
+    "service": "cognito-identity"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "cognito-identity"
+  }
+]

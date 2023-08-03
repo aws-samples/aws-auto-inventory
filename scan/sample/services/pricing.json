@@ -1,0 +1,30 @@
+[
+  {
+    "function": "describe_services",
+    "service": "pricing"
+  },
+  {
+    "function": "get_attribute_values",
+    "service": "pricing"
+  },
+  {
+    "function": "get_paginator",
+    "service": "pricing"
+  },
+  {
+    "function": "get_price_list_file_url",
+    "service": "pricing"
+  },
+  {
+    "function": "get_products",
+    "service": "pricing"
+  },
+  {
+    "function": "get_waiter",
+    "service": "pricing"
+  },
+  {
+    "function": "list_price_lists",
+    "service": "pricing"
+  }
+]

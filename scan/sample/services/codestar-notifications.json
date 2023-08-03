@@ -1,0 +1,30 @@
+[
+  {
+    "function": "describe_notification_rule",
+    "service": "codestar-notifications"
+  },
+  {
+    "function": "get_paginator",
+    "service": "codestar-notifications"
+  },
+  {
+    "function": "get_waiter",
+    "service": "codestar-notifications"
+  },
+  {
+    "function": "list_event_types",
+    "service": "codestar-notifications"
+  },
+  {
+    "function": "list_notification_rules",
+    "service": "codestar-notifications"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "codestar-notifications"
+  },
+  {
+    "function": "list_targets",
+    "service": "codestar-notifications"
+  }
+]

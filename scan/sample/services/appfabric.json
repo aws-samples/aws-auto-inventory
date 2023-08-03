@@ -1,0 +1,46 @@
+[
+  {
+    "function": "get_app_authorization",
+    "service": "appfabric"
+  },
+  {
+    "function": "get_app_bundle",
+    "service": "appfabric"
+  },
+  {
+    "function": "get_ingestion",
+    "service": "appfabric"
+  },
+  {
+    "function": "get_ingestion_destination",
+    "service": "appfabric"
+  },
+  {
+    "function": "get_paginator",
+    "service": "appfabric"
+  },
+  {
+    "function": "get_waiter",
+    "service": "appfabric"
+  },
+  {
+    "function": "list_app_authorizations",
+    "service": "appfabric"
+  },
+  {
+    "function": "list_app_bundles",
+    "service": "appfabric"
+  },
+  {
+    "function": "list_ingestion_destinations",
+    "service": "appfabric"
+  },
+  {
+    "function": "list_ingestions",
+    "service": "appfabric"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "appfabric"
+  }
+]

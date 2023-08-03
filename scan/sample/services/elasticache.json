@@ -1,0 +1,86 @@
+[
+  {
+    "function": "describe_cache_clusters",
+    "service": "elasticache"
+  },
+  {
+    "function": "describe_cache_engine_versions",
+    "service": "elasticache"
+  },
+  {
+    "function": "describe_cache_parameter_groups",
+    "service": "elasticache"
+  },
+  {
+    "function": "describe_cache_parameters",
+    "service": "elasticache"
+  },
+  {
+    "function": "describe_cache_security_groups",
+    "service": "elasticache"
+  },
+  {
+    "function": "describe_cache_subnet_groups",
+    "service": "elasticache"
+  },
+  {
+    "function": "describe_engine_default_parameters",
+    "service": "elasticache"
+  },
+  {
+    "function": "describe_events",
+    "service": "elasticache"
+  },
+  {
+    "function": "describe_global_replication_groups",
+    "service": "elasticache"
+  },
+  {
+    "function": "describe_replication_groups",
+    "service": "elasticache"
+  },
+  {
+    "function": "describe_reserved_cache_nodes",
+    "service": "elasticache"
+  },
+  {
+    "function": "describe_reserved_cache_nodes_offerings",
+    "service": "elasticache"
+  },
+  {
+    "function": "describe_service_updates",
+    "service": "elasticache"
+  },
+  {
+    "function": "describe_snapshots",
+    "service": "elasticache"
+  },
+  {
+    "function": "describe_update_actions",
+    "service": "elasticache"
+  },
+  {
+    "function": "describe_user_groups",
+    "service": "elasticache"
+  },
+  {
+    "function": "describe_users",
+    "service": "elasticache"
+  },
+  {
+    "function": "get_paginator",
+    "service": "elasticache"
+  },
+  {
+    "function": "get_waiter",
+    "service": "elasticache"
+  },
+  {
+    "function": "list_allowed_node_type_modifications",
+    "service": "elasticache"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "elasticache"
+  }
+]

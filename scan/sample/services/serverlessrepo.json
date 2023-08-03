@@ -1,0 +1,34 @@
+[
+  {
+    "function": "get_application",
+    "service": "serverlessrepo"
+  },
+  {
+    "function": "get_application_policy",
+    "service": "serverlessrepo"
+  },
+  {
+    "function": "get_cloud_formation_template",
+    "service": "serverlessrepo"
+  },
+  {
+    "function": "get_paginator",
+    "service": "serverlessrepo"
+  },
+  {
+    "function": "get_waiter",
+    "service": "serverlessrepo"
+  },
+  {
+    "function": "list_application_dependencies",
+    "service": "serverlessrepo"
+  },
+  {
+    "function": "list_application_versions",
+    "service": "serverlessrepo"
+  },
+  {
+    "function": "list_applications",
+    "service": "serverlessrepo"
+  }
+]

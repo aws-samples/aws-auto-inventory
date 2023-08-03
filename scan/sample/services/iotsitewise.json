@@ -1,0 +1,142 @@
+[
+  {
+    "function": "describe_access_policy",
+    "service": "iotsitewise"
+  },
+  {
+    "function": "describe_asset",
+    "service": "iotsitewise"
+  },
+  {
+    "function": "describe_asset_model",
+    "service": "iotsitewise"
+  },
+  {
+    "function": "describe_asset_property",
+    "service": "iotsitewise"
+  },
+  {
+    "function": "describe_bulk_import_job",
+    "service": "iotsitewise"
+  },
+  {
+    "function": "describe_dashboard",
+    "service": "iotsitewise"
+  },
+  {
+    "function": "describe_default_encryption_configuration",
+    "service": "iotsitewise"
+  },
+  {
+    "function": "describe_gateway",
+    "service": "iotsitewise"
+  },
+  {
+    "function": "describe_gateway_capability_configuration",
+    "service": "iotsitewise"
+  },
+  {
+    "function": "describe_logging_options",
+    "service": "iotsitewise"
+  },
+  {
+    "function": "describe_portal",
+    "service": "iotsitewise"
+  },
+  {
+    "function": "describe_project",
+    "service": "iotsitewise"
+  },
+  {
+    "function": "describe_storage_configuration",
+    "service": "iotsitewise"
+  },
+  {
+    "function": "describe_time_series",
+    "service": "iotsitewise"
+  },
+  {
+    "function": "get_asset_property_aggregates",
+    "service": "iotsitewise"
+  },
+  {
+    "function": "get_asset_property_value",
+    "service": "iotsitewise"
+  },
+  {
+    "function": "get_asset_property_value_history",
+    "service": "iotsitewise"
+  },
+  {
+    "function": "get_interpolated_asset_property_values",
+    "service": "iotsitewise"
+  },
+  {
+    "function": "get_paginator",
+    "service": "iotsitewise"
+  },
+  {
+    "function": "get_waiter",
+    "service": "iotsitewise"
+  },
+  {
+    "function": "list_access_policies",
+    "service": "iotsitewise"
+  },
+  {
+    "function": "list_asset_model_properties",
+    "service": "iotsitewise"
+  },
+  {
+    "function": "list_asset_models",
+    "service": "iotsitewise"
+  },
+  {
+    "function": "list_asset_properties",
+    "service": "iotsitewise"
+  },
+  {
+    "function": "list_asset_relationships",
+    "service": "iotsitewise"
+  },
+  {
+    "function": "list_assets",
+    "service": "iotsitewise"
+  },
+  {
+    "function": "list_associated_assets",
+    "service": "iotsitewise"
+  },
+  {
+    "function": "list_bulk_import_jobs",
+    "service": "iotsitewise"
+  },
+  {
+    "function": "list_dashboards",
+    "service": "iotsitewise"
+  },
+  {
+    "function": "list_gateways",
+    "service": "iotsitewise"
+  },
+  {
+    "function": "list_portals",
+    "service": "iotsitewise"
+  },
+  {
+    "function": "list_project_assets",
+    "service": "iotsitewise"
+  },
+  {
+    "function": "list_projects",
+    "service": "iotsitewise"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "iotsitewise"
+  },
+  {
+    "function": "list_time_series",
+    "service": "iotsitewise"
+  }
+]

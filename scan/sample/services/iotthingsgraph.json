@@ -1,0 +1,54 @@
+[
+  {
+    "function": "describe_namespace",
+    "service": "iotthingsgraph"
+  },
+  {
+    "function": "get_entities",
+    "service": "iotthingsgraph"
+  },
+  {
+    "function": "get_flow_template",
+    "service": "iotthingsgraph"
+  },
+  {
+    "function": "get_flow_template_revisions",
+    "service": "iotthingsgraph"
+  },
+  {
+    "function": "get_namespace_deletion_status",
+    "service": "iotthingsgraph"
+  },
+  {
+    "function": "get_paginator",
+    "service": "iotthingsgraph"
+  },
+  {
+    "function": "get_system_instance",
+    "service": "iotthingsgraph"
+  },
+  {
+    "function": "get_system_template",
+    "service": "iotthingsgraph"
+  },
+  {
+    "function": "get_system_template_revisions",
+    "service": "iotthingsgraph"
+  },
+  {
+    "function": "get_upload_status",
+    "service": "iotthingsgraph"
+  },
+  {
+    "function": "get_waiter",
+    "service": "iotthingsgraph"
+  },
+  {
+    "function": "list_flow_execution_messages",
+    "service": "iotthingsgraph"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "iotthingsgraph"
+  }
+]

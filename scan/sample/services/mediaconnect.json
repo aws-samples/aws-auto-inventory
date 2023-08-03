@@ -1,0 +1,66 @@
+[
+  {
+    "function": "describe_bridge",
+    "service": "mediaconnect"
+  },
+  {
+    "function": "describe_flow",
+    "service": "mediaconnect"
+  },
+  {
+    "function": "describe_gateway",
+    "service": "mediaconnect"
+  },
+  {
+    "function": "describe_gateway_instance",
+    "service": "mediaconnect"
+  },
+  {
+    "function": "describe_offering",
+    "service": "mediaconnect"
+  },
+  {
+    "function": "describe_reservation",
+    "service": "mediaconnect"
+  },
+  {
+    "function": "get_paginator",
+    "service": "mediaconnect"
+  },
+  {
+    "function": "get_waiter",
+    "service": "mediaconnect"
+  },
+  {
+    "function": "list_bridges",
+    "service": "mediaconnect"
+  },
+  {
+    "function": "list_entitlements",
+    "service": "mediaconnect"
+  },
+  {
+    "function": "list_flows",
+    "service": "mediaconnect"
+  },
+  {
+    "function": "list_gateway_instances",
+    "service": "mediaconnect"
+  },
+  {
+    "function": "list_gateways",
+    "service": "mediaconnect"
+  },
+  {
+    "function": "list_offerings",
+    "service": "mediaconnect"
+  },
+  {
+    "function": "list_reservations",
+    "service": "mediaconnect"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "mediaconnect"
+  }
+]

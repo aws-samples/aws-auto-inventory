@@ -1,0 +1,274 @@
+[
+  {
+    "function": "describe_agent_status",
+    "service": "connect"
+  },
+  {
+    "function": "describe_contact",
+    "service": "connect"
+  },
+  {
+    "function": "describe_contact_evaluation",
+    "service": "connect"
+  },
+  {
+    "function": "describe_contact_flow",
+    "service": "connect"
+  },
+  {
+    "function": "describe_contact_flow_module",
+    "service": "connect"
+  },
+  {
+    "function": "describe_evaluation_form",
+    "service": "connect"
+  },
+  {
+    "function": "describe_hours_of_operation",
+    "service": "connect"
+  },
+  {
+    "function": "describe_instance",
+    "service": "connect"
+  },
+  {
+    "function": "describe_instance_attribute",
+    "service": "connect"
+  },
+  {
+    "function": "describe_instance_storage_config",
+    "service": "connect"
+  },
+  {
+    "function": "describe_phone_number",
+    "service": "connect"
+  },
+  {
+    "function": "describe_prompt",
+    "service": "connect"
+  },
+  {
+    "function": "describe_queue",
+    "service": "connect"
+  },
+  {
+    "function": "describe_quick_connect",
+    "service": "connect"
+  },
+  {
+    "function": "describe_routing_profile",
+    "service": "connect"
+  },
+  {
+    "function": "describe_rule",
+    "service": "connect"
+  },
+  {
+    "function": "describe_security_profile",
+    "service": "connect"
+  },
+  {
+    "function": "describe_traffic_distribution_group",
+    "service": "connect"
+  },
+  {
+    "function": "describe_user",
+    "service": "connect"
+  },
+  {
+    "function": "describe_user_hierarchy_group",
+    "service": "connect"
+  },
+  {
+    "function": "describe_user_hierarchy_structure",
+    "service": "connect"
+  },
+  {
+    "function": "describe_vocabulary",
+    "service": "connect"
+  },
+  {
+    "function": "get_contact_attributes",
+    "service": "connect"
+  },
+  {
+    "function": "get_current_metric_data",
+    "service": "connect"
+  },
+  {
+    "function": "get_current_user_data",
+    "service": "connect"
+  },
+  {
+    "function": "get_federation_token",
+    "service": "connect"
+  },
+  {
+    "function": "get_metric_data",
+    "service": "connect"
+  },
+  {
+    "function": "get_metric_data_v2",
+    "service": "connect"
+  },
+  {
+    "function": "get_paginator",
+    "service": "connect"
+  },
+  {
+    "function": "get_prompt_file",
+    "service": "connect"
+  },
+  {
+    "function": "get_task_template",
+    "service": "connect"
+  },
+  {
+    "function": "get_traffic_distribution",
+    "service": "connect"
+  },
+  {
+    "function": "get_waiter",
+    "service": "connect"
+  },
+  {
+    "function": "list_agent_statuses",
+    "service": "connect"
+  },
+  {
+    "function": "list_approved_origins",
+    "service": "connect"
+  },
+  {
+    "function": "list_bots",
+    "service": "connect"
+  },
+  {
+    "function": "list_contact_evaluations",
+    "service": "connect"
+  },
+  {
+    "function": "list_contact_flow_modules",
+    "service": "connect"
+  },
+  {
+    "function": "list_contact_flows",
+    "service": "connect"
+  },
+  {
+    "function": "list_contact_references",
+    "service": "connect"
+  },
+  {
+    "function": "list_default_vocabularies",
+    "service": "connect"
+  },
+  {
+    "function": "list_evaluation_form_versions",
+    "service": "connect"
+  },
+  {
+    "function": "list_evaluation_forms",
+    "service": "connect"
+  },
+  {
+    "function": "list_hours_of_operations",
+    "service": "connect"
+  },
+  {
+    "function": "list_instance_attributes",
+    "service": "connect"
+  },
+  {
+    "function": "list_instance_storage_configs",
+    "service": "connect"
+  },
+  {
+    "function": "list_instances",
+    "service": "connect"
+  },
+  {
+    "function": "list_integration_associations",
+    "service": "connect"
+  },
+  {
+    "function": "list_lambda_functions",
+    "service": "connect"
+  },
+  {
+    "function": "list_lex_bots",
+    "service": "connect"
+  },
+  {
+    "function": "list_phone_numbers",
+    "service": "connect"
+  },
+  {
+    "function": "list_phone_numbers_v2",
+    "service": "connect"
+  },
+  {
+    "function": "list_prompts",
+    "service": "connect"
+  },
+  {
+    "function": "list_queue_quick_connects",
+    "service": "connect"
+  },
+  {
+    "function": "list_queues",
+    "service": "connect"
+  },
+  {
+    "function": "list_quick_connects",
+    "service": "connect"
+  },
+  {
+    "function": "list_routing_profile_queues",
+    "service": "connect"
+  },
+  {
+    "function": "list_routing_profiles",
+    "service": "connect"
+  },
+  {
+    "function": "list_rules",
+    "service": "connect"
+  },
+  {
+    "function": "list_security_keys",
+    "service": "connect"
+  },
+  {
+    "function": "list_security_profile_permissions",
+    "service": "connect"
+  },
+  {
+    "function": "list_security_profiles",
+    "service": "connect"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "connect"
+  },
+  {
+    "function": "list_task_templates",
+    "service": "connect"
+  },
+  {
+    "function": "list_traffic_distribution_groups",
+    "service": "connect"
+  },
+  {
+    "function": "list_use_cases",
+    "service": "connect"
+  },
+  {
+    "function": "list_user_hierarchy_groups",
+    "service": "connect"
+  },
+  {
+    "function": "list_users",
+    "service": "connect"
+  }
+]

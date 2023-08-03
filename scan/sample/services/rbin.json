@@ -1,0 +1,22 @@
+[
+  {
+    "function": "get_paginator",
+    "service": "rbin"
+  },
+  {
+    "function": "get_rule",
+    "service": "rbin"
+  },
+  {
+    "function": "get_waiter",
+    "service": "rbin"
+  },
+  {
+    "function": "list_rules",
+    "service": "rbin"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "rbin"
+  }
+]

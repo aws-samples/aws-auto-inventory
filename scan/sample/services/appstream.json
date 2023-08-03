@@ -1,0 +1,90 @@
+[
+  {
+    "function": "describe_app_block_builder_app_block_associations",
+    "service": "appstream"
+  },
+  {
+    "function": "describe_app_block_builders",
+    "service": "appstream"
+  },
+  {
+    "function": "describe_app_blocks",
+    "service": "appstream"
+  },
+  {
+    "function": "describe_application_fleet_associations",
+    "service": "appstream"
+  },
+  {
+    "function": "describe_applications",
+    "service": "appstream"
+  },
+  {
+    "function": "describe_directory_configs",
+    "service": "appstream"
+  },
+  {
+    "function": "describe_entitlements",
+    "service": "appstream"
+  },
+  {
+    "function": "describe_fleets",
+    "service": "appstream"
+  },
+  {
+    "function": "describe_image_builders",
+    "service": "appstream"
+  },
+  {
+    "function": "describe_image_permissions",
+    "service": "appstream"
+  },
+  {
+    "function": "describe_images",
+    "service": "appstream"
+  },
+  {
+    "function": "describe_sessions",
+    "service": "appstream"
+  },
+  {
+    "function": "describe_stacks",
+    "service": "appstream"
+  },
+  {
+    "function": "describe_usage_report_subscriptions",
+    "service": "appstream"
+  },
+  {
+    "function": "describe_user_stack_associations",
+    "service": "appstream"
+  },
+  {
+    "function": "describe_users",
+    "service": "appstream"
+  },
+  {
+    "function": "get_paginator",
+    "service": "appstream"
+  },
+  {
+    "function": "get_waiter",
+    "service": "appstream"
+  },
+  {
+    "function": "list_associated_fleets",
+    "service": "appstream"
+  },
+  {
+    "function": "list_associated_stacks",
+    "service": "appstream"
+  },
+  {
+    "function": "list_entitled_applications",
+    "service": "appstream"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "appstream"
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "function": "describe_change_set",
+    "service": "marketplace-catalog"
+  },
+  {
+    "function": "describe_entity",
+    "service": "marketplace-catalog"
+  },
+  {
+    "function": "get_paginator",
+    "service": "marketplace-catalog"
+  },
+  {
+    "function": "get_resource_policy",
+    "service": "marketplace-catalog"
+  },
+  {
+    "function": "get_waiter",
+    "service": "marketplace-catalog"
+  },
+  {
+    "function": "list_change_sets",
+    "service": "marketplace-catalog"
+  },
+  {
+    "function": "list_entities",
+    "service": "marketplace-catalog"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "marketplace-catalog"
+  }
+]

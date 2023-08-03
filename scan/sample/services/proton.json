@@ -1,0 +1,170 @@
+[
+  {
+    "function": "get_account_settings",
+    "service": "proton"
+  },
+  {
+    "function": "get_component",
+    "service": "proton"
+  },
+  {
+    "function": "get_deployment",
+    "service": "proton"
+  },
+  {
+    "function": "get_environment",
+    "service": "proton"
+  },
+  {
+    "function": "get_environment_account_connection",
+    "service": "proton"
+  },
+  {
+    "function": "get_environment_template",
+    "service": "proton"
+  },
+  {
+    "function": "get_environment_template_version",
+    "service": "proton"
+  },
+  {
+    "function": "get_paginator",
+    "service": "proton"
+  },
+  {
+    "function": "get_repository",
+    "service": "proton"
+  },
+  {
+    "function": "get_repository_sync_status",
+    "service": "proton"
+  },
+  {
+    "function": "get_resources_summary",
+    "service": "proton"
+  },
+  {
+    "function": "get_service",
+    "service": "proton"
+  },
+  {
+    "function": "get_service_instance",
+    "service": "proton"
+  },
+  {
+    "function": "get_service_instance_sync_status",
+    "service": "proton"
+  },
+  {
+    "function": "get_service_sync_blocker_summary",
+    "service": "proton"
+  },
+  {
+    "function": "get_service_sync_config",
+    "service": "proton"
+  },
+  {
+    "function": "get_service_template",
+    "service": "proton"
+  },
+  {
+    "function": "get_service_template_version",
+    "service": "proton"
+  },
+  {
+    "function": "get_template_sync_config",
+    "service": "proton"
+  },
+  {
+    "function": "get_template_sync_status",
+    "service": "proton"
+  },
+  {
+    "function": "get_waiter",
+    "service": "proton"
+  },
+  {
+    "function": "list_component_outputs",
+    "service": "proton"
+  },
+  {
+    "function": "list_component_provisioned_resources",
+    "service": "proton"
+  },
+  {
+    "function": "list_components",
+    "service": "proton"
+  },
+  {
+    "function": "list_deployments",
+    "service": "proton"
+  },
+  {
+    "function": "list_environment_account_connections",
+    "service": "proton"
+  },
+  {
+    "function": "list_environment_outputs",
+    "service": "proton"
+  },
+  {
+    "function": "list_environment_provisioned_resources",
+    "service": "proton"
+  },
+  {
+    "function": "list_environment_template_versions",
+    "service": "proton"
+  },
+  {
+    "function": "list_environment_templates",
+    "service": "proton"
+  },
+  {
+    "function": "list_environments",
+    "service": "proton"
+  },
+  {
+    "function": "list_repositories",
+    "service": "proton"
+  },
+  {
+    "function": "list_repository_sync_definitions",
+    "service": "proton"
+  },
+  {
+    "function": "list_service_instance_outputs",
+    "service": "proton"
+  },
+  {
+    "function": "list_service_instance_provisioned_resources",
+    "service": "proton"
+  },
+  {
+    "function": "list_service_instances",
+    "service": "proton"
+  },
+  {
+    "function": "list_service_pipeline_outputs",
+    "service": "proton"
+  },
+  {
+    "function": "list_service_pipeline_provisioned_resources",
+    "service": "proton"
+  },
+  {
+    "function": "list_service_template_versions",
+    "service": "proton"
+  },
+  {
+    "function": "list_service_templates",
+    "service": "proton"
+  },
+  {
+    "function": "list_services",
+    "service": "proton"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "proton"
+  }
+]

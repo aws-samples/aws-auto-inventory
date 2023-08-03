@@ -1,0 +1,38 @@
+[
+  {
+    "function": "get_account_configuration",
+    "service": "codeguru-security"
+  },
+  {
+    "function": "get_findings",
+    "service": "codeguru-security"
+  },
+  {
+    "function": "get_metrics_summary",
+    "service": "codeguru-security"
+  },
+  {
+    "function": "get_paginator",
+    "service": "codeguru-security"
+  },
+  {
+    "function": "get_scan",
+    "service": "codeguru-security"
+  },
+  {
+    "function": "get_waiter",
+    "service": "codeguru-security"
+  },
+  {
+    "function": "list_findings_metrics",
+    "service": "codeguru-security"
+  },
+  {
+    "function": "list_scans",
+    "service": "codeguru-security"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "codeguru-security"
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "function": "get_paginator",
+    "service": "managedblockchain-query"
+  },
+  {
+    "function": "get_token_balance",
+    "service": "managedblockchain-query"
+  },
+  {
+    "function": "get_transaction",
+    "service": "managedblockchain-query"
+  },
+  {
+    "function": "get_waiter",
+    "service": "managedblockchain-query"
+  },
+  {
+    "function": "list_token_balances",
+    "service": "managedblockchain-query"
+  },
+  {
+    "function": "list_transaction_events",
+    "service": "managedblockchain-query"
+  },
+  {
+    "function": "list_transactions",
+    "service": "managedblockchain-query"
+  }
+]

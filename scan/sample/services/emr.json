@@ -1,0 +1,106 @@
+[
+  {
+    "function": "describe_cluster",
+    "service": "emr"
+  },
+  {
+    "function": "describe_job_flows",
+    "service": "emr"
+  },
+  {
+    "function": "describe_notebook_execution",
+    "service": "emr"
+  },
+  {
+    "function": "describe_release_label",
+    "service": "emr"
+  },
+  {
+    "function": "describe_security_configuration",
+    "service": "emr"
+  },
+  {
+    "function": "describe_step",
+    "service": "emr"
+  },
+  {
+    "function": "describe_studio",
+    "service": "emr"
+  },
+  {
+    "function": "get_auto_termination_policy",
+    "service": "emr"
+  },
+  {
+    "function": "get_block_public_access_configuration",
+    "service": "emr"
+  },
+  {
+    "function": "get_cluster_session_credentials",
+    "service": "emr"
+  },
+  {
+    "function": "get_managed_scaling_policy",
+    "service": "emr"
+  },
+  {
+    "function": "get_paginator",
+    "service": "emr"
+  },
+  {
+    "function": "get_studio_session_mapping",
+    "service": "emr"
+  },
+  {
+    "function": "get_waiter",
+    "service": "emr"
+  },
+  {
+    "function": "list_bootstrap_actions",
+    "service": "emr"
+  },
+  {
+    "function": "list_clusters",
+    "service": "emr"
+  },
+  {
+    "function": "list_instance_fleets",
+    "service": "emr"
+  },
+  {
+    "function": "list_instance_groups",
+    "service": "emr"
+  },
+  {
+    "function": "list_instances",
+    "service": "emr"
+  },
+  {
+    "function": "list_notebook_executions",
+    "service": "emr"
+  },
+  {
+    "function": "list_release_labels",
+    "service": "emr"
+  },
+  {
+    "function": "list_security_configurations",
+    "service": "emr"
+  },
+  {
+    "function": "list_steps",
+    "service": "emr"
+  },
+  {
+    "function": "list_studio_session_mappings",
+    "service": "emr"
+  },
+  {
+    "function": "list_studios",
+    "service": "emr"
+  },
+  {
+    "function": "list_supported_instance_types",
+    "service": "emr"
+  }
+]

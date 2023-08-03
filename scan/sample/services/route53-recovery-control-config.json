@@ -1,0 +1,50 @@
+[
+  {
+    "function": "describe_cluster",
+    "service": "route53-recovery-control-config"
+  },
+  {
+    "function": "describe_control_panel",
+    "service": "route53-recovery-control-config"
+  },
+  {
+    "function": "describe_routing_control",
+    "service": "route53-recovery-control-config"
+  },
+  {
+    "function": "describe_safety_rule",
+    "service": "route53-recovery-control-config"
+  },
+  {
+    "function": "get_paginator",
+    "service": "route53-recovery-control-config"
+  },
+  {
+    "function": "get_waiter",
+    "service": "route53-recovery-control-config"
+  },
+  {
+    "function": "list_associated_route53_health_checks",
+    "service": "route53-recovery-control-config"
+  },
+  {
+    "function": "list_clusters",
+    "service": "route53-recovery-control-config"
+  },
+  {
+    "function": "list_control_panels",
+    "service": "route53-recovery-control-config"
+  },
+  {
+    "function": "list_routing_controls",
+    "service": "route53-recovery-control-config"
+  },
+  {
+    "function": "list_safety_rules",
+    "service": "route53-recovery-control-config"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "route53-recovery-control-config"
+  }
+]

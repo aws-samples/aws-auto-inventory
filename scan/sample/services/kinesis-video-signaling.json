@@ -1,0 +1,14 @@
+[
+  {
+    "function": "get_ice_server_config",
+    "service": "kinesis-video-signaling"
+  },
+  {
+    "function": "get_paginator",
+    "service": "kinesis-video-signaling"
+  },
+  {
+    "function": "get_waiter",
+    "service": "kinesis-video-signaling"
+  }
+]

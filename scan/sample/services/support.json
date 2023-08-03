@@ -1,0 +1,54 @@
+[
+  {
+    "function": "describe_attachment",
+    "service": "support"
+  },
+  {
+    "function": "describe_cases",
+    "service": "support"
+  },
+  {
+    "function": "describe_communications",
+    "service": "support"
+  },
+  {
+    "function": "describe_create_case_options",
+    "service": "support"
+  },
+  {
+    "function": "describe_services",
+    "service": "support"
+  },
+  {
+    "function": "describe_severity_levels",
+    "service": "support"
+  },
+  {
+    "function": "describe_supported_languages",
+    "service": "support"
+  },
+  {
+    "function": "describe_trusted_advisor_check_refresh_statuses",
+    "service": "support"
+  },
+  {
+    "function": "describe_trusted_advisor_check_result",
+    "service": "support"
+  },
+  {
+    "function": "describe_trusted_advisor_check_summaries",
+    "service": "support"
+  },
+  {
+    "function": "describe_trusted_advisor_checks",
+    "service": "support"
+  },
+  {
+    "function": "get_paginator",
+    "service": "support"
+  },
+  {
+    "function": "get_waiter",
+    "service": "support"
+  }
+]

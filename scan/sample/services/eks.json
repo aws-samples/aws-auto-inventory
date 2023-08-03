@@ -1,0 +1,70 @@
+[
+  {
+    "function": "describe_addon",
+    "service": "eks"
+  },
+  {
+    "function": "describe_addon_configuration",
+    "service": "eks"
+  },
+  {
+    "function": "describe_addon_versions",
+    "service": "eks"
+  },
+  {
+    "function": "describe_cluster",
+    "service": "eks"
+  },
+  {
+    "function": "describe_fargate_profile",
+    "service": "eks"
+  },
+  {
+    "function": "describe_identity_provider_config",
+    "service": "eks"
+  },
+  {
+    "function": "describe_nodegroup",
+    "service": "eks"
+  },
+  {
+    "function": "describe_update",
+    "service": "eks"
+  },
+  {
+    "function": "get_paginator",
+    "service": "eks"
+  },
+  {
+    "function": "get_waiter",
+    "service": "eks"
+  },
+  {
+    "function": "list_addons",
+    "service": "eks"
+  },
+  {
+    "function": "list_clusters",
+    "service": "eks"
+  },
+  {
+    "function": "list_fargate_profiles",
+    "service": "eks"
+  },
+  {
+    "function": "list_identity_provider_configs",
+    "service": "eks"
+  },
+  {
+    "function": "list_nodegroups",
+    "service": "eks"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "eks"
+  },
+  {
+    "function": "list_updates",
+    "service": "eks"
+  }
+]

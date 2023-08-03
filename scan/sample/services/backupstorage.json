@@ -1,0 +1,26 @@
+[
+  {
+    "function": "get_chunk",
+    "service": "backupstorage"
+  },
+  {
+    "function": "get_object_metadata",
+    "service": "backupstorage"
+  },
+  {
+    "function": "get_paginator",
+    "service": "backupstorage"
+  },
+  {
+    "function": "get_waiter",
+    "service": "backupstorage"
+  },
+  {
+    "function": "list_chunks",
+    "service": "backupstorage"
+  },
+  {
+    "function": "list_objects",
+    "service": "backupstorage"
+  }
+]

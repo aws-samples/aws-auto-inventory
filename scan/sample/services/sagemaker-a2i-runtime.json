@@ -1,0 +1,18 @@
+[
+  {
+    "function": "describe_human_loop",
+    "service": "sagemaker-a2i-runtime"
+  },
+  {
+    "function": "get_paginator",
+    "service": "sagemaker-a2i-runtime"
+  },
+  {
+    "function": "get_waiter",
+    "service": "sagemaker-a2i-runtime"
+  },
+  {
+    "function": "list_human_loops",
+    "service": "sagemaker-a2i-runtime"
+  }
+]

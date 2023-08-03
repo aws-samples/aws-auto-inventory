@@ -1,0 +1,342 @@
+[
+  {
+    "function": "get_blueprint",
+    "service": "glue"
+  },
+  {
+    "function": "get_blueprint_run",
+    "service": "glue"
+  },
+  {
+    "function": "get_blueprint_runs",
+    "service": "glue"
+  },
+  {
+    "function": "get_catalog_import_status",
+    "service": "glue"
+  },
+  {
+    "function": "get_classifier",
+    "service": "glue"
+  },
+  {
+    "function": "get_classifiers",
+    "service": "glue"
+  },
+  {
+    "function": "get_column_statistics_for_partition",
+    "service": "glue"
+  },
+  {
+    "function": "get_column_statistics_for_table",
+    "service": "glue"
+  },
+  {
+    "function": "get_connection",
+    "service": "glue"
+  },
+  {
+    "function": "get_connections",
+    "service": "glue"
+  },
+  {
+    "function": "get_crawler",
+    "service": "glue"
+  },
+  {
+    "function": "get_crawler_metrics",
+    "service": "glue"
+  },
+  {
+    "function": "get_crawlers",
+    "service": "glue"
+  },
+  {
+    "function": "get_custom_entity_type",
+    "service": "glue"
+  },
+  {
+    "function": "get_data_catalog_encryption_settings",
+    "service": "glue"
+  },
+  {
+    "function": "get_data_quality_result",
+    "service": "glue"
+  },
+  {
+    "function": "get_data_quality_rule_recommendation_run",
+    "service": "glue"
+  },
+  {
+    "function": "get_data_quality_ruleset",
+    "service": "glue"
+  },
+  {
+    "function": "get_data_quality_ruleset_evaluation_run",
+    "service": "glue"
+  },
+  {
+    "function": "get_database",
+    "service": "glue"
+  },
+  {
+    "function": "get_databases",
+    "service": "glue"
+  },
+  {
+    "function": "get_dataflow_graph",
+    "service": "glue"
+  },
+  {
+    "function": "get_dev_endpoint",
+    "service": "glue"
+  },
+  {
+    "function": "get_dev_endpoints",
+    "service": "glue"
+  },
+  {
+    "function": "get_job",
+    "service": "glue"
+  },
+  {
+    "function": "get_job_bookmark",
+    "service": "glue"
+  },
+  {
+    "function": "get_job_run",
+    "service": "glue"
+  },
+  {
+    "function": "get_job_runs",
+    "service": "glue"
+  },
+  {
+    "function": "get_jobs",
+    "service": "glue"
+  },
+  {
+    "function": "get_mapping",
+    "service": "glue"
+  },
+  {
+    "function": "get_ml_task_run",
+    "service": "glue"
+  },
+  {
+    "function": "get_ml_task_runs",
+    "service": "glue"
+  },
+  {
+    "function": "get_ml_transform",
+    "service": "glue"
+  },
+  {
+    "function": "get_ml_transforms",
+    "service": "glue"
+  },
+  {
+    "function": "get_paginator",
+    "service": "glue"
+  },
+  {
+    "function": "get_partition",
+    "service": "glue"
+  },
+  {
+    "function": "get_partition_indexes",
+    "service": "glue"
+  },
+  {
+    "function": "get_partitions",
+    "service": "glue"
+  },
+  {
+    "function": "get_plan",
+    "service": "glue"
+  },
+  {
+    "function": "get_registry",
+    "service": "glue"
+  },
+  {
+    "function": "get_resource_policies",
+    "service": "glue"
+  },
+  {
+    "function": "get_resource_policy",
+    "service": "glue"
+  },
+  {
+    "function": "get_schema",
+    "service": "glue"
+  },
+  {
+    "function": "get_schema_by_definition",
+    "service": "glue"
+  },
+  {
+    "function": "get_schema_version",
+    "service": "glue"
+  },
+  {
+    "function": "get_schema_versions_diff",
+    "service": "glue"
+  },
+  {
+    "function": "get_security_configuration",
+    "service": "glue"
+  },
+  {
+    "function": "get_security_configurations",
+    "service": "glue"
+  },
+  {
+    "function": "get_session",
+    "service": "glue"
+  },
+  {
+    "function": "get_statement",
+    "service": "glue"
+  },
+  {
+    "function": "get_table",
+    "service": "glue"
+  },
+  {
+    "function": "get_table_version",
+    "service": "glue"
+  },
+  {
+    "function": "get_table_versions",
+    "service": "glue"
+  },
+  {
+    "function": "get_tables",
+    "service": "glue"
+  },
+  {
+    "function": "get_tags",
+    "service": "glue"
+  },
+  {
+    "function": "get_trigger",
+    "service": "glue"
+  },
+  {
+    "function": "get_triggers",
+    "service": "glue"
+  },
+  {
+    "function": "get_unfiltered_partition_metadata",
+    "service": "glue"
+  },
+  {
+    "function": "get_unfiltered_partitions_metadata",
+    "service": "glue"
+  },
+  {
+    "function": "get_unfiltered_table_metadata",
+    "service": "glue"
+  },
+  {
+    "function": "get_user_defined_function",
+    "service": "glue"
+  },
+  {
+    "function": "get_user_defined_functions",
+    "service": "glue"
+  },
+  {
+    "function": "get_waiter",
+    "service": "glue"
+  },
+  {
+    "function": "get_workflow",
+    "service": "glue"
+  },
+  {
+    "function": "get_workflow_run",
+    "service": "glue"
+  },
+  {
+    "function": "get_workflow_run_properties",
+    "service": "glue"
+  },
+  {
+    "function": "get_workflow_runs",
+    "service": "glue"
+  },
+  {
+    "function": "list_blueprints",
+    "service": "glue"
+  },
+  {
+    "function": "list_crawlers",
+    "service": "glue"
+  },
+  {
+    "function": "list_crawls",
+    "service": "glue"
+  },
+  {
+    "function": "list_custom_entity_types",
+    "service": "glue"
+  },
+  {
+    "function": "list_data_quality_results",
+    "service": "glue"
+  },
+  {
+    "function": "list_data_quality_rule_recommendation_runs",
+    "service": "glue"
+  },
+  {
+    "function": "list_data_quality_ruleset_evaluation_runs",
+    "service": "glue"
+  },
+  {
+    "function": "list_data_quality_rulesets",
+    "service": "glue"
+  },
+  {
+    "function": "list_dev_endpoints",
+    "service": "glue"
+  },
+  {
+    "function": "list_jobs",
+    "service": "glue"
+  },
+  {
+    "function": "list_ml_transforms",
+    "service": "glue"
+  },
+  {
+    "function": "list_registries",
+    "service": "glue"
+  },
+  {
+    "function": "list_schema_versions",
+    "service": "glue"
+  },
+  {
+    "function": "list_schemas",
+    "service": "glue"
+  },
+  {
+    "function": "list_sessions",
+    "service": "glue"
+  },
+  {
+    "function": "list_statements",
+    "service": "glue"
+  },
+  {
+    "function": "list_triggers",
+    "service": "glue"
+  },
+  {
+    "function": "list_workflows",
+    "service": "glue"
+  }
+]

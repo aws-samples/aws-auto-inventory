@@ -1,0 +1,70 @@
+[
+  {
+    "function": "get_environment",
+    "service": "finspace"
+  },
+  {
+    "function": "get_kx_changeset",
+    "service": "finspace"
+  },
+  {
+    "function": "get_kx_cluster",
+    "service": "finspace"
+  },
+  {
+    "function": "get_kx_connection_string",
+    "service": "finspace"
+  },
+  {
+    "function": "get_kx_database",
+    "service": "finspace"
+  },
+  {
+    "function": "get_kx_environment",
+    "service": "finspace"
+  },
+  {
+    "function": "get_kx_user",
+    "service": "finspace"
+  },
+  {
+    "function": "get_paginator",
+    "service": "finspace"
+  },
+  {
+    "function": "get_waiter",
+    "service": "finspace"
+  },
+  {
+    "function": "list_environments",
+    "service": "finspace"
+  },
+  {
+    "function": "list_kx_changesets",
+    "service": "finspace"
+  },
+  {
+    "function": "list_kx_cluster_nodes",
+    "service": "finspace"
+  },
+  {
+    "function": "list_kx_clusters",
+    "service": "finspace"
+  },
+  {
+    "function": "list_kx_databases",
+    "service": "finspace"
+  },
+  {
+    "function": "list_kx_environments",
+    "service": "finspace"
+  },
+  {
+    "function": "list_kx_users",
+    "service": "finspace"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "finspace"
+  }
+]

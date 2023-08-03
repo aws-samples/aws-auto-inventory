@@ -1,0 +1,74 @@
+[
+  {
+    "function": "describe_dataset",
+    "service": "databrew"
+  },
+  {
+    "function": "describe_job",
+    "service": "databrew"
+  },
+  {
+    "function": "describe_job_run",
+    "service": "databrew"
+  },
+  {
+    "function": "describe_project",
+    "service": "databrew"
+  },
+  {
+    "function": "describe_recipe",
+    "service": "databrew"
+  },
+  {
+    "function": "describe_ruleset",
+    "service": "databrew"
+  },
+  {
+    "function": "describe_schedule",
+    "service": "databrew"
+  },
+  {
+    "function": "get_paginator",
+    "service": "databrew"
+  },
+  {
+    "function": "get_waiter",
+    "service": "databrew"
+  },
+  {
+    "function": "list_datasets",
+    "service": "databrew"
+  },
+  {
+    "function": "list_job_runs",
+    "service": "databrew"
+  },
+  {
+    "function": "list_jobs",
+    "service": "databrew"
+  },
+  {
+    "function": "list_projects",
+    "service": "databrew"
+  },
+  {
+    "function": "list_recipe_versions",
+    "service": "databrew"
+  },
+  {
+    "function": "list_recipes",
+    "service": "databrew"
+  },
+  {
+    "function": "list_rulesets",
+    "service": "databrew"
+  },
+  {
+    "function": "list_schedules",
+    "service": "databrew"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "databrew"
+  }
+]

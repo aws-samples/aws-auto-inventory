@@ -1,0 +1,22 @@
+[
+  {
+    "function": "get_account_alias",
+    "service": "support-app"
+  },
+  {
+    "function": "get_paginator",
+    "service": "support-app"
+  },
+  {
+    "function": "get_waiter",
+    "service": "support-app"
+  },
+  {
+    "function": "list_slack_channel_configurations",
+    "service": "support-app"
+  },
+  {
+    "function": "list_slack_workspace_configurations",
+    "service": "support-app"
+  }
+]

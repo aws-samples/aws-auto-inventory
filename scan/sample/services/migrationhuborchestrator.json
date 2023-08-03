@@ -1,0 +1,66 @@
+[
+  {
+    "function": "get_paginator",
+    "service": "migrationhuborchestrator"
+  },
+  {
+    "function": "get_template",
+    "service": "migrationhuborchestrator"
+  },
+  {
+    "function": "get_template_step",
+    "service": "migrationhuborchestrator"
+  },
+  {
+    "function": "get_template_step_group",
+    "service": "migrationhuborchestrator"
+  },
+  {
+    "function": "get_waiter",
+    "service": "migrationhuborchestrator"
+  },
+  {
+    "function": "get_workflow",
+    "service": "migrationhuborchestrator"
+  },
+  {
+    "function": "get_workflow_step",
+    "service": "migrationhuborchestrator"
+  },
+  {
+    "function": "get_workflow_step_group",
+    "service": "migrationhuborchestrator"
+  },
+  {
+    "function": "list_plugins",
+    "service": "migrationhuborchestrator"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "migrationhuborchestrator"
+  },
+  {
+    "function": "list_template_step_groups",
+    "service": "migrationhuborchestrator"
+  },
+  {
+    "function": "list_template_steps",
+    "service": "migrationhuborchestrator"
+  },
+  {
+    "function": "list_templates",
+    "service": "migrationhuborchestrator"
+  },
+  {
+    "function": "list_workflow_step_groups",
+    "service": "migrationhuborchestrator"
+  },
+  {
+    "function": "list_workflow_steps",
+    "service": "migrationhuborchestrator"
+  },
+  {
+    "function": "list_workflows",
+    "service": "migrationhuborchestrator"
+  }
+]

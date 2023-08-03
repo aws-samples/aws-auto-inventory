@@ -1,0 +1,30 @@
+[
+  {
+    "function": "get_document_analysis",
+    "service": "textract"
+  },
+  {
+    "function": "get_document_text_detection",
+    "service": "textract"
+  },
+  {
+    "function": "get_expense_analysis",
+    "service": "textract"
+  },
+  {
+    "function": "get_lending_analysis",
+    "service": "textract"
+  },
+  {
+    "function": "get_lending_analysis_summary",
+    "service": "textract"
+  },
+  {
+    "function": "get_paginator",
+    "service": "textract"
+  },
+  {
+    "function": "get_waiter",
+    "service": "textract"
+  }
+]

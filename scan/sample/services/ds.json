@@ -1,0 +1,90 @@
+[
+  {
+    "function": "describe_certificate",
+    "service": "ds"
+  },
+  {
+    "function": "describe_client_authentication_settings",
+    "service": "ds"
+  },
+  {
+    "function": "describe_conditional_forwarders",
+    "service": "ds"
+  },
+  {
+    "function": "describe_directories",
+    "service": "ds"
+  },
+  {
+    "function": "describe_domain_controllers",
+    "service": "ds"
+  },
+  {
+    "function": "describe_event_topics",
+    "service": "ds"
+  },
+  {
+    "function": "describe_ldaps_settings",
+    "service": "ds"
+  },
+  {
+    "function": "describe_regions",
+    "service": "ds"
+  },
+  {
+    "function": "describe_settings",
+    "service": "ds"
+  },
+  {
+    "function": "describe_shared_directories",
+    "service": "ds"
+  },
+  {
+    "function": "describe_snapshots",
+    "service": "ds"
+  },
+  {
+    "function": "describe_trusts",
+    "service": "ds"
+  },
+  {
+    "function": "describe_update_directory",
+    "service": "ds"
+  },
+  {
+    "function": "get_directory_limits",
+    "service": "ds"
+  },
+  {
+    "function": "get_paginator",
+    "service": "ds"
+  },
+  {
+    "function": "get_snapshot_limits",
+    "service": "ds"
+  },
+  {
+    "function": "get_waiter",
+    "service": "ds"
+  },
+  {
+    "function": "list_certificates",
+    "service": "ds"
+  },
+  {
+    "function": "list_ip_routes",
+    "service": "ds"
+  },
+  {
+    "function": "list_log_subscriptions",
+    "service": "ds"
+  },
+  {
+    "function": "list_schema_extensions",
+    "service": "ds"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "ds"
+  }
+]

@@ -1,0 +1,54 @@
+[
+  {
+    "function": "describe_access_points",
+    "service": "efs"
+  },
+  {
+    "function": "describe_account_preferences",
+    "service": "efs"
+  },
+  {
+    "function": "describe_backup_policy",
+    "service": "efs"
+  },
+  {
+    "function": "describe_file_system_policy",
+    "service": "efs"
+  },
+  {
+    "function": "describe_file_systems",
+    "service": "efs"
+  },
+  {
+    "function": "describe_lifecycle_configuration",
+    "service": "efs"
+  },
+  {
+    "function": "describe_mount_target_security_groups",
+    "service": "efs"
+  },
+  {
+    "function": "describe_mount_targets",
+    "service": "efs"
+  },
+  {
+    "function": "describe_replication_configurations",
+    "service": "efs"
+  },
+  {
+    "function": "describe_tags",
+    "service": "efs"
+  },
+  {
+    "function": "get_paginator",
+    "service": "efs"
+  },
+  {
+    "function": "get_waiter",
+    "service": "efs"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "efs"
+  }
+]

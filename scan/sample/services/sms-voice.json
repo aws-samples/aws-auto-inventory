@@ -1,0 +1,18 @@
+[
+  {
+    "function": "get_configuration_set_event_destinations",
+    "service": "sms-voice"
+  },
+  {
+    "function": "get_paginator",
+    "service": "sms-voice"
+  },
+  {
+    "function": "get_waiter",
+    "service": "sms-voice"
+  },
+  {
+    "function": "list_configuration_sets",
+    "service": "sms-voice"
+  }
+]

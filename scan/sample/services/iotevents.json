@@ -1,0 +1,62 @@
+[
+  {
+    "function": "describe_alarm_model",
+    "service": "iotevents"
+  },
+  {
+    "function": "describe_detector_model",
+    "service": "iotevents"
+  },
+  {
+    "function": "describe_detector_model_analysis",
+    "service": "iotevents"
+  },
+  {
+    "function": "describe_input",
+    "service": "iotevents"
+  },
+  {
+    "function": "describe_logging_options",
+    "service": "iotevents"
+  },
+  {
+    "function": "get_detector_model_analysis_results",
+    "service": "iotevents"
+  },
+  {
+    "function": "get_paginator",
+    "service": "iotevents"
+  },
+  {
+    "function": "get_waiter",
+    "service": "iotevents"
+  },
+  {
+    "function": "list_alarm_model_versions",
+    "service": "iotevents"
+  },
+  {
+    "function": "list_alarm_models",
+    "service": "iotevents"
+  },
+  {
+    "function": "list_detector_model_versions",
+    "service": "iotevents"
+  },
+  {
+    "function": "list_detector_models",
+    "service": "iotevents"
+  },
+  {
+    "function": "list_input_routings",
+    "service": "iotevents"
+  },
+  {
+    "function": "list_inputs",
+    "service": "iotevents"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "iotevents"
+  }
+]

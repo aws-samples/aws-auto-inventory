@@ -1,0 +1,54 @@
+[
+  {
+    "function": "get_application",
+    "service": "migration-hub-refactor-spaces"
+  },
+  {
+    "function": "get_environment",
+    "service": "migration-hub-refactor-spaces"
+  },
+  {
+    "function": "get_paginator",
+    "service": "migration-hub-refactor-spaces"
+  },
+  {
+    "function": "get_resource_policy",
+    "service": "migration-hub-refactor-spaces"
+  },
+  {
+    "function": "get_route",
+    "service": "migration-hub-refactor-spaces"
+  },
+  {
+    "function": "get_service",
+    "service": "migration-hub-refactor-spaces"
+  },
+  {
+    "function": "get_waiter",
+    "service": "migration-hub-refactor-spaces"
+  },
+  {
+    "function": "list_applications",
+    "service": "migration-hub-refactor-spaces"
+  },
+  {
+    "function": "list_environment_vpcs",
+    "service": "migration-hub-refactor-spaces"
+  },
+  {
+    "function": "list_environments",
+    "service": "migration-hub-refactor-spaces"
+  },
+  {
+    "function": "list_routes",
+    "service": "migration-hub-refactor-spaces"
+  },
+  {
+    "function": "list_services",
+    "service": "migration-hub-refactor-spaces"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "migration-hub-refactor-spaces"
+  }
+]

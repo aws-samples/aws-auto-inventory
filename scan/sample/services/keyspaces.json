@@ -1,0 +1,30 @@
+[
+  {
+    "function": "get_keyspace",
+    "service": "keyspaces"
+  },
+  {
+    "function": "get_paginator",
+    "service": "keyspaces"
+  },
+  {
+    "function": "get_table",
+    "service": "keyspaces"
+  },
+  {
+    "function": "get_waiter",
+    "service": "keyspaces"
+  },
+  {
+    "function": "list_keyspaces",
+    "service": "keyspaces"
+  },
+  {
+    "function": "list_tables",
+    "service": "keyspaces"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "keyspaces"
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "function": "describe_account_attributes",
+    "service": "pinpoint-sms-voice-v2"
+  },
+  {
+    "function": "describe_account_limits",
+    "service": "pinpoint-sms-voice-v2"
+  },
+  {
+    "function": "describe_configuration_sets",
+    "service": "pinpoint-sms-voice-v2"
+  },
+  {
+    "function": "describe_keywords",
+    "service": "pinpoint-sms-voice-v2"
+  },
+  {
+    "function": "describe_opt_out_lists",
+    "service": "pinpoint-sms-voice-v2"
+  },
+  {
+    "function": "describe_opted_out_numbers",
+    "service": "pinpoint-sms-voice-v2"
+  },
+  {
+    "function": "describe_phone_numbers",
+    "service": "pinpoint-sms-voice-v2"
+  },
+  {
+    "function": "describe_pools",
+    "service": "pinpoint-sms-voice-v2"
+  },
+  {
+    "function": "describe_sender_ids",
+    "service": "pinpoint-sms-voice-v2"
+  },
+  {
+    "function": "describe_spend_limits",
+    "service": "pinpoint-sms-voice-v2"
+  },
+  {
+    "function": "get_paginator",
+    "service": "pinpoint-sms-voice-v2"
+  },
+  {
+    "function": "get_waiter",
+    "service": "pinpoint-sms-voice-v2"
+  },
+  {
+    "function": "list_pool_origination_identities",
+    "service": "pinpoint-sms-voice-v2"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "pinpoint-sms-voice-v2"
+  }
+]

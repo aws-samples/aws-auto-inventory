@@ -1,0 +1,46 @@
+[
+  {
+    "function": "get_action",
+    "service": "fis"
+  },
+  {
+    "function": "get_experiment",
+    "service": "fis"
+  },
+  {
+    "function": "get_experiment_template",
+    "service": "fis"
+  },
+  {
+    "function": "get_paginator",
+    "service": "fis"
+  },
+  {
+    "function": "get_target_resource_type",
+    "service": "fis"
+  },
+  {
+    "function": "get_waiter",
+    "service": "fis"
+  },
+  {
+    "function": "list_actions",
+    "service": "fis"
+  },
+  {
+    "function": "list_experiment_templates",
+    "service": "fis"
+  },
+  {
+    "function": "list_experiments",
+    "service": "fis"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "fis"
+  },
+  {
+    "function": "list_target_resource_types",
+    "service": "fis"
+  }
+]

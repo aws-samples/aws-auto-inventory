@@ -1,0 +1,62 @@
+[
+  {
+    "function": "describe_domain",
+    "service": "voice-id"
+  },
+  {
+    "function": "describe_fraudster",
+    "service": "voice-id"
+  },
+  {
+    "function": "describe_fraudster_registration_job",
+    "service": "voice-id"
+  },
+  {
+    "function": "describe_speaker",
+    "service": "voice-id"
+  },
+  {
+    "function": "describe_speaker_enrollment_job",
+    "service": "voice-id"
+  },
+  {
+    "function": "describe_watchlist",
+    "service": "voice-id"
+  },
+  {
+    "function": "get_paginator",
+    "service": "voice-id"
+  },
+  {
+    "function": "get_waiter",
+    "service": "voice-id"
+  },
+  {
+    "function": "list_domains",
+    "service": "voice-id"
+  },
+  {
+    "function": "list_fraudster_registration_jobs",
+    "service": "voice-id"
+  },
+  {
+    "function": "list_fraudsters",
+    "service": "voice-id"
+  },
+  {
+    "function": "list_speaker_enrollment_jobs",
+    "service": "voice-id"
+  },
+  {
+    "function": "list_speakers",
+    "service": "voice-id"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "voice-id"
+  },
+  {
+    "function": "list_watchlists",
+    "service": "voice-id"
+  }
+]

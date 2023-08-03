@@ -1,0 +1,10 @@
+[
+  {
+    "function": "get_paginator",
+    "service": "cloudtrail-data"
+  },
+  {
+    "function": "get_waiter",
+    "service": "cloudtrail-data"
+  }
+]

@@ -1,0 +1,182 @@
+[
+  {
+    "function": "get_destination",
+    "service": "iotwireless"
+  },
+  {
+    "function": "get_device_profile",
+    "service": "iotwireless"
+  },
+  {
+    "function": "get_event_configuration_by_resource_types",
+    "service": "iotwireless"
+  },
+  {
+    "function": "get_fuota_task",
+    "service": "iotwireless"
+  },
+  {
+    "function": "get_log_levels_by_resource_types",
+    "service": "iotwireless"
+  },
+  {
+    "function": "get_multicast_group",
+    "service": "iotwireless"
+  },
+  {
+    "function": "get_multicast_group_session",
+    "service": "iotwireless"
+  },
+  {
+    "function": "get_network_analyzer_configuration",
+    "service": "iotwireless"
+  },
+  {
+    "function": "get_paginator",
+    "service": "iotwireless"
+  },
+  {
+    "function": "get_partner_account",
+    "service": "iotwireless"
+  },
+  {
+    "function": "get_position",
+    "service": "iotwireless"
+  },
+  {
+    "function": "get_position_configuration",
+    "service": "iotwireless"
+  },
+  {
+    "function": "get_position_estimate",
+    "service": "iotwireless"
+  },
+  {
+    "function": "get_resource_event_configuration",
+    "service": "iotwireless"
+  },
+  {
+    "function": "get_resource_log_level",
+    "service": "iotwireless"
+  },
+  {
+    "function": "get_resource_position",
+    "service": "iotwireless"
+  },
+  {
+    "function": "get_service_endpoint",
+    "service": "iotwireless"
+  },
+  {
+    "function": "get_service_profile",
+    "service": "iotwireless"
+  },
+  {
+    "function": "get_waiter",
+    "service": "iotwireless"
+  },
+  {
+    "function": "get_wireless_device",
+    "service": "iotwireless"
+  },
+  {
+    "function": "get_wireless_device_import_task",
+    "service": "iotwireless"
+  },
+  {
+    "function": "get_wireless_device_statistics",
+    "service": "iotwireless"
+  },
+  {
+    "function": "get_wireless_gateway",
+    "service": "iotwireless"
+  },
+  {
+    "function": "get_wireless_gateway_certificate",
+    "service": "iotwireless"
+  },
+  {
+    "function": "get_wireless_gateway_firmware_information",
+    "service": "iotwireless"
+  },
+  {
+    "function": "get_wireless_gateway_statistics",
+    "service": "iotwireless"
+  },
+  {
+    "function": "get_wireless_gateway_task",
+    "service": "iotwireless"
+  },
+  {
+    "function": "get_wireless_gateway_task_definition",
+    "service": "iotwireless"
+  },
+  {
+    "function": "list_destinations",
+    "service": "iotwireless"
+  },
+  {
+    "function": "list_device_profiles",
+    "service": "iotwireless"
+  },
+  {
+    "function": "list_devices_for_wireless_device_import_task",
+    "service": "iotwireless"
+  },
+  {
+    "function": "list_event_configurations",
+    "service": "iotwireless"
+  },
+  {
+    "function": "list_fuota_tasks",
+    "service": "iotwireless"
+  },
+  {
+    "function": "list_multicast_groups",
+    "service": "iotwireless"
+  },
+  {
+    "function": "list_multicast_groups_by_fuota_task",
+    "service": "iotwireless"
+  },
+  {
+    "function": "list_network_analyzer_configurations",
+    "service": "iotwireless"
+  },
+  {
+    "function": "list_partner_accounts",
+    "service": "iotwireless"
+  },
+  {
+    "function": "list_position_configurations",
+    "service": "iotwireless"
+  },
+  {
+    "function": "list_queued_messages",
+    "service": "iotwireless"
+  },
+  {
+    "function": "list_service_profiles",
+    "service": "iotwireless"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "iotwireless"
+  },
+  {
+    "function": "list_wireless_device_import_tasks",
+    "service": "iotwireless"
+  },
+  {
+    "function": "list_wireless_devices",
+    "service": "iotwireless"
+  },
+  {
+    "function": "list_wireless_gateway_task_definitions",
+    "service": "iotwireless"
+  },
+  {
+    "function": "list_wireless_gateways",
+    "service": "iotwireless"
+  }
+]

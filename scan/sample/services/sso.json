@@ -1,0 +1,22 @@
+[
+  {
+    "function": "get_paginator",
+    "service": "sso"
+  },
+  {
+    "function": "get_role_credentials",
+    "service": "sso"
+  },
+  {
+    "function": "get_waiter",
+    "service": "sso"
+  },
+  {
+    "function": "list_account_roles",
+    "service": "sso"
+  },
+  {
+    "function": "list_accounts",
+    "service": "sso"
+  }
+]

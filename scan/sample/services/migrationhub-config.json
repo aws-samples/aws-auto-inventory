@@ -1,0 +1,18 @@
+[
+  {
+    "function": "describe_home_region_controls",
+    "service": "migrationhub-config"
+  },
+  {
+    "function": "get_home_region",
+    "service": "migrationhub-config"
+  },
+  {
+    "function": "get_paginator",
+    "service": "migrationhub-config"
+  },
+  {
+    "function": "get_waiter",
+    "service": "migrationhub-config"
+  }
+]

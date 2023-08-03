@@ -1,0 +1,82 @@
+[
+  {
+    "function": "describe_job_log_items",
+    "service": "mgn"
+  },
+  {
+    "function": "describe_jobs",
+    "service": "mgn"
+  },
+  {
+    "function": "describe_launch_configuration_templates",
+    "service": "mgn"
+  },
+  {
+    "function": "describe_replication_configuration_templates",
+    "service": "mgn"
+  },
+  {
+    "function": "describe_source_servers",
+    "service": "mgn"
+  },
+  {
+    "function": "describe_vcenter_clients",
+    "service": "mgn"
+  },
+  {
+    "function": "get_launch_configuration",
+    "service": "mgn"
+  },
+  {
+    "function": "get_paginator",
+    "service": "mgn"
+  },
+  {
+    "function": "get_replication_configuration",
+    "service": "mgn"
+  },
+  {
+    "function": "get_waiter",
+    "service": "mgn"
+  },
+  {
+    "function": "list_applications",
+    "service": "mgn"
+  },
+  {
+    "function": "list_export_errors",
+    "service": "mgn"
+  },
+  {
+    "function": "list_exports",
+    "service": "mgn"
+  },
+  {
+    "function": "list_import_errors",
+    "service": "mgn"
+  },
+  {
+    "function": "list_imports",
+    "service": "mgn"
+  },
+  {
+    "function": "list_managed_accounts",
+    "service": "mgn"
+  },
+  {
+    "function": "list_source_server_actions",
+    "service": "mgn"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "mgn"
+  },
+  {
+    "function": "list_template_actions",
+    "service": "mgn"
+  },
+  {
+    "function": "list_waves",
+    "service": "mgn"
+  }
+]

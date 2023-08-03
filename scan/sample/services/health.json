@@ -1,0 +1,54 @@
+[
+  {
+    "function": "describe_affected_accounts_for_organization",
+    "service": "health"
+  },
+  {
+    "function": "describe_affected_entities",
+    "service": "health"
+  },
+  {
+    "function": "describe_affected_entities_for_organization",
+    "service": "health"
+  },
+  {
+    "function": "describe_entity_aggregates",
+    "service": "health"
+  },
+  {
+    "function": "describe_event_aggregates",
+    "service": "health"
+  },
+  {
+    "function": "describe_event_details",
+    "service": "health"
+  },
+  {
+    "function": "describe_event_details_for_organization",
+    "service": "health"
+  },
+  {
+    "function": "describe_event_types",
+    "service": "health"
+  },
+  {
+    "function": "describe_events",
+    "service": "health"
+  },
+  {
+    "function": "describe_events_for_organization",
+    "service": "health"
+  },
+  {
+    "function": "describe_health_service_status_for_organization",
+    "service": "health"
+  },
+  {
+    "function": "get_paginator",
+    "service": "health"
+  },
+  {
+    "function": "get_waiter",
+    "service": "health"
+  }
+]

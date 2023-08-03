@@ -1,0 +1,22 @@
+[
+  {
+    "function": "describe_scaling_plan_resources",
+    "service": "autoscaling-plans"
+  },
+  {
+    "function": "describe_scaling_plans",
+    "service": "autoscaling-plans"
+  },
+  {
+    "function": "get_paginator",
+    "service": "autoscaling-plans"
+  },
+  {
+    "function": "get_scaling_plan_resource_forecast_data",
+    "service": "autoscaling-plans"
+  },
+  {
+    "function": "get_waiter",
+    "service": "autoscaling-plans"
+  }
+]

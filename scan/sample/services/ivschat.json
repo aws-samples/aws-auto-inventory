@@ -1,0 +1,30 @@
+[
+  {
+    "function": "get_logging_configuration",
+    "service": "ivschat"
+  },
+  {
+    "function": "get_paginator",
+    "service": "ivschat"
+  },
+  {
+    "function": "get_room",
+    "service": "ivschat"
+  },
+  {
+    "function": "get_waiter",
+    "service": "ivschat"
+  },
+  {
+    "function": "list_logging_configurations",
+    "service": "ivschat"
+  },
+  {
+    "function": "list_rooms",
+    "service": "ivschat"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "ivschat"
+  }
+]

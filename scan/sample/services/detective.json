@@ -1,0 +1,42 @@
+[
+  {
+    "function": "describe_organization_configuration",
+    "service": "detective"
+  },
+  {
+    "function": "get_members",
+    "service": "detective"
+  },
+  {
+    "function": "get_paginator",
+    "service": "detective"
+  },
+  {
+    "function": "get_waiter",
+    "service": "detective"
+  },
+  {
+    "function": "list_datasource_packages",
+    "service": "detective"
+  },
+  {
+    "function": "list_graphs",
+    "service": "detective"
+  },
+  {
+    "function": "list_invitations",
+    "service": "detective"
+  },
+  {
+    "function": "list_members",
+    "service": "detective"
+  },
+  {
+    "function": "list_organization_admin_accounts",
+    "service": "detective"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "detective"
+  }
+]

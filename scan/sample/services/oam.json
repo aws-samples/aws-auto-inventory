@@ -1,0 +1,38 @@
+[
+  {
+    "function": "get_link",
+    "service": "oam"
+  },
+  {
+    "function": "get_paginator",
+    "service": "oam"
+  },
+  {
+    "function": "get_sink",
+    "service": "oam"
+  },
+  {
+    "function": "get_sink_policy",
+    "service": "oam"
+  },
+  {
+    "function": "get_waiter",
+    "service": "oam"
+  },
+  {
+    "function": "list_attached_links",
+    "service": "oam"
+  },
+  {
+    "function": "list_links",
+    "service": "oam"
+  },
+  {
+    "function": "list_sinks",
+    "service": "oam"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "oam"
+  }
+]

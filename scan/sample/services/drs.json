@@ -1,0 +1,66 @@
+[
+  {
+    "function": "describe_job_log_items",
+    "service": "drs"
+  },
+  {
+    "function": "describe_jobs",
+    "service": "drs"
+  },
+  {
+    "function": "describe_launch_configuration_templates",
+    "service": "drs"
+  },
+  {
+    "function": "describe_recovery_instances",
+    "service": "drs"
+  },
+  {
+    "function": "describe_recovery_snapshots",
+    "service": "drs"
+  },
+  {
+    "function": "describe_replication_configuration_templates",
+    "service": "drs"
+  },
+  {
+    "function": "describe_source_networks",
+    "service": "drs"
+  },
+  {
+    "function": "describe_source_servers",
+    "service": "drs"
+  },
+  {
+    "function": "get_failback_replication_configuration",
+    "service": "drs"
+  },
+  {
+    "function": "get_launch_configuration",
+    "service": "drs"
+  },
+  {
+    "function": "get_paginator",
+    "service": "drs"
+  },
+  {
+    "function": "get_replication_configuration",
+    "service": "drs"
+  },
+  {
+    "function": "get_waiter",
+    "service": "drs"
+  },
+  {
+    "function": "list_extensible_source_servers",
+    "service": "drs"
+  },
+  {
+    "function": "list_staging_accounts",
+    "service": "drs"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "drs"
+  }
+]

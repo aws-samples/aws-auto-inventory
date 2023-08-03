@@ -1,0 +1,70 @@
+[
+  {
+    "function": "get_dev_environment",
+    "service": "codecatalyst"
+  },
+  {
+    "function": "get_paginator",
+    "service": "codecatalyst"
+  },
+  {
+    "function": "get_project",
+    "service": "codecatalyst"
+  },
+  {
+    "function": "get_source_repository",
+    "service": "codecatalyst"
+  },
+  {
+    "function": "get_source_repository_clone_urls",
+    "service": "codecatalyst"
+  },
+  {
+    "function": "get_space",
+    "service": "codecatalyst"
+  },
+  {
+    "function": "get_subscription",
+    "service": "codecatalyst"
+  },
+  {
+    "function": "get_user_details",
+    "service": "codecatalyst"
+  },
+  {
+    "function": "get_waiter",
+    "service": "codecatalyst"
+  },
+  {
+    "function": "list_access_tokens",
+    "service": "codecatalyst"
+  },
+  {
+    "function": "list_dev_environment_sessions",
+    "service": "codecatalyst"
+  },
+  {
+    "function": "list_dev_environments",
+    "service": "codecatalyst"
+  },
+  {
+    "function": "list_event_logs",
+    "service": "codecatalyst"
+  },
+  {
+    "function": "list_projects",
+    "service": "codecatalyst"
+  },
+  {
+    "function": "list_source_repositories",
+    "service": "codecatalyst"
+  },
+  {
+    "function": "list_source_repository_branches",
+    "service": "codecatalyst"
+  },
+  {
+    "function": "list_spaces",
+    "service": "codecatalyst"
+  }
+]

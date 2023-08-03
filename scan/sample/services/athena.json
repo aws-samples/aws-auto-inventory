@@ -1,0 +1,142 @@
+[
+  {
+    "function": "get_calculation_execution",
+    "service": "athena"
+  },
+  {
+    "function": "get_calculation_execution_code",
+    "service": "athena"
+  },
+  {
+    "function": "get_calculation_execution_status",
+    "service": "athena"
+  },
+  {
+    "function": "get_capacity_assignment_configuration",
+    "service": "athena"
+  },
+  {
+    "function": "get_capacity_reservation",
+    "service": "athena"
+  },
+  {
+    "function": "get_data_catalog",
+    "service": "athena"
+  },
+  {
+    "function": "get_database",
+    "service": "athena"
+  },
+  {
+    "function": "get_named_query",
+    "service": "athena"
+  },
+  {
+    "function": "get_notebook_metadata",
+    "service": "athena"
+  },
+  {
+    "function": "get_paginator",
+    "service": "athena"
+  },
+  {
+    "function": "get_prepared_statement",
+    "service": "athena"
+  },
+  {
+    "function": "get_query_execution",
+    "service": "athena"
+  },
+  {
+    "function": "get_query_results",
+    "service": "athena"
+  },
+  {
+    "function": "get_query_runtime_statistics",
+    "service": "athena"
+  },
+  {
+    "function": "get_session",
+    "service": "athena"
+  },
+  {
+    "function": "get_session_status",
+    "service": "athena"
+  },
+  {
+    "function": "get_table_metadata",
+    "service": "athena"
+  },
+  {
+    "function": "get_waiter",
+    "service": "athena"
+  },
+  {
+    "function": "get_work_group",
+    "service": "athena"
+  },
+  {
+    "function": "list_application_dpu_sizes",
+    "service": "athena"
+  },
+  {
+    "function": "list_calculation_executions",
+    "service": "athena"
+  },
+  {
+    "function": "list_capacity_reservations",
+    "service": "athena"
+  },
+  {
+    "function": "list_data_catalogs",
+    "service": "athena"
+  },
+  {
+    "function": "list_databases",
+    "service": "athena"
+  },
+  {
+    "function": "list_engine_versions",
+    "service": "athena"
+  },
+  {
+    "function": "list_executors",
+    "service": "athena"
+  },
+  {
+    "function": "list_named_queries",
+    "service": "athena"
+  },
+  {
+    "function": "list_notebook_metadata",
+    "service": "athena"
+  },
+  {
+    "function": "list_notebook_sessions",
+    "service": "athena"
+  },
+  {
+    "function": "list_prepared_statements",
+    "service": "athena"
+  },
+  {
+    "function": "list_query_executions",
+    "service": "athena"
+  },
+  {
+    "function": "list_sessions",
+    "service": "athena"
+  },
+  {
+    "function": "list_table_metadata",
+    "service": "athena"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "athena"
+  },
+  {
+    "function": "list_work_groups",
+    "service": "athena"
+  }
+]

@@ -1,0 +1,70 @@
+[
+  {
+    "function": "get_app",
+    "service": "amplify"
+  },
+  {
+    "function": "get_artifact_url",
+    "service": "amplify"
+  },
+  {
+    "function": "get_backend_environment",
+    "service": "amplify"
+  },
+  {
+    "function": "get_branch",
+    "service": "amplify"
+  },
+  {
+    "function": "get_domain_association",
+    "service": "amplify"
+  },
+  {
+    "function": "get_job",
+    "service": "amplify"
+  },
+  {
+    "function": "get_paginator",
+    "service": "amplify"
+  },
+  {
+    "function": "get_waiter",
+    "service": "amplify"
+  },
+  {
+    "function": "get_webhook",
+    "service": "amplify"
+  },
+  {
+    "function": "list_apps",
+    "service": "amplify"
+  },
+  {
+    "function": "list_artifacts",
+    "service": "amplify"
+  },
+  {
+    "function": "list_backend_environments",
+    "service": "amplify"
+  },
+  {
+    "function": "list_branches",
+    "service": "amplify"
+  },
+  {
+    "function": "list_domain_associations",
+    "service": "amplify"
+  },
+  {
+    "function": "list_jobs",
+    "service": "amplify"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "amplify"
+  },
+  {
+    "function": "list_webhooks",
+    "service": "amplify"
+  }
+]

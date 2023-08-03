@@ -1,0 +1,34 @@
+[
+  {
+    "function": "describe_dimension_keys",
+    "service": "pi"
+  },
+  {
+    "function": "get_dimension_key_details",
+    "service": "pi"
+  },
+  {
+    "function": "get_paginator",
+    "service": "pi"
+  },
+  {
+    "function": "get_resource_metadata",
+    "service": "pi"
+  },
+  {
+    "function": "get_resource_metrics",
+    "service": "pi"
+  },
+  {
+    "function": "get_waiter",
+    "service": "pi"
+  },
+  {
+    "function": "list_available_resource_dimensions",
+    "service": "pi"
+  },
+  {
+    "function": "list_available_resource_metrics",
+    "service": "pi"
+  }
+]

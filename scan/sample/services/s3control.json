@@ -1,0 +1,126 @@
+[
+  {
+    "function": "describe_job",
+    "service": "s3control"
+  },
+  {
+    "function": "describe_multi_region_access_point_operation",
+    "service": "s3control"
+  },
+  {
+    "function": "get_access_point",
+    "service": "s3control"
+  },
+  {
+    "function": "get_access_point_configuration_for_object_lambda",
+    "service": "s3control"
+  },
+  {
+    "function": "get_access_point_for_object_lambda",
+    "service": "s3control"
+  },
+  {
+    "function": "get_access_point_policy",
+    "service": "s3control"
+  },
+  {
+    "function": "get_access_point_policy_for_object_lambda",
+    "service": "s3control"
+  },
+  {
+    "function": "get_access_point_policy_status",
+    "service": "s3control"
+  },
+  {
+    "function": "get_access_point_policy_status_for_object_lambda",
+    "service": "s3control"
+  },
+  {
+    "function": "get_bucket",
+    "service": "s3control"
+  },
+  {
+    "function": "get_bucket_lifecycle_configuration",
+    "service": "s3control"
+  },
+  {
+    "function": "get_bucket_policy",
+    "service": "s3control"
+  },
+  {
+    "function": "get_bucket_replication",
+    "service": "s3control"
+  },
+  {
+    "function": "get_bucket_tagging",
+    "service": "s3control"
+  },
+  {
+    "function": "get_bucket_versioning",
+    "service": "s3control"
+  },
+  {
+    "function": "get_job_tagging",
+    "service": "s3control"
+  },
+  {
+    "function": "get_multi_region_access_point",
+    "service": "s3control"
+  },
+  {
+    "function": "get_multi_region_access_point_policy",
+    "service": "s3control"
+  },
+  {
+    "function": "get_multi_region_access_point_policy_status",
+    "service": "s3control"
+  },
+  {
+    "function": "get_multi_region_access_point_routes",
+    "service": "s3control"
+  },
+  {
+    "function": "get_paginator",
+    "service": "s3control"
+  },
+  {
+    "function": "get_public_access_block",
+    "service": "s3control"
+  },
+  {
+    "function": "get_storage_lens_configuration",
+    "service": "s3control"
+  },
+  {
+    "function": "get_storage_lens_configuration_tagging",
+    "service": "s3control"
+  },
+  {
+    "function": "get_waiter",
+    "service": "s3control"
+  },
+  {
+    "function": "list_access_points",
+    "service": "s3control"
+  },
+  {
+    "function": "list_access_points_for_object_lambda",
+    "service": "s3control"
+  },
+  {
+    "function": "list_jobs",
+    "service": "s3control"
+  },
+  {
+    "function": "list_multi_region_access_points",
+    "service": "s3control"
+  },
+  {
+    "function": "list_regional_buckets",
+    "service": "s3control"
+  },
+  {
+    "function": "list_storage_lens_configurations",
+    "service": "s3control"
+  }
+]

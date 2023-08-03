@@ -1,0 +1,106 @@
+[
+  {
+    "function": "describe_agent_versions",
+    "service": "opsworks"
+  },
+  {
+    "function": "describe_apps",
+    "service": "opsworks"
+  },
+  {
+    "function": "describe_commands",
+    "service": "opsworks"
+  },
+  {
+    "function": "describe_deployments",
+    "service": "opsworks"
+  },
+  {
+    "function": "describe_ecs_clusters",
+    "service": "opsworks"
+  },
+  {
+    "function": "describe_elastic_ips",
+    "service": "opsworks"
+  },
+  {
+    "function": "describe_elastic_load_balancers",
+    "service": "opsworks"
+  },
+  {
+    "function": "describe_instances",
+    "service": "opsworks"
+  },
+  {
+    "function": "describe_layers",
+    "service": "opsworks"
+  },
+  {
+    "function": "describe_load_based_auto_scaling",
+    "service": "opsworks"
+  },
+  {
+    "function": "describe_my_user_profile",
+    "service": "opsworks"
+  },
+  {
+    "function": "describe_operating_systems",
+    "service": "opsworks"
+  },
+  {
+    "function": "describe_permissions",
+    "service": "opsworks"
+  },
+  {
+    "function": "describe_raid_arrays",
+    "service": "opsworks"
+  },
+  {
+    "function": "describe_rds_db_instances",
+    "service": "opsworks"
+  },
+  {
+    "function": "describe_service_errors",
+    "service": "opsworks"
+  },
+  {
+    "function": "describe_stack_provisioning_parameters",
+    "service": "opsworks"
+  },
+  {
+    "function": "describe_stack_summary",
+    "service": "opsworks"
+  },
+  {
+    "function": "describe_stacks",
+    "service": "opsworks"
+  },
+  {
+    "function": "describe_time_based_auto_scaling",
+    "service": "opsworks"
+  },
+  {
+    "function": "describe_user_profiles",
+    "service": "opsworks"
+  },
+  {
+    "function": "describe_volumes",
+    "service": "opsworks"
+  },
+  {
+    "function": "get_hostname_suggestion",
+    "service": "opsworks"
+  },
+  {
+    "function": "get_paginator",
+    "service": "opsworks"
+  },
+  {
+    "function": "get_waiter",
+    "service": "opsworks"
+  },
+  {
+    "function": "list_tags",
+    "service": "opsworks"
+  }
+]

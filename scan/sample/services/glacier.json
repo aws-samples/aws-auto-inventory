@@ -1,0 +1,62 @@
+[
+  {
+    "function": "describe_job",
+    "service": "glacier"
+  },
+  {
+    "function": "describe_vault",
+    "service": "glacier"
+  },
+  {
+    "function": "get_data_retrieval_policy",
+    "service": "glacier"
+  },
+  {
+    "function": "get_job_output",
+    "service": "glacier"
+  },
+  {
+    "function": "get_paginator",
+    "service": "glacier"
+  },
+  {
+    "function": "get_vault_access_policy",
+    "service": "glacier"
+  },
+  {
+    "function": "get_vault_lock",
+    "service": "glacier"
+  },
+  {
+    "function": "get_vault_notifications",
+    "service": "glacier"
+  },
+  {
+    "function": "get_waiter",
+    "service": "glacier"
+  },
+  {
+    "function": "list_jobs",
+    "service": "glacier"
+  },
+  {
+    "function": "list_multipart_uploads",
+    "service": "glacier"
+  },
+  {
+    "function": "list_parts",
+    "service": "glacier"
+  },
+  {
+    "function": "list_provisioned_capacity",
+    "service": "glacier"
+  },
+  {
+    "function": "list_tags_for_vault",
+    "service": "glacier"
+  },
+  {
+    "function": "list_vaults",
+    "service": "glacier"
+  }
+]

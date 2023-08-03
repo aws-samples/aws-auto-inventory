@@ -1,0 +1,38 @@
+[
+  {
+    "function": "describe_fhir_datastore",
+    "service": "healthlake"
+  },
+  {
+    "function": "describe_fhir_export_job",
+    "service": "healthlake"
+  },
+  {
+    "function": "describe_fhir_import_job",
+    "service": "healthlake"
+  },
+  {
+    "function": "get_paginator",
+    "service": "healthlake"
+  },
+  {
+    "function": "get_waiter",
+    "service": "healthlake"
+  },
+  {
+    "function": "list_fhir_datastores",
+    "service": "healthlake"
+  },
+  {
+    "function": "list_fhir_export_jobs",
+    "service": "healthlake"
+  },
+  {
+    "function": "list_fhir_import_jobs",
+    "service": "healthlake"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "healthlake"
+  }
+]

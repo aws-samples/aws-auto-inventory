@@ -1,0 +1,146 @@
+[
+  {
+    "function": "describe_dataset",
+    "service": "comprehend"
+  },
+  {
+    "function": "describe_document_classification_job",
+    "service": "comprehend"
+  },
+  {
+    "function": "describe_document_classifier",
+    "service": "comprehend"
+  },
+  {
+    "function": "describe_dominant_language_detection_job",
+    "service": "comprehend"
+  },
+  {
+    "function": "describe_endpoint",
+    "service": "comprehend"
+  },
+  {
+    "function": "describe_entities_detection_job",
+    "service": "comprehend"
+  },
+  {
+    "function": "describe_entity_recognizer",
+    "service": "comprehend"
+  },
+  {
+    "function": "describe_events_detection_job",
+    "service": "comprehend"
+  },
+  {
+    "function": "describe_flywheel",
+    "service": "comprehend"
+  },
+  {
+    "function": "describe_flywheel_iteration",
+    "service": "comprehend"
+  },
+  {
+    "function": "describe_key_phrases_detection_job",
+    "service": "comprehend"
+  },
+  {
+    "function": "describe_pii_entities_detection_job",
+    "service": "comprehend"
+  },
+  {
+    "function": "describe_resource_policy",
+    "service": "comprehend"
+  },
+  {
+    "function": "describe_sentiment_detection_job",
+    "service": "comprehend"
+  },
+  {
+    "function": "describe_targeted_sentiment_detection_job",
+    "service": "comprehend"
+  },
+  {
+    "function": "describe_topics_detection_job",
+    "service": "comprehend"
+  },
+  {
+    "function": "get_paginator",
+    "service": "comprehend"
+  },
+  {
+    "function": "get_waiter",
+    "service": "comprehend"
+  },
+  {
+    "function": "list_datasets",
+    "service": "comprehend"
+  },
+  {
+    "function": "list_document_classification_jobs",
+    "service": "comprehend"
+  },
+  {
+    "function": "list_document_classifier_summaries",
+    "service": "comprehend"
+  },
+  {
+    "function": "list_document_classifiers",
+    "service": "comprehend"
+  },
+  {
+    "function": "list_dominant_language_detection_jobs",
+    "service": "comprehend"
+  },
+  {
+    "function": "list_endpoints",
+    "service": "comprehend"
+  },
+  {
+    "function": "list_entities_detection_jobs",
+    "service": "comprehend"
+  },
+  {
+    "function": "list_entity_recognizer_summaries",
+    "service": "comprehend"
+  },
+  {
+    "function": "list_entity_recognizers",
+    "service": "comprehend"
+  },
+  {
+    "function": "list_events_detection_jobs",
+    "service": "comprehend"
+  },
+  {
+    "function": "list_flywheel_iteration_history",
+    "service": "comprehend"
+  },
+  {
+    "function": "list_flywheels",
+    "service": "comprehend"
+  },
+  {
+    "function": "list_key_phrases_detection_jobs",
+    "service": "comprehend"
+  },
+  {
+    "function": "list_pii_entities_detection_jobs",
+    "service": "comprehend"
+  },
+  {
+    "function": "list_sentiment_detection_jobs",
+    "service": "comprehend"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "comprehend"
+  },
+  {
+    "function": "list_targeted_sentiment_detection_jobs",
+    "service": "comprehend"
+  },
+  {
+    "function": "list_topics_detection_jobs",
+    "service": "comprehend"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "function": "get_control_operation",
+    "service": "controltower"
+  },
+  {
+    "function": "get_paginator",
+    "service": "controltower"
+  },
+  {
+    "function": "get_waiter",
+    "service": "controltower"
+  },
+  {
+    "function": "list_enabled_controls",
+    "service": "controltower"
+  }
+]

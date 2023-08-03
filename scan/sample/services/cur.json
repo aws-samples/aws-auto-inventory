@@ -1,0 +1,14 @@
+[
+  {
+    "function": "describe_report_definitions",
+    "service": "cur"
+  },
+  {
+    "function": "get_paginator",
+    "service": "cur"
+  },
+  {
+    "function": "get_waiter",
+    "service": "cur"
+  }
+]

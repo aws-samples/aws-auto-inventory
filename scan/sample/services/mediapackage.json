@@ -1,0 +1,38 @@
+[
+  {
+    "function": "describe_channel",
+    "service": "mediapackage"
+  },
+  {
+    "function": "describe_harvest_job",
+    "service": "mediapackage"
+  },
+  {
+    "function": "describe_origin_endpoint",
+    "service": "mediapackage"
+  },
+  {
+    "function": "get_paginator",
+    "service": "mediapackage"
+  },
+  {
+    "function": "get_waiter",
+    "service": "mediapackage"
+  },
+  {
+    "function": "list_channels",
+    "service": "mediapackage"
+  },
+  {
+    "function": "list_harvest_jobs",
+    "service": "mediapackage"
+  },
+  {
+    "function": "list_origin_endpoints",
+    "service": "mediapackage"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "mediapackage"
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "function": "describe_app",
+    "service": "simspaceweaver"
+  },
+  {
+    "function": "describe_simulation",
+    "service": "simspaceweaver"
+  },
+  {
+    "function": "get_paginator",
+    "service": "simspaceweaver"
+  },
+  {
+    "function": "get_waiter",
+    "service": "simspaceweaver"
+  },
+  {
+    "function": "list_apps",
+    "service": "simspaceweaver"
+  },
+  {
+    "function": "list_simulations",
+    "service": "simspaceweaver"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "simspaceweaver"
+  }
+]

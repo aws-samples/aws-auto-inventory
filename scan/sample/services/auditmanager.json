@@ -1,0 +1,130 @@
+[
+  {
+    "function": "get_account_status",
+    "service": "auditmanager"
+  },
+  {
+    "function": "get_assessment",
+    "service": "auditmanager"
+  },
+  {
+    "function": "get_assessment_framework",
+    "service": "auditmanager"
+  },
+  {
+    "function": "get_assessment_report_url",
+    "service": "auditmanager"
+  },
+  {
+    "function": "get_change_logs",
+    "service": "auditmanager"
+  },
+  {
+    "function": "get_control",
+    "service": "auditmanager"
+  },
+  {
+    "function": "get_delegations",
+    "service": "auditmanager"
+  },
+  {
+    "function": "get_evidence",
+    "service": "auditmanager"
+  },
+  {
+    "function": "get_evidence_by_evidence_folder",
+    "service": "auditmanager"
+  },
+  {
+    "function": "get_evidence_file_upload_url",
+    "service": "auditmanager"
+  },
+  {
+    "function": "get_evidence_folder",
+    "service": "auditmanager"
+  },
+  {
+    "function": "get_evidence_folders_by_assessment",
+    "service": "auditmanager"
+  },
+  {
+    "function": "get_evidence_folders_by_assessment_control",
+    "service": "auditmanager"
+  },
+  {
+    "function": "get_insights",
+    "service": "auditmanager"
+  },
+  {
+    "function": "get_insights_by_assessment",
+    "service": "auditmanager"
+  },
+  {
+    "function": "get_organization_admin_account",
+    "service": "auditmanager"
+  },
+  {
+    "function": "get_paginator",
+    "service": "auditmanager"
+  },
+  {
+    "function": "get_services_in_scope",
+    "service": "auditmanager"
+  },
+  {
+    "function": "get_settings",
+    "service": "auditmanager"
+  },
+  {
+    "function": "get_waiter",
+    "service": "auditmanager"
+  },
+  {
+    "function": "list_assessment_control_insights_by_control_domain",
+    "service": "auditmanager"
+  },
+  {
+    "function": "list_assessment_framework_share_requests",
+    "service": "auditmanager"
+  },
+  {
+    "function": "list_assessment_frameworks",
+    "service": "auditmanager"
+  },
+  {
+    "function": "list_assessment_reports",
+    "service": "auditmanager"
+  },
+  {
+    "function": "list_assessments",
+    "service": "auditmanager"
+  },
+  {
+    "function": "list_control_domain_insights",
+    "service": "auditmanager"
+  },
+  {
+    "function": "list_control_domain_insights_by_assessment",
+    "service": "auditmanager"
+  },
+  {
+    "function": "list_control_insights_by_control_domain",
+    "service": "auditmanager"
+  },
+  {
+    "function": "list_controls",
+    "service": "auditmanager"
+  },
+  {
+    "function": "list_keywords_for_data_source",
+    "service": "auditmanager"
+  },
+  {
+    "function": "list_notifications",
+    "service": "auditmanager"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "auditmanager"
+  }
+]

@@ -1,0 +1,178 @@
+[
+  {
+    "function": "describe_account_attributes",
+    "service": "redshift"
+  },
+  {
+    "function": "describe_authentication_profiles",
+    "service": "redshift"
+  },
+  {
+    "function": "describe_cluster_db_revisions",
+    "service": "redshift"
+  },
+  {
+    "function": "describe_cluster_parameter_groups",
+    "service": "redshift"
+  },
+  {
+    "function": "describe_cluster_parameters",
+    "service": "redshift"
+  },
+  {
+    "function": "describe_cluster_security_groups",
+    "service": "redshift"
+  },
+  {
+    "function": "describe_cluster_snapshots",
+    "service": "redshift"
+  },
+  {
+    "function": "describe_cluster_subnet_groups",
+    "service": "redshift"
+  },
+  {
+    "function": "describe_cluster_tracks",
+    "service": "redshift"
+  },
+  {
+    "function": "describe_cluster_versions",
+    "service": "redshift"
+  },
+  {
+    "function": "describe_clusters",
+    "service": "redshift"
+  },
+  {
+    "function": "describe_custom_domain_associations",
+    "service": "redshift"
+  },
+  {
+    "function": "describe_data_shares",
+    "service": "redshift"
+  },
+  {
+    "function": "describe_data_shares_for_consumer",
+    "service": "redshift"
+  },
+  {
+    "function": "describe_data_shares_for_producer",
+    "service": "redshift"
+  },
+  {
+    "function": "describe_default_cluster_parameters",
+    "service": "redshift"
+  },
+  {
+    "function": "describe_endpoint_access",
+    "service": "redshift"
+  },
+  {
+    "function": "describe_endpoint_authorization",
+    "service": "redshift"
+  },
+  {
+    "function": "describe_event_categories",
+    "service": "redshift"
+  },
+  {
+    "function": "describe_event_subscriptions",
+    "service": "redshift"
+  },
+  {
+    "function": "describe_events",
+    "service": "redshift"
+  },
+  {
+    "function": "describe_hsm_client_certificates",
+    "service": "redshift"
+  },
+  {
+    "function": "describe_hsm_configurations",
+    "service": "redshift"
+  },
+  {
+    "function": "describe_logging_status",
+    "service": "redshift"
+  },
+  {
+    "function": "describe_node_configuration_options",
+    "service": "redshift"
+  },
+  {
+    "function": "describe_orderable_cluster_options",
+    "service": "redshift"
+  },
+  {
+    "function": "describe_partners",
+    "service": "redshift"
+  },
+  {
+    "function": "describe_reserved_node_exchange_status",
+    "service": "redshift"
+  },
+  {
+    "function": "describe_reserved_node_offerings",
+    "service": "redshift"
+  },
+  {
+    "function": "describe_reserved_nodes",
+    "service": "redshift"
+  },
+  {
+    "function": "describe_resize",
+    "service": "redshift"
+  },
+  {
+    "function": "describe_scheduled_actions",
+    "service": "redshift"
+  },
+  {
+    "function": "describe_snapshot_copy_grants",
+    "service": "redshift"
+  },
+  {
+    "function": "describe_snapshot_schedules",
+    "service": "redshift"
+  },
+  {
+    "function": "describe_storage",
+    "service": "redshift"
+  },
+  {
+    "function": "describe_table_restore_status",
+    "service": "redshift"
+  },
+  {
+    "function": "describe_tags",
+    "service": "redshift"
+  },
+  {
+    "function": "describe_usage_limits",
+    "service": "redshift"
+  },
+  {
+    "function": "get_cluster_credentials",
+    "service": "redshift"
+  },
+  {
+    "function": "get_cluster_credentials_with_iam",
+    "service": "redshift"
+  },
+  {
+    "function": "get_paginator",
+    "service": "redshift"
+  },
+  {
+    "function": "get_reserved_node_exchange_configuration_options",
+    "service": "redshift"
+  },
+  {
+    "function": "get_reserved_node_exchange_offerings",
+    "service": "redshift"
+  },
+  {
+    "function": "get_waiter",
+    "service": "redshift"
+  }
+]

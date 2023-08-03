@@ -1,0 +1,82 @@
+[
+  {
+    "function": "describe_capacity_providers",
+    "service": "ecs"
+  },
+  {
+    "function": "describe_clusters",
+    "service": "ecs"
+  },
+  {
+    "function": "describe_container_instances",
+    "service": "ecs"
+  },
+  {
+    "function": "describe_services",
+    "service": "ecs"
+  },
+  {
+    "function": "describe_task_definition",
+    "service": "ecs"
+  },
+  {
+    "function": "describe_task_sets",
+    "service": "ecs"
+  },
+  {
+    "function": "describe_tasks",
+    "service": "ecs"
+  },
+  {
+    "function": "get_paginator",
+    "service": "ecs"
+  },
+  {
+    "function": "get_task_protection",
+    "service": "ecs"
+  },
+  {
+    "function": "get_waiter",
+    "service": "ecs"
+  },
+  {
+    "function": "list_account_settings",
+    "service": "ecs"
+  },
+  {
+    "function": "list_attributes",
+    "service": "ecs"
+  },
+  {
+    "function": "list_clusters",
+    "service": "ecs"
+  },
+  {
+    "function": "list_container_instances",
+    "service": "ecs"
+  },
+  {
+    "function": "list_services",
+    "service": "ecs"
+  },
+  {
+    "function": "list_services_by_namespace",
+    "service": "ecs"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "ecs"
+  },
+  {
+    "function": "list_task_definition_families",
+    "service": "ecs"
+  },
+  {
+    "function": "list_task_definitions",
+    "service": "ecs"
+  },
+  {
+    "function": "list_tasks",
+    "service": "ecs"
+  }
+]

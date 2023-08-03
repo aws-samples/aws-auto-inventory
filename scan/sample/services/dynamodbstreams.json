@@ -1,0 +1,26 @@
+[
+  {
+    "function": "describe_stream",
+    "service": "dynamodbstreams"
+  },
+  {
+    "function": "get_paginator",
+    "service": "dynamodbstreams"
+  },
+  {
+    "function": "get_records",
+    "service": "dynamodbstreams"
+  },
+  {
+    "function": "get_shard_iterator",
+    "service": "dynamodbstreams"
+  },
+  {
+    "function": "get_waiter",
+    "service": "dynamodbstreams"
+  },
+  {
+    "function": "list_streams",
+    "service": "dynamodbstreams"
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "function": "get_codegen_job",
+    "service": "amplifyuibuilder"
+  },
+  {
+    "function": "get_component",
+    "service": "amplifyuibuilder"
+  },
+  {
+    "function": "get_form",
+    "service": "amplifyuibuilder"
+  },
+  {
+    "function": "get_metadata",
+    "service": "amplifyuibuilder"
+  },
+  {
+    "function": "get_paginator",
+    "service": "amplifyuibuilder"
+  },
+  {
+    "function": "get_theme",
+    "service": "amplifyuibuilder"
+  },
+  {
+    "function": "get_waiter",
+    "service": "amplifyuibuilder"
+  },
+  {
+    "function": "list_codegen_jobs",
+    "service": "amplifyuibuilder"
+  },
+  {
+    "function": "list_components",
+    "service": "amplifyuibuilder"
+  },
+  {
+    "function": "list_forms",
+    "service": "amplifyuibuilder"
+  },
+  {
+    "function": "list_themes",
+    "service": "amplifyuibuilder"
+  }
+]

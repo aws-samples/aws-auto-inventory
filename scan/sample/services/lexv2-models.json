@@ -1,0 +1,186 @@
+[
+  {
+    "function": "describe_bot",
+    "service": "lexv2-models"
+  },
+  {
+    "function": "describe_bot_alias",
+    "service": "lexv2-models"
+  },
+  {
+    "function": "describe_bot_locale",
+    "service": "lexv2-models"
+  },
+  {
+    "function": "describe_bot_recommendation",
+    "service": "lexv2-models"
+  },
+  {
+    "function": "describe_bot_version",
+    "service": "lexv2-models"
+  },
+  {
+    "function": "describe_custom_vocabulary_metadata",
+    "service": "lexv2-models"
+  },
+  {
+    "function": "describe_export",
+    "service": "lexv2-models"
+  },
+  {
+    "function": "describe_import",
+    "service": "lexv2-models"
+  },
+  {
+    "function": "describe_intent",
+    "service": "lexv2-models"
+  },
+  {
+    "function": "describe_resource_policy",
+    "service": "lexv2-models"
+  },
+  {
+    "function": "describe_slot",
+    "service": "lexv2-models"
+  },
+  {
+    "function": "describe_slot_type",
+    "service": "lexv2-models"
+  },
+  {
+    "function": "describe_test_execution",
+    "service": "lexv2-models"
+  },
+  {
+    "function": "describe_test_set",
+    "service": "lexv2-models"
+  },
+  {
+    "function": "describe_test_set_discrepancy_report",
+    "service": "lexv2-models"
+  },
+  {
+    "function": "describe_test_set_generation",
+    "service": "lexv2-models"
+  },
+  {
+    "function": "get_paginator",
+    "service": "lexv2-models"
+  },
+  {
+    "function": "get_test_execution_artifacts_url",
+    "service": "lexv2-models"
+  },
+  {
+    "function": "get_waiter",
+    "service": "lexv2-models"
+  },
+  {
+    "function": "list_aggregated_utterances",
+    "service": "lexv2-models"
+  },
+  {
+    "function": "list_bot_aliases",
+    "service": "lexv2-models"
+  },
+  {
+    "function": "list_bot_locales",
+    "service": "lexv2-models"
+  },
+  {
+    "function": "list_bot_recommendations",
+    "service": "lexv2-models"
+  },
+  {
+    "function": "list_bot_versions",
+    "service": "lexv2-models"
+  },
+  {
+    "function": "list_bots",
+    "service": "lexv2-models"
+  },
+  {
+    "function": "list_built_in_intents",
+    "service": "lexv2-models"
+  },
+  {
+    "function": "list_built_in_slot_types",
+    "service": "lexv2-models"
+  },
+  {
+    "function": "list_custom_vocabulary_items",
+    "service": "lexv2-models"
+  },
+  {
+    "function": "list_exports",
+    "service": "lexv2-models"
+  },
+  {
+    "function": "list_imports",
+    "service": "lexv2-models"
+  },
+  {
+    "function": "list_intent_metrics",
+    "service": "lexv2-models"
+  },
+  {
+    "function": "list_intent_paths",
+    "service": "lexv2-models"
+  },
+  {
+    "function": "list_intent_stage_metrics",
+    "service": "lexv2-models"
+  },
+  {
+    "function": "list_intents",
+    "service": "lexv2-models"
+  },
+  {
+    "function": "list_recommended_intents",
+    "service": "lexv2-models"
+  },
+  {
+    "function": "list_session_analytics_data",
+    "service": "lexv2-models"
+  },
+  {
+    "function": "list_session_metrics",
+    "service": "lexv2-models"
+  },
+  {
+    "function": "list_slot_types",
+    "service": "lexv2-models"
+  },
+  {
+    "function": "list_slots",
+    "service": "lexv2-models"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "lexv2-models"
+  },
+  {
+    "function": "list_test_execution_result_items",
+    "service": "lexv2-models"
+  },
+  {
+    "function": "list_test_executions",
+    "service": "lexv2-models"
+  },
+  {
+    "function": "list_test_set_records",
+    "service": "lexv2-models"
+  },
+  {
+    "function": "list_test_sets",
+    "service": "lexv2-models"
+  },
+  {
+    "function": "list_utterance_analytics_data",
+    "service": "lexv2-models"
+  },
+  {
+    "function": "list_utterance_metrics",
+    "service": "lexv2-models"
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "function": "get_destination",
+    "service": "iot-roborunner"
+  },
+  {
+    "function": "get_paginator",
+    "service": "iot-roborunner"
+  },
+  {
+    "function": "get_site",
+    "service": "iot-roborunner"
+  },
+  {
+    "function": "get_waiter",
+    "service": "iot-roborunner"
+  },
+  {
+    "function": "get_worker",
+    "service": "iot-roborunner"
+  },
+  {
+    "function": "get_worker_fleet",
+    "service": "iot-roborunner"
+  },
+  {
+    "function": "list_destinations",
+    "service": "iot-roborunner"
+  },
+  {
+    "function": "list_sites",
+    "service": "iot-roborunner"
+  },
+  {
+    "function": "list_worker_fleets",
+    "service": "iot-roborunner"
+  },
+  {
+    "function": "list_workers",
+    "service": "iot-roborunner"
+  }
+]

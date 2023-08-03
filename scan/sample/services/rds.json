@@ -1,0 +1,174 @@
+[
+  {
+    "function": "describe_account_attributes",
+    "service": "rds"
+  },
+  {
+    "function": "describe_blue_green_deployments",
+    "service": "rds"
+  },
+  {
+    "function": "describe_certificates",
+    "service": "rds"
+  },
+  {
+    "function": "describe_db_cluster_automated_backups",
+    "service": "rds"
+  },
+  {
+    "function": "describe_db_cluster_backtracks",
+    "service": "rds"
+  },
+  {
+    "function": "describe_db_cluster_endpoints",
+    "service": "rds"
+  },
+  {
+    "function": "describe_db_cluster_parameter_groups",
+    "service": "rds"
+  },
+  {
+    "function": "describe_db_cluster_parameters",
+    "service": "rds"
+  },
+  {
+    "function": "describe_db_cluster_snapshot_attributes",
+    "service": "rds"
+  },
+  {
+    "function": "describe_db_cluster_snapshots",
+    "service": "rds"
+  },
+  {
+    "function": "describe_db_clusters",
+    "service": "rds"
+  },
+  {
+    "function": "describe_db_engine_versions",
+    "service": "rds"
+  },
+  {
+    "function": "describe_db_instance_automated_backups",
+    "service": "rds"
+  },
+  {
+    "function": "describe_db_instances",
+    "service": "rds"
+  },
+  {
+    "function": "describe_db_log_files",
+    "service": "rds"
+  },
+  {
+    "function": "describe_db_parameter_groups",
+    "service": "rds"
+  },
+  {
+    "function": "describe_db_parameters",
+    "service": "rds"
+  },
+  {
+    "function": "describe_db_proxies",
+    "service": "rds"
+  },
+  {
+    "function": "describe_db_proxy_endpoints",
+    "service": "rds"
+  },
+  {
+    "function": "describe_db_proxy_target_groups",
+    "service": "rds"
+  },
+  {
+    "function": "describe_db_proxy_targets",
+    "service": "rds"
+  },
+  {
+    "function": "describe_db_security_groups",
+    "service": "rds"
+  },
+  {
+    "function": "describe_db_snapshot_attributes",
+    "service": "rds"
+  },
+  {
+    "function": "describe_db_snapshots",
+    "service": "rds"
+  },
+  {
+    "function": "describe_db_subnet_groups",
+    "service": "rds"
+  },
+  {
+    "function": "describe_engine_default_cluster_parameters",
+    "service": "rds"
+  },
+  {
+    "function": "describe_engine_default_parameters",
+    "service": "rds"
+  },
+  {
+    "function": "describe_event_categories",
+    "service": "rds"
+  },
+  {
+    "function": "describe_event_subscriptions",
+    "service": "rds"
+  },
+  {
+    "function": "describe_events",
+    "service": "rds"
+  },
+  {
+    "function": "describe_export_tasks",
+    "service": "rds"
+  },
+  {
+    "function": "describe_global_clusters",
+    "service": "rds"
+  },
+  {
+    "function": "describe_option_group_options",
+    "service": "rds"
+  },
+  {
+    "function": "describe_option_groups",
+    "service": "rds"
+  },
+  {
+    "function": "describe_orderable_db_instance_options",
+    "service": "rds"
+  },
+  {
+    "function": "describe_pending_maintenance_actions",
+    "service": "rds"
+  },
+  {
+    "function": "describe_reserved_db_instances",
+    "service": "rds"
+  },
+  {
+    "function": "describe_reserved_db_instances_offerings",
+    "service": "rds"
+  },
+  {
+    "function": "describe_source_regions",
+    "service": "rds"
+  },
+  {
+    "function": "describe_valid_db_instance_modifications",
+    "service": "rds"
+  },
+  {
+    "function": "get_paginator",
+    "service": "rds"
+  },
+  {
+    "function": "get_waiter",
+    "service": "rds"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "rds"
+  }
+]

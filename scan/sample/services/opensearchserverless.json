@@ -1,0 +1,54 @@
+[
+  {
+    "function": "get_access_policy",
+    "service": "opensearchserverless"
+  },
+  {
+    "function": "get_account_settings",
+    "service": "opensearchserverless"
+  },
+  {
+    "function": "get_paginator",
+    "service": "opensearchserverless"
+  },
+  {
+    "function": "get_policies_stats",
+    "service": "opensearchserverless"
+  },
+  {
+    "function": "get_security_config",
+    "service": "opensearchserverless"
+  },
+  {
+    "function": "get_security_policy",
+    "service": "opensearchserverless"
+  },
+  {
+    "function": "get_waiter",
+    "service": "opensearchserverless"
+  },
+  {
+    "function": "list_access_policies",
+    "service": "opensearchserverless"
+  },
+  {
+    "function": "list_collections",
+    "service": "opensearchserverless"
+  },
+  {
+    "function": "list_security_configs",
+    "service": "opensearchserverless"
+  },
+  {
+    "function": "list_security_policies",
+    "service": "opensearchserverless"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "opensearchserverless"
+  },
+  {
+    "function": "list_vpc_endpoints",
+    "service": "opensearchserverless"
+  }
+]

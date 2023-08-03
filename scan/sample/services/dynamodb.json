@@ -1,0 +1,94 @@
+[
+  {
+    "function": "describe_backup",
+    "service": "dynamodb"
+  },
+  {
+    "function": "describe_continuous_backups",
+    "service": "dynamodb"
+  },
+  {
+    "function": "describe_contributor_insights",
+    "service": "dynamodb"
+  },
+  {
+    "function": "describe_endpoints",
+    "service": "dynamodb"
+  },
+  {
+    "function": "describe_export",
+    "service": "dynamodb"
+  },
+  {
+    "function": "describe_global_table",
+    "service": "dynamodb"
+  },
+  {
+    "function": "describe_global_table_settings",
+    "service": "dynamodb"
+  },
+  {
+    "function": "describe_import",
+    "service": "dynamodb"
+  },
+  {
+    "function": "describe_kinesis_streaming_destination",
+    "service": "dynamodb"
+  },
+  {
+    "function": "describe_limits",
+    "service": "dynamodb"
+  },
+  {
+    "function": "describe_table",
+    "service": "dynamodb"
+  },
+  {
+    "function": "describe_table_replica_auto_scaling",
+    "service": "dynamodb"
+  },
+  {
+    "function": "describe_time_to_live",
+    "service": "dynamodb"
+  },
+  {
+    "function": "get_item",
+    "service": "dynamodb"
+  },
+  {
+    "function": "get_paginator",
+    "service": "dynamodb"
+  },
+  {
+    "function": "get_waiter",
+    "service": "dynamodb"
+  },
+  {
+    "function": "list_backups",
+    "service": "dynamodb"
+  },
+  {
+    "function": "list_contributor_insights",
+    "service": "dynamodb"
+  },
+  {
+    "function": "list_exports",
+    "service": "dynamodb"
+  },
+  {
+    "function": "list_global_tables",
+    "service": "dynamodb"
+  },
+  {
+    "function": "list_imports",
+    "service": "dynamodb"
+  },
+  {
+    "function": "list_tables",
+    "service": "dynamodb"
+  },
+  {
+    "function": "list_tags_of_resource",
+    "service": "dynamodb"
+  }
+]

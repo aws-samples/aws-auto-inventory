@@ -1,0 +1,22 @@
+[
+  {
+    "function": "describe_application",
+    "service": "iotfleethub"
+  },
+  {
+    "function": "get_paginator",
+    "service": "iotfleethub"
+  },
+  {
+    "function": "get_waiter",
+    "service": "iotfleethub"
+  },
+  {
+    "function": "list_applications",
+    "service": "iotfleethub"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "iotfleethub"
+  }
+]

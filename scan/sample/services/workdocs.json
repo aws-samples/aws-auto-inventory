@@ -1,0 +1,74 @@
+[
+  {
+    "function": "describe_activities",
+    "service": "workdocs"
+  },
+  {
+    "function": "describe_comments",
+    "service": "workdocs"
+  },
+  {
+    "function": "describe_document_versions",
+    "service": "workdocs"
+  },
+  {
+    "function": "describe_folder_contents",
+    "service": "workdocs"
+  },
+  {
+    "function": "describe_groups",
+    "service": "workdocs"
+  },
+  {
+    "function": "describe_notification_subscriptions",
+    "service": "workdocs"
+  },
+  {
+    "function": "describe_resource_permissions",
+    "service": "workdocs"
+  },
+  {
+    "function": "describe_root_folders",
+    "service": "workdocs"
+  },
+  {
+    "function": "describe_users",
+    "service": "workdocs"
+  },
+  {
+    "function": "get_current_user",
+    "service": "workdocs"
+  },
+  {
+    "function": "get_document",
+    "service": "workdocs"
+  },
+  {
+    "function": "get_document_path",
+    "service": "workdocs"
+  },
+  {
+    "function": "get_document_version",
+    "service": "workdocs"
+  },
+  {
+    "function": "get_folder",
+    "service": "workdocs"
+  },
+  {
+    "function": "get_folder_path",
+    "service": "workdocs"
+  },
+  {
+    "function": "get_paginator",
+    "service": "workdocs"
+  },
+  {
+    "function": "get_resources",
+    "service": "workdocs"
+  },
+  {
+    "function": "get_waiter",
+    "service": "workdocs"
+  }
+]

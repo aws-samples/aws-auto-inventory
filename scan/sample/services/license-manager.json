@@ -1,0 +1,110 @@
+[
+  {
+    "function": "get_access_token",
+    "service": "license-manager"
+  },
+  {
+    "function": "get_grant",
+    "service": "license-manager"
+  },
+  {
+    "function": "get_license",
+    "service": "license-manager"
+  },
+  {
+    "function": "get_license_configuration",
+    "service": "license-manager"
+  },
+  {
+    "function": "get_license_conversion_task",
+    "service": "license-manager"
+  },
+  {
+    "function": "get_license_manager_report_generator",
+    "service": "license-manager"
+  },
+  {
+    "function": "get_license_usage",
+    "service": "license-manager"
+  },
+  {
+    "function": "get_paginator",
+    "service": "license-manager"
+  },
+  {
+    "function": "get_service_settings",
+    "service": "license-manager"
+  },
+  {
+    "function": "get_waiter",
+    "service": "license-manager"
+  },
+  {
+    "function": "list_associations_for_license_configuration",
+    "service": "license-manager"
+  },
+  {
+    "function": "list_distributed_grants",
+    "service": "license-manager"
+  },
+  {
+    "function": "list_failures_for_license_configuration_operations",
+    "service": "license-manager"
+  },
+  {
+    "function": "list_license_configurations",
+    "service": "license-manager"
+  },
+  {
+    "function": "list_license_conversion_tasks",
+    "service": "license-manager"
+  },
+  {
+    "function": "list_license_manager_report_generators",
+    "service": "license-manager"
+  },
+  {
+    "function": "list_license_specifications_for_resource",
+    "service": "license-manager"
+  },
+  {
+    "function": "list_license_versions",
+    "service": "license-manager"
+  },
+  {
+    "function": "list_licenses",
+    "service": "license-manager"
+  },
+  {
+    "function": "list_received_grants",
+    "service": "license-manager"
+  },
+  {
+    "function": "list_received_grants_for_organization",
+    "service": "license-manager"
+  },
+  {
+    "function": "list_received_licenses",
+    "service": "license-manager"
+  },
+  {
+    "function": "list_received_licenses_for_organization",
+    "service": "license-manager"
+  },
+  {
+    "function": "list_resource_inventory",
+    "service": "license-manager"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "license-manager"
+  },
+  {
+    "function": "list_tokens",
+    "service": "license-manager"
+  },
+  {
+    "function": "list_usage_for_license_configuration",
+    "service": "license-manager"
+  }
+]

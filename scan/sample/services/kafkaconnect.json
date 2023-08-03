@@ -1,0 +1,34 @@
+[
+  {
+    "function": "describe_connector",
+    "service": "kafkaconnect"
+  },
+  {
+    "function": "describe_custom_plugin",
+    "service": "kafkaconnect"
+  },
+  {
+    "function": "describe_worker_configuration",
+    "service": "kafkaconnect"
+  },
+  {
+    "function": "get_paginator",
+    "service": "kafkaconnect"
+  },
+  {
+    "function": "get_waiter",
+    "service": "kafkaconnect"
+  },
+  {
+    "function": "list_connectors",
+    "service": "kafkaconnect"
+  },
+  {
+    "function": "list_custom_plugins",
+    "service": "kafkaconnect"
+  },
+  {
+    "function": "list_worker_configurations",
+    "service": "kafkaconnect"
+  }
+]

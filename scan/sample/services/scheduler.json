@@ -1,0 +1,30 @@
+[
+  {
+    "function": "get_paginator",
+    "service": "scheduler"
+  },
+  {
+    "function": "get_schedule",
+    "service": "scheduler"
+  },
+  {
+    "function": "get_schedule_group",
+    "service": "scheduler"
+  },
+  {
+    "function": "get_waiter",
+    "service": "scheduler"
+  },
+  {
+    "function": "list_schedule_groups",
+    "service": "scheduler"
+  },
+  {
+    "function": "list_schedules",
+    "service": "scheduler"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "scheduler"
+  }
+]

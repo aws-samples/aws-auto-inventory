@@ -1,0 +1,18 @@
+[
+  {
+    "function": "get_attachment",
+    "service": "connectparticipant"
+  },
+  {
+    "function": "get_paginator",
+    "service": "connectparticipant"
+  },
+  {
+    "function": "get_transcript",
+    "service": "connectparticipant"
+  },
+  {
+    "function": "get_waiter",
+    "service": "connectparticipant"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "function": "get_catalog_item",
+    "service": "outposts"
+  },
+  {
+    "function": "get_connection",
+    "service": "outposts"
+  },
+  {
+    "function": "get_order",
+    "service": "outposts"
+  },
+  {
+    "function": "get_outpost",
+    "service": "outposts"
+  },
+  {
+    "function": "get_outpost_instance_types",
+    "service": "outposts"
+  },
+  {
+    "function": "get_paginator",
+    "service": "outposts"
+  },
+  {
+    "function": "get_site",
+    "service": "outposts"
+  },
+  {
+    "function": "get_site_address",
+    "service": "outposts"
+  },
+  {
+    "function": "get_waiter",
+    "service": "outposts"
+  },
+  {
+    "function": "list_assets",
+    "service": "outposts"
+  },
+  {
+    "function": "list_catalog_items",
+    "service": "outposts"
+  },
+  {
+    "function": "list_orders",
+    "service": "outposts"
+  },
+  {
+    "function": "list_outposts",
+    "service": "outposts"
+  },
+  {
+    "function": "list_sites",
+    "service": "outposts"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "outposts"
+  }
+]

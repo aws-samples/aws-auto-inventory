@@ -1,0 +1,86 @@
+[
+  {
+    "function": "describe_connection_loa",
+    "service": "directconnect"
+  },
+  {
+    "function": "describe_connections",
+    "service": "directconnect"
+  },
+  {
+    "function": "describe_connections_on_interconnect",
+    "service": "directconnect"
+  },
+  {
+    "function": "describe_customer_metadata",
+    "service": "directconnect"
+  },
+  {
+    "function": "describe_direct_connect_gateway_association_proposals",
+    "service": "directconnect"
+  },
+  {
+    "function": "describe_direct_connect_gateway_associations",
+    "service": "directconnect"
+  },
+  {
+    "function": "describe_direct_connect_gateway_attachments",
+    "service": "directconnect"
+  },
+  {
+    "function": "describe_direct_connect_gateways",
+    "service": "directconnect"
+  },
+  {
+    "function": "describe_hosted_connections",
+    "service": "directconnect"
+  },
+  {
+    "function": "describe_interconnect_loa",
+    "service": "directconnect"
+  },
+  {
+    "function": "describe_interconnects",
+    "service": "directconnect"
+  },
+  {
+    "function": "describe_lags",
+    "service": "directconnect"
+  },
+  {
+    "function": "describe_loa",
+    "service": "directconnect"
+  },
+  {
+    "function": "describe_locations",
+    "service": "directconnect"
+  },
+  {
+    "function": "describe_router_configuration",
+    "service": "directconnect"
+  },
+  {
+    "function": "describe_tags",
+    "service": "directconnect"
+  },
+  {
+    "function": "describe_virtual_gateways",
+    "service": "directconnect"
+  },
+  {
+    "function": "describe_virtual_interfaces",
+    "service": "directconnect"
+  },
+  {
+    "function": "get_paginator",
+    "service": "directconnect"
+  },
+  {
+    "function": "get_waiter",
+    "service": "directconnect"
+  },
+  {
+    "function": "list_virtual_interface_test_history",
+    "service": "directconnect"
+  }
+]

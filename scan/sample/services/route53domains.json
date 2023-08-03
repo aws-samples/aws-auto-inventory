@@ -1,0 +1,42 @@
+[
+  {
+    "function": "get_contact_reachability_status",
+    "service": "route53domains"
+  },
+  {
+    "function": "get_domain_detail",
+    "service": "route53domains"
+  },
+  {
+    "function": "get_domain_suggestions",
+    "service": "route53domains"
+  },
+  {
+    "function": "get_operation_detail",
+    "service": "route53domains"
+  },
+  {
+    "function": "get_paginator",
+    "service": "route53domains"
+  },
+  {
+    "function": "get_waiter",
+    "service": "route53domains"
+  },
+  {
+    "function": "list_domains",
+    "service": "route53domains"
+  },
+  {
+    "function": "list_operations",
+    "service": "route53domains"
+  },
+  {
+    "function": "list_prices",
+    "service": "route53domains"
+  },
+  {
+    "function": "list_tags_for_domain",
+    "service": "route53domains"
+  }
+]

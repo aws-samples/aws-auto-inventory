@@ -1,0 +1,46 @@
+[
+  {
+    "function": "describe_device",
+    "service": "snow-device-management"
+  },
+  {
+    "function": "describe_device_ec2_instances",
+    "service": "snow-device-management"
+  },
+  {
+    "function": "describe_execution",
+    "service": "snow-device-management"
+  },
+  {
+    "function": "describe_task",
+    "service": "snow-device-management"
+  },
+  {
+    "function": "get_paginator",
+    "service": "snow-device-management"
+  },
+  {
+    "function": "get_waiter",
+    "service": "snow-device-management"
+  },
+  {
+    "function": "list_device_resources",
+    "service": "snow-device-management"
+  },
+  {
+    "function": "list_devices",
+    "service": "snow-device-management"
+  },
+  {
+    "function": "list_executions",
+    "service": "snow-device-management"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "snow-device-management"
+  },
+  {
+    "function": "list_tasks",
+    "service": "snow-device-management"
+  }
+]

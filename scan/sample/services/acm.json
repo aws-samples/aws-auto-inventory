@@ -1,0 +1,30 @@
+[
+  {
+    "function": "describe_certificate",
+    "service": "acm"
+  },
+  {
+    "function": "get_account_configuration",
+    "service": "acm"
+  },
+  {
+    "function": "get_certificate",
+    "service": "acm"
+  },
+  {
+    "function": "get_paginator",
+    "service": "acm"
+  },
+  {
+    "function": "get_waiter",
+    "service": "acm"
+  },
+  {
+    "function": "list_certificates",
+    "service": "acm"
+  },
+  {
+    "function": "list_tags_for_certificate",
+    "service": "acm"
+  }
+]

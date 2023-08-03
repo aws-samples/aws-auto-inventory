@@ -1,0 +1,34 @@
+[
+  {
+    "function": "describe_account_attributes",
+    "service": "opsworkscm"
+  },
+  {
+    "function": "describe_backups",
+    "service": "opsworkscm"
+  },
+  {
+    "function": "describe_events",
+    "service": "opsworkscm"
+  },
+  {
+    "function": "describe_node_association_status",
+    "service": "opsworkscm"
+  },
+  {
+    "function": "describe_servers",
+    "service": "opsworkscm"
+  },
+  {
+    "function": "get_paginator",
+    "service": "opsworkscm"
+  },
+  {
+    "function": "get_waiter",
+    "service": "opsworkscm"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "opsworkscm"
+  }
+]

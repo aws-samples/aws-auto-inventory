@@ -1,0 +1,50 @@
+[
+  {
+    "function": "describe_limits",
+    "service": "kinesis"
+  },
+  {
+    "function": "describe_stream",
+    "service": "kinesis"
+  },
+  {
+    "function": "describe_stream_consumer",
+    "service": "kinesis"
+  },
+  {
+    "function": "describe_stream_summary",
+    "service": "kinesis"
+  },
+  {
+    "function": "get_paginator",
+    "service": "kinesis"
+  },
+  {
+    "function": "get_records",
+    "service": "kinesis"
+  },
+  {
+    "function": "get_shard_iterator",
+    "service": "kinesis"
+  },
+  {
+    "function": "get_waiter",
+    "service": "kinesis"
+  },
+  {
+    "function": "list_shards",
+    "service": "kinesis"
+  },
+  {
+    "function": "list_stream_consumers",
+    "service": "kinesis"
+  },
+  {
+    "function": "list_streams",
+    "service": "kinesis"
+  },
+  {
+    "function": "list_tags_for_stream",
+    "service": "kinesis"
+  }
+]

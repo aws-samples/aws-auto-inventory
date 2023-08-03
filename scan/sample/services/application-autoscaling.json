@@ -1,0 +1,30 @@
+[
+  {
+    "function": "describe_scalable_targets",
+    "service": "application-autoscaling"
+  },
+  {
+    "function": "describe_scaling_activities",
+    "service": "application-autoscaling"
+  },
+  {
+    "function": "describe_scaling_policies",
+    "service": "application-autoscaling"
+  },
+  {
+    "function": "describe_scheduled_actions",
+    "service": "application-autoscaling"
+  },
+  {
+    "function": "get_paginator",
+    "service": "application-autoscaling"
+  },
+  {
+    "function": "get_waiter",
+    "service": "application-autoscaling"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "application-autoscaling"
+  }
+]

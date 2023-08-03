@@ -1,0 +1,90 @@
+[
+  {
+    "function": "get_browser_settings",
+    "service": "workspaces-web"
+  },
+  {
+    "function": "get_identity_provider",
+    "service": "workspaces-web"
+  },
+  {
+    "function": "get_ip_access_settings",
+    "service": "workspaces-web"
+  },
+  {
+    "function": "get_network_settings",
+    "service": "workspaces-web"
+  },
+  {
+    "function": "get_paginator",
+    "service": "workspaces-web"
+  },
+  {
+    "function": "get_portal",
+    "service": "workspaces-web"
+  },
+  {
+    "function": "get_portal_service_provider_metadata",
+    "service": "workspaces-web"
+  },
+  {
+    "function": "get_trust_store",
+    "service": "workspaces-web"
+  },
+  {
+    "function": "get_trust_store_certificate",
+    "service": "workspaces-web"
+  },
+  {
+    "function": "get_user_access_logging_settings",
+    "service": "workspaces-web"
+  },
+  {
+    "function": "get_user_settings",
+    "service": "workspaces-web"
+  },
+  {
+    "function": "get_waiter",
+    "service": "workspaces-web"
+  },
+  {
+    "function": "list_browser_settings",
+    "service": "workspaces-web"
+  },
+  {
+    "function": "list_identity_providers",
+    "service": "workspaces-web"
+  },
+  {
+    "function": "list_ip_access_settings",
+    "service": "workspaces-web"
+  },
+  {
+    "function": "list_network_settings",
+    "service": "workspaces-web"
+  },
+  {
+    "function": "list_portals",
+    "service": "workspaces-web"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "workspaces-web"
+  },
+  {
+    "function": "list_trust_store_certificates",
+    "service": "workspaces-web"
+  },
+  {
+    "function": "list_trust_stores",
+    "service": "workspaces-web"
+  },
+  {
+    "function": "list_user_access_logging_settings",
+    "service": "workspaces-web"
+  },
+  {
+    "function": "list_user_settings",
+    "service": "workspaces-web"
+  }
+]

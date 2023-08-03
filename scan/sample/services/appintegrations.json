@@ -1,0 +1,38 @@
+[
+  {
+    "function": "get_data_integration",
+    "service": "appintegrations"
+  },
+  {
+    "function": "get_event_integration",
+    "service": "appintegrations"
+  },
+  {
+    "function": "get_paginator",
+    "service": "appintegrations"
+  },
+  {
+    "function": "get_waiter",
+    "service": "appintegrations"
+  },
+  {
+    "function": "list_data_integration_associations",
+    "service": "appintegrations"
+  },
+  {
+    "function": "list_data_integrations",
+    "service": "appintegrations"
+  },
+  {
+    "function": "list_event_integration_associations",
+    "service": "appintegrations"
+  },
+  {
+    "function": "list_event_integrations",
+    "service": "appintegrations"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "appintegrations"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "function": "get_applied_schema_version",
+    "service": "clouddirectory"
+  },
+  {
+    "function": "get_directory",
+    "service": "clouddirectory"
+  },
+  {
+    "function": "get_facet",
+    "service": "clouddirectory"
+  },
+  {
+    "function": "get_link_attributes",
+    "service": "clouddirectory"
+  },
+  {
+    "function": "get_object_attributes",
+    "service": "clouddirectory"
+  },
+  {
+    "function": "get_object_information",
+    "service": "clouddirectory"
+  },
+  {
+    "function": "get_paginator",
+    "service": "clouddirectory"
+  },
+  {
+    "function": "get_schema_as_json",
+    "service": "clouddirectory"
+  },
+  {
+    "function": "get_typed_link_facet_information",
+    "service": "clouddirectory"
+  },
+  {
+    "function": "get_waiter",
+    "service": "clouddirectory"
+  },
+  {
+    "function": "list_applied_schema_arns",
+    "service": "clouddirectory"
+  },
+  {
+    "function": "list_attached_indices",
+    "service": "clouddirectory"
+  },
+  {
+    "function": "list_development_schema_arns",
+    "service": "clouddirectory"
+  },
+  {
+    "function": "list_directories",
+    "service": "clouddirectory"
+  },
+  {
+    "function": "list_facet_attributes",
+    "service": "clouddirectory"
+  },
+  {
+    "function": "list_facet_names",
+    "service": "clouddirectory"
+  },
+  {
+    "function": "list_incoming_typed_links",
+    "service": "clouddirectory"
+  },
+  {
+    "function": "list_index",
+    "service": "clouddirectory"
+  },
+  {
+    "function": "list_managed_schema_arns",
+    "service": "clouddirectory"
+  },
+  {
+    "function": "list_object_attributes",
+    "service": "clouddirectory"
+  },
+  {
+    "function": "list_object_children",
+    "service": "clouddirectory"
+  },
+  {
+    "function": "list_object_parent_paths",
+    "service": "clouddirectory"
+  },
+  {
+    "function": "list_object_parents",
+    "service": "clouddirectory"
+  },
+  {
+    "function": "list_object_policies",
+    "service": "clouddirectory"
+  },
+  {
+    "function": "list_outgoing_typed_links",
+    "service": "clouddirectory"
+  },
+  {
+    "function": "list_policy_attachments",
+    "service": "clouddirectory"
+  },
+  {
+    "function": "list_published_schema_arns",
+    "service": "clouddirectory"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "clouddirectory"
+  },
+  {
+    "function": "list_typed_link_facet_attributes",
+    "service": "clouddirectory"
+  },
+  {
+    "function": "list_typed_link_facet_names",
+    "service": "clouddirectory"
+  }
+]

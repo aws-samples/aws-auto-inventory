@@ -1,0 +1,78 @@
+[
+  {
+    "function": "get_credentials",
+    "service": "redshift-serverless"
+  },
+  {
+    "function": "get_endpoint_access",
+    "service": "redshift-serverless"
+  },
+  {
+    "function": "get_namespace",
+    "service": "redshift-serverless"
+  },
+  {
+    "function": "get_paginator",
+    "service": "redshift-serverless"
+  },
+  {
+    "function": "get_recovery_point",
+    "service": "redshift-serverless"
+  },
+  {
+    "function": "get_resource_policy",
+    "service": "redshift-serverless"
+  },
+  {
+    "function": "get_snapshot",
+    "service": "redshift-serverless"
+  },
+  {
+    "function": "get_table_restore_status",
+    "service": "redshift-serverless"
+  },
+  {
+    "function": "get_usage_limit",
+    "service": "redshift-serverless"
+  },
+  {
+    "function": "get_waiter",
+    "service": "redshift-serverless"
+  },
+  {
+    "function": "get_workgroup",
+    "service": "redshift-serverless"
+  },
+  {
+    "function": "list_endpoint_access",
+    "service": "redshift-serverless"
+  },
+  {
+    "function": "list_namespaces",
+    "service": "redshift-serverless"
+  },
+  {
+    "function": "list_recovery_points",
+    "service": "redshift-serverless"
+  },
+  {
+    "function": "list_snapshots",
+    "service": "redshift-serverless"
+  },
+  {
+    "function": "list_table_restore_status",
+    "service": "redshift-serverless"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "redshift-serverless"
+  },
+  {
+    "function": "list_usage_limits",
+    "service": "redshift-serverless"
+  },
+  {
+    "function": "list_workgroups",
+    "service": "redshift-serverless"
+  }
+]

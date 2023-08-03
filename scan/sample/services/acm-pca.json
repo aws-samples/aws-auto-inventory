@@ -1,0 +1,46 @@
+[
+  {
+    "function": "describe_certificate_authority",
+    "service": "acm-pca"
+  },
+  {
+    "function": "describe_certificate_authority_audit_report",
+    "service": "acm-pca"
+  },
+  {
+    "function": "get_certificate",
+    "service": "acm-pca"
+  },
+  {
+    "function": "get_certificate_authority_certificate",
+    "service": "acm-pca"
+  },
+  {
+    "function": "get_certificate_authority_csr",
+    "service": "acm-pca"
+  },
+  {
+    "function": "get_paginator",
+    "service": "acm-pca"
+  },
+  {
+    "function": "get_policy",
+    "service": "acm-pca"
+  },
+  {
+    "function": "get_waiter",
+    "service": "acm-pca"
+  },
+  {
+    "function": "list_certificate_authorities",
+    "service": "acm-pca"
+  },
+  {
+    "function": "list_permissions",
+    "service": "acm-pca"
+  },
+  {
+    "function": "list_tags",
+    "service": "acm-pca"
+  }
+]

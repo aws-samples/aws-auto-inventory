@@ -1,0 +1,134 @@
+[
+  {
+    "function": "describe_email_monitoring_configuration",
+    "service": "workmail"
+  },
+  {
+    "function": "describe_group",
+    "service": "workmail"
+  },
+  {
+    "function": "describe_inbound_dmarc_settings",
+    "service": "workmail"
+  },
+  {
+    "function": "describe_mailbox_export_job",
+    "service": "workmail"
+  },
+  {
+    "function": "describe_organization",
+    "service": "workmail"
+  },
+  {
+    "function": "describe_resource",
+    "service": "workmail"
+  },
+  {
+    "function": "describe_user",
+    "service": "workmail"
+  },
+  {
+    "function": "get_access_control_effect",
+    "service": "workmail"
+  },
+  {
+    "function": "get_default_retention_policy",
+    "service": "workmail"
+  },
+  {
+    "function": "get_impersonation_role",
+    "service": "workmail"
+  },
+  {
+    "function": "get_impersonation_role_effect",
+    "service": "workmail"
+  },
+  {
+    "function": "get_mail_domain",
+    "service": "workmail"
+  },
+  {
+    "function": "get_mailbox_details",
+    "service": "workmail"
+  },
+  {
+    "function": "get_mobile_device_access_effect",
+    "service": "workmail"
+  },
+  {
+    "function": "get_mobile_device_access_override",
+    "service": "workmail"
+  },
+  {
+    "function": "get_paginator",
+    "service": "workmail"
+  },
+  {
+    "function": "get_waiter",
+    "service": "workmail"
+  },
+  {
+    "function": "list_access_control_rules",
+    "service": "workmail"
+  },
+  {
+    "function": "list_aliases",
+    "service": "workmail"
+  },
+  {
+    "function": "list_availability_configurations",
+    "service": "workmail"
+  },
+  {
+    "function": "list_group_members",
+    "service": "workmail"
+  },
+  {
+    "function": "list_groups",
+    "service": "workmail"
+  },
+  {
+    "function": "list_impersonation_roles",
+    "service": "workmail"
+  },
+  {
+    "function": "list_mail_domains",
+    "service": "workmail"
+  },
+  {
+    "function": "list_mailbox_export_jobs",
+    "service": "workmail"
+  },
+  {
+    "function": "list_mailbox_permissions",
+    "service": "workmail"
+  },
+  {
+    "function": "list_mobile_device_access_overrides",
+    "service": "workmail"
+  },
+  {
+    "function": "list_mobile_device_access_rules",
+    "service": "workmail"
+  },
+  {
+    "function": "list_organizations",
+    "service": "workmail"
+  },
+  {
+    "function": "list_resource_delegates",
+    "service": "workmail"
+  },
+  {
+    "function": "list_resources",
+    "service": "workmail"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "workmail"
+  },
+  {
+    "function": "list_users",
+    "service": "workmail"
+  }
+]

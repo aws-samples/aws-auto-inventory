@@ -1,0 +1,74 @@
+[
+  {
+    "function": "describe_code_coverages",
+    "service": "codebuild"
+  },
+  {
+    "function": "describe_test_cases",
+    "service": "codebuild"
+  },
+  {
+    "function": "get_paginator",
+    "service": "codebuild"
+  },
+  {
+    "function": "get_report_group_trend",
+    "service": "codebuild"
+  },
+  {
+    "function": "get_resource_policy",
+    "service": "codebuild"
+  },
+  {
+    "function": "get_waiter",
+    "service": "codebuild"
+  },
+  {
+    "function": "list_build_batches",
+    "service": "codebuild"
+  },
+  {
+    "function": "list_build_batches_for_project",
+    "service": "codebuild"
+  },
+  {
+    "function": "list_builds",
+    "service": "codebuild"
+  },
+  {
+    "function": "list_builds_for_project",
+    "service": "codebuild"
+  },
+  {
+    "function": "list_curated_environment_images",
+    "service": "codebuild"
+  },
+  {
+    "function": "list_projects",
+    "service": "codebuild"
+  },
+  {
+    "function": "list_report_groups",
+    "service": "codebuild"
+  },
+  {
+    "function": "list_reports",
+    "service": "codebuild"
+  },
+  {
+    "function": "list_reports_for_report_group",
+    "service": "codebuild"
+  },
+  {
+    "function": "list_shared_projects",
+    "service": "codebuild"
+  },
+  {
+    "function": "list_shared_report_groups",
+    "service": "codebuild"
+  },
+  {
+    "function": "list_source_credentials",
+    "service": "codebuild"
+  }
+]

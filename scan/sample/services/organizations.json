@@ -1,0 +1,106 @@
+[
+  {
+    "function": "describe_account",
+    "service": "organizations"
+  },
+  {
+    "function": "describe_create_account_status",
+    "service": "organizations"
+  },
+  {
+    "function": "describe_effective_policy",
+    "service": "organizations"
+  },
+  {
+    "function": "describe_handshake",
+    "service": "organizations"
+  },
+  {
+    "function": "describe_organization",
+    "service": "organizations"
+  },
+  {
+    "function": "describe_organizational_unit",
+    "service": "organizations"
+  },
+  {
+    "function": "describe_policy",
+    "service": "organizations"
+  },
+  {
+    "function": "describe_resource_policy",
+    "service": "organizations"
+  },
+  {
+    "function": "get_paginator",
+    "service": "organizations"
+  },
+  {
+    "function": "get_waiter",
+    "service": "organizations"
+  },
+  {
+    "function": "list_accounts",
+    "service": "organizations"
+  },
+  {
+    "function": "list_accounts_for_parent",
+    "service": "organizations"
+  },
+  {
+    "function": "list_aws_service_access_for_organization",
+    "service": "organizations"
+  },
+  {
+    "function": "list_children",
+    "service": "organizations"
+  },
+  {
+    "function": "list_create_account_status",
+    "service": "organizations"
+  },
+  {
+    "function": "list_delegated_administrators",
+    "service": "organizations"
+  },
+  {
+    "function": "list_delegated_services_for_account",
+    "service": "organizations"
+  },
+  {
+    "function": "list_handshakes_for_account",
+    "service": "organizations"
+  },
+  {
+    "function": "list_handshakes_for_organization",
+    "service": "organizations"
+  },
+  {
+    "function": "list_organizational_units_for_parent",
+    "service": "organizations"
+  },
+  {
+    "function": "list_parents",
+    "service": "organizations"
+  },
+  {
+    "function": "list_policies",
+    "service": "organizations"
+  },
+  {
+    "function": "list_policies_for_target",
+    "service": "organizations"
+  },
+  {
+    "function": "list_roots",
+    "service": "organizations"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "organizations"
+  },
+  {
+    "function": "list_targets_for_policy",
+    "service": "organizations"
+  }
+]

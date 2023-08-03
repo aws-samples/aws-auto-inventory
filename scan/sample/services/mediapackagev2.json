@@ -1,0 +1,46 @@
+[
+  {
+    "function": "get_channel",
+    "service": "mediapackagev2"
+  },
+  {
+    "function": "get_channel_group",
+    "service": "mediapackagev2"
+  },
+  {
+    "function": "get_channel_policy",
+    "service": "mediapackagev2"
+  },
+  {
+    "function": "get_origin_endpoint",
+    "service": "mediapackagev2"
+  },
+  {
+    "function": "get_origin_endpoint_policy",
+    "service": "mediapackagev2"
+  },
+  {
+    "function": "get_paginator",
+    "service": "mediapackagev2"
+  },
+  {
+    "function": "get_waiter",
+    "service": "mediapackagev2"
+  },
+  {
+    "function": "list_channel_groups",
+    "service": "mediapackagev2"
+  },
+  {
+    "function": "list_channels",
+    "service": "mediapackagev2"
+  },
+  {
+    "function": "list_origin_endpoints",
+    "service": "mediapackagev2"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "mediapackagev2"
+  }
+]

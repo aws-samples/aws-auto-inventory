@@ -1,0 +1,58 @@
+[
+  {
+    "function": "describe_app_instance",
+    "service": "chime-sdk-identity"
+  },
+  {
+    "function": "describe_app_instance_admin",
+    "service": "chime-sdk-identity"
+  },
+  {
+    "function": "describe_app_instance_bot",
+    "service": "chime-sdk-identity"
+  },
+  {
+    "function": "describe_app_instance_user",
+    "service": "chime-sdk-identity"
+  },
+  {
+    "function": "describe_app_instance_user_endpoint",
+    "service": "chime-sdk-identity"
+  },
+  {
+    "function": "get_app_instance_retention_settings",
+    "service": "chime-sdk-identity"
+  },
+  {
+    "function": "get_paginator",
+    "service": "chime-sdk-identity"
+  },
+  {
+    "function": "get_waiter",
+    "service": "chime-sdk-identity"
+  },
+  {
+    "function": "list_app_instance_admins",
+    "service": "chime-sdk-identity"
+  },
+  {
+    "function": "list_app_instance_bots",
+    "service": "chime-sdk-identity"
+  },
+  {
+    "function": "list_app_instance_user_endpoints",
+    "service": "chime-sdk-identity"
+  },
+  {
+    "function": "list_app_instance_users",
+    "service": "chime-sdk-identity"
+  },
+  {
+    "function": "list_app_instances",
+    "service": "chime-sdk-identity"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "chime-sdk-identity"
+  }
+]

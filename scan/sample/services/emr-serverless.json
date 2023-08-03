@@ -1,0 +1,34 @@
+[
+  {
+    "function": "get_application",
+    "service": "emr-serverless"
+  },
+  {
+    "function": "get_dashboard_for_job_run",
+    "service": "emr-serverless"
+  },
+  {
+    "function": "get_job_run",
+    "service": "emr-serverless"
+  },
+  {
+    "function": "get_paginator",
+    "service": "emr-serverless"
+  },
+  {
+    "function": "get_waiter",
+    "service": "emr-serverless"
+  },
+  {
+    "function": "list_applications",
+    "service": "emr-serverless"
+  },
+  {
+    "function": "list_job_runs",
+    "service": "emr-serverless"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "emr-serverless"
+  }
+]

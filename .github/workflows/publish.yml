@@ -14,13 +14,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - uses: actions/setup-python@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
 
       - run: python3 --version
-
       - run: pip install -r requirements.txt
-
-      - run: pyinstaller --name aws-auto-inventory-${{ matrix.os }} --clean --onefile --hidden-import cmath --log-level=DEBUG app/cli.py
+      - run: pyinstaller --name aws-auto-inventory-${{ matrix.os }} --onefile scan.py
 
       - uses: actions/upload-artifact@v3
         if: matrix.os == 'windows-latest'

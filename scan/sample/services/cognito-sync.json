@@ -1,0 +1,46 @@
+[
+  {
+    "function": "describe_dataset",
+    "service": "cognito-sync"
+  },
+  {
+    "function": "describe_identity_pool_usage",
+    "service": "cognito-sync"
+  },
+  {
+    "function": "describe_identity_usage",
+    "service": "cognito-sync"
+  },
+  {
+    "function": "get_bulk_publish_details",
+    "service": "cognito-sync"
+  },
+  {
+    "function": "get_cognito_events",
+    "service": "cognito-sync"
+  },
+  {
+    "function": "get_identity_pool_configuration",
+    "service": "cognito-sync"
+  },
+  {
+    "function": "get_paginator",
+    "service": "cognito-sync"
+  },
+  {
+    "function": "get_waiter",
+    "service": "cognito-sync"
+  },
+  {
+    "function": "list_datasets",
+    "service": "cognito-sync"
+  },
+  {
+    "function": "list_identity_pool_usage",
+    "service": "cognito-sync"
+  },
+  {
+    "function": "list_records",
+    "service": "cognito-sync"
+  }
+]

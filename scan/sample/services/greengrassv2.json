@@ -1,0 +1,70 @@
+[
+  {
+    "function": "describe_component",
+    "service": "greengrassv2"
+  },
+  {
+    "function": "get_component",
+    "service": "greengrassv2"
+  },
+  {
+    "function": "get_component_version_artifact",
+    "service": "greengrassv2"
+  },
+  {
+    "function": "get_connectivity_info",
+    "service": "greengrassv2"
+  },
+  {
+    "function": "get_core_device",
+    "service": "greengrassv2"
+  },
+  {
+    "function": "get_deployment",
+    "service": "greengrassv2"
+  },
+  {
+    "function": "get_paginator",
+    "service": "greengrassv2"
+  },
+  {
+    "function": "get_service_role_for_account",
+    "service": "greengrassv2"
+  },
+  {
+    "function": "get_waiter",
+    "service": "greengrassv2"
+  },
+  {
+    "function": "list_client_devices_associated_with_core_device",
+    "service": "greengrassv2"
+  },
+  {
+    "function": "list_component_versions",
+    "service": "greengrassv2"
+  },
+  {
+    "function": "list_components",
+    "service": "greengrassv2"
+  },
+  {
+    "function": "list_core_devices",
+    "service": "greengrassv2"
+  },
+  {
+    "function": "list_deployments",
+    "service": "greengrassv2"
+  },
+  {
+    "function": "list_effective_deployments",
+    "service": "greengrassv2"
+  },
+  {
+    "function": "list_installed_components",
+    "service": "greengrassv2"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "greengrassv2"
+  }
+]

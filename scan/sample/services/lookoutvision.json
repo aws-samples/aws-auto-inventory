@@ -1,0 +1,46 @@
+[
+  {
+    "function": "describe_dataset",
+    "service": "lookoutvision"
+  },
+  {
+    "function": "describe_model",
+    "service": "lookoutvision"
+  },
+  {
+    "function": "describe_model_packaging_job",
+    "service": "lookoutvision"
+  },
+  {
+    "function": "describe_project",
+    "service": "lookoutvision"
+  },
+  {
+    "function": "get_paginator",
+    "service": "lookoutvision"
+  },
+  {
+    "function": "get_waiter",
+    "service": "lookoutvision"
+  },
+  {
+    "function": "list_dataset_entries",
+    "service": "lookoutvision"
+  },
+  {
+    "function": "list_model_packaging_jobs",
+    "service": "lookoutvision"
+  },
+  {
+    "function": "list_models",
+    "service": "lookoutvision"
+  },
+  {
+    "function": "list_projects",
+    "service": "lookoutvision"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "lookoutvision"
+  }
+]

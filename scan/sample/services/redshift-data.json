@@ -1,0 +1,38 @@
+[
+  {
+    "function": "describe_statement",
+    "service": "redshift-data"
+  },
+  {
+    "function": "describe_table",
+    "service": "redshift-data"
+  },
+  {
+    "function": "get_paginator",
+    "service": "redshift-data"
+  },
+  {
+    "function": "get_statement_result",
+    "service": "redshift-data"
+  },
+  {
+    "function": "get_waiter",
+    "service": "redshift-data"
+  },
+  {
+    "function": "list_databases",
+    "service": "redshift-data"
+  },
+  {
+    "function": "list_schemas",
+    "service": "redshift-data"
+  },
+  {
+    "function": "list_statements",
+    "service": "redshift-data"
+  },
+  {
+    "function": "list_tables",
+    "service": "redshift-data"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "function": "describe_group",
+    "service": "identitystore"
+  },
+  {
+    "function": "describe_group_membership",
+    "service": "identitystore"
+  },
+  {
+    "function": "describe_user",
+    "service": "identitystore"
+  },
+  {
+    "function": "get_group_id",
+    "service": "identitystore"
+  },
+  {
+    "function": "get_group_membership_id",
+    "service": "identitystore"
+  },
+  {
+    "function": "get_paginator",
+    "service": "identitystore"
+  },
+  {
+    "function": "get_user_id",
+    "service": "identitystore"
+  },
+  {
+    "function": "get_waiter",
+    "service": "identitystore"
+  },
+  {
+    "function": "list_group_memberships",
+    "service": "identitystore"
+  },
+  {
+    "function": "list_group_memberships_for_member",
+    "service": "identitystore"
+  },
+  {
+    "function": "list_groups",
+    "service": "identitystore"
+  },
+  {
+    "function": "list_users",
+    "service": "identitystore"
+  }
+]

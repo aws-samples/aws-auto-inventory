@@ -1,0 +1,82 @@
+[
+  {
+    "function": "get_application",
+    "service": "m2"
+  },
+  {
+    "function": "get_application_version",
+    "service": "m2"
+  },
+  {
+    "function": "get_batch_job_execution",
+    "service": "m2"
+  },
+  {
+    "function": "get_data_set_details",
+    "service": "m2"
+  },
+  {
+    "function": "get_data_set_import_task",
+    "service": "m2"
+  },
+  {
+    "function": "get_deployment",
+    "service": "m2"
+  },
+  {
+    "function": "get_environment",
+    "service": "m2"
+  },
+  {
+    "function": "get_paginator",
+    "service": "m2"
+  },
+  {
+    "function": "get_signed_bluinsights_url",
+    "service": "m2"
+  },
+  {
+    "function": "get_waiter",
+    "service": "m2"
+  },
+  {
+    "function": "list_application_versions",
+    "service": "m2"
+  },
+  {
+    "function": "list_applications",
+    "service": "m2"
+  },
+  {
+    "function": "list_batch_job_definitions",
+    "service": "m2"
+  },
+  {
+    "function": "list_batch_job_executions",
+    "service": "m2"
+  },
+  {
+    "function": "list_data_set_import_history",
+    "service": "m2"
+  },
+  {
+    "function": "list_data_sets",
+    "service": "m2"
+  },
+  {
+    "function": "list_deployments",
+    "service": "m2"
+  },
+  {
+    "function": "list_engine_versions",
+    "service": "m2"
+  },
+  {
+    "function": "list_environments",
+    "service": "m2"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "m2"
+  }
+]

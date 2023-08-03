@@ -1,0 +1,130 @@
+[
+  {
+    "function": "describe_auto_predictor",
+    "service": "forecast"
+  },
+  {
+    "function": "describe_dataset",
+    "service": "forecast"
+  },
+  {
+    "function": "describe_dataset_group",
+    "service": "forecast"
+  },
+  {
+    "function": "describe_dataset_import_job",
+    "service": "forecast"
+  },
+  {
+    "function": "describe_explainability",
+    "service": "forecast"
+  },
+  {
+    "function": "describe_explainability_export",
+    "service": "forecast"
+  },
+  {
+    "function": "describe_forecast",
+    "service": "forecast"
+  },
+  {
+    "function": "describe_forecast_export_job",
+    "service": "forecast"
+  },
+  {
+    "function": "describe_monitor",
+    "service": "forecast"
+  },
+  {
+    "function": "describe_predictor",
+    "service": "forecast"
+  },
+  {
+    "function": "describe_predictor_backtest_export_job",
+    "service": "forecast"
+  },
+  {
+    "function": "describe_what_if_analysis",
+    "service": "forecast"
+  },
+  {
+    "function": "describe_what_if_forecast",
+    "service": "forecast"
+  },
+  {
+    "function": "describe_what_if_forecast_export",
+    "service": "forecast"
+  },
+  {
+    "function": "get_accuracy_metrics",
+    "service": "forecast"
+  },
+  {
+    "function": "get_paginator",
+    "service": "forecast"
+  },
+  {
+    "function": "get_waiter",
+    "service": "forecast"
+  },
+  {
+    "function": "list_dataset_groups",
+    "service": "forecast"
+  },
+  {
+    "function": "list_dataset_import_jobs",
+    "service": "forecast"
+  },
+  {
+    "function": "list_datasets",
+    "service": "forecast"
+  },
+  {
+    "function": "list_explainabilities",
+    "service": "forecast"
+  },
+  {
+    "function": "list_explainability_exports",
+    "service": "forecast"
+  },
+  {
+    "function": "list_forecast_export_jobs",
+    "service": "forecast"
+  },
+  {
+    "function": "list_forecasts",
+    "service": "forecast"
+  },
+  {
+    "function": "list_monitor_evaluations",
+    "service": "forecast"
+  },
+  {
+    "function": "list_monitors",
+    "service": "forecast"
+  },
+  {
+    "function": "list_predictor_backtest_export_jobs",
+    "service": "forecast"
+  },
+  {
+    "function": "list_predictors",
+    "service": "forecast"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "forecast"
+  },
+  {
+    "function": "list_what_if_analyses",
+    "service": "forecast"
+  },
+  {
+    "function": "list_what_if_forecast_exports",
+    "service": "forecast"
+  },
+  {
+    "function": "list_what_if_forecasts",
+    "service": "forecast"
+  }
+]

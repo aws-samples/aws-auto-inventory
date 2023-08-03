@@ -1,0 +1,18 @@
+[
+  {
+    "function": "get_deployments",
+    "service": "sagemaker-edge"
+  },
+  {
+    "function": "get_device_registration",
+    "service": "sagemaker-edge"
+  },
+  {
+    "function": "get_paginator",
+    "service": "sagemaker-edge"
+  },
+  {
+    "function": "get_waiter",
+    "service": "sagemaker-edge"
+  }
+]

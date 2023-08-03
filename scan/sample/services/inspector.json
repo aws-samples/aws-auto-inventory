@@ -1,0 +1,90 @@
+[
+  {
+    "function": "describe_assessment_runs",
+    "service": "inspector"
+  },
+  {
+    "function": "describe_assessment_targets",
+    "service": "inspector"
+  },
+  {
+    "function": "describe_assessment_templates",
+    "service": "inspector"
+  },
+  {
+    "function": "describe_cross_account_access_role",
+    "service": "inspector"
+  },
+  {
+    "function": "describe_exclusions",
+    "service": "inspector"
+  },
+  {
+    "function": "describe_findings",
+    "service": "inspector"
+  },
+  {
+    "function": "describe_resource_groups",
+    "service": "inspector"
+  },
+  {
+    "function": "describe_rules_packages",
+    "service": "inspector"
+  },
+  {
+    "function": "get_assessment_report",
+    "service": "inspector"
+  },
+  {
+    "function": "get_exclusions_preview",
+    "service": "inspector"
+  },
+  {
+    "function": "get_paginator",
+    "service": "inspector"
+  },
+  {
+    "function": "get_telemetry_metadata",
+    "service": "inspector"
+  },
+  {
+    "function": "get_waiter",
+    "service": "inspector"
+  },
+  {
+    "function": "list_assessment_run_agents",
+    "service": "inspector"
+  },
+  {
+    "function": "list_assessment_runs",
+    "service": "inspector"
+  },
+  {
+    "function": "list_assessment_targets",
+    "service": "inspector"
+  },
+  {
+    "function": "list_assessment_templates",
+    "service": "inspector"
+  },
+  {
+    "function": "list_event_subscriptions",
+    "service": "inspector"
+  },
+  {
+    "function": "list_exclusions",
+    "service": "inspector"
+  },
+  {
+    "function": "list_findings",
+    "service": "inspector"
+  },
+  {
+    "function": "list_rules_packages",
+    "service": "inspector"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "inspector"
+  }
+]

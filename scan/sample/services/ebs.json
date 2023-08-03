@@ -1,0 +1,22 @@
+[
+  {
+    "function": "get_paginator",
+    "service": "ebs"
+  },
+  {
+    "function": "get_snapshot_block",
+    "service": "ebs"
+  },
+  {
+    "function": "get_waiter",
+    "service": "ebs"
+  },
+  {
+    "function": "list_changed_blocks",
+    "service": "ebs"
+  },
+  {
+    "function": "list_snapshot_blocks",
+    "service": "ebs"
+  }
+]

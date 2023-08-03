@@ -1,0 +1,50 @@
+[
+  {
+    "function": "describe_analysis_schemes",
+    "service": "cloudsearch"
+  },
+  {
+    "function": "describe_availability_options",
+    "service": "cloudsearch"
+  },
+  {
+    "function": "describe_domain_endpoint_options",
+    "service": "cloudsearch"
+  },
+  {
+    "function": "describe_domains",
+    "service": "cloudsearch"
+  },
+  {
+    "function": "describe_expressions",
+    "service": "cloudsearch"
+  },
+  {
+    "function": "describe_index_fields",
+    "service": "cloudsearch"
+  },
+  {
+    "function": "describe_scaling_parameters",
+    "service": "cloudsearch"
+  },
+  {
+    "function": "describe_service_access_policies",
+    "service": "cloudsearch"
+  },
+  {
+    "function": "describe_suggesters",
+    "service": "cloudsearch"
+  },
+  {
+    "function": "get_paginator",
+    "service": "cloudsearch"
+  },
+  {
+    "function": "get_waiter",
+    "service": "cloudsearch"
+  },
+  {
+    "function": "list_domain_names",
+    "service": "cloudsearch"
+  }
+]

@@ -1,0 +1,158 @@
+[
+  {
+    "function": "get_annotation_import_job",
+    "service": "omics"
+  },
+  {
+    "function": "get_annotation_store",
+    "service": "omics"
+  },
+  {
+    "function": "get_paginator",
+    "service": "omics"
+  },
+  {
+    "function": "get_read_set",
+    "service": "omics"
+  },
+  {
+    "function": "get_read_set_activation_job",
+    "service": "omics"
+  },
+  {
+    "function": "get_read_set_export_job",
+    "service": "omics"
+  },
+  {
+    "function": "get_read_set_import_job",
+    "service": "omics"
+  },
+  {
+    "function": "get_read_set_metadata",
+    "service": "omics"
+  },
+  {
+    "function": "get_reference",
+    "service": "omics"
+  },
+  {
+    "function": "get_reference_import_job",
+    "service": "omics"
+  },
+  {
+    "function": "get_reference_metadata",
+    "service": "omics"
+  },
+  {
+    "function": "get_reference_store",
+    "service": "omics"
+  },
+  {
+    "function": "get_run",
+    "service": "omics"
+  },
+  {
+    "function": "get_run_group",
+    "service": "omics"
+  },
+  {
+    "function": "get_run_task",
+    "service": "omics"
+  },
+  {
+    "function": "get_sequence_store",
+    "service": "omics"
+  },
+  {
+    "function": "get_variant_import_job",
+    "service": "omics"
+  },
+  {
+    "function": "get_variant_store",
+    "service": "omics"
+  },
+  {
+    "function": "get_waiter",
+    "service": "omics"
+  },
+  {
+    "function": "get_workflow",
+    "service": "omics"
+  },
+  {
+    "function": "list_annotation_import_jobs",
+    "service": "omics"
+  },
+  {
+    "function": "list_annotation_stores",
+    "service": "omics"
+  },
+  {
+    "function": "list_multipart_read_set_uploads",
+    "service": "omics"
+  },
+  {
+    "function": "list_read_set_activation_jobs",
+    "service": "omics"
+  },
+  {
+    "function": "list_read_set_export_jobs",
+    "service": "omics"
+  },
+  {
+    "function": "list_read_set_import_jobs",
+    "service": "omics"
+  },
+  {
+    "function": "list_read_set_upload_parts",
+    "service": "omics"
+  },
+  {
+    "function": "list_read_sets",
+    "service": "omics"
+  },
+  {
+    "function": "list_reference_import_jobs",
+    "service": "omics"
+  },
+  {
+    "function": "list_reference_stores",
+    "service": "omics"
+  },
+  {
+    "function": "list_references",
+    "service": "omics"
+  },
+  {
+    "function": "list_run_groups",
+    "service": "omics"
+  },
+  {
+    "function": "list_run_tasks",
+    "service": "omics"
+  },
+  {
+    "function": "list_runs",
+    "service": "omics"
+  },
+  {
+    "function": "list_sequence_stores",
+    "service": "omics"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "omics"
+  },
+  {
+    "function": "list_variant_import_jobs",
+    "service": "omics"
+  },
+  {
+    "function": "list_variant_stores",
+    "service": "omics"
+  },
+  {
+    "function": "list_workflows",
+    "service": "omics"
+  }
+]

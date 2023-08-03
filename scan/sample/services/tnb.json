@@ -1,0 +1,70 @@
+[
+  {
+    "function": "get_paginator",
+    "service": "tnb"
+  },
+  {
+    "function": "get_sol_function_instance",
+    "service": "tnb"
+  },
+  {
+    "function": "get_sol_function_package",
+    "service": "tnb"
+  },
+  {
+    "function": "get_sol_function_package_content",
+    "service": "tnb"
+  },
+  {
+    "function": "get_sol_function_package_descriptor",
+    "service": "tnb"
+  },
+  {
+    "function": "get_sol_network_instance",
+    "service": "tnb"
+  },
+  {
+    "function": "get_sol_network_operation",
+    "service": "tnb"
+  },
+  {
+    "function": "get_sol_network_package",
+    "service": "tnb"
+  },
+  {
+    "function": "get_sol_network_package_content",
+    "service": "tnb"
+  },
+  {
+    "function": "get_sol_network_package_descriptor",
+    "service": "tnb"
+  },
+  {
+    "function": "get_waiter",
+    "service": "tnb"
+  },
+  {
+    "function": "list_sol_function_instances",
+    "service": "tnb"
+  },
+  {
+    "function": "list_sol_function_packages",
+    "service": "tnb"
+  },
+  {
+    "function": "list_sol_network_instances",
+    "service": "tnb"
+  },
+  {
+    "function": "list_sol_network_operations",
+    "service": "tnb"
+  },
+  {
+    "function": "list_sol_network_packages",
+    "service": "tnb"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "tnb"
+  }
+]

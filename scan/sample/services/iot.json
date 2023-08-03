@@ -1,0 +1,454 @@
+[
+  {
+    "function": "describe_account_audit_configuration",
+    "service": "iot"
+  },
+  {
+    "function": "describe_audit_finding",
+    "service": "iot"
+  },
+  {
+    "function": "describe_audit_mitigation_actions_task",
+    "service": "iot"
+  },
+  {
+    "function": "describe_audit_suppression",
+    "service": "iot"
+  },
+  {
+    "function": "describe_audit_task",
+    "service": "iot"
+  },
+  {
+    "function": "describe_authorizer",
+    "service": "iot"
+  },
+  {
+    "function": "describe_billing_group",
+    "service": "iot"
+  },
+  {
+    "function": "describe_ca_certificate",
+    "service": "iot"
+  },
+  {
+    "function": "describe_certificate",
+    "service": "iot"
+  },
+  {
+    "function": "describe_custom_metric",
+    "service": "iot"
+  },
+  {
+    "function": "describe_default_authorizer",
+    "service": "iot"
+  },
+  {
+    "function": "describe_detect_mitigation_actions_task",
+    "service": "iot"
+  },
+  {
+    "function": "describe_dimension",
+    "service": "iot"
+  },
+  {
+    "function": "describe_domain_configuration",
+    "service": "iot"
+  },
+  {
+    "function": "describe_endpoint",
+    "service": "iot"
+  },
+  {
+    "function": "describe_event_configurations",
+    "service": "iot"
+  },
+  {
+    "function": "describe_fleet_metric",
+    "service": "iot"
+  },
+  {
+    "function": "describe_index",
+    "service": "iot"
+  },
+  {
+    "function": "describe_job",
+    "service": "iot"
+  },
+  {
+    "function": "describe_job_execution",
+    "service": "iot"
+  },
+  {
+    "function": "describe_job_template",
+    "service": "iot"
+  },
+  {
+    "function": "describe_managed_job_template",
+    "service": "iot"
+  },
+  {
+    "function": "describe_mitigation_action",
+    "service": "iot"
+  },
+  {
+    "function": "describe_provisioning_template",
+    "service": "iot"
+  },
+  {
+    "function": "describe_provisioning_template_version",
+    "service": "iot"
+  },
+  {
+    "function": "describe_role_alias",
+    "service": "iot"
+  },
+  {
+    "function": "describe_scheduled_audit",
+    "service": "iot"
+  },
+  {
+    "function": "describe_security_profile",
+    "service": "iot"
+  },
+  {
+    "function": "describe_stream",
+    "service": "iot"
+  },
+  {
+    "function": "describe_thing",
+    "service": "iot"
+  },
+  {
+    "function": "describe_thing_group",
+    "service": "iot"
+  },
+  {
+    "function": "describe_thing_registration_task",
+    "service": "iot"
+  },
+  {
+    "function": "describe_thing_type",
+    "service": "iot"
+  },
+  {
+    "function": "get_behavior_model_training_summaries",
+    "service": "iot"
+  },
+  {
+    "function": "get_buckets_aggregation",
+    "service": "iot"
+  },
+  {
+    "function": "get_cardinality",
+    "service": "iot"
+  },
+  {
+    "function": "get_effective_policies",
+    "service": "iot"
+  },
+  {
+    "function": "get_indexing_configuration",
+    "service": "iot"
+  },
+  {
+    "function": "get_job_document",
+    "service": "iot"
+  },
+  {
+    "function": "get_logging_options",
+    "service": "iot"
+  },
+  {
+    "function": "get_ota_update",
+    "service": "iot"
+  },
+  {
+    "function": "get_package",
+    "service": "iot"
+  },
+  {
+    "function": "get_package_configuration",
+    "service": "iot"
+  },
+  {
+    "function": "get_package_version",
+    "service": "iot"
+  },
+  {
+    "function": "get_paginator",
+    "service": "iot"
+  },
+  {
+    "function": "get_percentiles",
+    "service": "iot"
+  },
+  {
+    "function": "get_policy",
+    "service": "iot"
+  },
+  {
+    "function": "get_policy_version",
+    "service": "iot"
+  },
+  {
+    "function": "get_registration_code",
+    "service": "iot"
+  },
+  {
+    "function": "get_statistics",
+    "service": "iot"
+  },
+  {
+    "function": "get_topic_rule",
+    "service": "iot"
+  },
+  {
+    "function": "get_topic_rule_destination",
+    "service": "iot"
+  },
+  {
+    "function": "get_v2_logging_options",
+    "service": "iot"
+  },
+  {
+    "function": "get_waiter",
+    "service": "iot"
+  },
+  {
+    "function": "list_active_violations",
+    "service": "iot"
+  },
+  {
+    "function": "list_attached_policies",
+    "service": "iot"
+  },
+  {
+    "function": "list_audit_findings",
+    "service": "iot"
+  },
+  {
+    "function": "list_audit_mitigation_actions_executions",
+    "service": "iot"
+  },
+  {
+    "function": "list_audit_mitigation_actions_tasks",
+    "service": "iot"
+  },
+  {
+    "function": "list_audit_suppressions",
+    "service": "iot"
+  },
+  {
+    "function": "list_audit_tasks",
+    "service": "iot"
+  },
+  {
+    "function": "list_authorizers",
+    "service": "iot"
+  },
+  {
+    "function": "list_billing_groups",
+    "service": "iot"
+  },
+  {
+    "function": "list_ca_certificates",
+    "service": "iot"
+  },
+  {
+    "function": "list_certificates",
+    "service": "iot"
+  },
+  {
+    "function": "list_certificates_by_ca",
+    "service": "iot"
+  },
+  {
+    "function": "list_custom_metrics",
+    "service": "iot"
+  },
+  {
+    "function": "list_detect_mitigation_actions_executions",
+    "service": "iot"
+  },
+  {
+    "function": "list_detect_mitigation_actions_tasks",
+    "service": "iot"
+  },
+  {
+    "function": "list_dimensions",
+    "service": "iot"
+  },
+  {
+    "function": "list_domain_configurations",
+    "service": "iot"
+  },
+  {
+    "function": "list_fleet_metrics",
+    "service": "iot"
+  },
+  {
+    "function": "list_indices",
+    "service": "iot"
+  },
+  {
+    "function": "list_job_executions_for_job",
+    "service": "iot"
+  },
+  {
+    "function": "list_job_executions_for_thing",
+    "service": "iot"
+  },
+  {
+    "function": "list_job_templates",
+    "service": "iot"
+  },
+  {
+    "function": "list_jobs",
+    "service": "iot"
+  },
+  {
+    "function": "list_managed_job_templates",
+    "service": "iot"
+  },
+  {
+    "function": "list_metric_values",
+    "service": "iot"
+  },
+  {
+    "function": "list_mitigation_actions",
+    "service": "iot"
+  },
+  {
+    "function": "list_ota_updates",
+    "service": "iot"
+  },
+  {
+    "function": "list_outgoing_certificates",
+    "service": "iot"
+  },
+  {
+    "function": "list_package_versions",
+    "service": "iot"
+  },
+  {
+    "function": "list_packages",
+    "service": "iot"
+  },
+  {
+    "function": "list_policies",
+    "service": "iot"
+  },
+  {
+    "function": "list_policy_principals",
+    "service": "iot"
+  },
+  {
+    "function": "list_policy_versions",
+    "service": "iot"
+  },
+  {
+    "function": "list_principal_policies",
+    "service": "iot"
+  },
+  {
+    "function": "list_principal_things",
+    "service": "iot"
+  },
+  {
+    "function": "list_provisioning_template_versions",
+    "service": "iot"
+  },
+  {
+    "function": "list_provisioning_templates",
+    "service": "iot"
+  },
+  {
+    "function": "list_related_resources_for_audit_finding",
+    "service": "iot"
+  },
+  {
+    "function": "list_role_aliases",
+    "service": "iot"
+  },
+  {
+    "function": "list_scheduled_audits",
+    "service": "iot"
+  },
+  {
+    "function": "list_security_profiles",
+    "service": "iot"
+  },
+  {
+    "function": "list_security_profiles_for_target",
+    "service": "iot"
+  },
+  {
+    "function": "list_streams",
+    "service": "iot"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "iot"
+  },
+  {
+    "function": "list_targets_for_policy",
+    "service": "iot"
+  },
+  {
+    "function": "list_targets_for_security_profile",
+    "service": "iot"
+  },
+  {
+    "function": "list_thing_groups",
+    "service": "iot"
+  },
+  {
+    "function": "list_thing_groups_for_thing",
+    "service": "iot"
+  },
+  {
+    "function": "list_thing_principals",
+    "service": "iot"
+  },
+  {
+    "function": "list_thing_registration_task_reports",
+    "service": "iot"
+  },
+  {
+    "function": "list_thing_registration_tasks",
+    "service": "iot"
+  },
+  {
+    "function": "list_thing_types",
+    "service": "iot"
+  },
+  {
+    "function": "list_things",
+    "service": "iot"
+  },
+  {
+    "function": "list_things_in_billing_group",
+    "service": "iot"
+  },
+  {
+    "function": "list_things_in_thing_group",
+    "service": "iot"
+  },
+  {
+    "function": "list_topic_rule_destinations",
+    "service": "iot"
+  },
+  {
+    "function": "list_topic_rules",
+    "service": "iot"
+  },
+  {
+    "function": "list_v2_logging_levels",
+    "service": "iot"
+  },
+  {
+    "function": "list_violation_events",
+    "service": "iot"
+  }
+]

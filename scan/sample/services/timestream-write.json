@@ -1,0 +1,42 @@
+[
+  {
+    "function": "describe_batch_load_task",
+    "service": "timestream-write"
+  },
+  {
+    "function": "describe_database",
+    "service": "timestream-write"
+  },
+  {
+    "function": "describe_endpoints",
+    "service": "timestream-write"
+  },
+  {
+    "function": "describe_table",
+    "service": "timestream-write"
+  },
+  {
+    "function": "get_paginator",
+    "service": "timestream-write"
+  },
+  {
+    "function": "get_waiter",
+    "service": "timestream-write"
+  },
+  {
+    "function": "list_batch_load_tasks",
+    "service": "timestream-write"
+  },
+  {
+    "function": "list_databases",
+    "service": "timestream-write"
+  },
+  {
+    "function": "list_tables",
+    "service": "timestream-write"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "timestream-write"
+  }
+]

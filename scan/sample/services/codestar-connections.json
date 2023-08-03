@@ -1,0 +1,30 @@
+[
+  {
+    "function": "get_connection",
+    "service": "codestar-connections"
+  },
+  {
+    "function": "get_host",
+    "service": "codestar-connections"
+  },
+  {
+    "function": "get_paginator",
+    "service": "codestar-connections"
+  },
+  {
+    "function": "get_waiter",
+    "service": "codestar-connections"
+  },
+  {
+    "function": "list_connections",
+    "service": "codestar-connections"
+  },
+  {
+    "function": "list_hosts",
+    "service": "codestar-connections"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "codestar-connections"
+  }
+]

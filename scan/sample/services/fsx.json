@@ -1,0 +1,50 @@
+[
+  {
+    "function": "describe_backups",
+    "service": "fsx"
+  },
+  {
+    "function": "describe_data_repository_associations",
+    "service": "fsx"
+  },
+  {
+    "function": "describe_data_repository_tasks",
+    "service": "fsx"
+  },
+  {
+    "function": "describe_file_caches",
+    "service": "fsx"
+  },
+  {
+    "function": "describe_file_system_aliases",
+    "service": "fsx"
+  },
+  {
+    "function": "describe_file_systems",
+    "service": "fsx"
+  },
+  {
+    "function": "describe_snapshots",
+    "service": "fsx"
+  },
+  {
+    "function": "describe_storage_virtual_machines",
+    "service": "fsx"
+  },
+  {
+    "function": "describe_volumes",
+    "service": "fsx"
+  },
+  {
+    "function": "get_paginator",
+    "service": "fsx"
+  },
+  {
+    "function": "get_waiter",
+    "service": "fsx"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "fsx"
+  }
+]

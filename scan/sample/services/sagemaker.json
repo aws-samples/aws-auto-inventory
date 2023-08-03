@@ -1,0 +1,550 @@
+[
+  {
+    "function": "describe_action",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_algorithm",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_app",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_app_image_config",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_artifact",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_auto_ml_job",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_auto_ml_job_v2",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_code_repository",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_compilation_job",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_context",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_data_quality_job_definition",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_device",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_device_fleet",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_domain",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_edge_deployment_plan",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_edge_packaging_job",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_endpoint",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_endpoint_config",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_experiment",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_feature_group",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_feature_metadata",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_flow_definition",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_hub",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_hub_content",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_human_task_ui",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_hyper_parameter_tuning_job",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_image",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_image_version",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_inference_experiment",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_inference_recommendations_job",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_labeling_job",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_lineage_group",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_model",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_model_bias_job_definition",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_model_card",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_model_card_export_job",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_model_explainability_job_definition",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_model_package",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_model_package_group",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_model_quality_job_definition",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_monitoring_schedule",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_notebook_instance",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_notebook_instance_lifecycle_config",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_pipeline",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_pipeline_definition_for_execution",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_pipeline_execution",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_processing_job",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_project",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_space",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_studio_lifecycle_config",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_subscribed_workteam",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_training_job",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_transform_job",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_trial",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_trial_component",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_user_profile",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_workforce",
+    "service": "sagemaker"
+  },
+  {
+    "function": "describe_workteam",
+    "service": "sagemaker"
+  },
+  {
+    "function": "get_device_fleet_report",
+    "service": "sagemaker"
+  },
+  {
+    "function": "get_lineage_group_policy",
+    "service": "sagemaker"
+  },
+  {
+    "function": "get_model_package_group_policy",
+    "service": "sagemaker"
+  },
+  {
+    "function": "get_paginator",
+    "service": "sagemaker"
+  },
+  {
+    "function": "get_sagemaker_servicecatalog_portfolio_status",
+    "service": "sagemaker"
+  },
+  {
+    "function": "get_search_suggestions",
+    "service": "sagemaker"
+  },
+  {
+    "function": "get_waiter",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_actions",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_algorithms",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_aliases",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_app_image_configs",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_apps",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_artifacts",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_associations",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_auto_ml_jobs",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_candidates_for_auto_ml_job",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_code_repositories",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_compilation_jobs",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_contexts",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_data_quality_job_definitions",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_device_fleets",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_devices",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_domains",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_edge_deployment_plans",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_edge_packaging_jobs",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_endpoint_configs",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_endpoints",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_experiments",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_feature_groups",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_flow_definitions",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_hub_content_versions",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_hub_contents",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_hubs",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_human_task_uis",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_hyper_parameter_tuning_jobs",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_image_versions",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_images",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_inference_experiments",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_inference_recommendations_job_steps",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_inference_recommendations_jobs",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_labeling_jobs",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_labeling_jobs_for_workteam",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_lineage_groups",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_model_bias_job_definitions",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_model_card_export_jobs",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_model_card_versions",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_model_cards",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_model_explainability_job_definitions",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_model_metadata",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_model_package_groups",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_model_packages",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_model_quality_job_definitions",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_models",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_monitoring_alert_history",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_monitoring_alerts",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_monitoring_executions",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_monitoring_schedules",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_notebook_instance_lifecycle_configs",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_notebook_instances",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_pipeline_execution_steps",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_pipeline_executions",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_pipeline_parameters_for_execution",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_pipelines",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_processing_jobs",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_projects",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_resource_catalogs",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_spaces",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_stage_devices",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_studio_lifecycle_configs",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_subscribed_workteams",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_tags",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_training_jobs",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_training_jobs_for_hyper_parameter_tuning_job",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_transform_jobs",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_trial_components",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_trials",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_user_profiles",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_workforces",
+    "service": "sagemaker"
+  },
+  {
+    "function": "list_workteams",
+    "service": "sagemaker"
+  }
+]

@@ -1,0 +1,126 @@
+[
+  {
+    "function": "get_component",
+    "service": "imagebuilder"
+  },
+  {
+    "function": "get_component_policy",
+    "service": "imagebuilder"
+  },
+  {
+    "function": "get_container_recipe",
+    "service": "imagebuilder"
+  },
+  {
+    "function": "get_container_recipe_policy",
+    "service": "imagebuilder"
+  },
+  {
+    "function": "get_distribution_configuration",
+    "service": "imagebuilder"
+  },
+  {
+    "function": "get_image",
+    "service": "imagebuilder"
+  },
+  {
+    "function": "get_image_pipeline",
+    "service": "imagebuilder"
+  },
+  {
+    "function": "get_image_policy",
+    "service": "imagebuilder"
+  },
+  {
+    "function": "get_image_recipe",
+    "service": "imagebuilder"
+  },
+  {
+    "function": "get_image_recipe_policy",
+    "service": "imagebuilder"
+  },
+  {
+    "function": "get_infrastructure_configuration",
+    "service": "imagebuilder"
+  },
+  {
+    "function": "get_paginator",
+    "service": "imagebuilder"
+  },
+  {
+    "function": "get_waiter",
+    "service": "imagebuilder"
+  },
+  {
+    "function": "get_workflow_execution",
+    "service": "imagebuilder"
+  },
+  {
+    "function": "get_workflow_step_execution",
+    "service": "imagebuilder"
+  },
+  {
+    "function": "list_component_build_versions",
+    "service": "imagebuilder"
+  },
+  {
+    "function": "list_components",
+    "service": "imagebuilder"
+  },
+  {
+    "function": "list_container_recipes",
+    "service": "imagebuilder"
+  },
+  {
+    "function": "list_distribution_configurations",
+    "service": "imagebuilder"
+  },
+  {
+    "function": "list_image_build_versions",
+    "service": "imagebuilder"
+  },
+  {
+    "function": "list_image_packages",
+    "service": "imagebuilder"
+  },
+  {
+    "function": "list_image_pipeline_images",
+    "service": "imagebuilder"
+  },
+  {
+    "function": "list_image_pipelines",
+    "service": "imagebuilder"
+  },
+  {
+    "function": "list_image_recipes",
+    "service": "imagebuilder"
+  },
+  {
+    "function": "list_image_scan_finding_aggregations",
+    "service": "imagebuilder"
+  },
+  {
+    "function": "list_image_scan_findings",
+    "service": "imagebuilder"
+  },
+  {
+    "function": "list_images",
+    "service": "imagebuilder"
+  },
+  {
+    "function": "list_infrastructure_configurations",
+    "service": "imagebuilder"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "imagebuilder"
+  },
+  {
+    "function": "list_workflow_executions",
+    "service": "imagebuilder"
+  },
+  {
+    "function": "list_workflow_step_executions",
+    "service": "imagebuilder"
+  }
+]

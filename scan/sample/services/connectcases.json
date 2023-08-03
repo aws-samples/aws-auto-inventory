@@ -1,0 +1,58 @@
+[
+  {
+    "function": "get_case",
+    "service": "connectcases"
+  },
+  {
+    "function": "get_case_event_configuration",
+    "service": "connectcases"
+  },
+  {
+    "function": "get_domain",
+    "service": "connectcases"
+  },
+  {
+    "function": "get_layout",
+    "service": "connectcases"
+  },
+  {
+    "function": "get_paginator",
+    "service": "connectcases"
+  },
+  {
+    "function": "get_template",
+    "service": "connectcases"
+  },
+  {
+    "function": "get_waiter",
+    "service": "connectcases"
+  },
+  {
+    "function": "list_cases_for_contact",
+    "service": "connectcases"
+  },
+  {
+    "function": "list_domains",
+    "service": "connectcases"
+  },
+  {
+    "function": "list_field_options",
+    "service": "connectcases"
+  },
+  {
+    "function": "list_fields",
+    "service": "connectcases"
+  },
+  {
+    "function": "list_layouts",
+    "service": "connectcases"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "connectcases"
+  },
+  {
+    "function": "list_templates",
+    "service": "connectcases"
+  }
+]

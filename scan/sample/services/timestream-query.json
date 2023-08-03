@@ -1,0 +1,26 @@
+[
+  {
+    "function": "describe_endpoints",
+    "service": "timestream-query"
+  },
+  {
+    "function": "describe_scheduled_query",
+    "service": "timestream-query"
+  },
+  {
+    "function": "get_paginator",
+    "service": "timestream-query"
+  },
+  {
+    "function": "get_waiter",
+    "service": "timestream-query"
+  },
+  {
+    "function": "list_scheduled_queries",
+    "service": "timestream-query"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "timestream-query"
+  }
+]

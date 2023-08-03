@@ -1,0 +1,98 @@
+[
+  {
+    "function": "get_api_association",
+    "service": "appsync"
+  },
+  {
+    "function": "get_api_cache",
+    "service": "appsync"
+  },
+  {
+    "function": "get_data_source",
+    "service": "appsync"
+  },
+  {
+    "function": "get_domain_name",
+    "service": "appsync"
+  },
+  {
+    "function": "get_function",
+    "service": "appsync"
+  },
+  {
+    "function": "get_graphql_api",
+    "service": "appsync"
+  },
+  {
+    "function": "get_introspection_schema",
+    "service": "appsync"
+  },
+  {
+    "function": "get_paginator",
+    "service": "appsync"
+  },
+  {
+    "function": "get_resolver",
+    "service": "appsync"
+  },
+  {
+    "function": "get_schema_creation_status",
+    "service": "appsync"
+  },
+  {
+    "function": "get_source_api_association",
+    "service": "appsync"
+  },
+  {
+    "function": "get_type",
+    "service": "appsync"
+  },
+  {
+    "function": "get_waiter",
+    "service": "appsync"
+  },
+  {
+    "function": "list_api_keys",
+    "service": "appsync"
+  },
+  {
+    "function": "list_data_sources",
+    "service": "appsync"
+  },
+  {
+    "function": "list_domain_names",
+    "service": "appsync"
+  },
+  {
+    "function": "list_functions",
+    "service": "appsync"
+  },
+  {
+    "function": "list_graphql_apis",
+    "service": "appsync"
+  },
+  {
+    "function": "list_resolvers",
+    "service": "appsync"
+  },
+  {
+    "function": "list_resolvers_by_function",
+    "service": "appsync"
+  },
+  {
+    "function": "list_source_api_associations",
+    "service": "appsync"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "appsync"
+  },
+  {
+    "function": "list_types",
+    "service": "appsync"
+  },
+  {
+    "function": "list_types_by_association",
+    "service": "appsync"
+  }
+]

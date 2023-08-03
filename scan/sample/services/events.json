@@ -1,0 +1,98 @@
+[
+  {
+    "function": "describe_api_destination",
+    "service": "events"
+  },
+  {
+    "function": "describe_archive",
+    "service": "events"
+  },
+  {
+    "function": "describe_connection",
+    "service": "events"
+  },
+  {
+    "function": "describe_endpoint",
+    "service": "events"
+  },
+  {
+    "function": "describe_event_bus",
+    "service": "events"
+  },
+  {
+    "function": "describe_event_source",
+    "service": "events"
+  },
+  {
+    "function": "describe_partner_event_source",
+    "service": "events"
+  },
+  {
+    "function": "describe_replay",
+    "service": "events"
+  },
+  {
+    "function": "describe_rule",
+    "service": "events"
+  },
+  {
+    "function": "get_paginator",
+    "service": "events"
+  },
+  {
+    "function": "get_waiter",
+    "service": "events"
+  },
+  {
+    "function": "list_api_destinations",
+    "service": "events"
+  },
+  {
+    "function": "list_archives",
+    "service": "events"
+  },
+  {
+    "function": "list_connections",
+    "service": "events"
+  },
+  {
+    "function": "list_endpoints",
+    "service": "events"
+  },
+  {
+    "function": "list_event_buses",
+    "service": "events"
+  },
+  {
+    "function": "list_event_sources",
+    "service": "events"
+  },
+  {
+    "function": "list_partner_event_source_accounts",
+    "service": "events"
+  },
+  {
+    "function": "list_partner_event_sources",
+    "service": "events"
+  },
+  {
+    "function": "list_replays",
+    "service": "events"
+  },
+  {
+    "function": "list_rule_names_by_target",
+    "service": "events"
+  },
+  {
+    "function": "list_rules",
+    "service": "events"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "events"
+  },
+  {
+    "function": "list_targets_by_rule",
+    "service": "events"
+  }
+]

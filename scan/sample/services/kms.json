@@ -1,0 +1,58 @@
+[
+  {
+    "function": "describe_custom_key_stores",
+    "service": "kms"
+  },
+  {
+    "function": "describe_key",
+    "service": "kms"
+  },
+  {
+    "function": "get_key_policy",
+    "service": "kms"
+  },
+  {
+    "function": "get_key_rotation_status",
+    "service": "kms"
+  },
+  {
+    "function": "get_paginator",
+    "service": "kms"
+  },
+  {
+    "function": "get_parameters_for_import",
+    "service": "kms"
+  },
+  {
+    "function": "get_public_key",
+    "service": "kms"
+  },
+  {
+    "function": "get_waiter",
+    "service": "kms"
+  },
+  {
+    "function": "list_aliases",
+    "service": "kms"
+  },
+  {
+    "function": "list_grants",
+    "service": "kms"
+  },
+  {
+    "function": "list_key_policies",
+    "service": "kms"
+  },
+  {
+    "function": "list_keys",
+    "service": "kms"
+  },
+  {
+    "function": "list_resource_tags",
+    "service": "kms"
+  },
+  {
+    "function": "list_retirable_grants",
+    "service": "kms"
+  }
+]

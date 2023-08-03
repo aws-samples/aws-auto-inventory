@@ -1,0 +1,54 @@
+[
+  {
+    "function": "get_asset",
+    "service": "dataexchange"
+  },
+  {
+    "function": "get_data_set",
+    "service": "dataexchange"
+  },
+  {
+    "function": "get_event_action",
+    "service": "dataexchange"
+  },
+  {
+    "function": "get_job",
+    "service": "dataexchange"
+  },
+  {
+    "function": "get_paginator",
+    "service": "dataexchange"
+  },
+  {
+    "function": "get_revision",
+    "service": "dataexchange"
+  },
+  {
+    "function": "get_waiter",
+    "service": "dataexchange"
+  },
+  {
+    "function": "list_data_set_revisions",
+    "service": "dataexchange"
+  },
+  {
+    "function": "list_data_sets",
+    "service": "dataexchange"
+  },
+  {
+    "function": "list_event_actions",
+    "service": "dataexchange"
+  },
+  {
+    "function": "list_jobs",
+    "service": "dataexchange"
+  },
+  {
+    "function": "list_revision_assets",
+    "service": "dataexchange"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "dataexchange"
+  }
+]

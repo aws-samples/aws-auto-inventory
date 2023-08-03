@@ -1,0 +1,22 @@
+[
+  {
+    "function": "get_paginator",
+    "service": "license-manager-linux-subscriptions"
+  },
+  {
+    "function": "get_service_settings",
+    "service": "license-manager-linux-subscriptions"
+  },
+  {
+    "function": "get_waiter",
+    "service": "license-manager-linux-subscriptions"
+  },
+  {
+    "function": "list_linux_subscription_instances",
+    "service": "license-manager-linux-subscriptions"
+  },
+  {
+    "function": "list_linux_subscriptions",
+    "service": "license-manager-linux-subscriptions"
+  }
+]

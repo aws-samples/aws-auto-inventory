@@ -1,0 +1,38 @@
+[
+  {
+    "function": "get_default_view",
+    "service": "resource-explorer-2"
+  },
+  {
+    "function": "get_index",
+    "service": "resource-explorer-2"
+  },
+  {
+    "function": "get_paginator",
+    "service": "resource-explorer-2"
+  },
+  {
+    "function": "get_view",
+    "service": "resource-explorer-2"
+  },
+  {
+    "function": "get_waiter",
+    "service": "resource-explorer-2"
+  },
+  {
+    "function": "list_indexes",
+    "service": "resource-explorer-2"
+  },
+  {
+    "function": "list_supported_resource_types",
+    "service": "resource-explorer-2"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "resource-explorer-2"
+  },
+  {
+    "function": "list_views",
+    "service": "resource-explorer-2"
+  }
+]

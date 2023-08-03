@@ -1,0 +1,86 @@
+[
+  {
+    "function": "describe_application_instance",
+    "service": "panorama"
+  },
+  {
+    "function": "describe_application_instance_details",
+    "service": "panorama"
+  },
+  {
+    "function": "describe_device",
+    "service": "panorama"
+  },
+  {
+    "function": "describe_device_job",
+    "service": "panorama"
+  },
+  {
+    "function": "describe_node",
+    "service": "panorama"
+  },
+  {
+    "function": "describe_node_from_template_job",
+    "service": "panorama"
+  },
+  {
+    "function": "describe_package",
+    "service": "panorama"
+  },
+  {
+    "function": "describe_package_import_job",
+    "service": "panorama"
+  },
+  {
+    "function": "describe_package_version",
+    "service": "panorama"
+  },
+  {
+    "function": "get_paginator",
+    "service": "panorama"
+  },
+  {
+    "function": "get_waiter",
+    "service": "panorama"
+  },
+  {
+    "function": "list_application_instance_dependencies",
+    "service": "panorama"
+  },
+  {
+    "function": "list_application_instance_node_instances",
+    "service": "panorama"
+  },
+  {
+    "function": "list_application_instances",
+    "service": "panorama"
+  },
+  {
+    "function": "list_devices",
+    "service": "panorama"
+  },
+  {
+    "function": "list_devices_jobs",
+    "service": "panorama"
+  },
+  {
+    "function": "list_node_from_template_jobs",
+    "service": "panorama"
+  },
+  {
+    "function": "list_nodes",
+    "service": "panorama"
+  },
+  {
+    "function": "list_package_import_jobs",
+    "service": "panorama"
+  },
+  {
+    "function": "list_packages",
+    "service": "panorama"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "panorama"
+  }
+]

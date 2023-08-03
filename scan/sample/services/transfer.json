@@ -1,0 +1,102 @@
+[
+  {
+    "function": "describe_access",
+    "service": "transfer"
+  },
+  {
+    "function": "describe_agreement",
+    "service": "transfer"
+  },
+  {
+    "function": "describe_certificate",
+    "service": "transfer"
+  },
+  {
+    "function": "describe_connector",
+    "service": "transfer"
+  },
+  {
+    "function": "describe_execution",
+    "service": "transfer"
+  },
+  {
+    "function": "describe_host_key",
+    "service": "transfer"
+  },
+  {
+    "function": "describe_profile",
+    "service": "transfer"
+  },
+  {
+    "function": "describe_security_policy",
+    "service": "transfer"
+  },
+  {
+    "function": "describe_server",
+    "service": "transfer"
+  },
+  {
+    "function": "describe_user",
+    "service": "transfer"
+  },
+  {
+    "function": "describe_workflow",
+    "service": "transfer"
+  },
+  {
+    "function": "get_paginator",
+    "service": "transfer"
+  },
+  {
+    "function": "get_waiter",
+    "service": "transfer"
+  },
+  {
+    "function": "list_accesses",
+    "service": "transfer"
+  },
+  {
+    "function": "list_agreements",
+    "service": "transfer"
+  },
+  {
+    "function": "list_certificates",
+    "service": "transfer"
+  },
+  {
+    "function": "list_connectors",
+    "service": "transfer"
+  },
+  {
+    "function": "list_executions",
+    "service": "transfer"
+  },
+  {
+    "function": "list_host_keys",
+    "service": "transfer"
+  },
+  {
+    "function": "list_profiles",
+    "service": "transfer"
+  },
+  {
+    "function": "list_security_policies",
+    "service": "transfer"
+  },
+  {
+    "function": "list_servers",
+    "service": "transfer"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "transfer"
+  },
+  {
+    "function": "list_users",
+    "service": "transfer"
+  },
+  {
+    "function": "list_workflows",
+    "service": "transfer"
+  }
+]

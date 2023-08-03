@@ -1,0 +1,82 @@
+[
+  {
+    "function": "get_application",
+    "service": "appconfig"
+  },
+  {
+    "function": "get_configuration",
+    "service": "appconfig"
+  },
+  {
+    "function": "get_configuration_profile",
+    "service": "appconfig"
+  },
+  {
+    "function": "get_deployment",
+    "service": "appconfig"
+  },
+  {
+    "function": "get_deployment_strategy",
+    "service": "appconfig"
+  },
+  {
+    "function": "get_environment",
+    "service": "appconfig"
+  },
+  {
+    "function": "get_extension",
+    "service": "appconfig"
+  },
+  {
+    "function": "get_extension_association",
+    "service": "appconfig"
+  },
+  {
+    "function": "get_hosted_configuration_version",
+    "service": "appconfig"
+  },
+  {
+    "function": "get_paginator",
+    "service": "appconfig"
+  },
+  {
+    "function": "get_waiter",
+    "service": "appconfig"
+  },
+  {
+    "function": "list_applications",
+    "service": "appconfig"
+  },
+  {
+    "function": "list_configuration_profiles",
+    "service": "appconfig"
+  },
+  {
+    "function": "list_deployment_strategies",
+    "service": "appconfig"
+  },
+  {
+    "function": "list_deployments",
+    "service": "appconfig"
+  },
+  {
+    "function": "list_environments",
+    "service": "appconfig"
+  },
+  {
+    "function": "list_extension_associations",
+    "service": "appconfig"
+  },
+  {
+    "function": "list_extensions",
+    "service": "appconfig"
+  },
+  {
+    "function": "list_hosted_configuration_versions",
+    "service": "appconfig"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "appconfig"
+  }
+]

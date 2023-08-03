@@ -1,0 +1,54 @@
+[
+  {
+    "function": "get_incident_record",
+    "service": "ssm-incidents"
+  },
+  {
+    "function": "get_paginator",
+    "service": "ssm-incidents"
+  },
+  {
+    "function": "get_replication_set",
+    "service": "ssm-incidents"
+  },
+  {
+    "function": "get_resource_policies",
+    "service": "ssm-incidents"
+  },
+  {
+    "function": "get_response_plan",
+    "service": "ssm-incidents"
+  },
+  {
+    "function": "get_timeline_event",
+    "service": "ssm-incidents"
+  },
+  {
+    "function": "get_waiter",
+    "service": "ssm-incidents"
+  },
+  {
+    "function": "list_incident_records",
+    "service": "ssm-incidents"
+  },
+  {
+    "function": "list_related_items",
+    "service": "ssm-incidents"
+  },
+  {
+    "function": "list_replication_sets",
+    "service": "ssm-incidents"
+  },
+  {
+    "function": "list_response_plans",
+    "service": "ssm-incidents"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "ssm-incidents"
+  },
+  {
+    "function": "list_timeline_events",
+    "service": "ssm-incidents"
+  }
+]

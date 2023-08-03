@@ -1,0 +1,70 @@
+[
+  {
+    "function": "get_component_type",
+    "service": "iottwinmaker"
+  },
+  {
+    "function": "get_entity",
+    "service": "iottwinmaker"
+  },
+  {
+    "function": "get_paginator",
+    "service": "iottwinmaker"
+  },
+  {
+    "function": "get_pricing_plan",
+    "service": "iottwinmaker"
+  },
+  {
+    "function": "get_property_value",
+    "service": "iottwinmaker"
+  },
+  {
+    "function": "get_property_value_history",
+    "service": "iottwinmaker"
+  },
+  {
+    "function": "get_scene",
+    "service": "iottwinmaker"
+  },
+  {
+    "function": "get_sync_job",
+    "service": "iottwinmaker"
+  },
+  {
+    "function": "get_waiter",
+    "service": "iottwinmaker"
+  },
+  {
+    "function": "get_workspace",
+    "service": "iottwinmaker"
+  },
+  {
+    "function": "list_component_types",
+    "service": "iottwinmaker"
+  },
+  {
+    "function": "list_entities",
+    "service": "iottwinmaker"
+  },
+  {
+    "function": "list_scenes",
+    "service": "iottwinmaker"
+  },
+  {
+    "function": "list_sync_jobs",
+    "service": "iottwinmaker"
+  },
+  {
+    "function": "list_sync_resources",
+    "service": "iottwinmaker"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "iottwinmaker"
+  },
+  {
+    "function": "list_workspaces",
+    "service": "iottwinmaker"
+  }
+]

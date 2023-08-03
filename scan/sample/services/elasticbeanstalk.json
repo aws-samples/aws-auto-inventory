@@ -1,0 +1,78 @@
+[
+  {
+    "function": "describe_account_attributes",
+    "service": "elasticbeanstalk"
+  },
+  {
+    "function": "describe_application_versions",
+    "service": "elasticbeanstalk"
+  },
+  {
+    "function": "describe_applications",
+    "service": "elasticbeanstalk"
+  },
+  {
+    "function": "describe_configuration_options",
+    "service": "elasticbeanstalk"
+  },
+  {
+    "function": "describe_configuration_settings",
+    "service": "elasticbeanstalk"
+  },
+  {
+    "function": "describe_environment_health",
+    "service": "elasticbeanstalk"
+  },
+  {
+    "function": "describe_environment_managed_action_history",
+    "service": "elasticbeanstalk"
+  },
+  {
+    "function": "describe_environment_managed_actions",
+    "service": "elasticbeanstalk"
+  },
+  {
+    "function": "describe_environment_resources",
+    "service": "elasticbeanstalk"
+  },
+  {
+    "function": "describe_environments",
+    "service": "elasticbeanstalk"
+  },
+  {
+    "function": "describe_events",
+    "service": "elasticbeanstalk"
+  },
+  {
+    "function": "describe_instances_health",
+    "service": "elasticbeanstalk"
+  },
+  {
+    "function": "describe_platform_version",
+    "service": "elasticbeanstalk"
+  },
+  {
+    "function": "get_paginator",
+    "service": "elasticbeanstalk"
+  },
+  {
+    "function": "get_waiter",
+    "service": "elasticbeanstalk"
+  },
+  {
+    "function": "list_available_solution_stacks",
+    "service": "elasticbeanstalk"
+  },
+  {
+    "function": "list_platform_branches",
+    "service": "elasticbeanstalk"
+  },
+  {
+    "function": "list_platform_versions",
+    "service": "elasticbeanstalk"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "elasticbeanstalk"
+  }
+]

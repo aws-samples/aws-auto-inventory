@@ -1,0 +1,34 @@
+[
+  {
+    "function": "get_paginator",
+    "service": "osis"
+  },
+  {
+    "function": "get_pipeline",
+    "service": "osis"
+  },
+  {
+    "function": "get_pipeline_blueprint",
+    "service": "osis"
+  },
+  {
+    "function": "get_pipeline_change_progress",
+    "service": "osis"
+  },
+  {
+    "function": "get_waiter",
+    "service": "osis"
+  },
+  {
+    "function": "list_pipeline_blueprints",
+    "service": "osis"
+  },
+  {
+    "function": "list_pipelines",
+    "service": "osis"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "osis"
+  }
+]

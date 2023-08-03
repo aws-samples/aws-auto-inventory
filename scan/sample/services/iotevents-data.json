@@ -1,0 +1,26 @@
+[
+  {
+    "function": "describe_alarm",
+    "service": "iotevents-data"
+  },
+  {
+    "function": "describe_detector",
+    "service": "iotevents-data"
+  },
+  {
+    "function": "get_paginator",
+    "service": "iotevents-data"
+  },
+  {
+    "function": "get_waiter",
+    "service": "iotevents-data"
+  },
+  {
+    "function": "list_alarms",
+    "service": "iotevents-data"
+  },
+  {
+    "function": "list_detectors",
+    "service": "iotevents-data"
+  }
+]

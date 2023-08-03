@@ -1,0 +1,22 @@
+[
+  {
+    "function": "get_paginator",
+    "service": "s3outposts"
+  },
+  {
+    "function": "get_waiter",
+    "service": "s3outposts"
+  },
+  {
+    "function": "list_endpoints",
+    "service": "s3outposts"
+  },
+  {
+    "function": "list_outposts_with_s3",
+    "service": "s3outposts"
+  },
+  {
+    "function": "list_shared_endpoints",
+    "service": "s3outposts"
+  }
+]

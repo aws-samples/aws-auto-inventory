@@ -1,0 +1,62 @@
+[
+  {
+    "function": "get_experiment",
+    "service": "evidently"
+  },
+  {
+    "function": "get_experiment_results",
+    "service": "evidently"
+  },
+  {
+    "function": "get_feature",
+    "service": "evidently"
+  },
+  {
+    "function": "get_launch",
+    "service": "evidently"
+  },
+  {
+    "function": "get_paginator",
+    "service": "evidently"
+  },
+  {
+    "function": "get_project",
+    "service": "evidently"
+  },
+  {
+    "function": "get_segment",
+    "service": "evidently"
+  },
+  {
+    "function": "get_waiter",
+    "service": "evidently"
+  },
+  {
+    "function": "list_experiments",
+    "service": "evidently"
+  },
+  {
+    "function": "list_features",
+    "service": "evidently"
+  },
+  {
+    "function": "list_launches",
+    "service": "evidently"
+  },
+  {
+    "function": "list_projects",
+    "service": "evidently"
+  },
+  {
+    "function": "list_segment_references",
+    "service": "evidently"
+  },
+  {
+    "function": "list_segments",
+    "service": "evidently"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "evidently"
+  }
+]

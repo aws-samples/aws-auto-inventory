@@ -1,0 +1,82 @@
+[
+  {
+    "function": "describe_domain",
+    "service": "codeartifact"
+  },
+  {
+    "function": "describe_package",
+    "service": "codeartifact"
+  },
+  {
+    "function": "describe_package_version",
+    "service": "codeartifact"
+  },
+  {
+    "function": "describe_repository",
+    "service": "codeartifact"
+  },
+  {
+    "function": "get_authorization_token",
+    "service": "codeartifact"
+  },
+  {
+    "function": "get_domain_permissions_policy",
+    "service": "codeartifact"
+  },
+  {
+    "function": "get_package_version_asset",
+    "service": "codeartifact"
+  },
+  {
+    "function": "get_package_version_readme",
+    "service": "codeartifact"
+  },
+  {
+    "function": "get_paginator",
+    "service": "codeartifact"
+  },
+  {
+    "function": "get_repository_endpoint",
+    "service": "codeartifact"
+  },
+  {
+    "function": "get_repository_permissions_policy",
+    "service": "codeartifact"
+  },
+  {
+    "function": "get_waiter",
+    "service": "codeartifact"
+  },
+  {
+    "function": "list_domains",
+    "service": "codeartifact"
+  },
+  {
+    "function": "list_package_version_assets",
+    "service": "codeartifact"
+  },
+  {
+    "function": "list_package_version_dependencies",
+    "service": "codeartifact"
+  },
+  {
+    "function": "list_package_versions",
+    "service": "codeartifact"
+  },
+  {
+    "function": "list_packages",
+    "service": "codeartifact"
+  },
+  {
+    "function": "list_repositories",
+    "service": "codeartifact"
+  },
+  {
+    "function": "list_repositories_in_domain",
+    "service": "codeartifact"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "codeartifact"
+  }
+]

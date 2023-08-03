@@ -1,0 +1,78 @@
+[
+  {
+    "function": "describe_application",
+    "service": "application-insights"
+  },
+  {
+    "function": "describe_component",
+    "service": "application-insights"
+  },
+  {
+    "function": "describe_component_configuration",
+    "service": "application-insights"
+  },
+  {
+    "function": "describe_component_configuration_recommendation",
+    "service": "application-insights"
+  },
+  {
+    "function": "describe_log_pattern",
+    "service": "application-insights"
+  },
+  {
+    "function": "describe_observation",
+    "service": "application-insights"
+  },
+  {
+    "function": "describe_problem",
+    "service": "application-insights"
+  },
+  {
+    "function": "describe_problem_observations",
+    "service": "application-insights"
+  },
+  {
+    "function": "describe_workload",
+    "service": "application-insights"
+  },
+  {
+    "function": "get_paginator",
+    "service": "application-insights"
+  },
+  {
+    "function": "get_waiter",
+    "service": "application-insights"
+  },
+  {
+    "function": "list_applications",
+    "service": "application-insights"
+  },
+  {
+    "function": "list_components",
+    "service": "application-insights"
+  },
+  {
+    "function": "list_configuration_history",
+    "service": "application-insights"
+  },
+  {
+    "function": "list_log_pattern_sets",
+    "service": "application-insights"
+  },
+  {
+    "function": "list_log_patterns",
+    "service": "application-insights"
+  },
+  {
+    "function": "list_problems",
+    "service": "application-insights"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "application-insights"
+  },
+  {
+    "function": "list_workloads",
+    "service": "application-insights"
+  }
+]

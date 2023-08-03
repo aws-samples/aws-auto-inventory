@@ -1,0 +1,102 @@
+[
+  {
+    "function": "describe_collection",
+    "service": "rekognition"
+  },
+  {
+    "function": "describe_dataset",
+    "service": "rekognition"
+  },
+  {
+    "function": "describe_project_versions",
+    "service": "rekognition"
+  },
+  {
+    "function": "describe_projects",
+    "service": "rekognition"
+  },
+  {
+    "function": "describe_stream_processor",
+    "service": "rekognition"
+  },
+  {
+    "function": "get_celebrity_info",
+    "service": "rekognition"
+  },
+  {
+    "function": "get_celebrity_recognition",
+    "service": "rekognition"
+  },
+  {
+    "function": "get_content_moderation",
+    "service": "rekognition"
+  },
+  {
+    "function": "get_face_detection",
+    "service": "rekognition"
+  },
+  {
+    "function": "get_face_liveness_session_results",
+    "service": "rekognition"
+  },
+  {
+    "function": "get_face_search",
+    "service": "rekognition"
+  },
+  {
+    "function": "get_label_detection",
+    "service": "rekognition"
+  },
+  {
+    "function": "get_paginator",
+    "service": "rekognition"
+  },
+  {
+    "function": "get_person_tracking",
+    "service": "rekognition"
+  },
+  {
+    "function": "get_segment_detection",
+    "service": "rekognition"
+  },
+  {
+    "function": "get_text_detection",
+    "service": "rekognition"
+  },
+  {
+    "function": "get_waiter",
+    "service": "rekognition"
+  },
+  {
+    "function": "list_collections",
+    "service": "rekognition"
+  },
+  {
+    "function": "list_dataset_entries",
+    "service": "rekognition"
+  },
+  {
+    "function": "list_dataset_labels",
+    "service": "rekognition"
+  },
+  {
+    "function": "list_faces",
+    "service": "rekognition"
+  },
+  {
+    "function": "list_project_policies",
+    "service": "rekognition"
+  },
+  {
+    "function": "list_stream_processors",
+    "service": "rekognition"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "rekognition"
+  },
+  {
+    "function": "list_users",
+    "service": "rekognition"
+  }
+]

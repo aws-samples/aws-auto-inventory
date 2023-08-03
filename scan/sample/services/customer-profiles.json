@@ -1,0 +1,114 @@
+[
+  {
+    "function": "get_auto_merging_preview",
+    "service": "customer-profiles"
+  },
+  {
+    "function": "get_calculated_attribute_definition",
+    "service": "customer-profiles"
+  },
+  {
+    "function": "get_calculated_attribute_for_profile",
+    "service": "customer-profiles"
+  },
+  {
+    "function": "get_domain",
+    "service": "customer-profiles"
+  },
+  {
+    "function": "get_event_stream",
+    "service": "customer-profiles"
+  },
+  {
+    "function": "get_identity_resolution_job",
+    "service": "customer-profiles"
+  },
+  {
+    "function": "get_integration",
+    "service": "customer-profiles"
+  },
+  {
+    "function": "get_matches",
+    "service": "customer-profiles"
+  },
+  {
+    "function": "get_paginator",
+    "service": "customer-profiles"
+  },
+  {
+    "function": "get_profile_object_type",
+    "service": "customer-profiles"
+  },
+  {
+    "function": "get_profile_object_type_template",
+    "service": "customer-profiles"
+  },
+  {
+    "function": "get_similar_profiles",
+    "service": "customer-profiles"
+  },
+  {
+    "function": "get_waiter",
+    "service": "customer-profiles"
+  },
+  {
+    "function": "get_workflow",
+    "service": "customer-profiles"
+  },
+  {
+    "function": "get_workflow_steps",
+    "service": "customer-profiles"
+  },
+  {
+    "function": "list_account_integrations",
+    "service": "customer-profiles"
+  },
+  {
+    "function": "list_calculated_attribute_definitions",
+    "service": "customer-profiles"
+  },
+  {
+    "function": "list_calculated_attributes_for_profile",
+    "service": "customer-profiles"
+  },
+  {
+    "function": "list_domains",
+    "service": "customer-profiles"
+  },
+  {
+    "function": "list_event_streams",
+    "service": "customer-profiles"
+  },
+  {
+    "function": "list_identity_resolution_jobs",
+    "service": "customer-profiles"
+  },
+  {
+    "function": "list_integrations",
+    "service": "customer-profiles"
+  },
+  {
+    "function": "list_profile_object_type_templates",
+    "service": "customer-profiles"
+  },
+  {
+    "function": "list_profile_object_types",
+    "service": "customer-profiles"
+  },
+  {
+    "function": "list_profile_objects",
+    "service": "customer-profiles"
+  },
+  {
+    "function": "list_rule_based_matches",
+    "service": "customer-profiles"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "customer-profiles"
+  },
+  {
+    "function": "list_workflows",
+    "service": "customer-profiles"
+  }
+]

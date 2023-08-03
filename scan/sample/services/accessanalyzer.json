@@ -1,0 +1,66 @@
+[
+  {
+    "function": "get_access_preview",
+    "service": "accessanalyzer"
+  },
+  {
+    "function": "get_analyzed_resource",
+    "service": "accessanalyzer"
+  },
+  {
+    "function": "get_analyzer",
+    "service": "accessanalyzer"
+  },
+  {
+    "function": "get_archive_rule",
+    "service": "accessanalyzer"
+  },
+  {
+    "function": "get_finding",
+    "service": "accessanalyzer"
+  },
+  {
+    "function": "get_generated_policy",
+    "service": "accessanalyzer"
+  },
+  {
+    "function": "get_paginator",
+    "service": "accessanalyzer"
+  },
+  {
+    "function": "get_waiter",
+    "service": "accessanalyzer"
+  },
+  {
+    "function": "list_access_preview_findings",
+    "service": "accessanalyzer"
+  },
+  {
+    "function": "list_access_previews",
+    "service": "accessanalyzer"
+  },
+  {
+    "function": "list_analyzed_resources",
+    "service": "accessanalyzer"
+  },
+  {
+    "function": "list_analyzers",
+    "service": "accessanalyzer"
+  },
+  {
+    "function": "list_archive_rules",
+    "service": "accessanalyzer"
+  },
+  {
+    "function": "list_findings",
+    "service": "accessanalyzer"
+  },
+  {
+    "function": "list_policy_generations",
+    "service": "accessanalyzer"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "accessanalyzer"
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "function": "get_identity_source",
+    "service": "verifiedpermissions"
+  },
+  {
+    "function": "get_paginator",
+    "service": "verifiedpermissions"
+  },
+  {
+    "function": "get_policy",
+    "service": "verifiedpermissions"
+  },
+  {
+    "function": "get_policy_store",
+    "service": "verifiedpermissions"
+  },
+  {
+    "function": "get_policy_template",
+    "service": "verifiedpermissions"
+  },
+  {
+    "function": "get_schema",
+    "service": "verifiedpermissions"
+  },
+  {
+    "function": "get_waiter",
+    "service": "verifiedpermissions"
+  },
+  {
+    "function": "list_identity_sources",
+    "service": "verifiedpermissions"
+  },
+  {
+    "function": "list_policies",
+    "service": "verifiedpermissions"
+  },
+  {
+    "function": "list_policy_stores",
+    "service": "verifiedpermissions"
+  },
+  {
+    "function": "list_policy_templates",
+    "service": "verifiedpermissions"
+  }
+]

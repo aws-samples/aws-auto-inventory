@@ -1,0 +1,54 @@
+[
+  {
+    "function": "describe_account_limits",
+    "service": "elbv2"
+  },
+  {
+    "function": "describe_listener_certificates",
+    "service": "elbv2"
+  },
+  {
+    "function": "describe_listeners",
+    "service": "elbv2"
+  },
+  {
+    "function": "describe_load_balancer_attributes",
+    "service": "elbv2"
+  },
+  {
+    "function": "describe_load_balancers",
+    "service": "elbv2"
+  },
+  {
+    "function": "describe_rules",
+    "service": "elbv2"
+  },
+  {
+    "function": "describe_ssl_policies",
+    "service": "elbv2"
+  },
+  {
+    "function": "describe_tags",
+    "service": "elbv2"
+  },
+  {
+    "function": "describe_target_group_attributes",
+    "service": "elbv2"
+  },
+  {
+    "function": "describe_target_groups",
+    "service": "elbv2"
+  },
+  {
+    "function": "describe_target_health",
+    "service": "elbv2"
+  },
+  {
+    "function": "get_paginator",
+    "service": "elbv2"
+  },
+  {
+    "function": "get_waiter",
+    "service": "elbv2"
+  }
+]

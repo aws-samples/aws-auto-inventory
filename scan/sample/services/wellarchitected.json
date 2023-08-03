@@ -1,0 +1,114 @@
+[
+  {
+    "function": "get_answer",
+    "service": "wellarchitected"
+  },
+  {
+    "function": "get_consolidated_report",
+    "service": "wellarchitected"
+  },
+  {
+    "function": "get_lens",
+    "service": "wellarchitected"
+  },
+  {
+    "function": "get_lens_review",
+    "service": "wellarchitected"
+  },
+  {
+    "function": "get_lens_review_report",
+    "service": "wellarchitected"
+  },
+  {
+    "function": "get_lens_version_difference",
+    "service": "wellarchitected"
+  },
+  {
+    "function": "get_milestone",
+    "service": "wellarchitected"
+  },
+  {
+    "function": "get_paginator",
+    "service": "wellarchitected"
+  },
+  {
+    "function": "get_profile",
+    "service": "wellarchitected"
+  },
+  {
+    "function": "get_profile_template",
+    "service": "wellarchitected"
+  },
+  {
+    "function": "get_waiter",
+    "service": "wellarchitected"
+  },
+  {
+    "function": "get_workload",
+    "service": "wellarchitected"
+  },
+  {
+    "function": "list_answers",
+    "service": "wellarchitected"
+  },
+  {
+    "function": "list_check_details",
+    "service": "wellarchitected"
+  },
+  {
+    "function": "list_check_summaries",
+    "service": "wellarchitected"
+  },
+  {
+    "function": "list_lens_review_improvements",
+    "service": "wellarchitected"
+  },
+  {
+    "function": "list_lens_reviews",
+    "service": "wellarchitected"
+  },
+  {
+    "function": "list_lens_shares",
+    "service": "wellarchitected"
+  },
+  {
+    "function": "list_lenses",
+    "service": "wellarchitected"
+  },
+  {
+    "function": "list_milestones",
+    "service": "wellarchitected"
+  },
+  {
+    "function": "list_notifications",
+    "service": "wellarchitected"
+  },
+  {
+    "function": "list_profile_notifications",
+    "service": "wellarchitected"
+  },
+  {
+    "function": "list_profile_shares",
+    "service": "wellarchitected"
+  },
+  {
+    "function": "list_profiles",
+    "service": "wellarchitected"
+  },
+  {
+    "function": "list_share_invitations",
+    "service": "wellarchitected"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "wellarchitected"
+  },
+  {
+    "function": "list_workload_shares",
+    "service": "wellarchitected"
+  },
+  {
+    "function": "list_workloads",
+    "service": "wellarchitected"
+  }
+]

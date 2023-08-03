@@ -1,0 +1,58 @@
+[
+  {
+    "function": "get_assistant",
+    "service": "wisdom"
+  },
+  {
+    "function": "get_assistant_association",
+    "service": "wisdom"
+  },
+  {
+    "function": "get_content",
+    "service": "wisdom"
+  },
+  {
+    "function": "get_content_summary",
+    "service": "wisdom"
+  },
+  {
+    "function": "get_knowledge_base",
+    "service": "wisdom"
+  },
+  {
+    "function": "get_paginator",
+    "service": "wisdom"
+  },
+  {
+    "function": "get_recommendations",
+    "service": "wisdom"
+  },
+  {
+    "function": "get_session",
+    "service": "wisdom"
+  },
+  {
+    "function": "get_waiter",
+    "service": "wisdom"
+  },
+  {
+    "function": "list_assistant_associations",
+    "service": "wisdom"
+  },
+  {
+    "function": "list_assistants",
+    "service": "wisdom"
+  },
+  {
+    "function": "list_contents",
+    "service": "wisdom"
+  },
+  {
+    "function": "list_knowledge_bases",
+    "service": "wisdom"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "wisdom"
+  }
+]

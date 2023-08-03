@@ -1,0 +1,222 @@
+[
+  {
+    "function": "get_adm_channel",
+    "service": "pinpoint"
+  },
+  {
+    "function": "get_apns_channel",
+    "service": "pinpoint"
+  },
+  {
+    "function": "get_apns_sandbox_channel",
+    "service": "pinpoint"
+  },
+  {
+    "function": "get_apns_voip_channel",
+    "service": "pinpoint"
+  },
+  {
+    "function": "get_apns_voip_sandbox_channel",
+    "service": "pinpoint"
+  },
+  {
+    "function": "get_app",
+    "service": "pinpoint"
+  },
+  {
+    "function": "get_application_date_range_kpi",
+    "service": "pinpoint"
+  },
+  {
+    "function": "get_application_settings",
+    "service": "pinpoint"
+  },
+  {
+    "function": "get_apps",
+    "service": "pinpoint"
+  },
+  {
+    "function": "get_baidu_channel",
+    "service": "pinpoint"
+  },
+  {
+    "function": "get_campaign",
+    "service": "pinpoint"
+  },
+  {
+    "function": "get_campaign_activities",
+    "service": "pinpoint"
+  },
+  {
+    "function": "get_campaign_date_range_kpi",
+    "service": "pinpoint"
+  },
+  {
+    "function": "get_campaign_version",
+    "service": "pinpoint"
+  },
+  {
+    "function": "get_campaign_versions",
+    "service": "pinpoint"
+  },
+  {
+    "function": "get_campaigns",
+    "service": "pinpoint"
+  },
+  {
+    "function": "get_channels",
+    "service": "pinpoint"
+  },
+  {
+    "function": "get_email_channel",
+    "service": "pinpoint"
+  },
+  {
+    "function": "get_email_template",
+    "service": "pinpoint"
+  },
+  {
+    "function": "get_endpoint",
+    "service": "pinpoint"
+  },
+  {
+    "function": "get_event_stream",
+    "service": "pinpoint"
+  },
+  {
+    "function": "get_export_job",
+    "service": "pinpoint"
+  },
+  {
+    "function": "get_export_jobs",
+    "service": "pinpoint"
+  },
+  {
+    "function": "get_gcm_channel",
+    "service": "pinpoint"
+  },
+  {
+    "function": "get_import_job",
+    "service": "pinpoint"
+  },
+  {
+    "function": "get_import_jobs",
+    "service": "pinpoint"
+  },
+  {
+    "function": "get_in_app_messages",
+    "service": "pinpoint"
+  },
+  {
+    "function": "get_in_app_template",
+    "service": "pinpoint"
+  },
+  {
+    "function": "get_journey",
+    "service": "pinpoint"
+  },
+  {
+    "function": "get_journey_date_range_kpi",
+    "service": "pinpoint"
+  },
+  {
+    "function": "get_journey_execution_activity_metrics",
+    "service": "pinpoint"
+  },
+  {
+    "function": "get_journey_execution_metrics",
+    "service": "pinpoint"
+  },
+  {
+    "function": "get_journey_run_execution_activity_metrics",
+    "service": "pinpoint"
+  },
+  {
+    "function": "get_journey_run_execution_metrics",
+    "service": "pinpoint"
+  },
+  {
+    "function": "get_journey_runs",
+    "service": "pinpoint"
+  },
+  {
+    "function": "get_paginator",
+    "service": "pinpoint"
+  },
+  {
+    "function": "get_push_template",
+    "service": "pinpoint"
+  },
+  {
+    "function": "get_recommender_configuration",
+    "service": "pinpoint"
+  },
+  {
+    "function": "get_recommender_configurations",
+    "service": "pinpoint"
+  },
+  {
+    "function": "get_segment",
+    "service": "pinpoint"
+  },
+  {
+    "function": "get_segment_export_jobs",
+    "service": "pinpoint"
+  },
+  {
+    "function": "get_segment_import_jobs",
+    "service": "pinpoint"
+  },
+  {
+    "function": "get_segment_version",
+    "service": "pinpoint"
+  },
+  {
+    "function": "get_segment_versions",
+    "service": "pinpoint"
+  },
+  {
+    "function": "get_segments",
+    "service": "pinpoint"
+  },
+  {
+    "function": "get_sms_channel",
+    "service": "pinpoint"
+  },
+  {
+    "function": "get_sms_template",
+    "service": "pinpoint"
+  },
+  {
+    "function": "get_user_endpoints",
+    "service": "pinpoint"
+  },
+  {
+    "function": "get_voice_channel",
+    "service": "pinpoint"
+  },
+  {
+    "function": "get_voice_template",
+    "service": "pinpoint"
+  },
+  {
+    "function": "get_waiter",
+    "service": "pinpoint"
+  },
+  {
+    "function": "list_journeys",
+    "service": "pinpoint"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "pinpoint"
+  },
+  {
+    "function": "list_template_versions",
+    "service": "pinpoint"
+  },
+  {
+    "function": "list_templates",
+    "service": "pinpoint"
+  }
+]

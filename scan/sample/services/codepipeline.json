@@ -1,0 +1,58 @@
+[
+  {
+    "function": "get_action_type",
+    "service": "codepipeline"
+  },
+  {
+    "function": "get_job_details",
+    "service": "codepipeline"
+  },
+  {
+    "function": "get_paginator",
+    "service": "codepipeline"
+  },
+  {
+    "function": "get_pipeline",
+    "service": "codepipeline"
+  },
+  {
+    "function": "get_pipeline_execution",
+    "service": "codepipeline"
+  },
+  {
+    "function": "get_pipeline_state",
+    "service": "codepipeline"
+  },
+  {
+    "function": "get_third_party_job_details",
+    "service": "codepipeline"
+  },
+  {
+    "function": "get_waiter",
+    "service": "codepipeline"
+  },
+  {
+    "function": "list_action_executions",
+    "service": "codepipeline"
+  },
+  {
+    "function": "list_action_types",
+    "service": "codepipeline"
+  },
+  {
+    "function": "list_pipeline_executions",
+    "service": "codepipeline"
+  },
+  {
+    "function": "list_pipelines",
+    "service": "codepipeline"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "codepipeline"
+  },
+  {
+    "function": "list_webhooks",
+    "service": "codepipeline"
+  }
+]

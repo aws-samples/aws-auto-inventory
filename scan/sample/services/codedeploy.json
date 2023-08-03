@@ -1,0 +1,82 @@
+[
+  {
+    "function": "get_application",
+    "service": "codedeploy"
+  },
+  {
+    "function": "get_application_revision",
+    "service": "codedeploy"
+  },
+  {
+    "function": "get_deployment",
+    "service": "codedeploy"
+  },
+  {
+    "function": "get_deployment_config",
+    "service": "codedeploy"
+  },
+  {
+    "function": "get_deployment_group",
+    "service": "codedeploy"
+  },
+  {
+    "function": "get_deployment_instance",
+    "service": "codedeploy"
+  },
+  {
+    "function": "get_deployment_target",
+    "service": "codedeploy"
+  },
+  {
+    "function": "get_on_premises_instance",
+    "service": "codedeploy"
+  },
+  {
+    "function": "get_paginator",
+    "service": "codedeploy"
+  },
+  {
+    "function": "get_waiter",
+    "service": "codedeploy"
+  },
+  {
+    "function": "list_application_revisions",
+    "service": "codedeploy"
+  },
+  {
+    "function": "list_applications",
+    "service": "codedeploy"
+  },
+  {
+    "function": "list_deployment_configs",
+    "service": "codedeploy"
+  },
+  {
+    "function": "list_deployment_groups",
+    "service": "codedeploy"
+  },
+  {
+    "function": "list_deployment_instances",
+    "service": "codedeploy"
+  },
+  {
+    "function": "list_deployment_targets",
+    "service": "codedeploy"
+  },
+  {
+    "function": "list_deployments",
+    "service": "codedeploy"
+  },
+  {
+    "function": "list_git_hub_account_token_names",
+    "service": "codedeploy"
+  },
+  {
+    "function": "list_on_premises_instances",
+    "service": "codedeploy"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "codedeploy"
+  }
+]

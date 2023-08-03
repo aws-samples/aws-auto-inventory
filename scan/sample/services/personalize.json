@@ -1,0 +1,150 @@
+[
+  {
+    "function": "describe_algorithm",
+    "service": "personalize"
+  },
+  {
+    "function": "describe_batch_inference_job",
+    "service": "personalize"
+  },
+  {
+    "function": "describe_batch_segment_job",
+    "service": "personalize"
+  },
+  {
+    "function": "describe_campaign",
+    "service": "personalize"
+  },
+  {
+    "function": "describe_dataset",
+    "service": "personalize"
+  },
+  {
+    "function": "describe_dataset_export_job",
+    "service": "personalize"
+  },
+  {
+    "function": "describe_dataset_group",
+    "service": "personalize"
+  },
+  {
+    "function": "describe_dataset_import_job",
+    "service": "personalize"
+  },
+  {
+    "function": "describe_event_tracker",
+    "service": "personalize"
+  },
+  {
+    "function": "describe_feature_transformation",
+    "service": "personalize"
+  },
+  {
+    "function": "describe_filter",
+    "service": "personalize"
+  },
+  {
+    "function": "describe_metric_attribution",
+    "service": "personalize"
+  },
+  {
+    "function": "describe_recipe",
+    "service": "personalize"
+  },
+  {
+    "function": "describe_recommender",
+    "service": "personalize"
+  },
+  {
+    "function": "describe_schema",
+    "service": "personalize"
+  },
+  {
+    "function": "describe_solution",
+    "service": "personalize"
+  },
+  {
+    "function": "describe_solution_version",
+    "service": "personalize"
+  },
+  {
+    "function": "get_paginator",
+    "service": "personalize"
+  },
+  {
+    "function": "get_solution_metrics",
+    "service": "personalize"
+  },
+  {
+    "function": "get_waiter",
+    "service": "personalize"
+  },
+  {
+    "function": "list_batch_inference_jobs",
+    "service": "personalize"
+  },
+  {
+    "function": "list_batch_segment_jobs",
+    "service": "personalize"
+  },
+  {
+    "function": "list_campaigns",
+    "service": "personalize"
+  },
+  {
+    "function": "list_dataset_export_jobs",
+    "service": "personalize"
+  },
+  {
+    "function": "list_dataset_groups",
+    "service": "personalize"
+  },
+  {
+    "function": "list_dataset_import_jobs",
+    "service": "personalize"
+  },
+  {
+    "function": "list_datasets",
+    "service": "personalize"
+  },
+  {
+    "function": "list_event_trackers",
+    "service": "personalize"
+  },
+  {
+    "function": "list_filters",
+    "service": "personalize"
+  },
+  {
+    "function": "list_metric_attribution_metrics",
+    "service": "personalize"
+  },
+  {
+    "function": "list_metric_attributions",
+    "service": "personalize"
+  },
+  {
+    "function": "list_recipes",
+    "service": "personalize"
+  },
+  {
+    "function": "list_recommenders",
+    "service": "personalize"
+  },
+  {
+    "function": "list_schemas",
+    "service": "personalize"
+  },
+  {
+    "function": "list_solution_versions",
+    "service": "personalize"
+  },
+  {
+    "function": "list_solutions",
+    "service": "personalize"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "personalize"
+  }
+]

@@ -1,0 +1,106 @@
+[
+  {
+    "function": "describe_geofence_collection",
+    "service": "location"
+  },
+  {
+    "function": "describe_key",
+    "service": "location"
+  },
+  {
+    "function": "describe_map",
+    "service": "location"
+  },
+  {
+    "function": "describe_place_index",
+    "service": "location"
+  },
+  {
+    "function": "describe_route_calculator",
+    "service": "location"
+  },
+  {
+    "function": "describe_tracker",
+    "service": "location"
+  },
+  {
+    "function": "get_device_position",
+    "service": "location"
+  },
+  {
+    "function": "get_device_position_history",
+    "service": "location"
+  },
+  {
+    "function": "get_geofence",
+    "service": "location"
+  },
+  {
+    "function": "get_map_glyphs",
+    "service": "location"
+  },
+  {
+    "function": "get_map_sprites",
+    "service": "location"
+  },
+  {
+    "function": "get_map_style_descriptor",
+    "service": "location"
+  },
+  {
+    "function": "get_map_tile",
+    "service": "location"
+  },
+  {
+    "function": "get_paginator",
+    "service": "location"
+  },
+  {
+    "function": "get_place",
+    "service": "location"
+  },
+  {
+    "function": "get_waiter",
+    "service": "location"
+  },
+  {
+    "function": "list_device_positions",
+    "service": "location"
+  },
+  {
+    "function": "list_geofence_collections",
+    "service": "location"
+  },
+  {
+    "function": "list_geofences",
+    "service": "location"
+  },
+  {
+    "function": "list_keys",
+    "service": "location"
+  },
+  {
+    "function": "list_maps",
+    "service": "location"
+  },
+  {
+    "function": "list_place_indexes",
+    "service": "location"
+  },
+  {
+    "function": "list_route_calculators",
+    "service": "location"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "location"
+  },
+  {
+    "function": "list_tracker_consumers",
+    "service": "location"
+  },
+  {
+    "function": "list_trackers",
+    "service": "location"
+  }
+]

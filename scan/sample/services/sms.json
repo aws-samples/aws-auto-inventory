@@ -1,0 +1,50 @@
+[
+  {
+    "function": "get_app",
+    "service": "sms"
+  },
+  {
+    "function": "get_app_launch_configuration",
+    "service": "sms"
+  },
+  {
+    "function": "get_app_replication_configuration",
+    "service": "sms"
+  },
+  {
+    "function": "get_app_validation_configuration",
+    "service": "sms"
+  },
+  {
+    "function": "get_app_validation_output",
+    "service": "sms"
+  },
+  {
+    "function": "get_connectors",
+    "service": "sms"
+  },
+  {
+    "function": "get_paginator",
+    "service": "sms"
+  },
+  {
+    "function": "get_replication_jobs",
+    "service": "sms"
+  },
+  {
+    "function": "get_replication_runs",
+    "service": "sms"
+  },
+  {
+    "function": "get_servers",
+    "service": "sms"
+  },
+  {
+    "function": "get_waiter",
+    "service": "sms"
+  },
+  {
+    "function": "list_apps",
+    "service": "sms"
+  }
+]

@@ -1,0 +1,54 @@
+[
+  {
+    "function": "get_device_identifier",
+    "service": "privatenetworks"
+  },
+  {
+    "function": "get_network",
+    "service": "privatenetworks"
+  },
+  {
+    "function": "get_network_resource",
+    "service": "privatenetworks"
+  },
+  {
+    "function": "get_network_site",
+    "service": "privatenetworks"
+  },
+  {
+    "function": "get_order",
+    "service": "privatenetworks"
+  },
+  {
+    "function": "get_paginator",
+    "service": "privatenetworks"
+  },
+  {
+    "function": "get_waiter",
+    "service": "privatenetworks"
+  },
+  {
+    "function": "list_device_identifiers",
+    "service": "privatenetworks"
+  },
+  {
+    "function": "list_network_resources",
+    "service": "privatenetworks"
+  },
+  {
+    "function": "list_network_sites",
+    "service": "privatenetworks"
+  },
+  {
+    "function": "list_networks",
+    "service": "privatenetworks"
+  },
+  {
+    "function": "list_orders",
+    "service": "privatenetworks"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "privatenetworks"
+  }
+]

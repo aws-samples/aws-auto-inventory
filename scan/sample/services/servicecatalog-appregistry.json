@@ -1,0 +1,50 @@
+[
+  {
+    "function": "get_application",
+    "service": "servicecatalog-appregistry"
+  },
+  {
+    "function": "get_associated_resource",
+    "service": "servicecatalog-appregistry"
+  },
+  {
+    "function": "get_attribute_group",
+    "service": "servicecatalog-appregistry"
+  },
+  {
+    "function": "get_configuration",
+    "service": "servicecatalog-appregistry"
+  },
+  {
+    "function": "get_paginator",
+    "service": "servicecatalog-appregistry"
+  },
+  {
+    "function": "get_waiter",
+    "service": "servicecatalog-appregistry"
+  },
+  {
+    "function": "list_applications",
+    "service": "servicecatalog-appregistry"
+  },
+  {
+    "function": "list_associated_attribute_groups",
+    "service": "servicecatalog-appregistry"
+  },
+  {
+    "function": "list_associated_resources",
+    "service": "servicecatalog-appregistry"
+  },
+  {
+    "function": "list_attribute_groups",
+    "service": "servicecatalog-appregistry"
+  },
+  {
+    "function": "list_attribute_groups_for_application",
+    "service": "servicecatalog-appregistry"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "servicecatalog-appregistry"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "function": "describe_engagement",
+    "service": "ssm-contacts"
+  },
+  {
+    "function": "describe_page",
+    "service": "ssm-contacts"
+  },
+  {
+    "function": "get_contact",
+    "service": "ssm-contacts"
+  },
+  {
+    "function": "get_contact_channel",
+    "service": "ssm-contacts"
+  },
+  {
+    "function": "get_contact_policy",
+    "service": "ssm-contacts"
+  },
+  {
+    "function": "get_paginator",
+    "service": "ssm-contacts"
+  },
+  {
+    "function": "get_rotation",
+    "service": "ssm-contacts"
+  },
+  {
+    "function": "get_rotation_override",
+    "service": "ssm-contacts"
+  },
+  {
+    "function": "get_waiter",
+    "service": "ssm-contacts"
+  },
+  {
+    "function": "list_contact_channels",
+    "service": "ssm-contacts"
+  },
+  {
+    "function": "list_contacts",
+    "service": "ssm-contacts"
+  },
+  {
+    "function": "list_engagements",
+    "service": "ssm-contacts"
+  },
+  {
+    "function": "list_page_receipts",
+    "service": "ssm-contacts"
+  },
+  {
+    "function": "list_page_resolutions",
+    "service": "ssm-contacts"
+  },
+  {
+    "function": "list_pages_by_contact",
+    "service": "ssm-contacts"
+  },
+  {
+    "function": "list_pages_by_engagement",
+    "service": "ssm-contacts"
+  },
+  {
+    "function": "list_preview_rotation_shifts",
+    "service": "ssm-contacts"
+  },
+  {
+    "function": "list_rotation_overrides",
+    "service": "ssm-contacts"
+  },
+  {
+    "function": "list_rotation_shifts",
+    "service": "ssm-contacts"
+  },
+  {
+    "function": "list_rotations",
+    "service": "ssm-contacts"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "ssm-contacts"
+  }
+]

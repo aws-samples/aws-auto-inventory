@@ -1,0 +1,62 @@
+[
+  {
+    "function": "describe_attack",
+    "service": "shield"
+  },
+  {
+    "function": "describe_attack_statistics",
+    "service": "shield"
+  },
+  {
+    "function": "describe_drt_access",
+    "service": "shield"
+  },
+  {
+    "function": "describe_emergency_contact_settings",
+    "service": "shield"
+  },
+  {
+    "function": "describe_protection",
+    "service": "shield"
+  },
+  {
+    "function": "describe_protection_group",
+    "service": "shield"
+  },
+  {
+    "function": "describe_subscription",
+    "service": "shield"
+  },
+  {
+    "function": "get_paginator",
+    "service": "shield"
+  },
+  {
+    "function": "get_subscription_state",
+    "service": "shield"
+  },
+  {
+    "function": "get_waiter",
+    "service": "shield"
+  },
+  {
+    "function": "list_attacks",
+    "service": "shield"
+  },
+  {
+    "function": "list_protection_groups",
+    "service": "shield"
+  },
+  {
+    "function": "list_protections",
+    "service": "shield"
+  },
+  {
+    "function": "list_resources_in_protection_group",
+    "service": "shield"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "shield"
+  }
+]

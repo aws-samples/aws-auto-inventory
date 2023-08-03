@@ -1,0 +1,294 @@
+[
+  {
+    "function": "describe_account_customization",
+    "service": "quicksight"
+  },
+  {
+    "function": "describe_account_settings",
+    "service": "quicksight"
+  },
+  {
+    "function": "describe_account_subscription",
+    "service": "quicksight"
+  },
+  {
+    "function": "describe_analysis",
+    "service": "quicksight"
+  },
+  {
+    "function": "describe_analysis_definition",
+    "service": "quicksight"
+  },
+  {
+    "function": "describe_analysis_permissions",
+    "service": "quicksight"
+  },
+  {
+    "function": "describe_asset_bundle_export_job",
+    "service": "quicksight"
+  },
+  {
+    "function": "describe_asset_bundle_import_job",
+    "service": "quicksight"
+  },
+  {
+    "function": "describe_dashboard",
+    "service": "quicksight"
+  },
+  {
+    "function": "describe_dashboard_definition",
+    "service": "quicksight"
+  },
+  {
+    "function": "describe_dashboard_permissions",
+    "service": "quicksight"
+  },
+  {
+    "function": "describe_dashboard_snapshot_job",
+    "service": "quicksight"
+  },
+  {
+    "function": "describe_dashboard_snapshot_job_result",
+    "service": "quicksight"
+  },
+  {
+    "function": "describe_data_set",
+    "service": "quicksight"
+  },
+  {
+    "function": "describe_data_set_permissions",
+    "service": "quicksight"
+  },
+  {
+    "function": "describe_data_set_refresh_properties",
+    "service": "quicksight"
+  },
+  {
+    "function": "describe_data_source",
+    "service": "quicksight"
+  },
+  {
+    "function": "describe_data_source_permissions",
+    "service": "quicksight"
+  },
+  {
+    "function": "describe_folder",
+    "service": "quicksight"
+  },
+  {
+    "function": "describe_folder_permissions",
+    "service": "quicksight"
+  },
+  {
+    "function": "describe_folder_resolved_permissions",
+    "service": "quicksight"
+  },
+  {
+    "function": "describe_group",
+    "service": "quicksight"
+  },
+  {
+    "function": "describe_group_membership",
+    "service": "quicksight"
+  },
+  {
+    "function": "describe_iam_policy_assignment",
+    "service": "quicksight"
+  },
+  {
+    "function": "describe_ingestion",
+    "service": "quicksight"
+  },
+  {
+    "function": "describe_ip_restriction",
+    "service": "quicksight"
+  },
+  {
+    "function": "describe_namespace",
+    "service": "quicksight"
+  },
+  {
+    "function": "describe_refresh_schedule",
+    "service": "quicksight"
+  },
+  {
+    "function": "describe_template",
+    "service": "quicksight"
+  },
+  {
+    "function": "describe_template_alias",
+    "service": "quicksight"
+  },
+  {
+    "function": "describe_template_definition",
+    "service": "quicksight"
+  },
+  {
+    "function": "describe_template_permissions",
+    "service": "quicksight"
+  },
+  {
+    "function": "describe_theme",
+    "service": "quicksight"
+  },
+  {
+    "function": "describe_theme_alias",
+    "service": "quicksight"
+  },
+  {
+    "function": "describe_theme_permissions",
+    "service": "quicksight"
+  },
+  {
+    "function": "describe_topic",
+    "service": "quicksight"
+  },
+  {
+    "function": "describe_topic_permissions",
+    "service": "quicksight"
+  },
+  {
+    "function": "describe_topic_refresh",
+    "service": "quicksight"
+  },
+  {
+    "function": "describe_topic_refresh_schedule",
+    "service": "quicksight"
+  },
+  {
+    "function": "describe_user",
+    "service": "quicksight"
+  },
+  {
+    "function": "describe_vpc_connection",
+    "service": "quicksight"
+  },
+  {
+    "function": "get_dashboard_embed_url",
+    "service": "quicksight"
+  },
+  {
+    "function": "get_paginator",
+    "service": "quicksight"
+  },
+  {
+    "function": "get_session_embed_url",
+    "service": "quicksight"
+  },
+  {
+    "function": "get_waiter",
+    "service": "quicksight"
+  },
+  {
+    "function": "list_analyses",
+    "service": "quicksight"
+  },
+  {
+    "function": "list_asset_bundle_export_jobs",
+    "service": "quicksight"
+  },
+  {
+    "function": "list_asset_bundle_import_jobs",
+    "service": "quicksight"
+  },
+  {
+    "function": "list_dashboard_versions",
+    "service": "quicksight"
+  },
+  {
+    "function": "list_dashboards",
+    "service": "quicksight"
+  },
+  {
+    "function": "list_data_sets",
+    "service": "quicksight"
+  },
+  {
+    "function": "list_data_sources",
+    "service": "quicksight"
+  },
+  {
+    "function": "list_folder_members",
+    "service": "quicksight"
+  },
+  {
+    "function": "list_folders",
+    "service": "quicksight"
+  },
+  {
+    "function": "list_group_memberships",
+    "service": "quicksight"
+  },
+  {
+    "function": "list_groups",
+    "service": "quicksight"
+  },
+  {
+    "function": "list_iam_policy_assignments",
+    "service": "quicksight"
+  },
+  {
+    "function": "list_iam_policy_assignments_for_user",
+    "service": "quicksight"
+  },
+  {
+    "function": "list_ingestions",
+    "service": "quicksight"
+  },
+  {
+    "function": "list_namespaces",
+    "service": "quicksight"
+  },
+  {
+    "function": "list_refresh_schedules",
+    "service": "quicksight"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "quicksight"
+  },
+  {
+    "function": "list_template_aliases",
+    "service": "quicksight"
+  },
+  {
+    "function": "list_template_versions",
+    "service": "quicksight"
+  },
+  {
+    "function": "list_templates",
+    "service": "quicksight"
+  },
+  {
+    "function": "list_theme_aliases",
+    "service": "quicksight"
+  },
+  {
+    "function": "list_theme_versions",
+    "service": "quicksight"
+  },
+  {
+    "function": "list_themes",
+    "service": "quicksight"
+  },
+  {
+    "function": "list_topic_refresh_schedules",
+    "service": "quicksight"
+  },
+  {
+    "function": "list_topics",
+    "service": "quicksight"
+  },
+  {
+    "function": "list_user_groups",
+    "service": "quicksight"
+  },
+  {
+    "function": "list_users",
+    "service": "quicksight"
+  },
+  {
+    "function": "list_vpc_connections",
+    "service": "quicksight"
+  }
+]

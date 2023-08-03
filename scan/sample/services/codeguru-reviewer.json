@@ -1,0 +1,42 @@
+[
+  {
+    "function": "describe_code_review",
+    "service": "codeguru-reviewer"
+  },
+  {
+    "function": "describe_recommendation_feedback",
+    "service": "codeguru-reviewer"
+  },
+  {
+    "function": "describe_repository_association",
+    "service": "codeguru-reviewer"
+  },
+  {
+    "function": "get_paginator",
+    "service": "codeguru-reviewer"
+  },
+  {
+    "function": "get_waiter",
+    "service": "codeguru-reviewer"
+  },
+  {
+    "function": "list_code_reviews",
+    "service": "codeguru-reviewer"
+  },
+  {
+    "function": "list_recommendation_feedback",
+    "service": "codeguru-reviewer"
+  },
+  {
+    "function": "list_recommendations",
+    "service": "codeguru-reviewer"
+  },
+  {
+    "function": "list_repository_associations",
+    "service": "codeguru-reviewer"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "codeguru-reviewer"
+  }
+]

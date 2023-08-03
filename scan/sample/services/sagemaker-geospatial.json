@@ -1,0 +1,42 @@
+[
+  {
+    "function": "get_earth_observation_job",
+    "service": "sagemaker-geospatial"
+  },
+  {
+    "function": "get_paginator",
+    "service": "sagemaker-geospatial"
+  },
+  {
+    "function": "get_raster_data_collection",
+    "service": "sagemaker-geospatial"
+  },
+  {
+    "function": "get_tile",
+    "service": "sagemaker-geospatial"
+  },
+  {
+    "function": "get_vector_enrichment_job",
+    "service": "sagemaker-geospatial"
+  },
+  {
+    "function": "get_waiter",
+    "service": "sagemaker-geospatial"
+  },
+  {
+    "function": "list_earth_observation_jobs",
+    "service": "sagemaker-geospatial"
+  },
+  {
+    "function": "list_raster_data_collections",
+    "service": "sagemaker-geospatial"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "sagemaker-geospatial"
+  },
+  {
+    "function": "list_vector_enrichment_jobs",
+    "service": "sagemaker-geospatial"
+  }
+]

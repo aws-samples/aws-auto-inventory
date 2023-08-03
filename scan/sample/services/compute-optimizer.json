@@ -1,0 +1,62 @@
+[
+  {
+    "function": "describe_recommendation_export_jobs",
+    "service": "compute-optimizer"
+  },
+  {
+    "function": "get_auto_scaling_group_recommendations",
+    "service": "compute-optimizer"
+  },
+  {
+    "function": "get_ebs_volume_recommendations",
+    "service": "compute-optimizer"
+  },
+  {
+    "function": "get_ec2_instance_recommendations",
+    "service": "compute-optimizer"
+  },
+  {
+    "function": "get_ec2_recommendation_projected_metrics",
+    "service": "compute-optimizer"
+  },
+  {
+    "function": "get_ecs_service_recommendation_projected_metrics",
+    "service": "compute-optimizer"
+  },
+  {
+    "function": "get_ecs_service_recommendations",
+    "service": "compute-optimizer"
+  },
+  {
+    "function": "get_effective_recommendation_preferences",
+    "service": "compute-optimizer"
+  },
+  {
+    "function": "get_enrollment_status",
+    "service": "compute-optimizer"
+  },
+  {
+    "function": "get_enrollment_statuses_for_organization",
+    "service": "compute-optimizer"
+  },
+  {
+    "function": "get_lambda_function_recommendations",
+    "service": "compute-optimizer"
+  },
+  {
+    "function": "get_paginator",
+    "service": "compute-optimizer"
+  },
+  {
+    "function": "get_recommendation_preferences",
+    "service": "compute-optimizer"
+  },
+  {
+    "function": "get_recommendation_summaries",
+    "service": "compute-optimizer"
+  },
+  {
+    "function": "get_waiter",
+    "service": "compute-optimizer"
+  }
+]

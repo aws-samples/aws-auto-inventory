@@ -1,0 +1,66 @@
+[
+  {
+    "function": "get_application_component_details",
+    "service": "migrationhubstrategy"
+  },
+  {
+    "function": "get_application_component_strategies",
+    "service": "migrationhubstrategy"
+  },
+  {
+    "function": "get_assessment",
+    "service": "migrationhubstrategy"
+  },
+  {
+    "function": "get_import_file_task",
+    "service": "migrationhubstrategy"
+  },
+  {
+    "function": "get_latest_assessment_id",
+    "service": "migrationhubstrategy"
+  },
+  {
+    "function": "get_paginator",
+    "service": "migrationhubstrategy"
+  },
+  {
+    "function": "get_portfolio_preferences",
+    "service": "migrationhubstrategy"
+  },
+  {
+    "function": "get_portfolio_summary",
+    "service": "migrationhubstrategy"
+  },
+  {
+    "function": "get_recommendation_report_details",
+    "service": "migrationhubstrategy"
+  },
+  {
+    "function": "get_server_details",
+    "service": "migrationhubstrategy"
+  },
+  {
+    "function": "get_server_strategies",
+    "service": "migrationhubstrategy"
+  },
+  {
+    "function": "get_waiter",
+    "service": "migrationhubstrategy"
+  },
+  {
+    "function": "list_application_components",
+    "service": "migrationhubstrategy"
+  },
+  {
+    "function": "list_collectors",
+    "service": "migrationhubstrategy"
+  },
+  {
+    "function": "list_import_file_task",
+    "service": "migrationhubstrategy"
+  },
+  {
+    "function": "list_servers",
+    "service": "migrationhubstrategy"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "function": "get_paginator",
+    "service": "license-manager-user-subscriptions"
+  },
+  {
+    "function": "get_waiter",
+    "service": "license-manager-user-subscriptions"
+  },
+  {
+    "function": "list_identity_providers",
+    "service": "license-manager-user-subscriptions"
+  },
+  {
+    "function": "list_instances",
+    "service": "license-manager-user-subscriptions"
+  },
+  {
+    "function": "list_product_subscriptions",
+    "service": "license-manager-user-subscriptions"
+  },
+  {
+    "function": "list_user_associations",
+    "service": "license-manager-user-subscriptions"
+  }
+]

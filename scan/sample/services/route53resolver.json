@@ -1,0 +1,134 @@
+[
+  {
+    "function": "get_firewall_config",
+    "service": "route53resolver"
+  },
+  {
+    "function": "get_firewall_domain_list",
+    "service": "route53resolver"
+  },
+  {
+    "function": "get_firewall_rule_group",
+    "service": "route53resolver"
+  },
+  {
+    "function": "get_firewall_rule_group_association",
+    "service": "route53resolver"
+  },
+  {
+    "function": "get_firewall_rule_group_policy",
+    "service": "route53resolver"
+  },
+  {
+    "function": "get_outpost_resolver",
+    "service": "route53resolver"
+  },
+  {
+    "function": "get_paginator",
+    "service": "route53resolver"
+  },
+  {
+    "function": "get_resolver_config",
+    "service": "route53resolver"
+  },
+  {
+    "function": "get_resolver_dnssec_config",
+    "service": "route53resolver"
+  },
+  {
+    "function": "get_resolver_endpoint",
+    "service": "route53resolver"
+  },
+  {
+    "function": "get_resolver_query_log_config",
+    "service": "route53resolver"
+  },
+  {
+    "function": "get_resolver_query_log_config_association",
+    "service": "route53resolver"
+  },
+  {
+    "function": "get_resolver_query_log_config_policy",
+    "service": "route53resolver"
+  },
+  {
+    "function": "get_resolver_rule",
+    "service": "route53resolver"
+  },
+  {
+    "function": "get_resolver_rule_association",
+    "service": "route53resolver"
+  },
+  {
+    "function": "get_resolver_rule_policy",
+    "service": "route53resolver"
+  },
+  {
+    "function": "get_waiter",
+    "service": "route53resolver"
+  },
+  {
+    "function": "list_firewall_configs",
+    "service": "route53resolver"
+  },
+  {
+    "function": "list_firewall_domain_lists",
+    "service": "route53resolver"
+  },
+  {
+    "function": "list_firewall_domains",
+    "service": "route53resolver"
+  },
+  {
+    "function": "list_firewall_rule_group_associations",
+    "service": "route53resolver"
+  },
+  {
+    "function": "list_firewall_rule_groups",
+    "service": "route53resolver"
+  },
+  {
+    "function": "list_firewall_rules",
+    "service": "route53resolver"
+  },
+  {
+    "function": "list_outpost_resolvers",
+    "service": "route53resolver"
+  },
+  {
+    "function": "list_resolver_configs",
+    "service": "route53resolver"
+  },
+  {
+    "function": "list_resolver_dnssec_configs",
+    "service": "route53resolver"
+  },
+  {
+    "function": "list_resolver_endpoint_ip_addresses",
+    "service": "route53resolver"
+  },
+  {
+    "function": "list_resolver_endpoints",
+    "service": "route53resolver"
+  },
+  {
+    "function": "list_resolver_query_log_config_associations",
+    "service": "route53resolver"
+  },
+  {
+    "function": "list_resolver_query_log_configs",
+    "service": "route53resolver"
+  },
+  {
+    "function": "list_resolver_rule_associations",
+    "service": "route53resolver"
+  },
+  {
+    "function": "list_resolver_rules",
+    "service": "route53resolver"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "route53resolver"
+  }
+]

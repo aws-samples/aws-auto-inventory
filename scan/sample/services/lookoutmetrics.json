@@ -1,0 +1,70 @@
+[
+  {
+    "function": "describe_alert",
+    "service": "lookoutmetrics"
+  },
+  {
+    "function": "describe_anomaly_detection_executions",
+    "service": "lookoutmetrics"
+  },
+  {
+    "function": "describe_anomaly_detector",
+    "service": "lookoutmetrics"
+  },
+  {
+    "function": "describe_metric_set",
+    "service": "lookoutmetrics"
+  },
+  {
+    "function": "get_anomaly_group",
+    "service": "lookoutmetrics"
+  },
+  {
+    "function": "get_data_quality_metrics",
+    "service": "lookoutmetrics"
+  },
+  {
+    "function": "get_feedback",
+    "service": "lookoutmetrics"
+  },
+  {
+    "function": "get_paginator",
+    "service": "lookoutmetrics"
+  },
+  {
+    "function": "get_sample_data",
+    "service": "lookoutmetrics"
+  },
+  {
+    "function": "get_waiter",
+    "service": "lookoutmetrics"
+  },
+  {
+    "function": "list_alerts",
+    "service": "lookoutmetrics"
+  },
+  {
+    "function": "list_anomaly_detectors",
+    "service": "lookoutmetrics"
+  },
+  {
+    "function": "list_anomaly_group_related_metrics",
+    "service": "lookoutmetrics"
+  },
+  {
+    "function": "list_anomaly_group_summaries",
+    "service": "lookoutmetrics"
+  },
+  {
+    "function": "list_anomaly_group_time_series",
+    "service": "lookoutmetrics"
+  },
+  {
+    "function": "list_metric_sets",
+    "service": "lookoutmetrics"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "lookoutmetrics"
+  }
+]

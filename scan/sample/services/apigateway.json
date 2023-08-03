@@ -1,0 +1,194 @@
+[
+  {
+    "function": "get_account",
+    "service": "apigateway"
+  },
+  {
+    "function": "get_api_key",
+    "service": "apigateway"
+  },
+  {
+    "function": "get_api_keys",
+    "service": "apigateway"
+  },
+  {
+    "function": "get_authorizer",
+    "service": "apigateway"
+  },
+  {
+    "function": "get_authorizers",
+    "service": "apigateway"
+  },
+  {
+    "function": "get_base_path_mapping",
+    "service": "apigateway"
+  },
+  {
+    "function": "get_base_path_mappings",
+    "service": "apigateway"
+  },
+  {
+    "function": "get_client_certificate",
+    "service": "apigateway"
+  },
+  {
+    "function": "get_client_certificates",
+    "service": "apigateway"
+  },
+  {
+    "function": "get_deployment",
+    "service": "apigateway"
+  },
+  {
+    "function": "get_deployments",
+    "service": "apigateway"
+  },
+  {
+    "function": "get_documentation_part",
+    "service": "apigateway"
+  },
+  {
+    "function": "get_documentation_parts",
+    "service": "apigateway"
+  },
+  {
+    "function": "get_documentation_version",
+    "service": "apigateway"
+  },
+  {
+    "function": "get_documentation_versions",
+    "service": "apigateway"
+  },
+  {
+    "function": "get_domain_name",
+    "service": "apigateway"
+  },
+  {
+    "function": "get_domain_names",
+    "service": "apigateway"
+  },
+  {
+    "function": "get_export",
+    "service": "apigateway"
+  },
+  {
+    "function": "get_gateway_response",
+    "service": "apigateway"
+  },
+  {
+    "function": "get_gateway_responses",
+    "service": "apigateway"
+  },
+  {
+    "function": "get_integration",
+    "service": "apigateway"
+  },
+  {
+    "function": "get_integration_response",
+    "service": "apigateway"
+  },
+  {
+    "function": "get_method",
+    "service": "apigateway"
+  },
+  {
+    "function": "get_method_response",
+    "service": "apigateway"
+  },
+  {
+    "function": "get_model",
+    "service": "apigateway"
+  },
+  {
+    "function": "get_model_template",
+    "service": "apigateway"
+  },
+  {
+    "function": "get_models",
+    "service": "apigateway"
+  },
+  {
+    "function": "get_paginator",
+    "service": "apigateway"
+  },
+  {
+    "function": "get_request_validator",
+    "service": "apigateway"
+  },
+  {
+    "function": "get_request_validators",
+    "service": "apigateway"
+  },
+  {
+    "function": "get_resource",
+    "service": "apigateway"
+  },
+  {
+    "function": "get_resources",
+    "service": "apigateway"
+  },
+  {
+    "function": "get_rest_api",
+    "service": "apigateway"
+  },
+  {
+    "function": "get_rest_apis",
+    "service": "apigateway"
+  },
+  {
+    "function": "get_sdk",
+    "service": "apigateway"
+  },
+  {
+    "function": "get_sdk_type",
+    "service": "apigateway"
+  },
+  {
+    "function": "get_sdk_types",
+    "service": "apigateway"
+  },
+  {
+    "function": "get_stage",
+    "service": "apigateway"
+  },
+  {
+    "function": "get_stages",
+    "service": "apigateway"
+  },
+  {
+    "function": "get_tags",
+    "service": "apigateway"
+  },
+  {
+    "function": "get_usage",
+    "service": "apigateway"
+  },
+  {
+    "function": "get_usage_plan",
+    "service": "apigateway"
+  },
+  {
+    "function": "get_usage_plan_key",
+    "service": "apigateway"
+  },
+  {
+    "function": "get_usage_plan_keys",
+    "service": "apigateway"
+  },
+  {
+    "function": "get_usage_plans",
+    "service": "apigateway"
+  },
+  {
+    "function": "get_vpc_link",
+    "service": "apigateway"
+  },
+  {
+    "function": "get_vpc_links",
+    "service": "apigateway"
+  },
+  {
+    "function": "get_waiter",
+    "service": "apigateway"
+  }
+]

@@ -1,0 +1,94 @@
+[
+  {
+    "function": "describe_account_health",
+    "service": "devops-guru"
+  },
+  {
+    "function": "describe_account_overview",
+    "service": "devops-guru"
+  },
+  {
+    "function": "describe_anomaly",
+    "service": "devops-guru"
+  },
+  {
+    "function": "describe_event_sources_config",
+    "service": "devops-guru"
+  },
+  {
+    "function": "describe_feedback",
+    "service": "devops-guru"
+  },
+  {
+    "function": "describe_insight",
+    "service": "devops-guru"
+  },
+  {
+    "function": "describe_organization_health",
+    "service": "devops-guru"
+  },
+  {
+    "function": "describe_organization_overview",
+    "service": "devops-guru"
+  },
+  {
+    "function": "describe_organization_resource_collection_health",
+    "service": "devops-guru"
+  },
+  {
+    "function": "describe_resource_collection_health",
+    "service": "devops-guru"
+  },
+  {
+    "function": "describe_service_integration",
+    "service": "devops-guru"
+  },
+  {
+    "function": "get_cost_estimation",
+    "service": "devops-guru"
+  },
+  {
+    "function": "get_paginator",
+    "service": "devops-guru"
+  },
+  {
+    "function": "get_resource_collection",
+    "service": "devops-guru"
+  },
+  {
+    "function": "get_waiter",
+    "service": "devops-guru"
+  },
+  {
+    "function": "list_anomalies_for_insight",
+    "service": "devops-guru"
+  },
+  {
+    "function": "list_anomalous_log_groups",
+    "service": "devops-guru"
+  },
+  {
+    "function": "list_events",
+    "service": "devops-guru"
+  },
+  {
+    "function": "list_insights",
+    "service": "devops-guru"
+  },
+  {
+    "function": "list_monitored_resources",
+    "service": "devops-guru"
+  },
+  {
+    "function": "list_notification_channels",
+    "service": "devops-guru"
+  },
+  {
+    "function": "list_organization_insights",
+    "service": "devops-guru"
+  },
+  {
+    "function": "list_recommendations",
+    "service": "devops-guru"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "function": "get_paginator",
+    "service": "cloudsearchdomain"
+  },
+  {
+    "function": "get_waiter",
+    "service": "cloudsearchdomain"
+  }
+]

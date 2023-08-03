@@ -1,0 +1,22 @@
+[
+  {
+    "function": "get_environment",
+    "service": "mwaa"
+  },
+  {
+    "function": "get_paginator",
+    "service": "mwaa"
+  },
+  {
+    "function": "get_waiter",
+    "service": "mwaa"
+  },
+  {
+    "function": "list_environments",
+    "service": "mwaa"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "mwaa"
+  }
+]

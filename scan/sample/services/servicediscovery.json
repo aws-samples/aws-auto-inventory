@@ -1,0 +1,50 @@
+[
+  {
+    "function": "get_instance",
+    "service": "servicediscovery"
+  },
+  {
+    "function": "get_instances_health_status",
+    "service": "servicediscovery"
+  },
+  {
+    "function": "get_namespace",
+    "service": "servicediscovery"
+  },
+  {
+    "function": "get_operation",
+    "service": "servicediscovery"
+  },
+  {
+    "function": "get_paginator",
+    "service": "servicediscovery"
+  },
+  {
+    "function": "get_service",
+    "service": "servicediscovery"
+  },
+  {
+    "function": "get_waiter",
+    "service": "servicediscovery"
+  },
+  {
+    "function": "list_instances",
+    "service": "servicediscovery"
+  },
+  {
+    "function": "list_namespaces",
+    "service": "servicediscovery"
+  },
+  {
+    "function": "list_operations",
+    "service": "servicediscovery"
+  },
+  {
+    "function": "list_services",
+    "service": "servicediscovery"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "servicediscovery"
+  }
+]

@@ -1,0 +1,138 @@
+[
+  {
+    "function": "describe_account_limits",
+    "service": "cloudformation"
+  },
+  {
+    "function": "describe_change_set",
+    "service": "cloudformation"
+  },
+  {
+    "function": "describe_change_set_hooks",
+    "service": "cloudformation"
+  },
+  {
+    "function": "describe_organizations_access",
+    "service": "cloudformation"
+  },
+  {
+    "function": "describe_publisher",
+    "service": "cloudformation"
+  },
+  {
+    "function": "describe_stack_drift_detection_status",
+    "service": "cloudformation"
+  },
+  {
+    "function": "describe_stack_events",
+    "service": "cloudformation"
+  },
+  {
+    "function": "describe_stack_instance",
+    "service": "cloudformation"
+  },
+  {
+    "function": "describe_stack_resource",
+    "service": "cloudformation"
+  },
+  {
+    "function": "describe_stack_resource_drifts",
+    "service": "cloudformation"
+  },
+  {
+    "function": "describe_stack_resources",
+    "service": "cloudformation"
+  },
+  {
+    "function": "describe_stack_set",
+    "service": "cloudformation"
+  },
+  {
+    "function": "describe_stack_set_operation",
+    "service": "cloudformation"
+  },
+  {
+    "function": "describe_stacks",
+    "service": "cloudformation"
+  },
+  {
+    "function": "describe_type",
+    "service": "cloudformation"
+  },
+  {
+    "function": "describe_type_registration",
+    "service": "cloudformation"
+  },
+  {
+    "function": "get_paginator",
+    "service": "cloudformation"
+  },
+  {
+    "function": "get_stack_policy",
+    "service": "cloudformation"
+  },
+  {
+    "function": "get_template",
+    "service": "cloudformation"
+  },
+  {
+    "function": "get_template_summary",
+    "service": "cloudformation"
+  },
+  {
+    "function": "get_waiter",
+    "service": "cloudformation"
+  },
+  {
+    "function": "list_change_sets",
+    "service": "cloudformation"
+  },
+  {
+    "function": "list_exports",
+    "service": "cloudformation"
+  },
+  {
+    "function": "list_imports",
+    "service": "cloudformation"
+  },
+  {
+    "function": "list_stack_instance_resource_drifts",
+    "service": "cloudformation"
+  },
+  {
+    "function": "list_stack_instances",
+    "service": "cloudformation"
+  },
+  {
+    "function": "list_stack_resources",
+    "service": "cloudformation"
+  },
+  {
+    "function": "list_stack_set_operation_results",
+    "service": "cloudformation"
+  },
+  {
+    "function": "list_stack_set_operations",
+    "service": "cloudformation"
+  },
+  {
+    "function": "list_stack_sets",
+    "service": "cloudformation"
+  },
+  {
+    "function": "list_stacks",
+    "service": "cloudformation"
+  },
+  {
+    "function": "list_type_registrations",
+    "service": "cloudformation"
+  },
+  {
+    "function": "list_type_versions",
+    "service": "cloudformation"
+  },
+  {
+    "function": "list_types",
+    "service": "cloudformation"
+  }
+]

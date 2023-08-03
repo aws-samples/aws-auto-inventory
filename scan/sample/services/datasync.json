@@ -1,0 +1,110 @@
+[
+  {
+    "function": "describe_agent",
+    "service": "datasync"
+  },
+  {
+    "function": "describe_discovery_job",
+    "service": "datasync"
+  },
+  {
+    "function": "describe_location_azure_blob",
+    "service": "datasync"
+  },
+  {
+    "function": "describe_location_efs",
+    "service": "datasync"
+  },
+  {
+    "function": "describe_location_fsx_lustre",
+    "service": "datasync"
+  },
+  {
+    "function": "describe_location_fsx_ontap",
+    "service": "datasync"
+  },
+  {
+    "function": "describe_location_fsx_open_zfs",
+    "service": "datasync"
+  },
+  {
+    "function": "describe_location_fsx_windows",
+    "service": "datasync"
+  },
+  {
+    "function": "describe_location_hdfs",
+    "service": "datasync"
+  },
+  {
+    "function": "describe_location_nfs",
+    "service": "datasync"
+  },
+  {
+    "function": "describe_location_object_storage",
+    "service": "datasync"
+  },
+  {
+    "function": "describe_location_s3",
+    "service": "datasync"
+  },
+  {
+    "function": "describe_location_smb",
+    "service": "datasync"
+  },
+  {
+    "function": "describe_storage_system",
+    "service": "datasync"
+  },
+  {
+    "function": "describe_storage_system_resource_metrics",
+    "service": "datasync"
+  },
+  {
+    "function": "describe_storage_system_resources",
+    "service": "datasync"
+  },
+  {
+    "function": "describe_task",
+    "service": "datasync"
+  },
+  {
+    "function": "describe_task_execution",
+    "service": "datasync"
+  },
+  {
+    "function": "get_paginator",
+    "service": "datasync"
+  },
+  {
+    "function": "get_waiter",
+    "service": "datasync"
+  },
+  {
+    "function": "list_agents",
+    "service": "datasync"
+  },
+  {
+    "function": "list_discovery_jobs",
+    "service": "datasync"
+  },
+  {
+    "function": "list_locations",
+    "service": "datasync"
+  },
+  {
+    "function": "list_storage_systems",
+    "service": "datasync"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "datasync"
+  },
+  {
+    "function": "list_task_executions",
+    "service": "datasync"
+  },
+  {
+    "function": "list_tasks",
+    "service": "datasync"
+  }
+]

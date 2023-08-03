@@ -1,0 +1,38 @@
+[
+  {
+    "function": "describe_campaign",
+    "service": "connectcampaigns"
+  },
+  {
+    "function": "get_campaign_state",
+    "service": "connectcampaigns"
+  },
+  {
+    "function": "get_campaign_state_batch",
+    "service": "connectcampaigns"
+  },
+  {
+    "function": "get_connect_instance_config",
+    "service": "connectcampaigns"
+  },
+  {
+    "function": "get_instance_onboarding_job_status",
+    "service": "connectcampaigns"
+  },
+  {
+    "function": "get_paginator",
+    "service": "connectcampaigns"
+  },
+  {
+    "function": "get_waiter",
+    "service": "connectcampaigns"
+  },
+  {
+    "function": "list_campaigns",
+    "service": "connectcampaigns"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "connectcampaigns"
+  }
+]

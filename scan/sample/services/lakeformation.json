@@ -1,0 +1,90 @@
+[
+  {
+    "function": "describe_resource",
+    "service": "lakeformation"
+  },
+  {
+    "function": "describe_transaction",
+    "service": "lakeformation"
+  },
+  {
+    "function": "get_data_cells_filter",
+    "service": "lakeformation"
+  },
+  {
+    "function": "get_data_lake_settings",
+    "service": "lakeformation"
+  },
+  {
+    "function": "get_effective_permissions_for_path",
+    "service": "lakeformation"
+  },
+  {
+    "function": "get_lf_tag",
+    "service": "lakeformation"
+  },
+  {
+    "function": "get_paginator",
+    "service": "lakeformation"
+  },
+  {
+    "function": "get_query_state",
+    "service": "lakeformation"
+  },
+  {
+    "function": "get_query_statistics",
+    "service": "lakeformation"
+  },
+  {
+    "function": "get_resource_lf_tags",
+    "service": "lakeformation"
+  },
+  {
+    "function": "get_table_objects",
+    "service": "lakeformation"
+  },
+  {
+    "function": "get_temporary_glue_partition_credentials",
+    "service": "lakeformation"
+  },
+  {
+    "function": "get_temporary_glue_table_credentials",
+    "service": "lakeformation"
+  },
+  {
+    "function": "get_waiter",
+    "service": "lakeformation"
+  },
+  {
+    "function": "get_work_unit_results",
+    "service": "lakeformation"
+  },
+  {
+    "function": "get_work_units",
+    "service": "lakeformation"
+  },
+  {
+    "function": "list_data_cells_filter",
+    "service": "lakeformation"
+  },
+  {
+    "function": "list_lf_tags",
+    "service": "lakeformation"
+  },
+  {
+    "function": "list_permissions",
+    "service": "lakeformation"
+  },
+  {
+    "function": "list_resources",
+    "service": "lakeformation"
+  },
+  {
+    "function": "list_table_storage_optimizers",
+    "service": "lakeformation"
+  },
+  {
+    "function": "list_transactions",
+    "service": "lakeformation"
+  }
+]

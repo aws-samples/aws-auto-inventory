@@ -1,0 +1,110 @@
+[
+  {
+    "function": "describe_action_targets",
+    "service": "securityhub"
+  },
+  {
+    "function": "describe_hub",
+    "service": "securityhub"
+  },
+  {
+    "function": "describe_organization_configuration",
+    "service": "securityhub"
+  },
+  {
+    "function": "describe_products",
+    "service": "securityhub"
+  },
+  {
+    "function": "describe_standards",
+    "service": "securityhub"
+  },
+  {
+    "function": "describe_standards_controls",
+    "service": "securityhub"
+  },
+  {
+    "function": "get_administrator_account",
+    "service": "securityhub"
+  },
+  {
+    "function": "get_enabled_standards",
+    "service": "securityhub"
+  },
+  {
+    "function": "get_finding_aggregator",
+    "service": "securityhub"
+  },
+  {
+    "function": "get_finding_history",
+    "service": "securityhub"
+  },
+  {
+    "function": "get_findings",
+    "service": "securityhub"
+  },
+  {
+    "function": "get_insight_results",
+    "service": "securityhub"
+  },
+  {
+    "function": "get_insights",
+    "service": "securityhub"
+  },
+  {
+    "function": "get_invitations_count",
+    "service": "securityhub"
+  },
+  {
+    "function": "get_master_account",
+    "service": "securityhub"
+  },
+  {
+    "function": "get_members",
+    "service": "securityhub"
+  },
+  {
+    "function": "get_paginator",
+    "service": "securityhub"
+  },
+  {
+    "function": "get_waiter",
+    "service": "securityhub"
+  },
+  {
+    "function": "list_automation_rules",
+    "service": "securityhub"
+  },
+  {
+    "function": "list_enabled_products_for_import",
+    "service": "securityhub"
+  },
+  {
+    "function": "list_finding_aggregators",
+    "service": "securityhub"
+  },
+  {
+    "function": "list_invitations",
+    "service": "securityhub"
+  },
+  {
+    "function": "list_members",
+    "service": "securityhub"
+  },
+  {
+    "function": "list_organization_admin_accounts",
+    "service": "securityhub"
+  },
+  {
+    "function": "list_security_control_definitions",
+    "service": "securityhub"
+  },
+  {
+    "function": "list_standards_control_associations",
+    "service": "securityhub"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "securityhub"
+  }
+]

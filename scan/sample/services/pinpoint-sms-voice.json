@@ -1,0 +1,14 @@
+[
+  {
+    "function": "get_configuration_set_event_destinations",
+    "service": "pinpoint-sms-voice"
+  },
+  {
+    "function": "get_paginator",
+    "service": "pinpoint-sms-voice"
+  },
+  {
+    "function": "get_waiter",
+    "service": "pinpoint-sms-voice"
+  }
+]

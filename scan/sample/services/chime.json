@@ -1,0 +1,294 @@
+[
+  {
+    "function": "describe_app_instance",
+    "service": "chime"
+  },
+  {
+    "function": "describe_app_instance_admin",
+    "service": "chime"
+  },
+  {
+    "function": "describe_app_instance_user",
+    "service": "chime"
+  },
+  {
+    "function": "describe_channel",
+    "service": "chime"
+  },
+  {
+    "function": "describe_channel_ban",
+    "service": "chime"
+  },
+  {
+    "function": "describe_channel_membership",
+    "service": "chime"
+  },
+  {
+    "function": "describe_channel_membership_for_app_instance_user",
+    "service": "chime"
+  },
+  {
+    "function": "describe_channel_moderated_by_app_instance_user",
+    "service": "chime"
+  },
+  {
+    "function": "describe_channel_moderator",
+    "service": "chime"
+  },
+  {
+    "function": "get_account",
+    "service": "chime"
+  },
+  {
+    "function": "get_account_settings",
+    "service": "chime"
+  },
+  {
+    "function": "get_app_instance_retention_settings",
+    "service": "chime"
+  },
+  {
+    "function": "get_app_instance_streaming_configurations",
+    "service": "chime"
+  },
+  {
+    "function": "get_attendee",
+    "service": "chime"
+  },
+  {
+    "function": "get_bot",
+    "service": "chime"
+  },
+  {
+    "function": "get_channel_message",
+    "service": "chime"
+  },
+  {
+    "function": "get_events_configuration",
+    "service": "chime"
+  },
+  {
+    "function": "get_global_settings",
+    "service": "chime"
+  },
+  {
+    "function": "get_media_capture_pipeline",
+    "service": "chime"
+  },
+  {
+    "function": "get_meeting",
+    "service": "chime"
+  },
+  {
+    "function": "get_messaging_session_endpoint",
+    "service": "chime"
+  },
+  {
+    "function": "get_paginator",
+    "service": "chime"
+  },
+  {
+    "function": "get_phone_number",
+    "service": "chime"
+  },
+  {
+    "function": "get_phone_number_order",
+    "service": "chime"
+  },
+  {
+    "function": "get_phone_number_settings",
+    "service": "chime"
+  },
+  {
+    "function": "get_proxy_session",
+    "service": "chime"
+  },
+  {
+    "function": "get_retention_settings",
+    "service": "chime"
+  },
+  {
+    "function": "get_room",
+    "service": "chime"
+  },
+  {
+    "function": "get_sip_media_application",
+    "service": "chime"
+  },
+  {
+    "function": "get_sip_media_application_logging_configuration",
+    "service": "chime"
+  },
+  {
+    "function": "get_sip_rule",
+    "service": "chime"
+  },
+  {
+    "function": "get_user",
+    "service": "chime"
+  },
+  {
+    "function": "get_user_settings",
+    "service": "chime"
+  },
+  {
+    "function": "get_voice_connector",
+    "service": "chime"
+  },
+  {
+    "function": "get_voice_connector_emergency_calling_configuration",
+    "service": "chime"
+  },
+  {
+    "function": "get_voice_connector_group",
+    "service": "chime"
+  },
+  {
+    "function": "get_voice_connector_logging_configuration",
+    "service": "chime"
+  },
+  {
+    "function": "get_voice_connector_origination",
+    "service": "chime"
+  },
+  {
+    "function": "get_voice_connector_proxy",
+    "service": "chime"
+  },
+  {
+    "function": "get_voice_connector_streaming_configuration",
+    "service": "chime"
+  },
+  {
+    "function": "get_voice_connector_termination",
+    "service": "chime"
+  },
+  {
+    "function": "get_voice_connector_termination_health",
+    "service": "chime"
+  },
+  {
+    "function": "get_waiter",
+    "service": "chime"
+  },
+  {
+    "function": "list_accounts",
+    "service": "chime"
+  },
+  {
+    "function": "list_app_instance_admins",
+    "service": "chime"
+  },
+  {
+    "function": "list_app_instance_users",
+    "service": "chime"
+  },
+  {
+    "function": "list_app_instances",
+    "service": "chime"
+  },
+  {
+    "function": "list_attendee_tags",
+    "service": "chime"
+  },
+  {
+    "function": "list_attendees",
+    "service": "chime"
+  },
+  {
+    "function": "list_bots",
+    "service": "chime"
+  },
+  {
+    "function": "list_channel_bans",
+    "service": "chime"
+  },
+  {
+    "function": "list_channel_memberships",
+    "service": "chime"
+  },
+  {
+    "function": "list_channel_memberships_for_app_instance_user",
+    "service": "chime"
+  },
+  {
+    "function": "list_channel_messages",
+    "service": "chime"
+  },
+  {
+    "function": "list_channel_moderators",
+    "service": "chime"
+  },
+  {
+    "function": "list_channels",
+    "service": "chime"
+  },
+  {
+    "function": "list_channels_moderated_by_app_instance_user",
+    "service": "chime"
+  },
+  {
+    "function": "list_media_capture_pipelines",
+    "service": "chime"
+  },
+  {
+    "function": "list_meeting_tags",
+    "service": "chime"
+  },
+  {
+    "function": "list_meetings",
+    "service": "chime"
+  },
+  {
+    "function": "list_phone_number_orders",
+    "service": "chime"
+  },
+  {
+    "function": "list_phone_numbers",
+    "service": "chime"
+  },
+  {
+    "function": "list_proxy_sessions",
+    "service": "chime"
+  },
+  {
+    "function": "list_room_memberships",
+    "service": "chime"
+  },
+  {
+    "function": "list_rooms",
+    "service": "chime"
+  },
+  {
+    "function": "list_sip_media_applications",
+    "service": "chime"
+  },
+  {
+    "function": "list_sip_rules",
+    "service": "chime"
+  },
+  {
+    "function": "list_supported_phone_number_countries",
+    "service": "chime"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "chime"
+  },
+  {
+    "function": "list_users",
+    "service": "chime"
+  },
+  {
+    "function": "list_voice_connector_groups",
+    "service": "chime"
+  },
+  {
+    "function": "list_voice_connector_termination_credentials",
+    "service": "chime"
+  },
+  {
+    "function": "list_voice_connectors",
+    "service": "chime"
+  }
+]

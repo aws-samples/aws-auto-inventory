@@ -1,0 +1,78 @@
+[
+  {
+    "function": "describe_account_policies",
+    "service": "logs"
+  },
+  {
+    "function": "describe_destinations",
+    "service": "logs"
+  },
+  {
+    "function": "describe_export_tasks",
+    "service": "logs"
+  },
+  {
+    "function": "describe_log_groups",
+    "service": "logs"
+  },
+  {
+    "function": "describe_log_streams",
+    "service": "logs"
+  },
+  {
+    "function": "describe_metric_filters",
+    "service": "logs"
+  },
+  {
+    "function": "describe_queries",
+    "service": "logs"
+  },
+  {
+    "function": "describe_query_definitions",
+    "service": "logs"
+  },
+  {
+    "function": "describe_resource_policies",
+    "service": "logs"
+  },
+  {
+    "function": "describe_subscription_filters",
+    "service": "logs"
+  },
+  {
+    "function": "get_data_protection_policy",
+    "service": "logs"
+  },
+  {
+    "function": "get_log_events",
+    "service": "logs"
+  },
+  {
+    "function": "get_log_group_fields",
+    "service": "logs"
+  },
+  {
+    "function": "get_log_record",
+    "service": "logs"
+  },
+  {
+    "function": "get_paginator",
+    "service": "logs"
+  },
+  {
+    "function": "get_query_results",
+    "service": "logs"
+  },
+  {
+    "function": "get_waiter",
+    "service": "logs"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "logs"
+  },
+  {
+    "function": "list_tags_log_group",
+    "service": "logs"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "function": "get_paginator",
+    "service": "iot-data"
+  },
+  {
+    "function": "get_retained_message",
+    "service": "iot-data"
+  },
+  {
+    "function": "get_thing_shadow",
+    "service": "iot-data"
+  },
+  {
+    "function": "get_waiter",
+    "service": "iot-data"
+  },
+  {
+    "function": "list_named_shadows_for_thing",
+    "service": "iot-data"
+  },
+  {
+    "function": "list_retained_messages",
+    "service": "iot-data"
+  }
+]

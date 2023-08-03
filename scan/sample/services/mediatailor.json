@@ -1,0 +1,78 @@
+[
+  {
+    "function": "describe_channel",
+    "service": "mediatailor"
+  },
+  {
+    "function": "describe_live_source",
+    "service": "mediatailor"
+  },
+  {
+    "function": "describe_program",
+    "service": "mediatailor"
+  },
+  {
+    "function": "describe_source_location",
+    "service": "mediatailor"
+  },
+  {
+    "function": "describe_vod_source",
+    "service": "mediatailor"
+  },
+  {
+    "function": "get_channel_policy",
+    "service": "mediatailor"
+  },
+  {
+    "function": "get_channel_schedule",
+    "service": "mediatailor"
+  },
+  {
+    "function": "get_paginator",
+    "service": "mediatailor"
+  },
+  {
+    "function": "get_playback_configuration",
+    "service": "mediatailor"
+  },
+  {
+    "function": "get_prefetch_schedule",
+    "service": "mediatailor"
+  },
+  {
+    "function": "get_waiter",
+    "service": "mediatailor"
+  },
+  {
+    "function": "list_alerts",
+    "service": "mediatailor"
+  },
+  {
+    "function": "list_channels",
+    "service": "mediatailor"
+  },
+  {
+    "function": "list_live_sources",
+    "service": "mediatailor"
+  },
+  {
+    "function": "list_playback_configurations",
+    "service": "mediatailor"
+  },
+  {
+    "function": "list_prefetch_schedules",
+    "service": "mediatailor"
+  },
+  {
+    "function": "list_source_locations",
+    "service": "mediatailor"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "mediatailor"
+  },
+  {
+    "function": "list_vod_sources",
+    "service": "mediatailor"
+  }
+]

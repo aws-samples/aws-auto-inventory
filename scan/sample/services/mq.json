@@ -1,0 +1,54 @@
+[
+  {
+    "function": "describe_broker",
+    "service": "mq"
+  },
+  {
+    "function": "describe_broker_engine_types",
+    "service": "mq"
+  },
+  {
+    "function": "describe_broker_instance_options",
+    "service": "mq"
+  },
+  {
+    "function": "describe_configuration",
+    "service": "mq"
+  },
+  {
+    "function": "describe_configuration_revision",
+    "service": "mq"
+  },
+  {
+    "function": "describe_user",
+    "service": "mq"
+  },
+  {
+    "function": "get_paginator",
+    "service": "mq"
+  },
+  {
+    "function": "get_waiter",
+    "service": "mq"
+  },
+  {
+    "function": "list_brokers",
+    "service": "mq"
+  },
+  {
+    "function": "list_configuration_revisions",
+    "service": "mq"
+  },
+  {
+    "function": "list_configurations",
+    "service": "mq"
+  },
+  {
+    "function": "list_tags",
+    "service": "mq"
+  },
+  {
+    "function": "list_users",
+    "service": "mq"
+  }
+]

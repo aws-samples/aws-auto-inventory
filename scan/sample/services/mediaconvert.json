@@ -1,0 +1,54 @@
+[
+  {
+    "function": "describe_endpoints",
+    "service": "mediaconvert"
+  },
+  {
+    "function": "get_job",
+    "service": "mediaconvert"
+  },
+  {
+    "function": "get_job_template",
+    "service": "mediaconvert"
+  },
+  {
+    "function": "get_paginator",
+    "service": "mediaconvert"
+  },
+  {
+    "function": "get_policy",
+    "service": "mediaconvert"
+  },
+  {
+    "function": "get_preset",
+    "service": "mediaconvert"
+  },
+  {
+    "function": "get_queue",
+    "service": "mediaconvert"
+  },
+  {
+    "function": "get_waiter",
+    "service": "mediaconvert"
+  },
+  {
+    "function": "list_job_templates",
+    "service": "mediaconvert"
+  },
+  {
+    "function": "list_jobs",
+    "service": "mediaconvert"
+  },
+  {
+    "function": "list_presets",
+    "service": "mediaconvert"
+  },
+  {
+    "function": "list_queues",
+    "service": "mediaconvert"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "mediaconvert"
+  }
+]

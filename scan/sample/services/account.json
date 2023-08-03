@@ -1,0 +1,26 @@
+[
+  {
+    "function": "get_alternate_contact",
+    "service": "account"
+  },
+  {
+    "function": "get_contact_information",
+    "service": "account"
+  },
+  {
+    "function": "get_paginator",
+    "service": "account"
+  },
+  {
+    "function": "get_region_opt_status",
+    "service": "account"
+  },
+  {
+    "function": "get_waiter",
+    "service": "account"
+  },
+  {
+    "function": "list_regions",
+    "service": "account"
+  }
+]

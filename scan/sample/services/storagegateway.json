@@ -1,0 +1,134 @@
+[
+  {
+    "function": "describe_availability_monitor_test",
+    "service": "storagegateway"
+  },
+  {
+    "function": "describe_bandwidth_rate_limit",
+    "service": "storagegateway"
+  },
+  {
+    "function": "describe_bandwidth_rate_limit_schedule",
+    "service": "storagegateway"
+  },
+  {
+    "function": "describe_cache",
+    "service": "storagegateway"
+  },
+  {
+    "function": "describe_cached_iscsi_volumes",
+    "service": "storagegateway"
+  },
+  {
+    "function": "describe_chap_credentials",
+    "service": "storagegateway"
+  },
+  {
+    "function": "describe_file_system_associations",
+    "service": "storagegateway"
+  },
+  {
+    "function": "describe_gateway_information",
+    "service": "storagegateway"
+  },
+  {
+    "function": "describe_maintenance_start_time",
+    "service": "storagegateway"
+  },
+  {
+    "function": "describe_nfs_file_shares",
+    "service": "storagegateway"
+  },
+  {
+    "function": "describe_smb_file_shares",
+    "service": "storagegateway"
+  },
+  {
+    "function": "describe_smb_settings",
+    "service": "storagegateway"
+  },
+  {
+    "function": "describe_snapshot_schedule",
+    "service": "storagegateway"
+  },
+  {
+    "function": "describe_stored_iscsi_volumes",
+    "service": "storagegateway"
+  },
+  {
+    "function": "describe_tape_archives",
+    "service": "storagegateway"
+  },
+  {
+    "function": "describe_tape_recovery_points",
+    "service": "storagegateway"
+  },
+  {
+    "function": "describe_tapes",
+    "service": "storagegateway"
+  },
+  {
+    "function": "describe_upload_buffer",
+    "service": "storagegateway"
+  },
+  {
+    "function": "describe_vtl_devices",
+    "service": "storagegateway"
+  },
+  {
+    "function": "describe_working_storage",
+    "service": "storagegateway"
+  },
+  {
+    "function": "get_paginator",
+    "service": "storagegateway"
+  },
+  {
+    "function": "get_waiter",
+    "service": "storagegateway"
+  },
+  {
+    "function": "list_automatic_tape_creation_policies",
+    "service": "storagegateway"
+  },
+  {
+    "function": "list_file_shares",
+    "service": "storagegateway"
+  },
+  {
+    "function": "list_file_system_associations",
+    "service": "storagegateway"
+  },
+  {
+    "function": "list_gateways",
+    "service": "storagegateway"
+  },
+  {
+    "function": "list_local_disks",
+    "service": "storagegateway"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "storagegateway"
+  },
+  {
+    "function": "list_tape_pools",
+    "service": "storagegateway"
+  },
+  {
+    "function": "list_tapes",
+    "service": "storagegateway"
+  },
+  {
+    "function": "list_volume_initiators",
+    "service": "storagegateway"
+  },
+  {
+    "function": "list_volume_recovery_points",
+    "service": "storagegateway"
+  },
+  {
+    "function": "list_volumes",
+    "service": "storagegateway"
+  }
+]

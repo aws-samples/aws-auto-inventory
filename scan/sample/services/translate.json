@@ -1,0 +1,42 @@
+[
+  {
+    "function": "describe_text_translation_job",
+    "service": "translate"
+  },
+  {
+    "function": "get_paginator",
+    "service": "translate"
+  },
+  {
+    "function": "get_parallel_data",
+    "service": "translate"
+  },
+  {
+    "function": "get_terminology",
+    "service": "translate"
+  },
+  {
+    "function": "get_waiter",
+    "service": "translate"
+  },
+  {
+    "function": "list_languages",
+    "service": "translate"
+  },
+  {
+    "function": "list_parallel_data",
+    "service": "translate"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "translate"
+  },
+  {
+    "function": "list_terminologies",
+    "service": "translate"
+  },
+  {
+    "function": "list_text_translation_jobs",
+    "service": "translate"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "function": "describe_clusters",
+    "service": "dax"
+  },
+  {
+    "function": "describe_default_parameters",
+    "service": "dax"
+  },
+  {
+    "function": "describe_events",
+    "service": "dax"
+  },
+  {
+    "function": "describe_parameter_groups",
+    "service": "dax"
+  },
+  {
+    "function": "describe_parameters",
+    "service": "dax"
+  },
+  {
+    "function": "describe_subnet_groups",
+    "service": "dax"
+  },
+  {
+    "function": "get_paginator",
+    "service": "dax"
+  },
+  {
+    "function": "get_waiter",
+    "service": "dax"
+  },
+  {
+    "function": "list_tags",
+    "service": "dax"
+  }
+]

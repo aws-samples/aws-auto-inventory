@@ -1,0 +1,78 @@
+[
+  {
+    "function": "describe_account",
+    "service": "workspaces"
+  },
+  {
+    "function": "describe_account_modifications",
+    "service": "workspaces"
+  },
+  {
+    "function": "describe_client_branding",
+    "service": "workspaces"
+  },
+  {
+    "function": "describe_client_properties",
+    "service": "workspaces"
+  },
+  {
+    "function": "describe_connect_client_add_ins",
+    "service": "workspaces"
+  },
+  {
+    "function": "describe_connection_alias_permissions",
+    "service": "workspaces"
+  },
+  {
+    "function": "describe_connection_aliases",
+    "service": "workspaces"
+  },
+  {
+    "function": "describe_ip_groups",
+    "service": "workspaces"
+  },
+  {
+    "function": "describe_tags",
+    "service": "workspaces"
+  },
+  {
+    "function": "describe_workspace_bundles",
+    "service": "workspaces"
+  },
+  {
+    "function": "describe_workspace_directories",
+    "service": "workspaces"
+  },
+  {
+    "function": "describe_workspace_image_permissions",
+    "service": "workspaces"
+  },
+  {
+    "function": "describe_workspace_images",
+    "service": "workspaces"
+  },
+  {
+    "function": "describe_workspace_snapshots",
+    "service": "workspaces"
+  },
+  {
+    "function": "describe_workspaces",
+    "service": "workspaces"
+  },
+  {
+    "function": "describe_workspaces_connection_status",
+    "service": "workspaces"
+  },
+  {
+    "function": "get_paginator",
+    "service": "workspaces"
+  },
+  {
+    "function": "get_waiter",
+    "service": "workspaces"
+  },
+  {
+    "function": "list_available_management_cidr_ranges",
+    "service": "workspaces"
+  }
+]

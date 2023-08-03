@@ -1,0 +1,30 @@
+[
+  {
+    "function": "get_cluster",
+    "service": "docdb-elastic"
+  },
+  {
+    "function": "get_cluster_snapshot",
+    "service": "docdb-elastic"
+  },
+  {
+    "function": "get_paginator",
+    "service": "docdb-elastic"
+  },
+  {
+    "function": "get_waiter",
+    "service": "docdb-elastic"
+  },
+  {
+    "function": "list_cluster_snapshots",
+    "service": "docdb-elastic"
+  },
+  {
+    "function": "list_clusters",
+    "service": "docdb-elastic"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "docdb-elastic"
+  }
+]

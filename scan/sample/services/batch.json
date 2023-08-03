@@ -1,0 +1,42 @@
+[
+  {
+    "function": "describe_compute_environments",
+    "service": "batch"
+  },
+  {
+    "function": "describe_job_definitions",
+    "service": "batch"
+  },
+  {
+    "function": "describe_job_queues",
+    "service": "batch"
+  },
+  {
+    "function": "describe_jobs",
+    "service": "batch"
+  },
+  {
+    "function": "describe_scheduling_policies",
+    "service": "batch"
+  },
+  {
+    "function": "get_paginator",
+    "service": "batch"
+  },
+  {
+    "function": "get_waiter",
+    "service": "batch"
+  },
+  {
+    "function": "list_jobs",
+    "service": "batch"
+  },
+  {
+    "function": "list_scheduling_policies",
+    "service": "batch"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "batch"
+  }
+]

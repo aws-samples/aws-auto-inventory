@@ -1,0 +1,38 @@
+[
+  {
+    "function": "describe_alert_manager_definition",
+    "service": "amp"
+  },
+  {
+    "function": "describe_logging_configuration",
+    "service": "amp"
+  },
+  {
+    "function": "describe_rule_groups_namespace",
+    "service": "amp"
+  },
+  {
+    "function": "describe_workspace",
+    "service": "amp"
+  },
+  {
+    "function": "get_paginator",
+    "service": "amp"
+  },
+  {
+    "function": "get_waiter",
+    "service": "amp"
+  },
+  {
+    "function": "list_rule_groups_namespaces",
+    "service": "amp"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "amp"
+  },
+  {
+    "function": "list_workspaces",
+    "service": "amp"
+  }
+]

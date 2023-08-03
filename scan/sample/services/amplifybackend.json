@@ -1,0 +1,46 @@
+[
+  {
+    "function": "get_backend",
+    "service": "amplifybackend"
+  },
+  {
+    "function": "get_backend_api",
+    "service": "amplifybackend"
+  },
+  {
+    "function": "get_backend_api_models",
+    "service": "amplifybackend"
+  },
+  {
+    "function": "get_backend_auth",
+    "service": "amplifybackend"
+  },
+  {
+    "function": "get_backend_job",
+    "service": "amplifybackend"
+  },
+  {
+    "function": "get_backend_storage",
+    "service": "amplifybackend"
+  },
+  {
+    "function": "get_paginator",
+    "service": "amplifybackend"
+  },
+  {
+    "function": "get_token",
+    "service": "amplifybackend"
+  },
+  {
+    "function": "get_waiter",
+    "service": "amplifybackend"
+  },
+  {
+    "function": "list_backend_jobs",
+    "service": "amplifybackend"
+  },
+  {
+    "function": "list_s3_buckets",
+    "service": "amplifybackend"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "function": "get_paginator",
+    "service": "applicationcostprofiler"
+  },
+  {
+    "function": "get_report_definition",
+    "service": "applicationcostprofiler"
+  },
+  {
+    "function": "get_waiter",
+    "service": "applicationcostprofiler"
+  },
+  {
+    "function": "list_report_definitions",
+    "service": "applicationcostprofiler"
+  }
+]

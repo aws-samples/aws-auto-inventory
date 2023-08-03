@@ -1,0 +1,58 @@
+[
+  {
+    "function": "describe_code_binding",
+    "service": "schemas"
+  },
+  {
+    "function": "describe_discoverer",
+    "service": "schemas"
+  },
+  {
+    "function": "describe_registry",
+    "service": "schemas"
+  },
+  {
+    "function": "describe_schema",
+    "service": "schemas"
+  },
+  {
+    "function": "get_code_binding_source",
+    "service": "schemas"
+  },
+  {
+    "function": "get_discovered_schema",
+    "service": "schemas"
+  },
+  {
+    "function": "get_paginator",
+    "service": "schemas"
+  },
+  {
+    "function": "get_resource_policy",
+    "service": "schemas"
+  },
+  {
+    "function": "get_waiter",
+    "service": "schemas"
+  },
+  {
+    "function": "list_discoverers",
+    "service": "schemas"
+  },
+  {
+    "function": "list_registries",
+    "service": "schemas"
+  },
+  {
+    "function": "list_schema_versions",
+    "service": "schemas"
+  },
+  {
+    "function": "list_schemas",
+    "service": "schemas"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "schemas"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "function": "describe_contact",
+    "service": "groundstation"
+  },
+  {
+    "function": "describe_ephemeris",
+    "service": "groundstation"
+  },
+  {
+    "function": "get_agent_configuration",
+    "service": "groundstation"
+  },
+  {
+    "function": "get_config",
+    "service": "groundstation"
+  },
+  {
+    "function": "get_dataflow_endpoint_group",
+    "service": "groundstation"
+  },
+  {
+    "function": "get_minute_usage",
+    "service": "groundstation"
+  },
+  {
+    "function": "get_mission_profile",
+    "service": "groundstation"
+  },
+  {
+    "function": "get_paginator",
+    "service": "groundstation"
+  },
+  {
+    "function": "get_satellite",
+    "service": "groundstation"
+  },
+  {
+    "function": "get_waiter",
+    "service": "groundstation"
+  },
+  {
+    "function": "list_configs",
+    "service": "groundstation"
+  },
+  {
+    "function": "list_contacts",
+    "service": "groundstation"
+  },
+  {
+    "function": "list_dataflow_endpoint_groups",
+    "service": "groundstation"
+  },
+  {
+    "function": "list_ephemerides",
+    "service": "groundstation"
+  },
+  {
+    "function": "list_ground_stations",
+    "service": "groundstation"
+  },
+  {
+    "function": "list_mission_profiles",
+    "service": "groundstation"
+  },
+  {
+    "function": "list_satellites",
+    "service": "groundstation"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "groundstation"
+  }
+]

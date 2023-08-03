@@ -1,0 +1,22 @@
+[
+  {
+    "function": "get_paginator",
+    "service": "importexport"
+  },
+  {
+    "function": "get_shipping_label",
+    "service": "importexport"
+  },
+  {
+    "function": "get_status",
+    "service": "importexport"
+  },
+  {
+    "function": "get_waiter",
+    "service": "importexport"
+  },
+  {
+    "function": "list_jobs",
+    "service": "importexport"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "function": "describe_query",
+    "service": "cloudtrail"
+  },
+  {
+    "function": "describe_trails",
+    "service": "cloudtrail"
+  },
+  {
+    "function": "get_channel",
+    "service": "cloudtrail"
+  },
+  {
+    "function": "get_event_data_store",
+    "service": "cloudtrail"
+  },
+  {
+    "function": "get_event_selectors",
+    "service": "cloudtrail"
+  },
+  {
+    "function": "get_import",
+    "service": "cloudtrail"
+  },
+  {
+    "function": "get_insight_selectors",
+    "service": "cloudtrail"
+  },
+  {
+    "function": "get_paginator",
+    "service": "cloudtrail"
+  },
+  {
+    "function": "get_query_results",
+    "service": "cloudtrail"
+  },
+  {
+    "function": "get_resource_policy",
+    "service": "cloudtrail"
+  },
+  {
+    "function": "get_trail",
+    "service": "cloudtrail"
+  },
+  {
+    "function": "get_trail_status",
+    "service": "cloudtrail"
+  },
+  {
+    "function": "get_waiter",
+    "service": "cloudtrail"
+  },
+  {
+    "function": "list_channels",
+    "service": "cloudtrail"
+  },
+  {
+    "function": "list_event_data_stores",
+    "service": "cloudtrail"
+  },
+  {
+    "function": "list_import_failures",
+    "service": "cloudtrail"
+  },
+  {
+    "function": "list_imports",
+    "service": "cloudtrail"
+  },
+  {
+    "function": "list_public_keys",
+    "service": "cloudtrail"
+  },
+  {
+    "function": "list_queries",
+    "service": "cloudtrail"
+  },
+  {
+    "function": "list_tags",
+    "service": "cloudtrail"
+  },
+  {
+    "function": "list_trails",
+    "service": "cloudtrail"
+  }
+]

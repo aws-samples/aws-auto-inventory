@@ -1,0 +1,50 @@
+[
+  {
+    "function": "describe_job_run",
+    "service": "emr-containers"
+  },
+  {
+    "function": "describe_job_template",
+    "service": "emr-containers"
+  },
+  {
+    "function": "describe_managed_endpoint",
+    "service": "emr-containers"
+  },
+  {
+    "function": "describe_virtual_cluster",
+    "service": "emr-containers"
+  },
+  {
+    "function": "get_managed_endpoint_session_credentials",
+    "service": "emr-containers"
+  },
+  {
+    "function": "get_paginator",
+    "service": "emr-containers"
+  },
+  {
+    "function": "get_waiter",
+    "service": "emr-containers"
+  },
+  {
+    "function": "list_job_runs",
+    "service": "emr-containers"
+  },
+  {
+    "function": "list_job_templates",
+    "service": "emr-containers"
+  },
+  {
+    "function": "list_managed_endpoints",
+    "service": "emr-containers"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "emr-containers"
+  },
+  {
+    "function": "list_virtual_clusters",
+    "service": "emr-containers"
+  }
+]

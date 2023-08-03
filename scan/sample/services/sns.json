@@ -1,0 +1,74 @@
+[
+  {
+    "function": "get_data_protection_policy",
+    "service": "sns"
+  },
+  {
+    "function": "get_endpoint_attributes",
+    "service": "sns"
+  },
+  {
+    "function": "get_paginator",
+    "service": "sns"
+  },
+  {
+    "function": "get_platform_application_attributes",
+    "service": "sns"
+  },
+  {
+    "function": "get_sms_attributes",
+    "service": "sns"
+  },
+  {
+    "function": "get_sms_sandbox_account_status",
+    "service": "sns"
+  },
+  {
+    "function": "get_subscription_attributes",
+    "service": "sns"
+  },
+  {
+    "function": "get_topic_attributes",
+    "service": "sns"
+  },
+  {
+    "function": "get_waiter",
+    "service": "sns"
+  },
+  {
+    "function": "list_endpoints_by_platform_application",
+    "service": "sns"
+  },
+  {
+    "function": "list_origination_numbers",
+    "service": "sns"
+  },
+  {
+    "function": "list_phone_numbers_opted_out",
+    "service": "sns"
+  },
+  {
+    "function": "list_platform_applications",
+    "service": "sns"
+  },
+  {
+    "function": "list_sms_sandbox_phone_numbers",
+    "service": "sns"
+  },
+  {
+    "function": "list_subscriptions",
+    "service": "sns"
+  },
+  {
+    "function": "list_subscriptions_by_topic",
+    "service": "sns"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "sns"
+  },
+  {
+    "function": "list_topics",
+    "service": "sns"
+  }
+]

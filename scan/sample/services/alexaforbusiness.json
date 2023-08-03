@@ -1,0 +1,102 @@
+[
+  {
+    "function": "get_address_book",
+    "service": "alexaforbusiness"
+  },
+  {
+    "function": "get_conference_preference",
+    "service": "alexaforbusiness"
+  },
+  {
+    "function": "get_conference_provider",
+    "service": "alexaforbusiness"
+  },
+  {
+    "function": "get_contact",
+    "service": "alexaforbusiness"
+  },
+  {
+    "function": "get_device",
+    "service": "alexaforbusiness"
+  },
+  {
+    "function": "get_gateway",
+    "service": "alexaforbusiness"
+  },
+  {
+    "function": "get_gateway_group",
+    "service": "alexaforbusiness"
+  },
+  {
+    "function": "get_invitation_configuration",
+    "service": "alexaforbusiness"
+  },
+  {
+    "function": "get_network_profile",
+    "service": "alexaforbusiness"
+  },
+  {
+    "function": "get_paginator",
+    "service": "alexaforbusiness"
+  },
+  {
+    "function": "get_profile",
+    "service": "alexaforbusiness"
+  },
+  {
+    "function": "get_room",
+    "service": "alexaforbusiness"
+  },
+  {
+    "function": "get_room_skill_parameter",
+    "service": "alexaforbusiness"
+  },
+  {
+    "function": "get_skill_group",
+    "service": "alexaforbusiness"
+  },
+  {
+    "function": "get_waiter",
+    "service": "alexaforbusiness"
+  },
+  {
+    "function": "list_business_report_schedules",
+    "service": "alexaforbusiness"
+  },
+  {
+    "function": "list_conference_providers",
+    "service": "alexaforbusiness"
+  },
+  {
+    "function": "list_device_events",
+    "service": "alexaforbusiness"
+  },
+  {
+    "function": "list_gateway_groups",
+    "service": "alexaforbusiness"
+  },
+  {
+    "function": "list_gateways",
+    "service": "alexaforbusiness"
+  },
+  {
+    "function": "list_skills",
+    "service": "alexaforbusiness"
+  },
+  {
+    "function": "list_skills_store_categories",
+    "service": "alexaforbusiness"
+  },
+  {
+    "function": "list_skills_store_skills_by_category",
+    "service": "alexaforbusiness"
+  },
+  {
+    "function": "list_smart_home_appliances",
+    "service": "alexaforbusiness"
+  },
+  {
+    "function": "list_tags",
+    "service": "alexaforbusiness"
+  }
+]

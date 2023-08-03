@@ -1,0 +1,38 @@
+[
+  {
+    "function": "get_media_capture_pipeline",
+    "service": "chime-sdk-media-pipelines"
+  },
+  {
+    "function": "get_media_insights_pipeline_configuration",
+    "service": "chime-sdk-media-pipelines"
+  },
+  {
+    "function": "get_media_pipeline",
+    "service": "chime-sdk-media-pipelines"
+  },
+  {
+    "function": "get_paginator",
+    "service": "chime-sdk-media-pipelines"
+  },
+  {
+    "function": "get_waiter",
+    "service": "chime-sdk-media-pipelines"
+  },
+  {
+    "function": "list_media_capture_pipelines",
+    "service": "chime-sdk-media-pipelines"
+  },
+  {
+    "function": "list_media_insights_pipeline_configurations",
+    "service": "chime-sdk-media-pipelines"
+  },
+  {
+    "function": "list_media_pipelines",
+    "service": "chime-sdk-media-pipelines"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "chime-sdk-media-pipelines"
+  }
+]

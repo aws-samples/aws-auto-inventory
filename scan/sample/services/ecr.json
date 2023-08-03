@@ -1,0 +1,70 @@
+[
+  {
+    "function": "describe_image_replication_status",
+    "service": "ecr"
+  },
+  {
+    "function": "describe_image_scan_findings",
+    "service": "ecr"
+  },
+  {
+    "function": "describe_images",
+    "service": "ecr"
+  },
+  {
+    "function": "describe_pull_through_cache_rules",
+    "service": "ecr"
+  },
+  {
+    "function": "describe_registry",
+    "service": "ecr"
+  },
+  {
+    "function": "describe_repositories",
+    "service": "ecr"
+  },
+  {
+    "function": "get_authorization_token",
+    "service": "ecr"
+  },
+  {
+    "function": "get_download_url_for_layer",
+    "service": "ecr"
+  },
+  {
+    "function": "get_lifecycle_policy",
+    "service": "ecr"
+  },
+  {
+    "function": "get_lifecycle_policy_preview",
+    "service": "ecr"
+  },
+  {
+    "function": "get_paginator",
+    "service": "ecr"
+  },
+  {
+    "function": "get_registry_policy",
+    "service": "ecr"
+  },
+  {
+    "function": "get_registry_scanning_configuration",
+    "service": "ecr"
+  },
+  {
+    "function": "get_repository_policy",
+    "service": "ecr"
+  },
+  {
+    "function": "get_waiter",
+    "service": "ecr"
+  },
+  {
+    "function": "list_images",
+    "service": "ecr"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "ecr"
+  }
+]

@@ -1,0 +1,94 @@
+[
+  {
+    "function": "describe_db_cluster_endpoints",
+    "service": "neptune"
+  },
+  {
+    "function": "describe_db_cluster_parameter_groups",
+    "service": "neptune"
+  },
+  {
+    "function": "describe_db_cluster_parameters",
+    "service": "neptune"
+  },
+  {
+    "function": "describe_db_cluster_snapshot_attributes",
+    "service": "neptune"
+  },
+  {
+    "function": "describe_db_cluster_snapshots",
+    "service": "neptune"
+  },
+  {
+    "function": "describe_db_clusters",
+    "service": "neptune"
+  },
+  {
+    "function": "describe_db_engine_versions",
+    "service": "neptune"
+  },
+  {
+    "function": "describe_db_instances",
+    "service": "neptune"
+  },
+  {
+    "function": "describe_db_parameter_groups",
+    "service": "neptune"
+  },
+  {
+    "function": "describe_db_parameters",
+    "service": "neptune"
+  },
+  {
+    "function": "describe_db_subnet_groups",
+    "service": "neptune"
+  },
+  {
+    "function": "describe_engine_default_cluster_parameters",
+    "service": "neptune"
+  },
+  {
+    "function": "describe_engine_default_parameters",
+    "service": "neptune"
+  },
+  {
+    "function": "describe_event_categories",
+    "service": "neptune"
+  },
+  {
+    "function": "describe_event_subscriptions",
+    "service": "neptune"
+  },
+  {
+    "function": "describe_events",
+    "service": "neptune"
+  },
+  {
+    "function": "describe_global_clusters",
+    "service": "neptune"
+  },
+  {
+    "function": "describe_orderable_db_instance_options",
+    "service": "neptune"
+  },
+  {
+    "function": "describe_pending_maintenance_actions",
+    "service": "neptune"
+  },
+  {
+    "function": "describe_valid_db_instance_modifications",
+    "service": "neptune"
+  },
+  {
+    "function": "get_paginator",
+    "service": "neptune"
+  },
+  {
+    "function": "get_waiter",
+    "service": "neptune"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "neptune"
+  }
+]

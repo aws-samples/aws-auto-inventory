@@ -1,0 +1,126 @@
+[
+  {
+    "function": "describe_malware_scans",
+    "service": "guardduty"
+  },
+  {
+    "function": "describe_organization_configuration",
+    "service": "guardduty"
+  },
+  {
+    "function": "describe_publishing_destination",
+    "service": "guardduty"
+  },
+  {
+    "function": "get_administrator_account",
+    "service": "guardduty"
+  },
+  {
+    "function": "get_coverage_statistics",
+    "service": "guardduty"
+  },
+  {
+    "function": "get_detector",
+    "service": "guardduty"
+  },
+  {
+    "function": "get_filter",
+    "service": "guardduty"
+  },
+  {
+    "function": "get_findings",
+    "service": "guardduty"
+  },
+  {
+    "function": "get_findings_statistics",
+    "service": "guardduty"
+  },
+  {
+    "function": "get_invitations_count",
+    "service": "guardduty"
+  },
+  {
+    "function": "get_ip_set",
+    "service": "guardduty"
+  },
+  {
+    "function": "get_malware_scan_settings",
+    "service": "guardduty"
+  },
+  {
+    "function": "get_master_account",
+    "service": "guardduty"
+  },
+  {
+    "function": "get_member_detectors",
+    "service": "guardduty"
+  },
+  {
+    "function": "get_members",
+    "service": "guardduty"
+  },
+  {
+    "function": "get_paginator",
+    "service": "guardduty"
+  },
+  {
+    "function": "get_remaining_free_trial_days",
+    "service": "guardduty"
+  },
+  {
+    "function": "get_threat_intel_set",
+    "service": "guardduty"
+  },
+  {
+    "function": "get_usage_statistics",
+    "service": "guardduty"
+  },
+  {
+    "function": "get_waiter",
+    "service": "guardduty"
+  },
+  {
+    "function": "list_coverage",
+    "service": "guardduty"
+  },
+  {
+    "function": "list_detectors",
+    "service": "guardduty"
+  },
+  {
+    "function": "list_filters",
+    "service": "guardduty"
+  },
+  {
+    "function": "list_findings",
+    "service": "guardduty"
+  },
+  {
+    "function": "list_invitations",
+    "service": "guardduty"
+  },
+  {
+    "function": "list_ip_sets",
+    "service": "guardduty"
+  },
+  {
+    "function": "list_members",
+    "service": "guardduty"
+  },
+  {
+    "function": "list_organization_admin_accounts",
+    "service": "guardduty"
+  },
+  {
+    "function": "list_publishing_destinations",
+    "service": "guardduty"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "guardduty"
+  },
+  {
+    "function": "list_threat_intel_sets",
+    "service": "guardduty"
+  }
+]

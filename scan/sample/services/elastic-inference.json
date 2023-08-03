@@ -1,0 +1,26 @@
+[
+  {
+    "function": "describe_accelerator_offerings",
+    "service": "elastic-inference"
+  },
+  {
+    "function": "describe_accelerator_types",
+    "service": "elastic-inference"
+  },
+  {
+    "function": "describe_accelerators",
+    "service": "elastic-inference"
+  },
+  {
+    "function": "get_paginator",
+    "service": "elastic-inference"
+  },
+  {
+    "function": "get_waiter",
+    "service": "elastic-inference"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "elastic-inference"
+  }
+]

@@ -1,0 +1,106 @@
+[
+  {
+    "function": "describe_cost_category_definition",
+    "service": "ce"
+  },
+  {
+    "function": "get_anomalies",
+    "service": "ce"
+  },
+  {
+    "function": "get_anomaly_monitors",
+    "service": "ce"
+  },
+  {
+    "function": "get_anomaly_subscriptions",
+    "service": "ce"
+  },
+  {
+    "function": "get_cost_and_usage",
+    "service": "ce"
+  },
+  {
+    "function": "get_cost_and_usage_with_resources",
+    "service": "ce"
+  },
+  {
+    "function": "get_cost_categories",
+    "service": "ce"
+  },
+  {
+    "function": "get_cost_forecast",
+    "service": "ce"
+  },
+  {
+    "function": "get_dimension_values",
+    "service": "ce"
+  },
+  {
+    "function": "get_paginator",
+    "service": "ce"
+  },
+  {
+    "function": "get_reservation_coverage",
+    "service": "ce"
+  },
+  {
+    "function": "get_reservation_purchase_recommendation",
+    "service": "ce"
+  },
+  {
+    "function": "get_reservation_utilization",
+    "service": "ce"
+  },
+  {
+    "function": "get_rightsizing_recommendation",
+    "service": "ce"
+  },
+  {
+    "function": "get_savings_plan_purchase_recommendation_details",
+    "service": "ce"
+  },
+  {
+    "function": "get_savings_plans_coverage",
+    "service": "ce"
+  },
+  {
+    "function": "get_savings_plans_purchase_recommendation",
+    "service": "ce"
+  },
+  {
+    "function": "get_savings_plans_utilization",
+    "service": "ce"
+  },
+  {
+    "function": "get_savings_plans_utilization_details",
+    "service": "ce"
+  },
+  {
+    "function": "get_tags",
+    "service": "ce"
+  },
+  {
+    "function": "get_usage_forecast",
+    "service": "ce"
+  },
+  {
+    "function": "get_waiter",
+    "service": "ce"
+  },
+  {
+    "function": "list_cost_allocation_tags",
+    "service": "ce"
+  },
+  {
+    "function": "list_cost_category_definitions",
+    "service": "ce"
+  },
+  {
+    "function": "list_savings_plans_purchase_recommendation_generation",
+    "service": "ce"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "ce"
+  }
+]

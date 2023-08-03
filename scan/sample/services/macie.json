@@ -1,0 +1,18 @@
+[
+  {
+    "function": "get_paginator",
+    "service": "macie"
+  },
+  {
+    "function": "get_waiter",
+    "service": "macie"
+  },
+  {
+    "function": "list_member_accounts",
+    "service": "macie"
+  },
+  {
+    "function": "list_s3_resources",
+    "service": "macie"
+  }
+]

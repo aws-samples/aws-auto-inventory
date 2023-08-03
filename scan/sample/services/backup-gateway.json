@@ -1,0 +1,46 @@
+[
+  {
+    "function": "get_bandwidth_rate_limit_schedule",
+    "service": "backup-gateway"
+  },
+  {
+    "function": "get_gateway",
+    "service": "backup-gateway"
+  },
+  {
+    "function": "get_hypervisor",
+    "service": "backup-gateway"
+  },
+  {
+    "function": "get_hypervisor_property_mappings",
+    "service": "backup-gateway"
+  },
+  {
+    "function": "get_paginator",
+    "service": "backup-gateway"
+  },
+  {
+    "function": "get_virtual_machine",
+    "service": "backup-gateway"
+  },
+  {
+    "function": "get_waiter",
+    "service": "backup-gateway"
+  },
+  {
+    "function": "list_gateways",
+    "service": "backup-gateway"
+  },
+  {
+    "function": "list_hypervisors",
+    "service": "backup-gateway"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "backup-gateway"
+  },
+  {
+    "function": "list_virtual_machines",
+    "service": "backup-gateway"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "function": "get_attributes",
+    "service": "sdb"
+  },
+  {
+    "function": "get_paginator",
+    "service": "sdb"
+  },
+  {
+    "function": "get_waiter",
+    "service": "sdb"
+  },
+  {
+    "function": "list_domains",
+    "service": "sdb"
+  }
+]

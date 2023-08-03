@@ -1,0 +1,30 @@
+[
+  {
+    "function": "describe_environment_memberships",
+    "service": "cloud9"
+  },
+  {
+    "function": "describe_environment_status",
+    "service": "cloud9"
+  },
+  {
+    "function": "describe_environments",
+    "service": "cloud9"
+  },
+  {
+    "function": "get_paginator",
+    "service": "cloud9"
+  },
+  {
+    "function": "get_waiter",
+    "service": "cloud9"
+  },
+  {
+    "function": "list_environments",
+    "service": "cloud9"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "cloud9"
+  }
+]

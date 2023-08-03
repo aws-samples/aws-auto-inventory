@@ -1,0 +1,46 @@
+[
+  {
+    "function": "describe_image_tags",
+    "service": "ecr-public"
+  },
+  {
+    "function": "describe_images",
+    "service": "ecr-public"
+  },
+  {
+    "function": "describe_registries",
+    "service": "ecr-public"
+  },
+  {
+    "function": "describe_repositories",
+    "service": "ecr-public"
+  },
+  {
+    "function": "get_authorization_token",
+    "service": "ecr-public"
+  },
+  {
+    "function": "get_paginator",
+    "service": "ecr-public"
+  },
+  {
+    "function": "get_registry_catalog_data",
+    "service": "ecr-public"
+  },
+  {
+    "function": "get_repository_catalog_data",
+    "service": "ecr-public"
+  },
+  {
+    "function": "get_repository_policy",
+    "service": "ecr-public"
+  },
+  {
+    "function": "get_waiter",
+    "service": "ecr-public"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "ecr-public"
+  }
+]

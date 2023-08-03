@@ -1,0 +1,18 @@
+[
+  {
+    "function": "get_paginator",
+    "service": "route53-recovery-cluster"
+  },
+  {
+    "function": "get_routing_control_state",
+    "service": "route53-recovery-cluster"
+  },
+  {
+    "function": "get_waiter",
+    "service": "route53-recovery-cluster"
+  },
+  {
+    "function": "list_routing_controls",
+    "service": "route53-recovery-cluster"
+  }
+]

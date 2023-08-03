@@ -1,0 +1,38 @@
+[
+  {
+    "function": "get_endpoint",
+    "service": "iotdeviceadvisor"
+  },
+  {
+    "function": "get_paginator",
+    "service": "iotdeviceadvisor"
+  },
+  {
+    "function": "get_suite_definition",
+    "service": "iotdeviceadvisor"
+  },
+  {
+    "function": "get_suite_run",
+    "service": "iotdeviceadvisor"
+  },
+  {
+    "function": "get_suite_run_report",
+    "service": "iotdeviceadvisor"
+  },
+  {
+    "function": "get_waiter",
+    "service": "iotdeviceadvisor"
+  },
+  {
+    "function": "list_suite_definitions",
+    "service": "iotdeviceadvisor"
+  },
+  {
+    "function": "list_suite_runs",
+    "service": "iotdeviceadvisor"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "iotdeviceadvisor"
+  }
+]

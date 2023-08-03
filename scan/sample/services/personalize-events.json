@@ -1,0 +1,10 @@
+[
+  {
+    "function": "get_paginator",
+    "service": "personalize-events"
+  },
+  {
+    "function": "get_waiter",
+    "service": "personalize-events"
+  }
+]

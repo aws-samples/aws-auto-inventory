@@ -1,0 +1,42 @@
+[
+  {
+    "function": "get_paginator",
+    "service": "ivs-realtime"
+  },
+  {
+    "function": "get_participant",
+    "service": "ivs-realtime"
+  },
+  {
+    "function": "get_stage",
+    "service": "ivs-realtime"
+  },
+  {
+    "function": "get_stage_session",
+    "service": "ivs-realtime"
+  },
+  {
+    "function": "get_waiter",
+    "service": "ivs-realtime"
+  },
+  {
+    "function": "list_participant_events",
+    "service": "ivs-realtime"
+  },
+  {
+    "function": "list_participants",
+    "service": "ivs-realtime"
+  },
+  {
+    "function": "list_stage_sessions",
+    "service": "ivs-realtime"
+  },
+  {
+    "function": "list_stages",
+    "service": "ivs-realtime"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "ivs-realtime"
+  }
+]

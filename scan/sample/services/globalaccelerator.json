@@ -1,0 +1,82 @@
+[
+  {
+    "function": "describe_accelerator",
+    "service": "globalaccelerator"
+  },
+  {
+    "function": "describe_accelerator_attributes",
+    "service": "globalaccelerator"
+  },
+  {
+    "function": "describe_custom_routing_accelerator",
+    "service": "globalaccelerator"
+  },
+  {
+    "function": "describe_custom_routing_accelerator_attributes",
+    "service": "globalaccelerator"
+  },
+  {
+    "function": "describe_custom_routing_endpoint_group",
+    "service": "globalaccelerator"
+  },
+  {
+    "function": "describe_custom_routing_listener",
+    "service": "globalaccelerator"
+  },
+  {
+    "function": "describe_endpoint_group",
+    "service": "globalaccelerator"
+  },
+  {
+    "function": "describe_listener",
+    "service": "globalaccelerator"
+  },
+  {
+    "function": "get_paginator",
+    "service": "globalaccelerator"
+  },
+  {
+    "function": "get_waiter",
+    "service": "globalaccelerator"
+  },
+  {
+    "function": "list_accelerators",
+    "service": "globalaccelerator"
+  },
+  {
+    "function": "list_byoip_cidrs",
+    "service": "globalaccelerator"
+  },
+  {
+    "function": "list_custom_routing_accelerators",
+    "service": "globalaccelerator"
+  },
+  {
+    "function": "list_custom_routing_endpoint_groups",
+    "service": "globalaccelerator"
+  },
+  {
+    "function": "list_custom_routing_listeners",
+    "service": "globalaccelerator"
+  },
+  {
+    "function": "list_custom_routing_port_mappings",
+    "service": "globalaccelerator"
+  },
+  {
+    "function": "list_custom_routing_port_mappings_by_destination",
+    "service": "globalaccelerator"
+  },
+  {
+    "function": "list_endpoint_groups",
+    "service": "globalaccelerator"
+  },
+  {
+    "function": "list_listeners",
+    "service": "globalaccelerator"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "globalaccelerator"
+  }
+]

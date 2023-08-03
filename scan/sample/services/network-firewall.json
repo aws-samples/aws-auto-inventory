@@ -1,0 +1,58 @@
+[
+  {
+    "function": "describe_firewall",
+    "service": "network-firewall"
+  },
+  {
+    "function": "describe_firewall_policy",
+    "service": "network-firewall"
+  },
+  {
+    "function": "describe_logging_configuration",
+    "service": "network-firewall"
+  },
+  {
+    "function": "describe_resource_policy",
+    "service": "network-firewall"
+  },
+  {
+    "function": "describe_rule_group",
+    "service": "network-firewall"
+  },
+  {
+    "function": "describe_rule_group_metadata",
+    "service": "network-firewall"
+  },
+  {
+    "function": "describe_tls_inspection_configuration",
+    "service": "network-firewall"
+  },
+  {
+    "function": "get_paginator",
+    "service": "network-firewall"
+  },
+  {
+    "function": "get_waiter",
+    "service": "network-firewall"
+  },
+  {
+    "function": "list_firewall_policies",
+    "service": "network-firewall"
+  },
+  {
+    "function": "list_firewalls",
+    "service": "network-firewall"
+  },
+  {
+    "function": "list_rule_groups",
+    "service": "network-firewall"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "network-firewall"
+  },
+  {
+    "function": "list_tls_inspection_configurations",
+    "service": "network-firewall"
+  }
+]

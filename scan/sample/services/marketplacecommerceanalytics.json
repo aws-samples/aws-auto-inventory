@@ -1,0 +1,10 @@
+[
+  {
+    "function": "get_paginator",
+    "service": "marketplacecommerceanalytics"
+  },
+  {
+    "function": "get_waiter",
+    "service": "marketplacecommerceanalytics"
+  }
+]

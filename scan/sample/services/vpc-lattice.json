@@ -1,0 +1,90 @@
+[
+  {
+    "function": "get_access_log_subscription",
+    "service": "vpc-lattice"
+  },
+  {
+    "function": "get_auth_policy",
+    "service": "vpc-lattice"
+  },
+  {
+    "function": "get_listener",
+    "service": "vpc-lattice"
+  },
+  {
+    "function": "get_paginator",
+    "service": "vpc-lattice"
+  },
+  {
+    "function": "get_resource_policy",
+    "service": "vpc-lattice"
+  },
+  {
+    "function": "get_rule",
+    "service": "vpc-lattice"
+  },
+  {
+    "function": "get_service",
+    "service": "vpc-lattice"
+  },
+  {
+    "function": "get_service_network",
+    "service": "vpc-lattice"
+  },
+  {
+    "function": "get_service_network_service_association",
+    "service": "vpc-lattice"
+  },
+  {
+    "function": "get_service_network_vpc_association",
+    "service": "vpc-lattice"
+  },
+  {
+    "function": "get_target_group",
+    "service": "vpc-lattice"
+  },
+  {
+    "function": "get_waiter",
+    "service": "vpc-lattice"
+  },
+  {
+    "function": "list_access_log_subscriptions",
+    "service": "vpc-lattice"
+  },
+  {
+    "function": "list_listeners",
+    "service": "vpc-lattice"
+  },
+  {
+    "function": "list_rules",
+    "service": "vpc-lattice"
+  },
+  {
+    "function": "list_service_network_service_associations",
+    "service": "vpc-lattice"
+  },
+  {
+    "function": "list_service_network_vpc_associations",
+    "service": "vpc-lattice"
+  },
+  {
+    "function": "list_service_networks",
+    "service": "vpc-lattice"
+  },
+  {
+    "function": "list_services",
+    "service": "vpc-lattice"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "vpc-lattice"
+  },
+  {
+    "function": "list_target_groups",
+    "service": "vpc-lattice"
+  },
+  {
+    "function": "list_targets",
+    "service": "vpc-lattice"
+  }
+]

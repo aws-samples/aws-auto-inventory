@@ -1,0 +1,66 @@
+[
+  {
+    "function": "describe_acls",
+    "service": "memorydb"
+  },
+  {
+    "function": "describe_clusters",
+    "service": "memorydb"
+  },
+  {
+    "function": "describe_engine_versions",
+    "service": "memorydb"
+  },
+  {
+    "function": "describe_events",
+    "service": "memorydb"
+  },
+  {
+    "function": "describe_parameter_groups",
+    "service": "memorydb"
+  },
+  {
+    "function": "describe_parameters",
+    "service": "memorydb"
+  },
+  {
+    "function": "describe_reserved_nodes",
+    "service": "memorydb"
+  },
+  {
+    "function": "describe_reserved_nodes_offerings",
+    "service": "memorydb"
+  },
+  {
+    "function": "describe_service_updates",
+    "service": "memorydb"
+  },
+  {
+    "function": "describe_snapshots",
+    "service": "memorydb"
+  },
+  {
+    "function": "describe_subnet_groups",
+    "service": "memorydb"
+  },
+  {
+    "function": "describe_users",
+    "service": "memorydb"
+  },
+  {
+    "function": "get_paginator",
+    "service": "memorydb"
+  },
+  {
+    "function": "get_waiter",
+    "service": "memorydb"
+  },
+  {
+    "function": "list_allowed_node_type_updates",
+    "service": "memorydb"
+  },
+  {
+    "function": "list_tags",
+    "service": "memorydb"
+  }
+]

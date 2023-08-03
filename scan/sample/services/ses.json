@@ -1,0 +1,98 @@
+[
+  {
+    "function": "describe_active_receipt_rule_set",
+    "service": "ses"
+  },
+  {
+    "function": "describe_configuration_set",
+    "service": "ses"
+  },
+  {
+    "function": "describe_receipt_rule",
+    "service": "ses"
+  },
+  {
+    "function": "describe_receipt_rule_set",
+    "service": "ses"
+  },
+  {
+    "function": "get_account_sending_enabled",
+    "service": "ses"
+  },
+  {
+    "function": "get_custom_verification_email_template",
+    "service": "ses"
+  },
+  {
+    "function": "get_identity_dkim_attributes",
+    "service": "ses"
+  },
+  {
+    "function": "get_identity_mail_from_domain_attributes",
+    "service": "ses"
+  },
+  {
+    "function": "get_identity_notification_attributes",
+    "service": "ses"
+  },
+  {
+    "function": "get_identity_policies",
+    "service": "ses"
+  },
+  {
+    "function": "get_identity_verification_attributes",
+    "service": "ses"
+  },
+  {
+    "function": "get_paginator",
+    "service": "ses"
+  },
+  {
+    "function": "get_send_quota",
+    "service": "ses"
+  },
+  {
+    "function": "get_send_statistics",
+    "service": "ses"
+  },
+  {
+    "function": "get_template",
+    "service": "ses"
+  },
+  {
+    "function": "get_waiter",
+    "service": "ses"
+  },
+  {
+    "function": "list_configuration_sets",
+    "service": "ses"
+  },
+  {
+    "function": "list_custom_verification_email_templates",
+    "service": "ses"
+  },
+  {
+    "function": "list_identities",
+    "service": "ses"
+  },
+  {
+    "function": "list_identity_policies",
+    "service": "ses"
+  },
+  {
+    "function": "list_receipt_filters",
+    "service": "ses"
+  },
+  {
+    "function": "list_receipt_rule_sets",
+    "service": "ses"
+  },
+  {
+    "function": "list_templates",
+    "service": "ses"
+  },
+  {
+    "function": "list_verified_email_addresses",
+    "service": "ses"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "function": "describe_canaries",
+    "service": "synthetics"
+  },
+  {
+    "function": "describe_canaries_last_run",
+    "service": "synthetics"
+  },
+  {
+    "function": "describe_runtime_versions",
+    "service": "synthetics"
+  },
+  {
+    "function": "get_canary",
+    "service": "synthetics"
+  },
+  {
+    "function": "get_canary_runs",
+    "service": "synthetics"
+  },
+  {
+    "function": "get_group",
+    "service": "synthetics"
+  },
+  {
+    "function": "get_paginator",
+    "service": "synthetics"
+  },
+  {
+    "function": "get_waiter",
+    "service": "synthetics"
+  },
+  {
+    "function": "list_associated_groups",
+    "service": "synthetics"
+  },
+  {
+    "function": "list_group_resources",
+    "service": "synthetics"
+  },
+  {
+    "function": "list_groups",
+    "service": "synthetics"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "synthetics"
+  }
+]

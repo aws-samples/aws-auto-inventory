@@ -1,0 +1,82 @@
+[
+  {
+    "function": "describe_account_assignment_creation_status",
+    "service": "sso-admin"
+  },
+  {
+    "function": "describe_account_assignment_deletion_status",
+    "service": "sso-admin"
+  },
+  {
+    "function": "describe_instance_access_control_attribute_configuration",
+    "service": "sso-admin"
+  },
+  {
+    "function": "describe_permission_set",
+    "service": "sso-admin"
+  },
+  {
+    "function": "describe_permission_set_provisioning_status",
+    "service": "sso-admin"
+  },
+  {
+    "function": "get_inline_policy_for_permission_set",
+    "service": "sso-admin"
+  },
+  {
+    "function": "get_paginator",
+    "service": "sso-admin"
+  },
+  {
+    "function": "get_permissions_boundary_for_permission_set",
+    "service": "sso-admin"
+  },
+  {
+    "function": "get_waiter",
+    "service": "sso-admin"
+  },
+  {
+    "function": "list_account_assignment_creation_status",
+    "service": "sso-admin"
+  },
+  {
+    "function": "list_account_assignment_deletion_status",
+    "service": "sso-admin"
+  },
+  {
+    "function": "list_account_assignments",
+    "service": "sso-admin"
+  },
+  {
+    "function": "list_accounts_for_provisioned_permission_set",
+    "service": "sso-admin"
+  },
+  {
+    "function": "list_customer_managed_policy_references_in_permission_set",
+    "service": "sso-admin"
+  },
+  {
+    "function": "list_instances",
+    "service": "sso-admin"
+  },
+  {
+    "function": "list_managed_policies_in_permission_set",
+    "service": "sso-admin"
+  },
+  {
+    "function": "list_permission_set_provisioning_status",
+    "service": "sso-admin"
+  },
+  {
+    "function": "list_permission_sets",
+    "service": "sso-admin"
+  },
+  {
+    "function": "list_permission_sets_provisioned_to_account",
+    "service": "sso-admin"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "sso-admin"
+  }
+]

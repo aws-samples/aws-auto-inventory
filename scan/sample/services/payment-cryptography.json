@@ -1,0 +1,42 @@
+[
+  {
+    "function": "get_alias",
+    "service": "payment-cryptography"
+  },
+  {
+    "function": "get_key",
+    "service": "payment-cryptography"
+  },
+  {
+    "function": "get_paginator",
+    "service": "payment-cryptography"
+  },
+  {
+    "function": "get_parameters_for_export",
+    "service": "payment-cryptography"
+  },
+  {
+    "function": "get_parameters_for_import",
+    "service": "payment-cryptography"
+  },
+  {
+    "function": "get_public_key_certificate",
+    "service": "payment-cryptography"
+  },
+  {
+    "function": "get_waiter",
+    "service": "payment-cryptography"
+  },
+  {
+    "function": "list_aliases",
+    "service": "payment-cryptography"
+  },
+  {
+    "function": "list_keys",
+    "service": "payment-cryptography"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "payment-cryptography"
+  }
+]

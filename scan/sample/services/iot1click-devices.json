@@ -1,0 +1,30 @@
+[
+  {
+    "function": "describe_device",
+    "service": "iot1click-devices"
+  },
+  {
+    "function": "get_device_methods",
+    "service": "iot1click-devices"
+  },
+  {
+    "function": "get_paginator",
+    "service": "iot1click-devices"
+  },
+  {
+    "function": "get_waiter",
+    "service": "iot1click-devices"
+  },
+  {
+    "function": "list_device_events",
+    "service": "iot1click-devices"
+  },
+  {
+    "function": "list_devices",
+    "service": "iot1click-devices"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "iot1click-devices"
+  }
+]

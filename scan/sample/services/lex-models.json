@@ -1,0 +1,98 @@
+[
+  {
+    "function": "get_bot",
+    "service": "lex-models"
+  },
+  {
+    "function": "get_bot_alias",
+    "service": "lex-models"
+  },
+  {
+    "function": "get_bot_aliases",
+    "service": "lex-models"
+  },
+  {
+    "function": "get_bot_channel_association",
+    "service": "lex-models"
+  },
+  {
+    "function": "get_bot_channel_associations",
+    "service": "lex-models"
+  },
+  {
+    "function": "get_bot_versions",
+    "service": "lex-models"
+  },
+  {
+    "function": "get_bots",
+    "service": "lex-models"
+  },
+  {
+    "function": "get_builtin_intent",
+    "service": "lex-models"
+  },
+  {
+    "function": "get_builtin_intents",
+    "service": "lex-models"
+  },
+  {
+    "function": "get_builtin_slot_types",
+    "service": "lex-models"
+  },
+  {
+    "function": "get_export",
+    "service": "lex-models"
+  },
+  {
+    "function": "get_import",
+    "service": "lex-models"
+  },
+  {
+    "function": "get_intent",
+    "service": "lex-models"
+  },
+  {
+    "function": "get_intent_versions",
+    "service": "lex-models"
+  },
+  {
+    "function": "get_intents",
+    "service": "lex-models"
+  },
+  {
+    "function": "get_migration",
+    "service": "lex-models"
+  },
+  {
+    "function": "get_migrations",
+    "service": "lex-models"
+  },
+  {
+    "function": "get_paginator",
+    "service": "lex-models"
+  },
+  {
+    "function": "get_slot_type",
+    "service": "lex-models"
+  },
+  {
+    "function": "get_slot_type_versions",
+    "service": "lex-models"
+  },
+  {
+    "function": "get_slot_types",
+    "service": "lex-models"
+  },
+  {
+    "function": "get_utterances_view",
+    "service": "lex-models"
+  },
+  {
+    "function": "get_waiter",
+    "service": "lex-models"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "lex-models"
+  }
+]

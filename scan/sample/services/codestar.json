@@ -1,0 +1,38 @@
+[
+  {
+    "function": "describe_project",
+    "service": "codestar"
+  },
+  {
+    "function": "describe_user_profile",
+    "service": "codestar"
+  },
+  {
+    "function": "get_paginator",
+    "service": "codestar"
+  },
+  {
+    "function": "get_waiter",
+    "service": "codestar"
+  },
+  {
+    "function": "list_projects",
+    "service": "codestar"
+  },
+  {
+    "function": "list_resources",
+    "service": "codestar"
+  },
+  {
+    "function": "list_tags_for_project",
+    "service": "codestar"
+  },
+  {
+    "function": "list_team_members",
+    "service": "codestar"
+  },
+  {
+    "function": "list_user_profiles",
+    "service": "codestar"
+  }
+]

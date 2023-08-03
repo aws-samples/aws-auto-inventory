@@ -1,0 +1,302 @@
+[
+  {
+    "function": "describe_activations",
+    "service": "ssm"
+  },
+  {
+    "function": "describe_association",
+    "service": "ssm"
+  },
+  {
+    "function": "describe_association_execution_targets",
+    "service": "ssm"
+  },
+  {
+    "function": "describe_association_executions",
+    "service": "ssm"
+  },
+  {
+    "function": "describe_automation_executions",
+    "service": "ssm"
+  },
+  {
+    "function": "describe_automation_step_executions",
+    "service": "ssm"
+  },
+  {
+    "function": "describe_available_patches",
+    "service": "ssm"
+  },
+  {
+    "function": "describe_document",
+    "service": "ssm"
+  },
+  {
+    "function": "describe_document_permission",
+    "service": "ssm"
+  },
+  {
+    "function": "describe_effective_instance_associations",
+    "service": "ssm"
+  },
+  {
+    "function": "describe_effective_patches_for_patch_baseline",
+    "service": "ssm"
+  },
+  {
+    "function": "describe_instance_associations_status",
+    "service": "ssm"
+  },
+  {
+    "function": "describe_instance_information",
+    "service": "ssm"
+  },
+  {
+    "function": "describe_instance_patch_states",
+    "service": "ssm"
+  },
+  {
+    "function": "describe_instance_patch_states_for_patch_group",
+    "service": "ssm"
+  },
+  {
+    "function": "describe_instance_patches",
+    "service": "ssm"
+  },
+  {
+    "function": "describe_inventory_deletions",
+    "service": "ssm"
+  },
+  {
+    "function": "describe_maintenance_window_execution_task_invocations",
+    "service": "ssm"
+  },
+  {
+    "function": "describe_maintenance_window_execution_tasks",
+    "service": "ssm"
+  },
+  {
+    "function": "describe_maintenance_window_executions",
+    "service": "ssm"
+  },
+  {
+    "function": "describe_maintenance_window_schedule",
+    "service": "ssm"
+  },
+  {
+    "function": "describe_maintenance_window_targets",
+    "service": "ssm"
+  },
+  {
+    "function": "describe_maintenance_window_tasks",
+    "service": "ssm"
+  },
+  {
+    "function": "describe_maintenance_windows",
+    "service": "ssm"
+  },
+  {
+    "function": "describe_maintenance_windows_for_target",
+    "service": "ssm"
+  },
+  {
+    "function": "describe_ops_items",
+    "service": "ssm"
+  },
+  {
+    "function": "describe_parameters",
+    "service": "ssm"
+  },
+  {
+    "function": "describe_patch_baselines",
+    "service": "ssm"
+  },
+  {
+    "function": "describe_patch_group_state",
+    "service": "ssm"
+  },
+  {
+    "function": "describe_patch_groups",
+    "service": "ssm"
+  },
+  {
+    "function": "describe_patch_properties",
+    "service": "ssm"
+  },
+  {
+    "function": "describe_sessions",
+    "service": "ssm"
+  },
+  {
+    "function": "get_automation_execution",
+    "service": "ssm"
+  },
+  {
+    "function": "get_calendar_state",
+    "service": "ssm"
+  },
+  {
+    "function": "get_command_invocation",
+    "service": "ssm"
+  },
+  {
+    "function": "get_connection_status",
+    "service": "ssm"
+  },
+  {
+    "function": "get_default_patch_baseline",
+    "service": "ssm"
+  },
+  {
+    "function": "get_deployable_patch_snapshot_for_instance",
+    "service": "ssm"
+  },
+  {
+    "function": "get_document",
+    "service": "ssm"
+  },
+  {
+    "function": "get_inventory",
+    "service": "ssm"
+  },
+  {
+    "function": "get_inventory_schema",
+    "service": "ssm"
+  },
+  {
+    "function": "get_maintenance_window",
+    "service": "ssm"
+  },
+  {
+    "function": "get_maintenance_window_execution",
+    "service": "ssm"
+  },
+  {
+    "function": "get_maintenance_window_execution_task",
+    "service": "ssm"
+  },
+  {
+    "function": "get_maintenance_window_execution_task_invocation",
+    "service": "ssm"
+  },
+  {
+    "function": "get_maintenance_window_task",
+    "service": "ssm"
+  },
+  {
+    "function": "get_ops_item",
+    "service": "ssm"
+  },
+  {
+    "function": "get_ops_metadata",
+    "service": "ssm"
+  },
+  {
+    "function": "get_ops_summary",
+    "service": "ssm"
+  },
+  {
+    "function": "get_paginator",
+    "service": "ssm"
+  },
+  {
+    "function": "get_parameter",
+    "service": "ssm"
+  },
+  {
+    "function": "get_parameter_history",
+    "service": "ssm"
+  },
+  {
+    "function": "get_parameters",
+    "service": "ssm"
+  },
+  {
+    "function": "get_parameters_by_path",
+    "service": "ssm"
+  },
+  {
+    "function": "get_patch_baseline",
+    "service": "ssm"
+  },
+  {
+    "function": "get_patch_baseline_for_patch_group",
+    "service": "ssm"
+  },
+  {
+    "function": "get_resource_policies",
+    "service": "ssm"
+  },
+  {
+    "function": "get_service_setting",
+    "service": "ssm"
+  },
+  {
+    "function": "get_waiter",
+    "service": "ssm"
+  },
+  {
+    "function": "list_association_versions",
+    "service": "ssm"
+  },
+  {
+    "function": "list_associations",
+    "service": "ssm"
+  },
+  {
+    "function": "list_command_invocations",
+    "service": "ssm"
+  },
+  {
+    "function": "list_commands",
+    "service": "ssm"
+  },
+  {
+    "function": "list_compliance_items",
+    "service": "ssm"
+  },
+  {
+    "function": "list_compliance_summaries",
+    "service": "ssm"
+  },
+  {
+    "function": "list_document_metadata_history",
+    "service": "ssm"
+  },
+  {
+    "function": "list_document_versions",
+    "service": "ssm"
+  },
+  {
+    "function": "list_documents",
+    "service": "ssm"
+  },
+  {
+    "function": "list_inventory_entries",
+    "service": "ssm"
+  },
+  {
+    "function": "list_ops_item_events",
+    "service": "ssm"
+  },
+  {
+    "function": "list_ops_item_related_items",
+    "service": "ssm"
+  },
+  {
+    "function": "list_ops_metadata",
+    "service": "ssm"
+  },
+  {
+    "function": "list_resource_compliance_summaries",
+    "service": "ssm"
+  },
+  {
+    "function": "list_resource_data_sync",
+    "service": "ssm"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "ssm"
+  }
+]

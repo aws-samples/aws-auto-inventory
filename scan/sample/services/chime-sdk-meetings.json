@@ -1,0 +1,26 @@
+[
+  {
+    "function": "get_attendee",
+    "service": "chime-sdk-meetings"
+  },
+  {
+    "function": "get_meeting",
+    "service": "chime-sdk-meetings"
+  },
+  {
+    "function": "get_paginator",
+    "service": "chime-sdk-meetings"
+  },
+  {
+    "function": "get_waiter",
+    "service": "chime-sdk-meetings"
+  },
+  {
+    "function": "list_attendees",
+    "service": "chime-sdk-meetings"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "chime-sdk-meetings"
+  }
+]

@@ -1,0 +1,70 @@
+[
+  {
+    "function": "describe_activity",
+    "service": "stepfunctions"
+  },
+  {
+    "function": "describe_execution",
+    "service": "stepfunctions"
+  },
+  {
+    "function": "describe_map_run",
+    "service": "stepfunctions"
+  },
+  {
+    "function": "describe_state_machine",
+    "service": "stepfunctions"
+  },
+  {
+    "function": "describe_state_machine_alias",
+    "service": "stepfunctions"
+  },
+  {
+    "function": "describe_state_machine_for_execution",
+    "service": "stepfunctions"
+  },
+  {
+    "function": "get_activity_task",
+    "service": "stepfunctions"
+  },
+  {
+    "function": "get_execution_history",
+    "service": "stepfunctions"
+  },
+  {
+    "function": "get_paginator",
+    "service": "stepfunctions"
+  },
+  {
+    "function": "get_waiter",
+    "service": "stepfunctions"
+  },
+  {
+    "function": "list_activities",
+    "service": "stepfunctions"
+  },
+  {
+    "function": "list_executions",
+    "service": "stepfunctions"
+  },
+  {
+    "function": "list_map_runs",
+    "service": "stepfunctions"
+  },
+  {
+    "function": "list_state_machine_aliases",
+    "service": "stepfunctions"
+  },
+  {
+    "function": "list_state_machine_versions",
+    "service": "stepfunctions"
+  },
+  {
+    "function": "list_state_machines",
+    "service": "stepfunctions"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "stepfunctions"
+  }
+]

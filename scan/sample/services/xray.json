@@ -1,0 +1,74 @@
+[
+  {
+    "function": "get_encryption_config",
+    "service": "xray"
+  },
+  {
+    "function": "get_group",
+    "service": "xray"
+  },
+  {
+    "function": "get_groups",
+    "service": "xray"
+  },
+  {
+    "function": "get_insight",
+    "service": "xray"
+  },
+  {
+    "function": "get_insight_events",
+    "service": "xray"
+  },
+  {
+    "function": "get_insight_impact_graph",
+    "service": "xray"
+  },
+  {
+    "function": "get_insight_summaries",
+    "service": "xray"
+  },
+  {
+    "function": "get_paginator",
+    "service": "xray"
+  },
+  {
+    "function": "get_sampling_rules",
+    "service": "xray"
+  },
+  {
+    "function": "get_sampling_statistic_summaries",
+    "service": "xray"
+  },
+  {
+    "function": "get_sampling_targets",
+    "service": "xray"
+  },
+  {
+    "function": "get_service_graph",
+    "service": "xray"
+  },
+  {
+    "function": "get_time_series_service_statistics",
+    "service": "xray"
+  },
+  {
+    "function": "get_trace_graph",
+    "service": "xray"
+  },
+  {
+    "function": "get_trace_summaries",
+    "service": "xray"
+  },
+  {
+    "function": "get_waiter",
+    "service": "xray"
+  },
+  {
+    "function": "list_resource_policies",
+    "service": "xray"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "xray"
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "function": "describe_voices",
+    "service": "polly"
+  },
+  {
+    "function": "get_lexicon",
+    "service": "polly"
+  },
+  {
+    "function": "get_paginator",
+    "service": "polly"
+  },
+  {
+    "function": "get_speech_synthesis_task",
+    "service": "polly"
+  },
+  {
+    "function": "get_waiter",
+    "service": "polly"
+  },
+  {
+    "function": "list_lexicons",
+    "service": "polly"
+  },
+  {
+    "function": "list_speech_synthesis_tasks",
+    "service": "polly"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "function": "describe_delivery_stream",
+    "service": "firehose"
+  },
+  {
+    "function": "get_paginator",
+    "service": "firehose"
+  },
+  {
+    "function": "get_waiter",
+    "service": "firehose"
+  },
+  {
+    "function": "list_delivery_streams",
+    "service": "firehose"
+  },
+  {
+    "function": "list_tags_for_delivery_stream",
+    "service": "firehose"
+  }
+]

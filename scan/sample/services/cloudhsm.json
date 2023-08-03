@@ -1,0 +1,46 @@
+[
+  {
+    "function": "describe_hapg",
+    "service": "cloudhsm"
+  },
+  {
+    "function": "describe_hsm",
+    "service": "cloudhsm"
+  },
+  {
+    "function": "describe_luna_client",
+    "service": "cloudhsm"
+  },
+  {
+    "function": "get_config",
+    "service": "cloudhsm"
+  },
+  {
+    "function": "get_paginator",
+    "service": "cloudhsm"
+  },
+  {
+    "function": "get_waiter",
+    "service": "cloudhsm"
+  },
+  {
+    "function": "list_available_zones",
+    "service": "cloudhsm"
+  },
+  {
+    "function": "list_hapgs",
+    "service": "cloudhsm"
+  },
+  {
+    "function": "list_hsms",
+    "service": "cloudhsm"
+  },
+  {
+    "function": "list_luna_clients",
+    "service": "cloudhsm"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "cloudhsm"
+  }
+]

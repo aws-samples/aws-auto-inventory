@@ -1,0 +1,50 @@
+[
+  {
+    "function": "get_application",
+    "service": "ssm-sap"
+  },
+  {
+    "function": "get_component",
+    "service": "ssm-sap"
+  },
+  {
+    "function": "get_database",
+    "service": "ssm-sap"
+  },
+  {
+    "function": "get_operation",
+    "service": "ssm-sap"
+  },
+  {
+    "function": "get_paginator",
+    "service": "ssm-sap"
+  },
+  {
+    "function": "get_resource_permission",
+    "service": "ssm-sap"
+  },
+  {
+    "function": "get_waiter",
+    "service": "ssm-sap"
+  },
+  {
+    "function": "list_applications",
+    "service": "ssm-sap"
+  },
+  {
+    "function": "list_components",
+    "service": "ssm-sap"
+  },
+  {
+    "function": "list_databases",
+    "service": "ssm-sap"
+  },
+  {
+    "function": "list_operations",
+    "service": "ssm-sap"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "ssm-sap"
+  }
+]

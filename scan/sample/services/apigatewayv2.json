@@ -1,0 +1,114 @@
+[
+  {
+    "function": "get_api",
+    "service": "apigatewayv2"
+  },
+  {
+    "function": "get_api_mapping",
+    "service": "apigatewayv2"
+  },
+  {
+    "function": "get_api_mappings",
+    "service": "apigatewayv2"
+  },
+  {
+    "function": "get_apis",
+    "service": "apigatewayv2"
+  },
+  {
+    "function": "get_authorizer",
+    "service": "apigatewayv2"
+  },
+  {
+    "function": "get_authorizers",
+    "service": "apigatewayv2"
+  },
+  {
+    "function": "get_deployment",
+    "service": "apigatewayv2"
+  },
+  {
+    "function": "get_deployments",
+    "service": "apigatewayv2"
+  },
+  {
+    "function": "get_domain_name",
+    "service": "apigatewayv2"
+  },
+  {
+    "function": "get_domain_names",
+    "service": "apigatewayv2"
+  },
+  {
+    "function": "get_integration",
+    "service": "apigatewayv2"
+  },
+  {
+    "function": "get_integration_response",
+    "service": "apigatewayv2"
+  },
+  {
+    "function": "get_integration_responses",
+    "service": "apigatewayv2"
+  },
+  {
+    "function": "get_integrations",
+    "service": "apigatewayv2"
+  },
+  {
+    "function": "get_model",
+    "service": "apigatewayv2"
+  },
+  {
+    "function": "get_model_template",
+    "service": "apigatewayv2"
+  },
+  {
+    "function": "get_models",
+    "service": "apigatewayv2"
+  },
+  {
+    "function": "get_paginator",
+    "service": "apigatewayv2"
+  },
+  {
+    "function": "get_route",
+    "service": "apigatewayv2"
+  },
+  {
+    "function": "get_route_response",
+    "service": "apigatewayv2"
+  },
+  {
+    "function": "get_route_responses",
+    "service": "apigatewayv2"
+  },
+  {
+    "function": "get_routes",
+    "service": "apigatewayv2"
+  },
+  {
+    "function": "get_stage",
+    "service": "apigatewayv2"
+  },
+  {
+    "function": "get_stages",
+    "service": "apigatewayv2"
+  },
+  {
+    "function": "get_tags",
+    "service": "apigatewayv2"
+  },
+  {
+    "function": "get_vpc_link",
+    "service": "apigatewayv2"
+  },
+  {
+    "function": "get_vpc_links",
+    "service": "apigatewayv2"
+  },
+  {
+    "function": "get_waiter",
+    "service": "apigatewayv2"
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "function": "describe_account_configuration",
+    "service": "medialive"
+  },
+  {
+    "function": "describe_channel",
+    "service": "medialive"
+  },
+  {
+    "function": "describe_input",
+    "service": "medialive"
+  },
+  {
+    "function": "describe_input_device",
+    "service": "medialive"
+  },
+  {
+    "function": "describe_input_device_thumbnail",
+    "service": "medialive"
+  },
+  {
+    "function": "describe_input_security_group",
+    "service": "medialive"
+  },
+  {
+    "function": "describe_multiplex",
+    "service": "medialive"
+  },
+  {
+    "function": "describe_multiplex_program",
+    "service": "medialive"
+  },
+  {
+    "function": "describe_offering",
+    "service": "medialive"
+  },
+  {
+    "function": "describe_reservation",
+    "service": "medialive"
+  },
+  {
+    "function": "describe_schedule",
+    "service": "medialive"
+  },
+  {
+    "function": "describe_thumbnails",
+    "service": "medialive"
+  },
+  {
+    "function": "get_paginator",
+    "service": "medialive"
+  },
+  {
+    "function": "get_waiter",
+    "service": "medialive"
+  },
+  {
+    "function": "list_channels",
+    "service": "medialive"
+  },
+  {
+    "function": "list_input_device_transfers",
+    "service": "medialive"
+  },
+  {
+    "function": "list_input_devices",
+    "service": "medialive"
+  },
+  {
+    "function": "list_input_security_groups",
+    "service": "medialive"
+  },
+  {
+    "function": "list_inputs",
+    "service": "medialive"
+  },
+  {
+    "function": "list_multiplex_programs",
+    "service": "medialive"
+  },
+  {
+    "function": "list_multiplexes",
+    "service": "medialive"
+  },
+  {
+    "function": "list_offerings",
+    "service": "medialive"
+  },
+  {
+    "function": "list_reservations",
+    "service": "medialive"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "medialive"
+  }
+]

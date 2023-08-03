@@ -1,0 +1,770 @@
+[
+  {
+    "function": "describe_account_attributes",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_address_transfers",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_addresses",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_addresses_attribute",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_aggregate_id_format",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_availability_zones",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_aws_network_performance_metric_subscriptions",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_bundle_tasks",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_byoip_cidrs",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_capacity_reservation_fleets",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_capacity_reservations",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_carrier_gateways",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_classic_link_instances",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_client_vpn_authorization_rules",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_client_vpn_connections",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_client_vpn_endpoints",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_client_vpn_routes",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_client_vpn_target_networks",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_coip_pools",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_conversion_tasks",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_customer_gateways",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_dhcp_options",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_egress_only_internet_gateways",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_elastic_gpus",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_export_image_tasks",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_export_tasks",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_fast_launch_images",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_fast_snapshot_restores",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_fleet_history",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_fleet_instances",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_fleets",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_flow_logs",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_fpga_image_attribute",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_fpga_images",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_host_reservation_offerings",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_host_reservations",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_hosts",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_iam_instance_profile_associations",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_id_format",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_identity_id_format",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_image_attribute",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_images",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_import_image_tasks",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_import_snapshot_tasks",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_instance_attribute",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_instance_connect_endpoints",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_instance_credit_specifications",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_instance_event_notification_attributes",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_instance_event_windows",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_instance_status",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_instance_type_offerings",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_instance_types",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_instances",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_internet_gateways",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_ipam_pools",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_ipam_resource_discoveries",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_ipam_resource_discovery_associations",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_ipam_scopes",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_ipams",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_ipv6_pools",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_key_pairs",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_launch_template_versions",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_launch_templates",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_local_gateway_route_table_virtual_interface_group_associations",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_local_gateway_route_table_vpc_associations",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_local_gateway_route_tables",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_local_gateway_virtual_interface_groups",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_local_gateway_virtual_interfaces",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_local_gateways",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_managed_prefix_lists",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_moving_addresses",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_nat_gateways",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_network_acls",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_network_insights_access_scope_analyses",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_network_insights_access_scopes",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_network_insights_analyses",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_network_insights_paths",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_network_interface_attribute",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_network_interface_permissions",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_network_interfaces",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_placement_groups",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_prefix_lists",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_principal_id_format",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_public_ipv4_pools",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_regions",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_replace_root_volume_tasks",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_reserved_instances",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_reserved_instances_listings",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_reserved_instances_modifications",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_reserved_instances_offerings",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_route_tables",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_scheduled_instance_availability",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_scheduled_instances",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_security_group_references",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_security_group_rules",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_security_groups",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_snapshot_attribute",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_snapshot_tier_status",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_snapshots",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_spot_datafeed_subscription",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_spot_fleet_instances",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_spot_fleet_request_history",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_spot_fleet_requests",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_spot_instance_requests",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_spot_price_history",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_stale_security_groups",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_store_image_tasks",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_subnets",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_tags",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_traffic_mirror_filters",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_traffic_mirror_sessions",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_traffic_mirror_targets",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_transit_gateway_attachments",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_transit_gateway_connect_peers",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_transit_gateway_connects",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_transit_gateway_multicast_domains",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_transit_gateway_peering_attachments",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_transit_gateway_policy_tables",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_transit_gateway_route_table_announcements",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_transit_gateway_route_tables",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_transit_gateway_vpc_attachments",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_transit_gateways",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_trunk_interface_associations",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_verified_access_endpoints",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_verified_access_groups",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_verified_access_instance_logging_configurations",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_verified_access_instances",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_verified_access_trust_providers",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_volume_attribute",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_volume_status",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_volumes",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_volumes_modifications",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_vpc_attribute",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_vpc_classic_link",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_vpc_classic_link_dns_support",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_vpc_endpoint_connection_notifications",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_vpc_endpoint_connections",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_vpc_endpoint_service_configurations",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_vpc_endpoint_service_permissions",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_vpc_endpoint_services",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_vpc_endpoints",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_vpc_peering_connections",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_vpcs",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_vpn_connections",
+    "service": "ec2"
+  },
+  {
+    "function": "describe_vpn_gateways",
+    "service": "ec2"
+  },
+  {
+    "function": "get_associated_enclave_certificate_iam_roles",
+    "service": "ec2"
+  },
+  {
+    "function": "get_associated_ipv6_pool_cidrs",
+    "service": "ec2"
+  },
+  {
+    "function": "get_aws_network_performance_data",
+    "service": "ec2"
+  },
+  {
+    "function": "get_capacity_reservation_usage",
+    "service": "ec2"
+  },
+  {
+    "function": "get_coip_pool_usage",
+    "service": "ec2"
+  },
+  {
+    "function": "get_console_output",
+    "service": "ec2"
+  },
+  {
+    "function": "get_console_screenshot",
+    "service": "ec2"
+  },
+  {
+    "function": "get_default_credit_specification",
+    "service": "ec2"
+  },
+  {
+    "function": "get_ebs_default_kms_key_id",
+    "service": "ec2"
+  },
+  {
+    "function": "get_ebs_encryption_by_default",
+    "service": "ec2"
+  },
+  {
+    "function": "get_flow_logs_integration_template",
+    "service": "ec2"
+  },
+  {
+    "function": "get_groups_for_capacity_reservation",
+    "service": "ec2"
+  },
+  {
+    "function": "get_host_reservation_purchase_preview",
+    "service": "ec2"
+  },
+  {
+    "function": "get_instance_types_from_instance_requirements",
+    "service": "ec2"
+  },
+  {
+    "function": "get_instance_uefi_data",
+    "service": "ec2"
+  },
+  {
+    "function": "get_ipam_address_history",
+    "service": "ec2"
+  },
+  {
+    "function": "get_ipam_discovered_accounts",
+    "service": "ec2"
+  },
+  {
+    "function": "get_ipam_discovered_resource_cidrs",
+    "service": "ec2"
+  },
+  {
+    "function": "get_ipam_pool_allocations",
+    "service": "ec2"
+  },
+  {
+    "function": "get_ipam_pool_cidrs",
+    "service": "ec2"
+  },
+  {
+    "function": "get_ipam_resource_cidrs",
+    "service": "ec2"
+  },
+  {
+    "function": "get_launch_template_data",
+    "service": "ec2"
+  },
+  {
+    "function": "get_managed_prefix_list_associations",
+    "service": "ec2"
+  },
+  {
+    "function": "get_managed_prefix_list_entries",
+    "service": "ec2"
+  },
+  {
+    "function": "get_network_insights_access_scope_analysis_findings",
+    "service": "ec2"
+  },
+  {
+    "function": "get_network_insights_access_scope_content",
+    "service": "ec2"
+  },
+  {
+    "function": "get_paginator",
+    "service": "ec2"
+  },
+  {
+    "function": "get_password_data",
+    "service": "ec2"
+  },
+  {
+    "function": "get_reserved_instances_exchange_quote",
+    "service": "ec2"
+  },
+  {
+    "function": "get_serial_console_access_status",
+    "service": "ec2"
+  },
+  {
+    "function": "get_spot_placement_scores",
+    "service": "ec2"
+  },
+  {
+    "function": "get_subnet_cidr_reservations",
+    "service": "ec2"
+  },
+  {
+    "function": "get_transit_gateway_attachment_propagations",
+    "service": "ec2"
+  },
+  {
+    "function": "get_transit_gateway_multicast_domain_associations",
+    "service": "ec2"
+  },
+  {
+    "function": "get_transit_gateway_policy_table_associations",
+    "service": "ec2"
+  },
+  {
+    "function": "get_transit_gateway_policy_table_entries",
+    "service": "ec2"
+  },
+  {
+    "function": "get_transit_gateway_prefix_list_references",
+    "service": "ec2"
+  },
+  {
+    "function": "get_transit_gateway_route_table_associations",
+    "service": "ec2"
+  },
+  {
+    "function": "get_transit_gateway_route_table_propagations",
+    "service": "ec2"
+  },
+  {
+    "function": "get_verified_access_endpoint_policy",
+    "service": "ec2"
+  },
+  {
+    "function": "get_verified_access_group_policy",
+    "service": "ec2"
+  },
+  {
+    "function": "get_vpn_connection_device_sample_configuration",
+    "service": "ec2"
+  },
+  {
+    "function": "get_vpn_connection_device_types",
+    "service": "ec2"
+  },
+  {
+    "function": "get_vpn_tunnel_replacement_status",
+    "service": "ec2"
+  },
+  {
+    "function": "get_waiter",
+    "service": "ec2"
+  },
+  {
+    "function": "list_images_in_recycle_bin",
+    "service": "ec2"
+  },
+  {
+    "function": "list_snapshots_in_recycle_bin",
+    "service": "ec2"
+  }
+]

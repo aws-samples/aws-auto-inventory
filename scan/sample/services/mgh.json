@@ -1,0 +1,38 @@
+[
+  {
+    "function": "describe_application_state",
+    "service": "mgh"
+  },
+  {
+    "function": "describe_migration_task",
+    "service": "mgh"
+  },
+  {
+    "function": "get_paginator",
+    "service": "mgh"
+  },
+  {
+    "function": "get_waiter",
+    "service": "mgh"
+  },
+  {
+    "function": "list_application_states",
+    "service": "mgh"
+  },
+  {
+    "function": "list_created_artifacts",
+    "service": "mgh"
+  },
+  {
+    "function": "list_discovered_resources",
+    "service": "mgh"
+  },
+  {
+    "function": "list_migration_tasks",
+    "service": "mgh"
+  },
+  {
+    "function": "list_progress_update_streams",
+    "service": "mgh"
+  }
+]

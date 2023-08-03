@@ -1,0 +1,38 @@
+[
+  {
+    "function": "get_account_settings",
+    "service": "resource-groups"
+  },
+  {
+    "function": "get_group",
+    "service": "resource-groups"
+  },
+  {
+    "function": "get_group_configuration",
+    "service": "resource-groups"
+  },
+  {
+    "function": "get_group_query",
+    "service": "resource-groups"
+  },
+  {
+    "function": "get_paginator",
+    "service": "resource-groups"
+  },
+  {
+    "function": "get_tags",
+    "service": "resource-groups"
+  },
+  {
+    "function": "get_waiter",
+    "service": "resource-groups"
+  },
+  {
+    "function": "list_group_resources",
+    "service": "resource-groups"
+  },
+  {
+    "function": "list_groups",
+    "service": "resource-groups"
+  }
+]

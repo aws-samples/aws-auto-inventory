@@ -1,0 +1,46 @@
+[
+  {
+    "function": "get_crl",
+    "service": "rolesanywhere"
+  },
+  {
+    "function": "get_paginator",
+    "service": "rolesanywhere"
+  },
+  {
+    "function": "get_profile",
+    "service": "rolesanywhere"
+  },
+  {
+    "function": "get_subject",
+    "service": "rolesanywhere"
+  },
+  {
+    "function": "get_trust_anchor",
+    "service": "rolesanywhere"
+  },
+  {
+    "function": "get_waiter",
+    "service": "rolesanywhere"
+  },
+  {
+    "function": "list_crls",
+    "service": "rolesanywhere"
+  },
+  {
+    "function": "list_profiles",
+    "service": "rolesanywhere"
+  },
+  {
+    "function": "list_subjects",
+    "service": "rolesanywhere"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "rolesanywhere"
+  },
+  {
+    "function": "list_trust_anchors",
+    "service": "rolesanywhere"
+  }
+]

@@ -1,0 +1,154 @@
+[
+  {
+    "function": "describe_constraint",
+    "service": "servicecatalog"
+  },
+  {
+    "function": "describe_copy_product_status",
+    "service": "servicecatalog"
+  },
+  {
+    "function": "describe_portfolio",
+    "service": "servicecatalog"
+  },
+  {
+    "function": "describe_portfolio_share_status",
+    "service": "servicecatalog"
+  },
+  {
+    "function": "describe_portfolio_shares",
+    "service": "servicecatalog"
+  },
+  {
+    "function": "describe_product",
+    "service": "servicecatalog"
+  },
+  {
+    "function": "describe_product_as_admin",
+    "service": "servicecatalog"
+  },
+  {
+    "function": "describe_product_view",
+    "service": "servicecatalog"
+  },
+  {
+    "function": "describe_provisioned_product",
+    "service": "servicecatalog"
+  },
+  {
+    "function": "describe_provisioned_product_plan",
+    "service": "servicecatalog"
+  },
+  {
+    "function": "describe_provisioning_artifact",
+    "service": "servicecatalog"
+  },
+  {
+    "function": "describe_provisioning_parameters",
+    "service": "servicecatalog"
+  },
+  {
+    "function": "describe_record",
+    "service": "servicecatalog"
+  },
+  {
+    "function": "describe_service_action",
+    "service": "servicecatalog"
+  },
+  {
+    "function": "describe_service_action_execution_parameters",
+    "service": "servicecatalog"
+  },
+  {
+    "function": "describe_tag_option",
+    "service": "servicecatalog"
+  },
+  {
+    "function": "get_aws_organizations_access_status",
+    "service": "servicecatalog"
+  },
+  {
+    "function": "get_paginator",
+    "service": "servicecatalog"
+  },
+  {
+    "function": "get_provisioned_product_outputs",
+    "service": "servicecatalog"
+  },
+  {
+    "function": "get_waiter",
+    "service": "servicecatalog"
+  },
+  {
+    "function": "list_accepted_portfolio_shares",
+    "service": "servicecatalog"
+  },
+  {
+    "function": "list_budgets_for_resource",
+    "service": "servicecatalog"
+  },
+  {
+    "function": "list_constraints_for_portfolio",
+    "service": "servicecatalog"
+  },
+  {
+    "function": "list_launch_paths",
+    "service": "servicecatalog"
+  },
+  {
+    "function": "list_organization_portfolio_access",
+    "service": "servicecatalog"
+  },
+  {
+    "function": "list_portfolio_access",
+    "service": "servicecatalog"
+  },
+  {
+    "function": "list_portfolios",
+    "service": "servicecatalog"
+  },
+  {
+    "function": "list_portfolios_for_product",
+    "service": "servicecatalog"
+  },
+  {
+    "function": "list_principals_for_portfolio",
+    "service": "servicecatalog"
+  },
+  {
+    "function": "list_provisioned_product_plans",
+    "service": "servicecatalog"
+  },
+  {
+    "function": "list_provisioning_artifacts",
+    "service": "servicecatalog"
+  },
+  {
+    "function": "list_provisioning_artifacts_for_service_action",
+    "service": "servicecatalog"
+  },
+  {
+    "function": "list_record_history",
+    "service": "servicecatalog"
+  },
+  {
+    "function": "list_resources_for_tag_option",
+    "service": "servicecatalog"
+  },
+  {
+    "function": "list_service_actions",
+    "service": "servicecatalog"
+  },
+  {
+    "function": "list_service_actions_for_provisioning_artifact",
+    "service": "servicecatalog"
+  },
+  {
+    "function": "list_stack_instances_for_provisioned_product",
+    "service": "servicecatalog"
+  },
+  {
+    "function": "list_tag_options",
+    "service": "servicecatalog"
+  }
+]

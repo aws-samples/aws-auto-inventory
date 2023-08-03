@@ -1,0 +1,106 @@
+[
+  {
+    "function": "describe_deployment_job",
+    "service": "robomaker"
+  },
+  {
+    "function": "describe_fleet",
+    "service": "robomaker"
+  },
+  {
+    "function": "describe_robot",
+    "service": "robomaker"
+  },
+  {
+    "function": "describe_robot_application",
+    "service": "robomaker"
+  },
+  {
+    "function": "describe_simulation_application",
+    "service": "robomaker"
+  },
+  {
+    "function": "describe_simulation_job",
+    "service": "robomaker"
+  },
+  {
+    "function": "describe_simulation_job_batch",
+    "service": "robomaker"
+  },
+  {
+    "function": "describe_world",
+    "service": "robomaker"
+  },
+  {
+    "function": "describe_world_export_job",
+    "service": "robomaker"
+  },
+  {
+    "function": "describe_world_generation_job",
+    "service": "robomaker"
+  },
+  {
+    "function": "describe_world_template",
+    "service": "robomaker"
+  },
+  {
+    "function": "get_paginator",
+    "service": "robomaker"
+  },
+  {
+    "function": "get_waiter",
+    "service": "robomaker"
+  },
+  {
+    "function": "get_world_template_body",
+    "service": "robomaker"
+  },
+  {
+    "function": "list_deployment_jobs",
+    "service": "robomaker"
+  },
+  {
+    "function": "list_fleets",
+    "service": "robomaker"
+  },
+  {
+    "function": "list_robot_applications",
+    "service": "robomaker"
+  },
+  {
+    "function": "list_robots",
+    "service": "robomaker"
+  },
+  {
+    "function": "list_simulation_applications",
+    "service": "robomaker"
+  },
+  {
+    "function": "list_simulation_job_batches",
+    "service": "robomaker"
+  },
+  {
+    "function": "list_simulation_jobs",
+    "service": "robomaker"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "robomaker"
+  },
+  {
+    "function": "list_world_export_jobs",
+    "service": "robomaker"
+  },
+  {
+    "function": "list_world_generation_jobs",
+    "service": "robomaker"
+  },
+  {
+    "function": "list_world_templates",
+    "service": "robomaker"
+  },
+  {
+    "function": "list_worlds",
+    "service": "robomaker"
+  }
+]

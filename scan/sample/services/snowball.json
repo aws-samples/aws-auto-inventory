@@ -1,0 +1,74 @@
+[
+  {
+    "function": "describe_address",
+    "service": "snowball"
+  },
+  {
+    "function": "describe_addresses",
+    "service": "snowball"
+  },
+  {
+    "function": "describe_cluster",
+    "service": "snowball"
+  },
+  {
+    "function": "describe_job",
+    "service": "snowball"
+  },
+  {
+    "function": "describe_return_shipping_label",
+    "service": "snowball"
+  },
+  {
+    "function": "get_job_manifest",
+    "service": "snowball"
+  },
+  {
+    "function": "get_job_unlock_code",
+    "service": "snowball"
+  },
+  {
+    "function": "get_paginator",
+    "service": "snowball"
+  },
+  {
+    "function": "get_snowball_usage",
+    "service": "snowball"
+  },
+  {
+    "function": "get_software_updates",
+    "service": "snowball"
+  },
+  {
+    "function": "get_waiter",
+    "service": "snowball"
+  },
+  {
+    "function": "list_cluster_jobs",
+    "service": "snowball"
+  },
+  {
+    "function": "list_clusters",
+    "service": "snowball"
+  },
+  {
+    "function": "list_compatible_images",
+    "service": "snowball"
+  },
+  {
+    "function": "list_jobs",
+    "service": "snowball"
+  },
+  {
+    "function": "list_long_term_pricing",
+    "service": "snowball"
+  },
+  {
+    "function": "list_pickup_locations",
+    "service": "snowball"
+  },
+  {
+    "function": "list_service_versions",
+    "service": "snowball"
+  }
+]

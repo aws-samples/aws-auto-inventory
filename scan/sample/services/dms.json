@@ -1,0 +1,146 @@
+[
+  {
+    "function": "describe_account_attributes",
+    "service": "dms"
+  },
+  {
+    "function": "describe_applicable_individual_assessments",
+    "service": "dms"
+  },
+  {
+    "function": "describe_certificates",
+    "service": "dms"
+  },
+  {
+    "function": "describe_connections",
+    "service": "dms"
+  },
+  {
+    "function": "describe_endpoint_settings",
+    "service": "dms"
+  },
+  {
+    "function": "describe_endpoint_types",
+    "service": "dms"
+  },
+  {
+    "function": "describe_endpoints",
+    "service": "dms"
+  },
+  {
+    "function": "describe_engine_versions",
+    "service": "dms"
+  },
+  {
+    "function": "describe_event_categories",
+    "service": "dms"
+  },
+  {
+    "function": "describe_event_subscriptions",
+    "service": "dms"
+  },
+  {
+    "function": "describe_events",
+    "service": "dms"
+  },
+  {
+    "function": "describe_fleet_advisor_collectors",
+    "service": "dms"
+  },
+  {
+    "function": "describe_fleet_advisor_databases",
+    "service": "dms"
+  },
+  {
+    "function": "describe_fleet_advisor_lsa_analysis",
+    "service": "dms"
+  },
+  {
+    "function": "describe_fleet_advisor_schema_object_summary",
+    "service": "dms"
+  },
+  {
+    "function": "describe_fleet_advisor_schemas",
+    "service": "dms"
+  },
+  {
+    "function": "describe_orderable_replication_instances",
+    "service": "dms"
+  },
+  {
+    "function": "describe_pending_maintenance_actions",
+    "service": "dms"
+  },
+  {
+    "function": "describe_recommendation_limitations",
+    "service": "dms"
+  },
+  {
+    "function": "describe_recommendations",
+    "service": "dms"
+  },
+  {
+    "function": "describe_refresh_schemas_status",
+    "service": "dms"
+  },
+  {
+    "function": "describe_replication_configs",
+    "service": "dms"
+  },
+  {
+    "function": "describe_replication_instance_task_logs",
+    "service": "dms"
+  },
+  {
+    "function": "describe_replication_instances",
+    "service": "dms"
+  },
+  {
+    "function": "describe_replication_subnet_groups",
+    "service": "dms"
+  },
+  {
+    "function": "describe_replication_table_statistics",
+    "service": "dms"
+  },
+  {
+    "function": "describe_replication_task_assessment_results",
+    "service": "dms"
+  },
+  {
+    "function": "describe_replication_task_assessment_runs",
+    "service": "dms"
+  },
+  {
+    "function": "describe_replication_task_individual_assessments",
+    "service": "dms"
+  },
+  {
+    "function": "describe_replication_tasks",
+    "service": "dms"
+  },
+  {
+    "function": "describe_replications",
+    "service": "dms"
+  },
+  {
+    "function": "describe_schemas",
+    "service": "dms"
+  },
+  {
+    "function": "describe_table_statistics",
+    "service": "dms"
+  },
+  {
+    "function": "get_paginator",
+    "service": "dms"
+  },
+  {
+    "function": "get_waiter",
+    "service": "dms"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "dms"
+  }
+]

@@ -1,0 +1,190 @@
+[
+  {
+    "function": "get_associated_role",
+    "service": "greengrass"
+  },
+  {
+    "function": "get_bulk_deployment_status",
+    "service": "greengrass"
+  },
+  {
+    "function": "get_connectivity_info",
+    "service": "greengrass"
+  },
+  {
+    "function": "get_connector_definition",
+    "service": "greengrass"
+  },
+  {
+    "function": "get_connector_definition_version",
+    "service": "greengrass"
+  },
+  {
+    "function": "get_core_definition",
+    "service": "greengrass"
+  },
+  {
+    "function": "get_core_definition_version",
+    "service": "greengrass"
+  },
+  {
+    "function": "get_deployment_status",
+    "service": "greengrass"
+  },
+  {
+    "function": "get_device_definition",
+    "service": "greengrass"
+  },
+  {
+    "function": "get_device_definition_version",
+    "service": "greengrass"
+  },
+  {
+    "function": "get_function_definition",
+    "service": "greengrass"
+  },
+  {
+    "function": "get_function_definition_version",
+    "service": "greengrass"
+  },
+  {
+    "function": "get_group",
+    "service": "greengrass"
+  },
+  {
+    "function": "get_group_certificate_authority",
+    "service": "greengrass"
+  },
+  {
+    "function": "get_group_certificate_configuration",
+    "service": "greengrass"
+  },
+  {
+    "function": "get_group_version",
+    "service": "greengrass"
+  },
+  {
+    "function": "get_logger_definition",
+    "service": "greengrass"
+  },
+  {
+    "function": "get_logger_definition_version",
+    "service": "greengrass"
+  },
+  {
+    "function": "get_paginator",
+    "service": "greengrass"
+  },
+  {
+    "function": "get_resource_definition",
+    "service": "greengrass"
+  },
+  {
+    "function": "get_resource_definition_version",
+    "service": "greengrass"
+  },
+  {
+    "function": "get_service_role_for_account",
+    "service": "greengrass"
+  },
+  {
+    "function": "get_subscription_definition",
+    "service": "greengrass"
+  },
+  {
+    "function": "get_subscription_definition_version",
+    "service": "greengrass"
+  },
+  {
+    "function": "get_thing_runtime_configuration",
+    "service": "greengrass"
+  },
+  {
+    "function": "get_waiter",
+    "service": "greengrass"
+  },
+  {
+    "function": "list_bulk_deployment_detailed_reports",
+    "service": "greengrass"
+  },
+  {
+    "function": "list_bulk_deployments",
+    "service": "greengrass"
+  },
+  {
+    "function": "list_connector_definition_versions",
+    "service": "greengrass"
+  },
+  {
+    "function": "list_connector_definitions",
+    "service": "greengrass"
+  },
+  {
+    "function": "list_core_definition_versions",
+    "service": "greengrass"
+  },
+  {
+    "function": "list_core_definitions",
+    "service": "greengrass"
+  },
+  {
+    "function": "list_deployments",
+    "service": "greengrass"
+  },
+  {
+    "function": "list_device_definition_versions",
+    "service": "greengrass"
+  },
+  {
+    "function": "list_device_definitions",
+    "service": "greengrass"
+  },
+  {
+    "function": "list_function_definition_versions",
+    "service": "greengrass"
+  },
+  {
+    "function": "list_function_definitions",
+    "service": "greengrass"
+  },
+  {
+    "function": "list_group_certificate_authorities",
+    "service": "greengrass"
+  },
+  {
+    "function": "list_group_versions",
+    "service": "greengrass"
+  },
+  {
+    "function": "list_groups",
+    "service": "greengrass"
+  },
+  {
+    "function": "list_logger_definition_versions",
+    "service": "greengrass"
+  },
+  {
+    "function": "list_logger_definitions",
+    "service": "greengrass"
+  },
+  {
+    "function": "list_resource_definition_versions",
+    "service": "greengrass"
+  },
+  {
+    "function": "list_resource_definitions",
+    "service": "greengrass"
+  },
+  {
+    "function": "list_subscription_definition_versions",
+    "service": "greengrass"
+  },
+  {
+    "function": "list_subscription_definitions",
+    "service": "greengrass"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "greengrass"
+  }
+]

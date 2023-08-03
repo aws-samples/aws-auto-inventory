@@ -1,0 +1,106 @@
+[
+  {
+    "function": "describe_detector",
+    "service": "frauddetector"
+  },
+  {
+    "function": "describe_model_versions",
+    "service": "frauddetector"
+  },
+  {
+    "function": "get_batch_import_jobs",
+    "service": "frauddetector"
+  },
+  {
+    "function": "get_batch_prediction_jobs",
+    "service": "frauddetector"
+  },
+  {
+    "function": "get_delete_events_by_event_type_status",
+    "service": "frauddetector"
+  },
+  {
+    "function": "get_detector_version",
+    "service": "frauddetector"
+  },
+  {
+    "function": "get_detectors",
+    "service": "frauddetector"
+  },
+  {
+    "function": "get_entity_types",
+    "service": "frauddetector"
+  },
+  {
+    "function": "get_event",
+    "service": "frauddetector"
+  },
+  {
+    "function": "get_event_prediction",
+    "service": "frauddetector"
+  },
+  {
+    "function": "get_event_prediction_metadata",
+    "service": "frauddetector"
+  },
+  {
+    "function": "get_event_types",
+    "service": "frauddetector"
+  },
+  {
+    "function": "get_external_models",
+    "service": "frauddetector"
+  },
+  {
+    "function": "get_kms_encryption_key",
+    "service": "frauddetector"
+  },
+  {
+    "function": "get_labels",
+    "service": "frauddetector"
+  },
+  {
+    "function": "get_list_elements",
+    "service": "frauddetector"
+  },
+  {
+    "function": "get_lists_metadata",
+    "service": "frauddetector"
+  },
+  {
+    "function": "get_model_version",
+    "service": "frauddetector"
+  },
+  {
+    "function": "get_models",
+    "service": "frauddetector"
+  },
+  {
+    "function": "get_outcomes",
+    "service": "frauddetector"
+  },
+  {
+    "function": "get_paginator",
+    "service": "frauddetector"
+  },
+  {
+    "function": "get_rules",
+    "service": "frauddetector"
+  },
+  {
+    "function": "get_variables",
+    "service": "frauddetector"
+  },
+  {
+    "function": "get_waiter",
+    "service": "frauddetector"
+  },
+  {
+    "function": "list_event_predictions",
+    "service": "frauddetector"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "frauddetector"
+  }
+]

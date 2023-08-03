@@ -1,0 +1,78 @@
+[
+  {
+    "function": "describe_language_model",
+    "service": "transcribe"
+  },
+  {
+    "function": "get_call_analytics_category",
+    "service": "transcribe"
+  },
+  {
+    "function": "get_call_analytics_job",
+    "service": "transcribe"
+  },
+  {
+    "function": "get_medical_transcription_job",
+    "service": "transcribe"
+  },
+  {
+    "function": "get_medical_vocabulary",
+    "service": "transcribe"
+  },
+  {
+    "function": "get_paginator",
+    "service": "transcribe"
+  },
+  {
+    "function": "get_transcription_job",
+    "service": "transcribe"
+  },
+  {
+    "function": "get_vocabulary",
+    "service": "transcribe"
+  },
+  {
+    "function": "get_vocabulary_filter",
+    "service": "transcribe"
+  },
+  {
+    "function": "get_waiter",
+    "service": "transcribe"
+  },
+  {
+    "function": "list_call_analytics_categories",
+    "service": "transcribe"
+  },
+  {
+    "function": "list_call_analytics_jobs",
+    "service": "transcribe"
+  },
+  {
+    "function": "list_language_models",
+    "service": "transcribe"
+  },
+  {
+    "function": "list_medical_transcription_jobs",
+    "service": "transcribe"
+  },
+  {
+    "function": "list_medical_vocabularies",
+    "service": "transcribe"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "transcribe"
+  },
+  {
+    "function": "list_transcription_jobs",
+    "service": "transcribe"
+  },
+  {
+    "function": "list_vocabularies",
+    "service": "transcribe"
+  },
+  {
+    "function": "list_vocabulary_filters",
+    "service": "transcribe"
+  }
+]

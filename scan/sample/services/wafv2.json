@@ -1,0 +1,118 @@
+[
+  {
+    "function": "describe_all_managed_products",
+    "service": "wafv2"
+  },
+  {
+    "function": "describe_managed_products_by_vendor",
+    "service": "wafv2"
+  },
+  {
+    "function": "describe_managed_rule_group",
+    "service": "wafv2"
+  },
+  {
+    "function": "get_decrypted_api_key",
+    "service": "wafv2"
+  },
+  {
+    "function": "get_ip_set",
+    "service": "wafv2"
+  },
+  {
+    "function": "get_logging_configuration",
+    "service": "wafv2"
+  },
+  {
+    "function": "get_managed_rule_set",
+    "service": "wafv2"
+  },
+  {
+    "function": "get_mobile_sdk_release",
+    "service": "wafv2"
+  },
+  {
+    "function": "get_paginator",
+    "service": "wafv2"
+  },
+  {
+    "function": "get_permission_policy",
+    "service": "wafv2"
+  },
+  {
+    "function": "get_rate_based_statement_managed_keys",
+    "service": "wafv2"
+  },
+  {
+    "function": "get_regex_pattern_set",
+    "service": "wafv2"
+  },
+  {
+    "function": "get_rule_group",
+    "service": "wafv2"
+  },
+  {
+    "function": "get_sampled_requests",
+    "service": "wafv2"
+  },
+  {
+    "function": "get_waiter",
+    "service": "wafv2"
+  },
+  {
+    "function": "get_web_acl",
+    "service": "wafv2"
+  },
+  {
+    "function": "get_web_acl_for_resource",
+    "service": "wafv2"
+  },
+  {
+    "function": "list_api_keys",
+    "service": "wafv2"
+  },
+  {
+    "function": "list_available_managed_rule_group_versions",
+    "service": "wafv2"
+  },
+  {
+    "function": "list_available_managed_rule_groups",
+    "service": "wafv2"
+  },
+  {
+    "function": "list_ip_sets",
+    "service": "wafv2"
+  },
+  {
+    "function": "list_logging_configurations",
+    "service": "wafv2"
+  },
+  {
+    "function": "list_managed_rule_sets",
+    "service": "wafv2"
+  },
+  {
+    "function": "list_mobile_sdk_releases",
+    "service": "wafv2"
+  },
+  {
+    "function": "list_regex_pattern_sets",
+    "service": "wafv2"
+  },
+  {
+    "function": "list_resources_for_web_acl",
+    "service": "wafv2"
+  },
+  {
+    "function": "list_rule_groups",
+    "service": "wafv2"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "wafv2"
+  },
+  {
+    "function": "list_web_acls",
+    "service": "wafv2"
+  }
+]

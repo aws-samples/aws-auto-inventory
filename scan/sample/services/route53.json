@@ -1,0 +1,158 @@
+[
+  {
+    "function": "get_account_limit",
+    "service": "route53"
+  },
+  {
+    "function": "get_change",
+    "service": "route53"
+  },
+  {
+    "function": "get_checker_ip_ranges",
+    "service": "route53"
+  },
+  {
+    "function": "get_dnssec",
+    "service": "route53"
+  },
+  {
+    "function": "get_geo_location",
+    "service": "route53"
+  },
+  {
+    "function": "get_health_check",
+    "service": "route53"
+  },
+  {
+    "function": "get_health_check_count",
+    "service": "route53"
+  },
+  {
+    "function": "get_health_check_last_failure_reason",
+    "service": "route53"
+  },
+  {
+    "function": "get_health_check_status",
+    "service": "route53"
+  },
+  {
+    "function": "get_hosted_zone",
+    "service": "route53"
+  },
+  {
+    "function": "get_hosted_zone_count",
+    "service": "route53"
+  },
+  {
+    "function": "get_hosted_zone_limit",
+    "service": "route53"
+  },
+  {
+    "function": "get_paginator",
+    "service": "route53"
+  },
+  {
+    "function": "get_query_logging_config",
+    "service": "route53"
+  },
+  {
+    "function": "get_reusable_delegation_set",
+    "service": "route53"
+  },
+  {
+    "function": "get_reusable_delegation_set_limit",
+    "service": "route53"
+  },
+  {
+    "function": "get_traffic_policy",
+    "service": "route53"
+  },
+  {
+    "function": "get_traffic_policy_instance",
+    "service": "route53"
+  },
+  {
+    "function": "get_traffic_policy_instance_count",
+    "service": "route53"
+  },
+  {
+    "function": "get_waiter",
+    "service": "route53"
+  },
+  {
+    "function": "list_cidr_blocks",
+    "service": "route53"
+  },
+  {
+    "function": "list_cidr_collections",
+    "service": "route53"
+  },
+  {
+    "function": "list_cidr_locations",
+    "service": "route53"
+  },
+  {
+    "function": "list_geo_locations",
+    "service": "route53"
+  },
+  {
+    "function": "list_health_checks",
+    "service": "route53"
+  },
+  {
+    "function": "list_hosted_zones",
+    "service": "route53"
+  },
+  {
+    "function": "list_hosted_zones_by_name",
+    "service": "route53"
+  },
+  {
+    "function": "list_hosted_zones_by_vpc",
+    "service": "route53"
+  },
+  {
+    "function": "list_query_logging_configs",
+    "service": "route53"
+  },
+  {
+    "function": "list_resource_record_sets",
+    "service": "route53"
+  },
+  {
+    "function": "list_reusable_delegation_sets",
+    "service": "route53"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "route53"
+  },
+  {
+    "function": "list_tags_for_resources",
+    "service": "route53"
+  },
+  {
+    "function": "list_traffic_policies",
+    "service": "route53"
+  },
+  {
+    "function": "list_traffic_policy_instances",
+    "service": "route53"
+  },
+  {
+    "function": "list_traffic_policy_instances_by_hosted_zone",
+    "service": "route53"
+  },
+  {
+    "function": "list_traffic_policy_instances_by_policy",
+    "service": "route53"
+  },
+  {
+    "function": "list_traffic_policy_versions",
+    "service": "route53"
+  },
+  {
+    "function": "list_vpc_association_authorizations",
+    "service": "route53"
+  }
+]

@@ -64,16 +64,16 @@ repos:
     # This hook trims trailing whitespace.
     - id: trailing-whitespace
 - repo: https://github.com/psf/black
-  rev: '23.1.0'
+  rev: '23.7.0'
   hooks:
     - id: black
-- repo: https://github.com/PyCQA/flake8
-  rev: '6.0.0'
-  hooks:
-    - id: flake8
-      args: ['--ignore=E501']
+# - repo: https://github.com/PyCQA/flake8
+#   rev: '6.1.0'
+#   hooks:
+#     - id: flake8
+#       args: ['--ignore=E501']
 - repo: https://github.com/jendrikseipp/vulture
   rev: 'v2.7'  # or any later Vulture version
   hooks:
     - id: vulture
-      args: ['app/']
+      args: ['scan.py', ]

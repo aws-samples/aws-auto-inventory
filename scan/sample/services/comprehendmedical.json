@@ -1,0 +1,50 @@
+[
+  {
+    "function": "describe_entities_detection_v2_job",
+    "service": "comprehendmedical"
+  },
+  {
+    "function": "describe_icd10_cm_inference_job",
+    "service": "comprehendmedical"
+  },
+  {
+    "function": "describe_phi_detection_job",
+    "service": "comprehendmedical"
+  },
+  {
+    "function": "describe_rx_norm_inference_job",
+    "service": "comprehendmedical"
+  },
+  {
+    "function": "describe_snomedct_inference_job",
+    "service": "comprehendmedical"
+  },
+  {
+    "function": "get_paginator",
+    "service": "comprehendmedical"
+  },
+  {
+    "function": "get_waiter",
+    "service": "comprehendmedical"
+  },
+  {
+    "function": "list_entities_detection_v2_jobs",
+    "service": "comprehendmedical"
+  },
+  {
+    "function": "list_icd10_cm_inference_jobs",
+    "service": "comprehendmedical"
+  },
+  {
+    "function": "list_phi_detection_jobs",
+    "service": "comprehendmedical"
+  },
+  {
+    "function": "list_rx_norm_inference_jobs",
+    "service": "comprehendmedical"
+  },
+  {
+    "function": "list_snomedct_inference_jobs",
+    "service": "comprehendmedical"
+  }
+]

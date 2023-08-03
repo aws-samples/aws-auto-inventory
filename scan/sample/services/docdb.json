@@ -1,0 +1,78 @@
+[
+  {
+    "function": "describe_certificates",
+    "service": "docdb"
+  },
+  {
+    "function": "describe_db_cluster_parameter_groups",
+    "service": "docdb"
+  },
+  {
+    "function": "describe_db_cluster_parameters",
+    "service": "docdb"
+  },
+  {
+    "function": "describe_db_cluster_snapshot_attributes",
+    "service": "docdb"
+  },
+  {
+    "function": "describe_db_cluster_snapshots",
+    "service": "docdb"
+  },
+  {
+    "function": "describe_db_clusters",
+    "service": "docdb"
+  },
+  {
+    "function": "describe_db_engine_versions",
+    "service": "docdb"
+  },
+  {
+    "function": "describe_db_instances",
+    "service": "docdb"
+  },
+  {
+    "function": "describe_db_subnet_groups",
+    "service": "docdb"
+  },
+  {
+    "function": "describe_engine_default_cluster_parameters",
+    "service": "docdb"
+  },
+  {
+    "function": "describe_event_categories",
+    "service": "docdb"
+  },
+  {
+    "function": "describe_event_subscriptions",
+    "service": "docdb"
+  },
+  {
+    "function": "describe_events",
+    "service": "docdb"
+  },
+  {
+    "function": "describe_global_clusters",
+    "service": "docdb"
+  },
+  {
+    "function": "describe_orderable_db_instance_options",
+    "service": "docdb"
+  },
+  {
+    "function": "describe_pending_maintenance_actions",
+    "service": "docdb"
+  },
+  {
+    "function": "get_paginator",
+    "service": "docdb"
+  },
+  {
+    "function": "get_waiter",
+    "service": "docdb"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "docdb"
+  }
+]

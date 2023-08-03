@@ -1,0 +1,62 @@
+[
+  {
+    "function": "get_accessor",
+    "service": "managedblockchain"
+  },
+  {
+    "function": "get_member",
+    "service": "managedblockchain"
+  },
+  {
+    "function": "get_network",
+    "service": "managedblockchain"
+  },
+  {
+    "function": "get_node",
+    "service": "managedblockchain"
+  },
+  {
+    "function": "get_paginator",
+    "service": "managedblockchain"
+  },
+  {
+    "function": "get_proposal",
+    "service": "managedblockchain"
+  },
+  {
+    "function": "get_waiter",
+    "service": "managedblockchain"
+  },
+  {
+    "function": "list_accessors",
+    "service": "managedblockchain"
+  },
+  {
+    "function": "list_invitations",
+    "service": "managedblockchain"
+  },
+  {
+    "function": "list_members",
+    "service": "managedblockchain"
+  },
+  {
+    "function": "list_networks",
+    "service": "managedblockchain"
+  },
+  {
+    "function": "list_nodes",
+    "service": "managedblockchain"
+  },
+  {
+    "function": "list_proposal_votes",
+    "service": "managedblockchain"
+  },
+  {
+    "function": "list_proposals",
+    "service": "managedblockchain"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "managedblockchain"
+  }
+]

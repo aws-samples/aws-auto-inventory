@@ -1,0 +1,150 @@
+[
+  {
+    "function": "get_global_settings",
+    "service": "chime-sdk-voice"
+  },
+  {
+    "function": "get_paginator",
+    "service": "chime-sdk-voice"
+  },
+  {
+    "function": "get_phone_number",
+    "service": "chime-sdk-voice"
+  },
+  {
+    "function": "get_phone_number_order",
+    "service": "chime-sdk-voice"
+  },
+  {
+    "function": "get_phone_number_settings",
+    "service": "chime-sdk-voice"
+  },
+  {
+    "function": "get_proxy_session",
+    "service": "chime-sdk-voice"
+  },
+  {
+    "function": "get_sip_media_application",
+    "service": "chime-sdk-voice"
+  },
+  {
+    "function": "get_sip_media_application_alexa_skill_configuration",
+    "service": "chime-sdk-voice"
+  },
+  {
+    "function": "get_sip_media_application_logging_configuration",
+    "service": "chime-sdk-voice"
+  },
+  {
+    "function": "get_sip_rule",
+    "service": "chime-sdk-voice"
+  },
+  {
+    "function": "get_speaker_search_task",
+    "service": "chime-sdk-voice"
+  },
+  {
+    "function": "get_voice_connector",
+    "service": "chime-sdk-voice"
+  },
+  {
+    "function": "get_voice_connector_emergency_calling_configuration",
+    "service": "chime-sdk-voice"
+  },
+  {
+    "function": "get_voice_connector_group",
+    "service": "chime-sdk-voice"
+  },
+  {
+    "function": "get_voice_connector_logging_configuration",
+    "service": "chime-sdk-voice"
+  },
+  {
+    "function": "get_voice_connector_origination",
+    "service": "chime-sdk-voice"
+  },
+  {
+    "function": "get_voice_connector_proxy",
+    "service": "chime-sdk-voice"
+  },
+  {
+    "function": "get_voice_connector_streaming_configuration",
+    "service": "chime-sdk-voice"
+  },
+  {
+    "function": "get_voice_connector_termination",
+    "service": "chime-sdk-voice"
+  },
+  {
+    "function": "get_voice_connector_termination_health",
+    "service": "chime-sdk-voice"
+  },
+  {
+    "function": "get_voice_profile",
+    "service": "chime-sdk-voice"
+  },
+  {
+    "function": "get_voice_profile_domain",
+    "service": "chime-sdk-voice"
+  },
+  {
+    "function": "get_voice_tone_analysis_task",
+    "service": "chime-sdk-voice"
+  },
+  {
+    "function": "get_waiter",
+    "service": "chime-sdk-voice"
+  },
+  {
+    "function": "list_available_voice_connector_regions",
+    "service": "chime-sdk-voice"
+  },
+  {
+    "function": "list_phone_number_orders",
+    "service": "chime-sdk-voice"
+  },
+  {
+    "function": "list_phone_numbers",
+    "service": "chime-sdk-voice"
+  },
+  {
+    "function": "list_proxy_sessions",
+    "service": "chime-sdk-voice"
+  },
+  {
+    "function": "list_sip_media_applications",
+    "service": "chime-sdk-voice"
+  },
+  {
+    "function": "list_sip_rules",
+    "service": "chime-sdk-voice"
+  },
+  {
+    "function": "list_supported_phone_number_countries",
+    "service": "chime-sdk-voice"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "chime-sdk-voice"
+  },
+  {
+    "function": "list_voice_connector_groups",
+    "service": "chime-sdk-voice"
+  },
+  {
+    "function": "list_voice_connector_termination_credentials",
+    "service": "chime-sdk-voice"
+  },
+  {
+    "function": "list_voice_connectors",
+    "service": "chime-sdk-voice"
+  },
+  {
+    "function": "list_voice_profile_domains",
+    "service": "chime-sdk-voice"
+  },
+  {
+    "function": "list_voice_profiles",
+    "service": "chime-sdk-voice"
+  }
+]

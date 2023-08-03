@@ -1,0 +1,218 @@
+[
+  {
+    "function": "describe_function",
+    "service": "cloudfront"
+  },
+  {
+    "function": "get_cache_policy",
+    "service": "cloudfront"
+  },
+  {
+    "function": "get_cache_policy_config",
+    "service": "cloudfront"
+  },
+  {
+    "function": "get_cloud_front_origin_access_identity",
+    "service": "cloudfront"
+  },
+  {
+    "function": "get_cloud_front_origin_access_identity_config",
+    "service": "cloudfront"
+  },
+  {
+    "function": "get_continuous_deployment_policy",
+    "service": "cloudfront"
+  },
+  {
+    "function": "get_continuous_deployment_policy_config",
+    "service": "cloudfront"
+  },
+  {
+    "function": "get_distribution",
+    "service": "cloudfront"
+  },
+  {
+    "function": "get_distribution_config",
+    "service": "cloudfront"
+  },
+  {
+    "function": "get_field_level_encryption",
+    "service": "cloudfront"
+  },
+  {
+    "function": "get_field_level_encryption_config",
+    "service": "cloudfront"
+  },
+  {
+    "function": "get_field_level_encryption_profile",
+    "service": "cloudfront"
+  },
+  {
+    "function": "get_field_level_encryption_profile_config",
+    "service": "cloudfront"
+  },
+  {
+    "function": "get_function",
+    "service": "cloudfront"
+  },
+  {
+    "function": "get_invalidation",
+    "service": "cloudfront"
+  },
+  {
+    "function": "get_key_group",
+    "service": "cloudfront"
+  },
+  {
+    "function": "get_key_group_config",
+    "service": "cloudfront"
+  },
+  {
+    "function": "get_monitoring_subscription",
+    "service": "cloudfront"
+  },
+  {
+    "function": "get_origin_access_control",
+    "service": "cloudfront"
+  },
+  {
+    "function": "get_origin_access_control_config",
+    "service": "cloudfront"
+  },
+  {
+    "function": "get_origin_request_policy",
+    "service": "cloudfront"
+  },
+  {
+    "function": "get_origin_request_policy_config",
+    "service": "cloudfront"
+  },
+  {
+    "function": "get_paginator",
+    "service": "cloudfront"
+  },
+  {
+    "function": "get_public_key",
+    "service": "cloudfront"
+  },
+  {
+    "function": "get_public_key_config",
+    "service": "cloudfront"
+  },
+  {
+    "function": "get_realtime_log_config",
+    "service": "cloudfront"
+  },
+  {
+    "function": "get_response_headers_policy",
+    "service": "cloudfront"
+  },
+  {
+    "function": "get_response_headers_policy_config",
+    "service": "cloudfront"
+  },
+  {
+    "function": "get_streaming_distribution",
+    "service": "cloudfront"
+  },
+  {
+    "function": "get_streaming_distribution_config",
+    "service": "cloudfront"
+  },
+  {
+    "function": "get_waiter",
+    "service": "cloudfront"
+  },
+  {
+    "function": "list_cache_policies",
+    "service": "cloudfront"
+  },
+  {
+    "function": "list_cloud_front_origin_access_identities",
+    "service": "cloudfront"
+  },
+  {
+    "function": "list_conflicting_aliases",
+    "service": "cloudfront"
+  },
+  {
+    "function": "list_continuous_deployment_policies",
+    "service": "cloudfront"
+  },
+  {
+    "function": "list_distributions",
+    "service": "cloudfront"
+  },
+  {
+    "function": "list_distributions_by_cache_policy_id",
+    "service": "cloudfront"
+  },
+  {
+    "function": "list_distributions_by_key_group",
+    "service": "cloudfront"
+  },
+  {
+    "function": "list_distributions_by_origin_request_policy_id",
+    "service": "cloudfront"
+  },
+  {
+    "function": "list_distributions_by_realtime_log_config",
+    "service": "cloudfront"
+  },
+  {
+    "function": "list_distributions_by_response_headers_policy_id",
+    "service": "cloudfront"
+  },
+  {
+    "function": "list_distributions_by_web_acl_id",
+    "service": "cloudfront"
+  },
+  {
+    "function": "list_field_level_encryption_configs",
+    "service": "cloudfront"
+  },
+  {
+    "function": "list_field_level_encryption_profiles",
+    "service": "cloudfront"
+  },
+  {
+    "function": "list_functions",
+    "service": "cloudfront"
+  },
+  {
+    "function": "list_invalidations",
+    "service": "cloudfront"
+  },
+  {
+    "function": "list_key_groups",
+    "service": "cloudfront"
+  },
+  {
+    "function": "list_origin_access_controls",
+    "service": "cloudfront"
+  },
+  {
+    "function": "list_origin_request_policies",
+    "service": "cloudfront"
+  },
+  {
+    "function": "list_public_keys",
+    "service": "cloudfront"
+  },
+  {
+    "function": "list_realtime_log_configs",
+    "service": "cloudfront"
+  },
+  {
+    "function": "list_response_headers_policies",
+    "service": "cloudfront"
+  },
+  {
+    "function": "list_streaming_distributions",
+    "service": "cloudfront"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "cloudfront"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "function": "get_channel",
+    "service": "ivs"
+  },
+  {
+    "function": "get_paginator",
+    "service": "ivs"
+  },
+  {
+    "function": "get_playback_key_pair",
+    "service": "ivs"
+  },
+  {
+    "function": "get_recording_configuration",
+    "service": "ivs"
+  },
+  {
+    "function": "get_stream",
+    "service": "ivs"
+  },
+  {
+    "function": "get_stream_key",
+    "service": "ivs"
+  },
+  {
+    "function": "get_stream_session",
+    "service": "ivs"
+  },
+  {
+    "function": "get_waiter",
+    "service": "ivs"
+  },
+  {
+    "function": "list_channels",
+    "service": "ivs"
+  },
+  {
+    "function": "list_playback_key_pairs",
+    "service": "ivs"
+  },
+  {
+    "function": "list_recording_configurations",
+    "service": "ivs"
+  },
+  {
+    "function": "list_stream_keys",
+    "service": "ivs"
+  },
+  {
+    "function": "list_stream_sessions",
+    "service": "ivs"
+  },
+  {
+    "function": "list_streams",
+    "service": "ivs"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "ivs"
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "function": "describe_access_control_configuration",
+    "service": "kendra"
+  },
+  {
+    "function": "describe_data_source",
+    "service": "kendra"
+  },
+  {
+    "function": "describe_experience",
+    "service": "kendra"
+  },
+  {
+    "function": "describe_faq",
+    "service": "kendra"
+  },
+  {
+    "function": "describe_featured_results_set",
+    "service": "kendra"
+  },
+  {
+    "function": "describe_index",
+    "service": "kendra"
+  },
+  {
+    "function": "describe_principal_mapping",
+    "service": "kendra"
+  },
+  {
+    "function": "describe_query_suggestions_block_list",
+    "service": "kendra"
+  },
+  {
+    "function": "describe_query_suggestions_config",
+    "service": "kendra"
+  },
+  {
+    "function": "describe_thesaurus",
+    "service": "kendra"
+  },
+  {
+    "function": "get_paginator",
+    "service": "kendra"
+  },
+  {
+    "function": "get_query_suggestions",
+    "service": "kendra"
+  },
+  {
+    "function": "get_snapshots",
+    "service": "kendra"
+  },
+  {
+    "function": "get_waiter",
+    "service": "kendra"
+  },
+  {
+    "function": "list_access_control_configurations",
+    "service": "kendra"
+  },
+  {
+    "function": "list_data_source_sync_jobs",
+    "service": "kendra"
+  },
+  {
+    "function": "list_data_sources",
+    "service": "kendra"
+  },
+  {
+    "function": "list_entity_personas",
+    "service": "kendra"
+  },
+  {
+    "function": "list_experience_entities",
+    "service": "kendra"
+  },
+  {
+    "function": "list_experiences",
+    "service": "kendra"
+  },
+  {
+    "function": "list_faqs",
+    "service": "kendra"
+  },
+  {
+    "function": "list_featured_results_sets",
+    "service": "kendra"
+  },
+  {
+    "function": "list_groups_older_than_ordering_id",
+    "service": "kendra"
+  },
+  {
+    "function": "list_indices",
+    "service": "kendra"
+  },
+  {
+    "function": "list_query_suggestions_block_lists",
+    "service": "kendra"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "kendra"
+  },
+  {
+    "function": "list_thesauri",
+    "service": "kendra"
+  }
+]

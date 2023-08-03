@@ -1,0 +1,210 @@
+[
+  {
+    "function": "describe_aggregate_compliance_by_config_rules",
+    "service": "config"
+  },
+  {
+    "function": "describe_aggregate_compliance_by_conformance_packs",
+    "service": "config"
+  },
+  {
+    "function": "describe_aggregation_authorizations",
+    "service": "config"
+  },
+  {
+    "function": "describe_compliance_by_config_rule",
+    "service": "config"
+  },
+  {
+    "function": "describe_compliance_by_resource",
+    "service": "config"
+  },
+  {
+    "function": "describe_config_rule_evaluation_status",
+    "service": "config"
+  },
+  {
+    "function": "describe_config_rules",
+    "service": "config"
+  },
+  {
+    "function": "describe_configuration_aggregator_sources_status",
+    "service": "config"
+  },
+  {
+    "function": "describe_configuration_aggregators",
+    "service": "config"
+  },
+  {
+    "function": "describe_configuration_recorder_status",
+    "service": "config"
+  },
+  {
+    "function": "describe_configuration_recorders",
+    "service": "config"
+  },
+  {
+    "function": "describe_conformance_pack_compliance",
+    "service": "config"
+  },
+  {
+    "function": "describe_conformance_pack_status",
+    "service": "config"
+  },
+  {
+    "function": "describe_conformance_packs",
+    "service": "config"
+  },
+  {
+    "function": "describe_delivery_channel_status",
+    "service": "config"
+  },
+  {
+    "function": "describe_delivery_channels",
+    "service": "config"
+  },
+  {
+    "function": "describe_organization_config_rule_statuses",
+    "service": "config"
+  },
+  {
+    "function": "describe_organization_config_rules",
+    "service": "config"
+  },
+  {
+    "function": "describe_organization_conformance_pack_statuses",
+    "service": "config"
+  },
+  {
+    "function": "describe_organization_conformance_packs",
+    "service": "config"
+  },
+  {
+    "function": "describe_pending_aggregation_requests",
+    "service": "config"
+  },
+  {
+    "function": "describe_remediation_configurations",
+    "service": "config"
+  },
+  {
+    "function": "describe_remediation_exceptions",
+    "service": "config"
+  },
+  {
+    "function": "describe_remediation_execution_status",
+    "service": "config"
+  },
+  {
+    "function": "describe_retention_configurations",
+    "service": "config"
+  },
+  {
+    "function": "get_aggregate_compliance_details_by_config_rule",
+    "service": "config"
+  },
+  {
+    "function": "get_aggregate_config_rule_compliance_summary",
+    "service": "config"
+  },
+  {
+    "function": "get_aggregate_conformance_pack_compliance_summary",
+    "service": "config"
+  },
+  {
+    "function": "get_aggregate_discovered_resource_counts",
+    "service": "config"
+  },
+  {
+    "function": "get_aggregate_resource_config",
+    "service": "config"
+  },
+  {
+    "function": "get_compliance_details_by_config_rule",
+    "service": "config"
+  },
+  {
+    "function": "get_compliance_details_by_resource",
+    "service": "config"
+  },
+  {
+    "function": "get_compliance_summary_by_config_rule",
+    "service": "config"
+  },
+  {
+    "function": "get_compliance_summary_by_resource_type",
+    "service": "config"
+  },
+  {
+    "function": "get_conformance_pack_compliance_details",
+    "service": "config"
+  },
+  {
+    "function": "get_conformance_pack_compliance_summary",
+    "service": "config"
+  },
+  {
+    "function": "get_custom_rule_policy",
+    "service": "config"
+  },
+  {
+    "function": "get_discovered_resource_counts",
+    "service": "config"
+  },
+  {
+    "function": "get_organization_config_rule_detailed_status",
+    "service": "config"
+  },
+  {
+    "function": "get_organization_conformance_pack_detailed_status",
+    "service": "config"
+  },
+  {
+    "function": "get_organization_custom_rule_policy",
+    "service": "config"
+  },
+  {
+    "function": "get_paginator",
+    "service": "config"
+  },
+  {
+    "function": "get_resource_config_history",
+    "service": "config"
+  },
+  {
+    "function": "get_resource_evaluation_summary",
+    "service": "config"
+  },
+  {
+    "function": "get_stored_query",
+    "service": "config"
+  },
+  {
+    "function": "get_waiter",
+    "service": "config"
+  },
+  {
+    "function": "list_aggregate_discovered_resources",
+    "service": "config"
+  },
+  {
+    "function": "list_conformance_pack_compliance_scores",
+    "service": "config"
+  },
+  {
+    "function": "list_discovered_resources",
+    "service": "config"
+  },
+  {
+    "function": "list_resource_evaluations",
+    "service": "config"
+  },
+  {
+    "function": "list_stored_queries",
+    "service": "config"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "config"
+  }
+]

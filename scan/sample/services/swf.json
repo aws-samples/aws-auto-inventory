@@ -1,0 +1,54 @@
+[
+  {
+    "function": "describe_activity_type",
+    "service": "swf"
+  },
+  {
+    "function": "describe_domain",
+    "service": "swf"
+  },
+  {
+    "function": "describe_workflow_execution",
+    "service": "swf"
+  },
+  {
+    "function": "describe_workflow_type",
+    "service": "swf"
+  },
+  {
+    "function": "get_paginator",
+    "service": "swf"
+  },
+  {
+    "function": "get_waiter",
+    "service": "swf"
+  },
+  {
+    "function": "get_workflow_execution_history",
+    "service": "swf"
+  },
+  {
+    "function": "list_activity_types",
+    "service": "swf"
+  },
+  {
+    "function": "list_closed_workflow_executions",
+    "service": "swf"
+  },
+  {
+    "function": "list_domains",
+    "service": "swf"
+  },
+  {
+    "function": "list_open_workflow_executions",
+    "service": "swf"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "swf"
+  },
+  {
+    "function": "list_workflow_types",
+    "service": "swf"
+  }
+]

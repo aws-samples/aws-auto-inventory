@@ -1,0 +1,18 @@
+[
+  {
+    "function": "get_paginator",
+    "service": "personalize-runtime"
+  },
+  {
+    "function": "get_personalized_ranking",
+    "service": "personalize-runtime"
+  },
+  {
+    "function": "get_recommendations",
+    "service": "personalize-runtime"
+  },
+  {
+    "function": "get_waiter",
+    "service": "personalize-runtime"
+  }
+]

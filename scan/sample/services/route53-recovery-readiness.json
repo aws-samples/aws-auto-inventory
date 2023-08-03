@@ -1,0 +1,74 @@
+[
+  {
+    "function": "get_architecture_recommendations",
+    "service": "route53-recovery-readiness"
+  },
+  {
+    "function": "get_cell",
+    "service": "route53-recovery-readiness"
+  },
+  {
+    "function": "get_cell_readiness_summary",
+    "service": "route53-recovery-readiness"
+  },
+  {
+    "function": "get_paginator",
+    "service": "route53-recovery-readiness"
+  },
+  {
+    "function": "get_readiness_check",
+    "service": "route53-recovery-readiness"
+  },
+  {
+    "function": "get_readiness_check_resource_status",
+    "service": "route53-recovery-readiness"
+  },
+  {
+    "function": "get_readiness_check_status",
+    "service": "route53-recovery-readiness"
+  },
+  {
+    "function": "get_recovery_group",
+    "service": "route53-recovery-readiness"
+  },
+  {
+    "function": "get_recovery_group_readiness_summary",
+    "service": "route53-recovery-readiness"
+  },
+  {
+    "function": "get_resource_set",
+    "service": "route53-recovery-readiness"
+  },
+  {
+    "function": "get_waiter",
+    "service": "route53-recovery-readiness"
+  },
+  {
+    "function": "list_cells",
+    "service": "route53-recovery-readiness"
+  },
+  {
+    "function": "list_cross_account_authorizations",
+    "service": "route53-recovery-readiness"
+  },
+  {
+    "function": "list_readiness_checks",
+    "service": "route53-recovery-readiness"
+  },
+  {
+    "function": "list_recovery_groups",
+    "service": "route53-recovery-readiness"
+  },
+  {
+    "function": "list_resource_sets",
+    "service": "route53-recovery-readiness"
+  },
+  {
+    "function": "list_rules",
+    "service": "route53-recovery-readiness"
+  },
+  {
+    "function": "list_tags_for_resources",
+    "service": "route53-recovery-readiness"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "function": "get_managed_resource",
+    "service": "arc-zonal-shift"
+  },
+  {
+    "function": "get_paginator",
+    "service": "arc-zonal-shift"
+  },
+  {
+    "function": "get_waiter",
+    "service": "arc-zonal-shift"
+  },
+  {
+    "function": "list_managed_resources",
+    "service": "arc-zonal-shift"
+  },
+  {
+    "function": "list_zonal_shifts",
+    "service": "arc-zonal-shift"
+  }
+]

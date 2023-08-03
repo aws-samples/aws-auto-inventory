@@ -1,0 +1,166 @@
+[
+  {
+    "function": "describe_buckets",
+    "service": "macie2"
+  },
+  {
+    "function": "describe_classification_job",
+    "service": "macie2"
+  },
+  {
+    "function": "describe_organization_configuration",
+    "service": "macie2"
+  },
+  {
+    "function": "get_administrator_account",
+    "service": "macie2"
+  },
+  {
+    "function": "get_allow_list",
+    "service": "macie2"
+  },
+  {
+    "function": "get_automated_discovery_configuration",
+    "service": "macie2"
+  },
+  {
+    "function": "get_bucket_statistics",
+    "service": "macie2"
+  },
+  {
+    "function": "get_classification_export_configuration",
+    "service": "macie2"
+  },
+  {
+    "function": "get_classification_scope",
+    "service": "macie2"
+  },
+  {
+    "function": "get_custom_data_identifier",
+    "service": "macie2"
+  },
+  {
+    "function": "get_finding_statistics",
+    "service": "macie2"
+  },
+  {
+    "function": "get_findings",
+    "service": "macie2"
+  },
+  {
+    "function": "get_findings_filter",
+    "service": "macie2"
+  },
+  {
+    "function": "get_findings_publication_configuration",
+    "service": "macie2"
+  },
+  {
+    "function": "get_invitations_count",
+    "service": "macie2"
+  },
+  {
+    "function": "get_macie_session",
+    "service": "macie2"
+  },
+  {
+    "function": "get_master_account",
+    "service": "macie2"
+  },
+  {
+    "function": "get_member",
+    "service": "macie2"
+  },
+  {
+    "function": "get_paginator",
+    "service": "macie2"
+  },
+  {
+    "function": "get_resource_profile",
+    "service": "macie2"
+  },
+  {
+    "function": "get_reveal_configuration",
+    "service": "macie2"
+  },
+  {
+    "function": "get_sensitive_data_occurrences",
+    "service": "macie2"
+  },
+  {
+    "function": "get_sensitive_data_occurrences_availability",
+    "service": "macie2"
+  },
+  {
+    "function": "get_sensitivity_inspection_template",
+    "service": "macie2"
+  },
+  {
+    "function": "get_usage_statistics",
+    "service": "macie2"
+  },
+  {
+    "function": "get_usage_totals",
+    "service": "macie2"
+  },
+  {
+    "function": "get_waiter",
+    "service": "macie2"
+  },
+  {
+    "function": "list_allow_lists",
+    "service": "macie2"
+  },
+  {
+    "function": "list_classification_jobs",
+    "service": "macie2"
+  },
+  {
+    "function": "list_classification_scopes",
+    "service": "macie2"
+  },
+  {
+    "function": "list_custom_data_identifiers",
+    "service": "macie2"
+  },
+  {
+    "function": "list_findings",
+    "service": "macie2"
+  },
+  {
+    "function": "list_findings_filters",
+    "service": "macie2"
+  },
+  {
+    "function": "list_invitations",
+    "service": "macie2"
+  },
+  {
+    "function": "list_managed_data_identifiers",
+    "service": "macie2"
+  },
+  {
+    "function": "list_members",
+    "service": "macie2"
+  },
+  {
+    "function": "list_organization_admin_accounts",
+    "service": "macie2"
+  },
+  {
+    "function": "list_resource_profile_artifacts",
+    "service": "macie2"
+  },
+  {
+    "function": "list_resource_profile_detections",
+    "service": "macie2"
+  },
+  {
+    "function": "list_sensitivity_inspection_templates",
+    "service": "macie2"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "macie2"
+  }
+]

@@ -1,0 +1,158 @@
+[
+  {
+    "function": "describe_backup_job",
+    "service": "backup"
+  },
+  {
+    "function": "describe_backup_vault",
+    "service": "backup"
+  },
+  {
+    "function": "describe_copy_job",
+    "service": "backup"
+  },
+  {
+    "function": "describe_framework",
+    "service": "backup"
+  },
+  {
+    "function": "describe_global_settings",
+    "service": "backup"
+  },
+  {
+    "function": "describe_protected_resource",
+    "service": "backup"
+  },
+  {
+    "function": "describe_recovery_point",
+    "service": "backup"
+  },
+  {
+    "function": "describe_region_settings",
+    "service": "backup"
+  },
+  {
+    "function": "describe_report_job",
+    "service": "backup"
+  },
+  {
+    "function": "describe_report_plan",
+    "service": "backup"
+  },
+  {
+    "function": "describe_restore_job",
+    "service": "backup"
+  },
+  {
+    "function": "get_backup_plan",
+    "service": "backup"
+  },
+  {
+    "function": "get_backup_plan_from_json",
+    "service": "backup"
+  },
+  {
+    "function": "get_backup_plan_from_template",
+    "service": "backup"
+  },
+  {
+    "function": "get_backup_selection",
+    "service": "backup"
+  },
+  {
+    "function": "get_backup_vault_access_policy",
+    "service": "backup"
+  },
+  {
+    "function": "get_backup_vault_notifications",
+    "service": "backup"
+  },
+  {
+    "function": "get_legal_hold",
+    "service": "backup"
+  },
+  {
+    "function": "get_paginator",
+    "service": "backup"
+  },
+  {
+    "function": "get_recovery_point_restore_metadata",
+    "service": "backup"
+  },
+  {
+    "function": "get_supported_resource_types",
+    "service": "backup"
+  },
+  {
+    "function": "get_waiter",
+    "service": "backup"
+  },
+  {
+    "function": "list_backup_jobs",
+    "service": "backup"
+  },
+  {
+    "function": "list_backup_plan_templates",
+    "service": "backup"
+  },
+  {
+    "function": "list_backup_plan_versions",
+    "service": "backup"
+  },
+  {
+    "function": "list_backup_plans",
+    "service": "backup"
+  },
+  {
+    "function": "list_backup_selections",
+    "service": "backup"
+  },
+  {
+    "function": "list_backup_vaults",
+    "service": "backup"
+  },
+  {
+    "function": "list_copy_jobs",
+    "service": "backup"
+  },
+  {
+    "function": "list_frameworks",
+    "service": "backup"
+  },
+  {
+    "function": "list_legal_holds",
+    "service": "backup"
+  },
+  {
+    "function": "list_protected_resources",
+    "service": "backup"
+  },
+  {
+    "function": "list_recovery_points_by_backup_vault",
+    "service": "backup"
+  },
+  {
+    "function": "list_recovery_points_by_legal_hold",
+    "service": "backup"
+  },
+  {
+    "function": "list_recovery_points_by_resource",
+    "service": "backup"
+  },
+  {
+    "function": "list_report_jobs",
+    "service": "backup"
+  },
+  {
+    "function": "list_report_plans",
+    "service": "backup"
+  },
+  {
+    "function": "list_restore_jobs",
+    "service": "backup"
+  },
+  {
+    "function": "list_tags",
+    "service": "backup"
+  }
+]

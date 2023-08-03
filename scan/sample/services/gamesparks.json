@@ -1,0 +1,78 @@
+[
+  {
+    "function": "get_extension",
+    "service": "gamesparks"
+  },
+  {
+    "function": "get_extension_version",
+    "service": "gamesparks"
+  },
+  {
+    "function": "get_game",
+    "service": "gamesparks"
+  },
+  {
+    "function": "get_game_configuration",
+    "service": "gamesparks"
+  },
+  {
+    "function": "get_generated_code_job",
+    "service": "gamesparks"
+  },
+  {
+    "function": "get_paginator",
+    "service": "gamesparks"
+  },
+  {
+    "function": "get_player_connection_status",
+    "service": "gamesparks"
+  },
+  {
+    "function": "get_snapshot",
+    "service": "gamesparks"
+  },
+  {
+    "function": "get_stage",
+    "service": "gamesparks"
+  },
+  {
+    "function": "get_stage_deployment",
+    "service": "gamesparks"
+  },
+  {
+    "function": "get_waiter",
+    "service": "gamesparks"
+  },
+  {
+    "function": "list_extension_versions",
+    "service": "gamesparks"
+  },
+  {
+    "function": "list_extensions",
+    "service": "gamesparks"
+  },
+  {
+    "function": "list_games",
+    "service": "gamesparks"
+  },
+  {
+    "function": "list_generated_code_jobs",
+    "service": "gamesparks"
+  },
+  {
+    "function": "list_snapshots",
+    "service": "gamesparks"
+  },
+  {
+    "function": "list_stage_deployments",
+    "service": "gamesparks"
+  },
+  {
+    "function": "list_stages",
+    "service": "gamesparks"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "gamesparks"
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "function": "describe_report_creation",
+    "service": "resourcegroupstaggingapi"
+  },
+  {
+    "function": "get_compliance_summary",
+    "service": "resourcegroupstaggingapi"
+  },
+  {
+    "function": "get_paginator",
+    "service": "resourcegroupstaggingapi"
+  },
+  {
+    "function": "get_resources",
+    "service": "resourcegroupstaggingapi"
+  },
+  {
+    "function": "get_tag_keys",
+    "service": "resourcegroupstaggingapi"
+  },
+  {
+    "function": "get_tag_values",
+    "service": "resourcegroupstaggingapi"
+  },
+  {
+    "function": "get_waiter",
+    "service": "resourcegroupstaggingapi"
+  }
+]

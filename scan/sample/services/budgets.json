@@ -1,0 +1,50 @@
+[
+  {
+    "function": "describe_budget",
+    "service": "budgets"
+  },
+  {
+    "function": "describe_budget_action",
+    "service": "budgets"
+  },
+  {
+    "function": "describe_budget_action_histories",
+    "service": "budgets"
+  },
+  {
+    "function": "describe_budget_actions_for_account",
+    "service": "budgets"
+  },
+  {
+    "function": "describe_budget_actions_for_budget",
+    "service": "budgets"
+  },
+  {
+    "function": "describe_budget_notifications_for_account",
+    "service": "budgets"
+  },
+  {
+    "function": "describe_budget_performance_history",
+    "service": "budgets"
+  },
+  {
+    "function": "describe_budgets",
+    "service": "budgets"
+  },
+  {
+    "function": "describe_notifications_for_budget",
+    "service": "budgets"
+  },
+  {
+    "function": "describe_subscribers_for_notification",
+    "service": "budgets"
+  },
+  {
+    "function": "get_paginator",
+    "service": "budgets"
+  },
+  {
+    "function": "get_waiter",
+    "service": "budgets"
+  }
+]

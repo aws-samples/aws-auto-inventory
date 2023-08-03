@@ -1,0 +1,74 @@
+[
+  {
+    "function": "describe_alarm_history",
+    "service": "cloudwatch"
+  },
+  {
+    "function": "describe_alarms",
+    "service": "cloudwatch"
+  },
+  {
+    "function": "describe_alarms_for_metric",
+    "service": "cloudwatch"
+  },
+  {
+    "function": "describe_anomaly_detectors",
+    "service": "cloudwatch"
+  },
+  {
+    "function": "describe_insight_rules",
+    "service": "cloudwatch"
+  },
+  {
+    "function": "get_dashboard",
+    "service": "cloudwatch"
+  },
+  {
+    "function": "get_insight_rule_report",
+    "service": "cloudwatch"
+  },
+  {
+    "function": "get_metric_data",
+    "service": "cloudwatch"
+  },
+  {
+    "function": "get_metric_statistics",
+    "service": "cloudwatch"
+  },
+  {
+    "function": "get_metric_stream",
+    "service": "cloudwatch"
+  },
+  {
+    "function": "get_metric_widget_image",
+    "service": "cloudwatch"
+  },
+  {
+    "function": "get_paginator",
+    "service": "cloudwatch"
+  },
+  {
+    "function": "get_waiter",
+    "service": "cloudwatch"
+  },
+  {
+    "function": "list_dashboards",
+    "service": "cloudwatch"
+  },
+  {
+    "function": "list_managed_insight_rules",
+    "service": "cloudwatch"
+  },
+  {
+    "function": "list_metric_streams",
+    "service": "cloudwatch"
+  },
+  {
+    "function": "list_metrics",
+    "service": "cloudwatch"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "cloudwatch"
+  }
+]

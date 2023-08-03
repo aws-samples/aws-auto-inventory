@@ -1,0 +1,78 @@
+[
+  {
+    "function": "get_account",
+    "service": "pinpoint-email"
+  },
+  {
+    "function": "get_blacklist_reports",
+    "service": "pinpoint-email"
+  },
+  {
+    "function": "get_configuration_set",
+    "service": "pinpoint-email"
+  },
+  {
+    "function": "get_configuration_set_event_destinations",
+    "service": "pinpoint-email"
+  },
+  {
+    "function": "get_dedicated_ip",
+    "service": "pinpoint-email"
+  },
+  {
+    "function": "get_dedicated_ips",
+    "service": "pinpoint-email"
+  },
+  {
+    "function": "get_deliverability_dashboard_options",
+    "service": "pinpoint-email"
+  },
+  {
+    "function": "get_deliverability_test_report",
+    "service": "pinpoint-email"
+  },
+  {
+    "function": "get_domain_deliverability_campaign",
+    "service": "pinpoint-email"
+  },
+  {
+    "function": "get_domain_statistics_report",
+    "service": "pinpoint-email"
+  },
+  {
+    "function": "get_email_identity",
+    "service": "pinpoint-email"
+  },
+  {
+    "function": "get_paginator",
+    "service": "pinpoint-email"
+  },
+  {
+    "function": "get_waiter",
+    "service": "pinpoint-email"
+  },
+  {
+    "function": "list_configuration_sets",
+    "service": "pinpoint-email"
+  },
+  {
+    "function": "list_dedicated_ip_pools",
+    "service": "pinpoint-email"
+  },
+  {
+    "function": "list_deliverability_test_reports",
+    "service": "pinpoint-email"
+  },
+  {
+    "function": "list_domain_deliverability_campaigns",
+    "service": "pinpoint-email"
+  },
+  {
+    "function": "list_email_identities",
+    "service": "pinpoint-email"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "pinpoint-email"
+  }
+]

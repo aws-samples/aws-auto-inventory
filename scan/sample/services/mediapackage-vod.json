@@ -1,0 +1,38 @@
+[
+  {
+    "function": "describe_asset",
+    "service": "mediapackage-vod"
+  },
+  {
+    "function": "describe_packaging_configuration",
+    "service": "mediapackage-vod"
+  },
+  {
+    "function": "describe_packaging_group",
+    "service": "mediapackage-vod"
+  },
+  {
+    "function": "get_paginator",
+    "service": "mediapackage-vod"
+  },
+  {
+    "function": "get_waiter",
+    "service": "mediapackage-vod"
+  },
+  {
+    "function": "list_assets",
+    "service": "mediapackage-vod"
+  },
+  {
+    "function": "list_packaging_configurations",
+    "service": "mediapackage-vod"
+  },
+  {
+    "function": "list_packaging_groups",
+    "service": "mediapackage-vod"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "mediapackage-vod"
+  }
+]

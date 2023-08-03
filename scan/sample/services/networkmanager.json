@@ -1,0 +1,146 @@
+[
+  {
+    "function": "describe_global_networks",
+    "service": "networkmanager"
+  },
+  {
+    "function": "get_connect_attachment",
+    "service": "networkmanager"
+  },
+  {
+    "function": "get_connect_peer",
+    "service": "networkmanager"
+  },
+  {
+    "function": "get_connect_peer_associations",
+    "service": "networkmanager"
+  },
+  {
+    "function": "get_connections",
+    "service": "networkmanager"
+  },
+  {
+    "function": "get_core_network",
+    "service": "networkmanager"
+  },
+  {
+    "function": "get_core_network_change_events",
+    "service": "networkmanager"
+  },
+  {
+    "function": "get_core_network_change_set",
+    "service": "networkmanager"
+  },
+  {
+    "function": "get_core_network_policy",
+    "service": "networkmanager"
+  },
+  {
+    "function": "get_customer_gateway_associations",
+    "service": "networkmanager"
+  },
+  {
+    "function": "get_devices",
+    "service": "networkmanager"
+  },
+  {
+    "function": "get_link_associations",
+    "service": "networkmanager"
+  },
+  {
+    "function": "get_links",
+    "service": "networkmanager"
+  },
+  {
+    "function": "get_network_resource_counts",
+    "service": "networkmanager"
+  },
+  {
+    "function": "get_network_resource_relationships",
+    "service": "networkmanager"
+  },
+  {
+    "function": "get_network_resources",
+    "service": "networkmanager"
+  },
+  {
+    "function": "get_network_routes",
+    "service": "networkmanager"
+  },
+  {
+    "function": "get_network_telemetry",
+    "service": "networkmanager"
+  },
+  {
+    "function": "get_paginator",
+    "service": "networkmanager"
+  },
+  {
+    "function": "get_resource_policy",
+    "service": "networkmanager"
+  },
+  {
+    "function": "get_route_analysis",
+    "service": "networkmanager"
+  },
+  {
+    "function": "get_site_to_site_vpn_attachment",
+    "service": "networkmanager"
+  },
+  {
+    "function": "get_sites",
+    "service": "networkmanager"
+  },
+  {
+    "function": "get_transit_gateway_connect_peer_associations",
+    "service": "networkmanager"
+  },
+  {
+    "function": "get_transit_gateway_peering",
+    "service": "networkmanager"
+  },
+  {
+    "function": "get_transit_gateway_registrations",
+    "service": "networkmanager"
+  },
+  {
+    "function": "get_transit_gateway_route_table_attachment",
+    "service": "networkmanager"
+  },
+  {
+    "function": "get_vpc_attachment",
+    "service": "networkmanager"
+  },
+  {
+    "function": "get_waiter",
+    "service": "networkmanager"
+  },
+  {
+    "function": "list_attachments",
+    "service": "networkmanager"
+  },
+  {
+    "function": "list_connect_peers",
+    "service": "networkmanager"
+  },
+  {
+    "function": "list_core_network_policy_versions",
+    "service": "networkmanager"
+  },
+  {
+    "function": "list_core_networks",
+    "service": "networkmanager"
+  },
+  {
+    "function": "list_organization_service_access_status",
+    "service": "networkmanager"
+  },
+  {
+    "function": "list_peerings",
+    "service": "networkmanager"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "networkmanager"
+  }
+]

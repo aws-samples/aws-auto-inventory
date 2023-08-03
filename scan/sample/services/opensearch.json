@@ -1,0 +1,126 @@
+[
+  {
+    "function": "describe_domain",
+    "service": "opensearch"
+  },
+  {
+    "function": "describe_domain_auto_tunes",
+    "service": "opensearch"
+  },
+  {
+    "function": "describe_domain_change_progress",
+    "service": "opensearch"
+  },
+  {
+    "function": "describe_domain_config",
+    "service": "opensearch"
+  },
+  {
+    "function": "describe_domain_health",
+    "service": "opensearch"
+  },
+  {
+    "function": "describe_domain_nodes",
+    "service": "opensearch"
+  },
+  {
+    "function": "describe_domains",
+    "service": "opensearch"
+  },
+  {
+    "function": "describe_dry_run_progress",
+    "service": "opensearch"
+  },
+  {
+    "function": "describe_inbound_connections",
+    "service": "opensearch"
+  },
+  {
+    "function": "describe_instance_type_limits",
+    "service": "opensearch"
+  },
+  {
+    "function": "describe_outbound_connections",
+    "service": "opensearch"
+  },
+  {
+    "function": "describe_packages",
+    "service": "opensearch"
+  },
+  {
+    "function": "describe_reserved_instance_offerings",
+    "service": "opensearch"
+  },
+  {
+    "function": "describe_reserved_instances",
+    "service": "opensearch"
+  },
+  {
+    "function": "describe_vpc_endpoints",
+    "service": "opensearch"
+  },
+  {
+    "function": "get_compatible_versions",
+    "service": "opensearch"
+  },
+  {
+    "function": "get_package_version_history",
+    "service": "opensearch"
+  },
+  {
+    "function": "get_paginator",
+    "service": "opensearch"
+  },
+  {
+    "function": "get_upgrade_history",
+    "service": "opensearch"
+  },
+  {
+    "function": "get_upgrade_status",
+    "service": "opensearch"
+  },
+  {
+    "function": "get_waiter",
+    "service": "opensearch"
+  },
+  {
+    "function": "list_domain_names",
+    "service": "opensearch"
+  },
+  {
+    "function": "list_domains_for_package",
+    "service": "opensearch"
+  },
+  {
+    "function": "list_instance_type_details",
+    "service": "opensearch"
+  },
+  {
+    "function": "list_packages_for_domain",
+    "service": "opensearch"
+  },
+  {
+    "function": "list_scheduled_actions",
+    "service": "opensearch"
+  },
+  {
+    "function": "list_tags",
+    "service": "opensearch"
+  },
+  {
+    "function": "list_versions",
+    "service": "opensearch"
+  },
+  {
+    "function": "list_vpc_endpoint_access",
+    "service": "opensearch"
+  },
+  {
+    "function": "list_vpc_endpoints",
+    "service": "opensearch"
+  },
+  {
+    "function": "list_vpc_endpoints_for_domain",
+    "service": "opensearch"
+  }
+]

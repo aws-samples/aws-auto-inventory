@@ -1,0 +1,14 @@
+[
+  {
+    "function": "get_paginator",
+    "service": "sagemaker-featurestore-runtime"
+  },
+  {
+    "function": "get_record",
+    "service": "sagemaker-featurestore-runtime"
+  },
+  {
+    "function": "get_waiter",
+    "service": "sagemaker-featurestore-runtime"
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "function": "get_health_event",
+    "service": "internetmonitor"
+  },
+  {
+    "function": "get_monitor",
+    "service": "internetmonitor"
+  },
+  {
+    "function": "get_paginator",
+    "service": "internetmonitor"
+  },
+  {
+    "function": "get_waiter",
+    "service": "internetmonitor"
+  },
+  {
+    "function": "list_health_events",
+    "service": "internetmonitor"
+  },
+  {
+    "function": "list_monitors",
+    "service": "internetmonitor"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "internetmonitor"
+  }
+]

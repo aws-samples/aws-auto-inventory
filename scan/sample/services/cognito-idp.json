@@ -1,0 +1,114 @@
+[
+  {
+    "function": "describe_identity_provider",
+    "service": "cognito-idp"
+  },
+  {
+    "function": "describe_resource_server",
+    "service": "cognito-idp"
+  },
+  {
+    "function": "describe_risk_configuration",
+    "service": "cognito-idp"
+  },
+  {
+    "function": "describe_user_import_job",
+    "service": "cognito-idp"
+  },
+  {
+    "function": "describe_user_pool",
+    "service": "cognito-idp"
+  },
+  {
+    "function": "describe_user_pool_client",
+    "service": "cognito-idp"
+  },
+  {
+    "function": "describe_user_pool_domain",
+    "service": "cognito-idp"
+  },
+  {
+    "function": "get_csv_header",
+    "service": "cognito-idp"
+  },
+  {
+    "function": "get_device",
+    "service": "cognito-idp"
+  },
+  {
+    "function": "get_group",
+    "service": "cognito-idp"
+  },
+  {
+    "function": "get_identity_provider_by_identifier",
+    "service": "cognito-idp"
+  },
+  {
+    "function": "get_paginator",
+    "service": "cognito-idp"
+  },
+  {
+    "function": "get_signing_certificate",
+    "service": "cognito-idp"
+  },
+  {
+    "function": "get_ui_customization",
+    "service": "cognito-idp"
+  },
+  {
+    "function": "get_user",
+    "service": "cognito-idp"
+  },
+  {
+    "function": "get_user_attribute_verification_code",
+    "service": "cognito-idp"
+  },
+  {
+    "function": "get_user_pool_mfa_config",
+    "service": "cognito-idp"
+  },
+  {
+    "function": "get_waiter",
+    "service": "cognito-idp"
+  },
+  {
+    "function": "list_devices",
+    "service": "cognito-idp"
+  },
+  {
+    "function": "list_groups",
+    "service": "cognito-idp"
+  },
+  {
+    "function": "list_identity_providers",
+    "service": "cognito-idp"
+  },
+  {
+    "function": "list_resource_servers",
+    "service": "cognito-idp"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "cognito-idp"
+  },
+  {
+    "function": "list_user_import_jobs",
+    "service": "cognito-idp"
+  },
+  {
+    "function": "list_user_pool_clients",
+    "service": "cognito-idp"
+  },
+  {
+    "function": "list_user_pools",
+    "service": "cognito-idp"
+  },
+  {
+    "function": "list_users",
+    "service": "cognito-idp"
+  },
+  {
+    "function": "list_users_in_group",
+    "service": "cognito-idp"
+  }
+]

@@ -1,0 +1,54 @@
+[
+  {
+    "function": "describe_journal_kinesis_stream",
+    "service": "qldb"
+  },
+  {
+    "function": "describe_journal_s3_export",
+    "service": "qldb"
+  },
+  {
+    "function": "describe_ledger",
+    "service": "qldb"
+  },
+  {
+    "function": "get_block",
+    "service": "qldb"
+  },
+  {
+    "function": "get_digest",
+    "service": "qldb"
+  },
+  {
+    "function": "get_paginator",
+    "service": "qldb"
+  },
+  {
+    "function": "get_revision",
+    "service": "qldb"
+  },
+  {
+    "function": "get_waiter",
+    "service": "qldb"
+  },
+  {
+    "function": "list_journal_kinesis_streams_for_ledger",
+    "service": "qldb"
+  },
+  {
+    "function": "list_journal_s3_exports",
+    "service": "qldb"
+  },
+  {
+    "function": "list_journal_s3_exports_for_ledger",
+    "service": "qldb"
+  },
+  {
+    "function": "list_ledgers",
+    "service": "qldb"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "qldb"
+  }
+]

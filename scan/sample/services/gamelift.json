@@ -1,0 +1,178 @@
+[
+  {
+    "function": "describe_alias",
+    "service": "gamelift"
+  },
+  {
+    "function": "describe_build",
+    "service": "gamelift"
+  },
+  {
+    "function": "describe_compute",
+    "service": "gamelift"
+  },
+  {
+    "function": "describe_ec2_instance_limits",
+    "service": "gamelift"
+  },
+  {
+    "function": "describe_fleet_attributes",
+    "service": "gamelift"
+  },
+  {
+    "function": "describe_fleet_capacity",
+    "service": "gamelift"
+  },
+  {
+    "function": "describe_fleet_events",
+    "service": "gamelift"
+  },
+  {
+    "function": "describe_fleet_location_attributes",
+    "service": "gamelift"
+  },
+  {
+    "function": "describe_fleet_location_capacity",
+    "service": "gamelift"
+  },
+  {
+    "function": "describe_fleet_location_utilization",
+    "service": "gamelift"
+  },
+  {
+    "function": "describe_fleet_port_settings",
+    "service": "gamelift"
+  },
+  {
+    "function": "describe_fleet_utilization",
+    "service": "gamelift"
+  },
+  {
+    "function": "describe_game_server",
+    "service": "gamelift"
+  },
+  {
+    "function": "describe_game_server_group",
+    "service": "gamelift"
+  },
+  {
+    "function": "describe_game_server_instances",
+    "service": "gamelift"
+  },
+  {
+    "function": "describe_game_session_details",
+    "service": "gamelift"
+  },
+  {
+    "function": "describe_game_session_placement",
+    "service": "gamelift"
+  },
+  {
+    "function": "describe_game_session_queues",
+    "service": "gamelift"
+  },
+  {
+    "function": "describe_game_sessions",
+    "service": "gamelift"
+  },
+  {
+    "function": "describe_instances",
+    "service": "gamelift"
+  },
+  {
+    "function": "describe_matchmaking",
+    "service": "gamelift"
+  },
+  {
+    "function": "describe_matchmaking_configurations",
+    "service": "gamelift"
+  },
+  {
+    "function": "describe_matchmaking_rule_sets",
+    "service": "gamelift"
+  },
+  {
+    "function": "describe_player_sessions",
+    "service": "gamelift"
+  },
+  {
+    "function": "describe_runtime_configuration",
+    "service": "gamelift"
+  },
+  {
+    "function": "describe_scaling_policies",
+    "service": "gamelift"
+  },
+  {
+    "function": "describe_script",
+    "service": "gamelift"
+  },
+  {
+    "function": "describe_vpc_peering_authorizations",
+    "service": "gamelift"
+  },
+  {
+    "function": "describe_vpc_peering_connections",
+    "service": "gamelift"
+  },
+  {
+    "function": "get_compute_access",
+    "service": "gamelift"
+  },
+  {
+    "function": "get_compute_auth_token",
+    "service": "gamelift"
+  },
+  {
+    "function": "get_game_session_log_url",
+    "service": "gamelift"
+  },
+  {
+    "function": "get_instance_access",
+    "service": "gamelift"
+  },
+  {
+    "function": "get_paginator",
+    "service": "gamelift"
+  },
+  {
+    "function": "get_waiter",
+    "service": "gamelift"
+  },
+  {
+    "function": "list_aliases",
+    "service": "gamelift"
+  },
+  {
+    "function": "list_builds",
+    "service": "gamelift"
+  },
+  {
+    "function": "list_compute",
+    "service": "gamelift"
+  },
+  {
+    "function": "list_fleets",
+    "service": "gamelift"
+  },
+  {
+    "function": "list_game_server_groups",
+    "service": "gamelift"
+  },
+  {
+    "function": "list_game_servers",
+    "service": "gamelift"
+  },
+  {
+    "function": "list_locations",
+    "service": "gamelift"
+  },
+  {
+    "function": "list_scripts",
+    "service": "gamelift"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "gamelift"
+  }
+]

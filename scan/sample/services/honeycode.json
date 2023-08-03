@@ -1,0 +1,34 @@
+[
+  {
+    "function": "describe_table_data_import_job",
+    "service": "honeycode"
+  },
+  {
+    "function": "get_paginator",
+    "service": "honeycode"
+  },
+  {
+    "function": "get_screen_data",
+    "service": "honeycode"
+  },
+  {
+    "function": "get_waiter",
+    "service": "honeycode"
+  },
+  {
+    "function": "list_table_columns",
+    "service": "honeycode"
+  },
+  {
+    "function": "list_table_rows",
+    "service": "honeycode"
+  },
+  {
+    "function": "list_tables",
+    "service": "honeycode"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "honeycode"
+  }
+]

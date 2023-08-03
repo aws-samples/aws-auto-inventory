@@ -1,0 +1,58 @@
+[
+  {
+    "function": "describe_channel",
+    "service": "iotanalytics"
+  },
+  {
+    "function": "describe_dataset",
+    "service": "iotanalytics"
+  },
+  {
+    "function": "describe_datastore",
+    "service": "iotanalytics"
+  },
+  {
+    "function": "describe_logging_options",
+    "service": "iotanalytics"
+  },
+  {
+    "function": "describe_pipeline",
+    "service": "iotanalytics"
+  },
+  {
+    "function": "get_dataset_content",
+    "service": "iotanalytics"
+  },
+  {
+    "function": "get_paginator",
+    "service": "iotanalytics"
+  },
+  {
+    "function": "get_waiter",
+    "service": "iotanalytics"
+  },
+  {
+    "function": "list_channels",
+    "service": "iotanalytics"
+  },
+  {
+    "function": "list_dataset_contents",
+    "service": "iotanalytics"
+  },
+  {
+    "function": "list_datasets",
+    "service": "iotanalytics"
+  },
+  {
+    "function": "list_datastores",
+    "service": "iotanalytics"
+  },
+  {
+    "function": "list_pipelines",
+    "service": "iotanalytics"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "iotanalytics"
+  }
+]

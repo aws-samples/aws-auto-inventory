@@ -1,0 +1,38 @@
+[
+  {
+    "function": "describe_container",
+    "service": "mediastore"
+  },
+  {
+    "function": "get_container_policy",
+    "service": "mediastore"
+  },
+  {
+    "function": "get_cors_policy",
+    "service": "mediastore"
+  },
+  {
+    "function": "get_lifecycle_policy",
+    "service": "mediastore"
+  },
+  {
+    "function": "get_metric_policy",
+    "service": "mediastore"
+  },
+  {
+    "function": "get_paginator",
+    "service": "mediastore"
+  },
+  {
+    "function": "get_waiter",
+    "service": "mediastore"
+  },
+  {
+    "function": "list_containers",
+    "service": "mediastore"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "mediastore"
+  }
+]

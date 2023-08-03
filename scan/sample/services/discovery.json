@@ -1,0 +1,50 @@
+[
+  {
+    "function": "describe_agents",
+    "service": "discovery"
+  },
+  {
+    "function": "describe_configurations",
+    "service": "discovery"
+  },
+  {
+    "function": "describe_continuous_exports",
+    "service": "discovery"
+  },
+  {
+    "function": "describe_export_configurations",
+    "service": "discovery"
+  },
+  {
+    "function": "describe_export_tasks",
+    "service": "discovery"
+  },
+  {
+    "function": "describe_import_tasks",
+    "service": "discovery"
+  },
+  {
+    "function": "describe_tags",
+    "service": "discovery"
+  },
+  {
+    "function": "get_discovery_summary",
+    "service": "discovery"
+  },
+  {
+    "function": "get_paginator",
+    "service": "discovery"
+  },
+  {
+    "function": "get_waiter",
+    "service": "discovery"
+  },
+  {
+    "function": "list_configurations",
+    "service": "discovery"
+  },
+  {
+    "function": "list_server_neighbors",
+    "service": "discovery"
+  }
+]

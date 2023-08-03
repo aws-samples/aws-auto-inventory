@@ -1,0 +1,70 @@
+[
+  {
+    "function": "get_changeset",
+    "service": "finspace-data"
+  },
+  {
+    "function": "get_data_view",
+    "service": "finspace-data"
+  },
+  {
+    "function": "get_dataset",
+    "service": "finspace-data"
+  },
+  {
+    "function": "get_external_data_view_access_details",
+    "service": "finspace-data"
+  },
+  {
+    "function": "get_paginator",
+    "service": "finspace-data"
+  },
+  {
+    "function": "get_permission_group",
+    "service": "finspace-data"
+  },
+  {
+    "function": "get_programmatic_access_credentials",
+    "service": "finspace-data"
+  },
+  {
+    "function": "get_user",
+    "service": "finspace-data"
+  },
+  {
+    "function": "get_waiter",
+    "service": "finspace-data"
+  },
+  {
+    "function": "get_working_location",
+    "service": "finspace-data"
+  },
+  {
+    "function": "list_changesets",
+    "service": "finspace-data"
+  },
+  {
+    "function": "list_data_views",
+    "service": "finspace-data"
+  },
+  {
+    "function": "list_datasets",
+    "service": "finspace-data"
+  },
+  {
+    "function": "list_permission_groups",
+    "service": "finspace-data"
+  },
+  {
+    "function": "list_permission_groups_by_user",
+    "service": "finspace-data"
+  },
+  {
+    "function": "list_users",
+    "service": "finspace-data"
+  },
+  {
+    "function": "list_users_by_permission_group",
+    "service": "finspace-data"
+  }
+]

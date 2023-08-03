@@ -1,0 +1,38 @@
+[
+  {
+    "function": "describe_account_limits",
+    "service": "elb"
+  },
+  {
+    "function": "describe_instance_health",
+    "service": "elb"
+  },
+  {
+    "function": "describe_load_balancer_attributes",
+    "service": "elb"
+  },
+  {
+    "function": "describe_load_balancer_policies",
+    "service": "elb"
+  },
+  {
+    "function": "describe_load_balancer_policy_types",
+    "service": "elb"
+  },
+  {
+    "function": "describe_load_balancers",
+    "service": "elb"
+  },
+  {
+    "function": "describe_tags",
+    "service": "elb"
+  },
+  {
+    "function": "get_paginator",
+    "service": "elb"
+  },
+  {
+    "function": "get_waiter",
+    "service": "elb"
+  }
+]

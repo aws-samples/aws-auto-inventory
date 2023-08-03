@@ -1,0 +1,114 @@
+[
+  {
+    "function": "describe_app",
+    "service": "resiliencehub"
+  },
+  {
+    "function": "describe_app_assessment",
+    "service": "resiliencehub"
+  },
+  {
+    "function": "describe_app_version",
+    "service": "resiliencehub"
+  },
+  {
+    "function": "describe_app_version_app_component",
+    "service": "resiliencehub"
+  },
+  {
+    "function": "describe_app_version_resource",
+    "service": "resiliencehub"
+  },
+  {
+    "function": "describe_app_version_resources_resolution_status",
+    "service": "resiliencehub"
+  },
+  {
+    "function": "describe_app_version_template",
+    "service": "resiliencehub"
+  },
+  {
+    "function": "describe_draft_app_version_resources_import_status",
+    "service": "resiliencehub"
+  },
+  {
+    "function": "describe_resiliency_policy",
+    "service": "resiliencehub"
+  },
+  {
+    "function": "get_paginator",
+    "service": "resiliencehub"
+  },
+  {
+    "function": "get_waiter",
+    "service": "resiliencehub"
+  },
+  {
+    "function": "list_alarm_recommendations",
+    "service": "resiliencehub"
+  },
+  {
+    "function": "list_app_assessments",
+    "service": "resiliencehub"
+  },
+  {
+    "function": "list_app_component_compliances",
+    "service": "resiliencehub"
+  },
+  {
+    "function": "list_app_component_recommendations",
+    "service": "resiliencehub"
+  },
+  {
+    "function": "list_app_input_sources",
+    "service": "resiliencehub"
+  },
+  {
+    "function": "list_app_version_app_components",
+    "service": "resiliencehub"
+  },
+  {
+    "function": "list_app_version_resource_mappings",
+    "service": "resiliencehub"
+  },
+  {
+    "function": "list_app_version_resources",
+    "service": "resiliencehub"
+  },
+  {
+    "function": "list_app_versions",
+    "service": "resiliencehub"
+  },
+  {
+    "function": "list_apps",
+    "service": "resiliencehub"
+  },
+  {
+    "function": "list_recommendation_templates",
+    "service": "resiliencehub"
+  },
+  {
+    "function": "list_resiliency_policies",
+    "service": "resiliencehub"
+  },
+  {
+    "function": "list_sop_recommendations",
+    "service": "resiliencehub"
+  },
+  {
+    "function": "list_suggested_resiliency_policies",
+    "service": "resiliencehub"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "resiliencehub"
+  },
+  {
+    "function": "list_test_recommendations",
+    "service": "resiliencehub"
+  },
+  {
+    "function": "list_unsupported_app_version_resources",
+    "service": "resiliencehub"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "function": "describe_job_execution",
+    "service": "iot-jobs-data"
+  },
+  {
+    "function": "get_paginator",
+    "service": "iot-jobs-data"
+  },
+  {
+    "function": "get_pending_job_executions",
+    "service": "iot-jobs-data"
+  },
+  {
+    "function": "get_waiter",
+    "service": "iot-jobs-data"
+  }
+]

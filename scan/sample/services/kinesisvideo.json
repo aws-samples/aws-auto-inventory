@@ -1,0 +1,66 @@
+[
+  {
+    "function": "describe_edge_configuration",
+    "service": "kinesisvideo"
+  },
+  {
+    "function": "describe_image_generation_configuration",
+    "service": "kinesisvideo"
+  },
+  {
+    "function": "describe_mapped_resource_configuration",
+    "service": "kinesisvideo"
+  },
+  {
+    "function": "describe_media_storage_configuration",
+    "service": "kinesisvideo"
+  },
+  {
+    "function": "describe_notification_configuration",
+    "service": "kinesisvideo"
+  },
+  {
+    "function": "describe_signaling_channel",
+    "service": "kinesisvideo"
+  },
+  {
+    "function": "describe_stream",
+    "service": "kinesisvideo"
+  },
+  {
+    "function": "get_data_endpoint",
+    "service": "kinesisvideo"
+  },
+  {
+    "function": "get_paginator",
+    "service": "kinesisvideo"
+  },
+  {
+    "function": "get_signaling_channel_endpoint",
+    "service": "kinesisvideo"
+  },
+  {
+    "function": "get_waiter",
+    "service": "kinesisvideo"
+  },
+  {
+    "function": "list_edge_agent_configurations",
+    "service": "kinesisvideo"
+  },
+  {
+    "function": "list_signaling_channels",
+    "service": "kinesisvideo"
+  },
+  {
+    "function": "list_streams",
+    "service": "kinesisvideo"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "kinesisvideo"
+  },
+  {
+    "function": "list_tags_for_stream",
+    "service": "kinesisvideo"
+  }
+]

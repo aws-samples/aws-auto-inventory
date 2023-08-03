@@ -1,0 +1,26 @@
+[
+  {
+    "function": "describe_bundle",
+    "service": "mobile"
+  },
+  {
+    "function": "describe_project",
+    "service": "mobile"
+  },
+  {
+    "function": "get_paginator",
+    "service": "mobile"
+  },
+  {
+    "function": "get_waiter",
+    "service": "mobile"
+  },
+  {
+    "function": "list_bundles",
+    "service": "mobile"
+  },
+  {
+    "function": "list_projects",
+    "service": "mobile"
+  }
+]

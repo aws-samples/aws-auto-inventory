@@ -1,0 +1,102 @@
+[
+  {
+    "function": "describe_channel",
+    "service": "chime-sdk-messaging"
+  },
+  {
+    "function": "describe_channel_ban",
+    "service": "chime-sdk-messaging"
+  },
+  {
+    "function": "describe_channel_flow",
+    "service": "chime-sdk-messaging"
+  },
+  {
+    "function": "describe_channel_membership",
+    "service": "chime-sdk-messaging"
+  },
+  {
+    "function": "describe_channel_membership_for_app_instance_user",
+    "service": "chime-sdk-messaging"
+  },
+  {
+    "function": "describe_channel_moderated_by_app_instance_user",
+    "service": "chime-sdk-messaging"
+  },
+  {
+    "function": "describe_channel_moderator",
+    "service": "chime-sdk-messaging"
+  },
+  {
+    "function": "get_channel_membership_preferences",
+    "service": "chime-sdk-messaging"
+  },
+  {
+    "function": "get_channel_message",
+    "service": "chime-sdk-messaging"
+  },
+  {
+    "function": "get_channel_message_status",
+    "service": "chime-sdk-messaging"
+  },
+  {
+    "function": "get_messaging_session_endpoint",
+    "service": "chime-sdk-messaging"
+  },
+  {
+    "function": "get_messaging_streaming_configurations",
+    "service": "chime-sdk-messaging"
+  },
+  {
+    "function": "get_paginator",
+    "service": "chime-sdk-messaging"
+  },
+  {
+    "function": "get_waiter",
+    "service": "chime-sdk-messaging"
+  },
+  {
+    "function": "list_channel_bans",
+    "service": "chime-sdk-messaging"
+  },
+  {
+    "function": "list_channel_flows",
+    "service": "chime-sdk-messaging"
+  },
+  {
+    "function": "list_channel_memberships",
+    "service": "chime-sdk-messaging"
+  },
+  {
+    "function": "list_channel_memberships_for_app_instance_user",
+    "service": "chime-sdk-messaging"
+  },
+  {
+    "function": "list_channel_messages",
+    "service": "chime-sdk-messaging"
+  },
+  {
+    "function": "list_channel_moderators",
+    "service": "chime-sdk-messaging"
+  },
+  {
+    "function": "list_channels",
+    "service": "chime-sdk-messaging"
+  },
+  {
+    "function": "list_channels_associated_with_channel_flow",
+    "service": "chime-sdk-messaging"
+  },
+  {
+    "function": "list_channels_moderated_by_app_instance_user",
+    "service": "chime-sdk-messaging"
+  },
+  {
+    "function": "list_sub_channels",
+    "service": "chime-sdk-messaging"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "chime-sdk-messaging"
+  }
+]

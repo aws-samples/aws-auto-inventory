@@ -1,0 +1,22 @@
+[
+  {
+    "function": "describe_application",
+    "service": "kinesisanalytics"
+  },
+  {
+    "function": "get_paginator",
+    "service": "kinesisanalytics"
+  },
+  {
+    "function": "get_waiter",
+    "service": "kinesisanalytics"
+  },
+  {
+    "function": "list_applications",
+    "service": "kinesisanalytics"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "kinesisanalytics"
+  }
+]

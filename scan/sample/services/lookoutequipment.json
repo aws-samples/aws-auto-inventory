@@ -1,0 +1,86 @@
+[
+  {
+    "function": "describe_data_ingestion_job",
+    "service": "lookoutequipment"
+  },
+  {
+    "function": "describe_dataset",
+    "service": "lookoutequipment"
+  },
+  {
+    "function": "describe_inference_scheduler",
+    "service": "lookoutequipment"
+  },
+  {
+    "function": "describe_label",
+    "service": "lookoutequipment"
+  },
+  {
+    "function": "describe_label_group",
+    "service": "lookoutequipment"
+  },
+  {
+    "function": "describe_model",
+    "service": "lookoutequipment"
+  },
+  {
+    "function": "describe_model_version",
+    "service": "lookoutequipment"
+  },
+  {
+    "function": "describe_resource_policy",
+    "service": "lookoutequipment"
+  },
+  {
+    "function": "get_paginator",
+    "service": "lookoutequipment"
+  },
+  {
+    "function": "get_waiter",
+    "service": "lookoutequipment"
+  },
+  {
+    "function": "list_data_ingestion_jobs",
+    "service": "lookoutequipment"
+  },
+  {
+    "function": "list_datasets",
+    "service": "lookoutequipment"
+  },
+  {
+    "function": "list_inference_events",
+    "service": "lookoutequipment"
+  },
+  {
+    "function": "list_inference_executions",
+    "service": "lookoutequipment"
+  },
+  {
+    "function": "list_inference_schedulers",
+    "service": "lookoutequipment"
+  },
+  {
+    "function": "list_label_groups",
+    "service": "lookoutequipment"
+  },
+  {
+    "function": "list_labels",
+    "service": "lookoutequipment"
+  },
+  {
+    "function": "list_model_versions",
+    "service": "lookoutequipment"
+  },
+  {
+    "function": "list_models",
+    "service": "lookoutequipment"
+  },
+  {
+    "function": "list_sensor_statistics",
+    "service": "lookoutequipment"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "lookoutequipment"
+  }
+]

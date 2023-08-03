@@ -1,0 +1,22 @@
+[
+  {
+    "function": "describe_backups",
+    "service": "cloudhsmv2"
+  },
+  {
+    "function": "describe_clusters",
+    "service": "cloudhsmv2"
+  },
+  {
+    "function": "get_paginator",
+    "service": "cloudhsmv2"
+  },
+  {
+    "function": "get_waiter",
+    "service": "cloudhsmv2"
+  },
+  {
+    "function": "list_tags",
+    "service": "cloudhsmv2"
+  }
+]

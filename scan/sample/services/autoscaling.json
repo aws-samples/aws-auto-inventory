@@ -1,0 +1,98 @@
+[
+  {
+    "function": "describe_account_limits",
+    "service": "autoscaling"
+  },
+  {
+    "function": "describe_adjustment_types",
+    "service": "autoscaling"
+  },
+  {
+    "function": "describe_auto_scaling_groups",
+    "service": "autoscaling"
+  },
+  {
+    "function": "describe_auto_scaling_instances",
+    "service": "autoscaling"
+  },
+  {
+    "function": "describe_auto_scaling_notification_types",
+    "service": "autoscaling"
+  },
+  {
+    "function": "describe_instance_refreshes",
+    "service": "autoscaling"
+  },
+  {
+    "function": "describe_launch_configurations",
+    "service": "autoscaling"
+  },
+  {
+    "function": "describe_lifecycle_hook_types",
+    "service": "autoscaling"
+  },
+  {
+    "function": "describe_lifecycle_hooks",
+    "service": "autoscaling"
+  },
+  {
+    "function": "describe_load_balancer_target_groups",
+    "service": "autoscaling"
+  },
+  {
+    "function": "describe_load_balancers",
+    "service": "autoscaling"
+  },
+  {
+    "function": "describe_metric_collection_types",
+    "service": "autoscaling"
+  },
+  {
+    "function": "describe_notification_configurations",
+    "service": "autoscaling"
+  },
+  {
+    "function": "describe_policies",
+    "service": "autoscaling"
+  },
+  {
+    "function": "describe_scaling_activities",
+    "service": "autoscaling"
+  },
+  {
+    "function": "describe_scaling_process_types",
+    "service": "autoscaling"
+  },
+  {
+    "function": "describe_scheduled_actions",
+    "service": "autoscaling"
+  },
+  {
+    "function": "describe_tags",
+    "service": "autoscaling"
+  },
+  {
+    "function": "describe_termination_policy_types",
+    "service": "autoscaling"
+  },
+  {
+    "function": "describe_traffic_sources",
+    "service": "autoscaling"
+  },
+  {
+    "function": "describe_warm_pool",
+    "service": "autoscaling"
+  },
+  {
+    "function": "get_paginator",
+    "service": "autoscaling"
+  },
+  {
+    "function": "get_predictive_scaling_forecast",
+    "service": "autoscaling"
+  },
+  {
+    "function": "get_waiter",
+    "service": "autoscaling"
+  }
+]

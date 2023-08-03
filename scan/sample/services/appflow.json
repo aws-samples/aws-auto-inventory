@@ -1,0 +1,50 @@
+[
+  {
+    "function": "describe_connector",
+    "service": "appflow"
+  },
+  {
+    "function": "describe_connector_entity",
+    "service": "appflow"
+  },
+  {
+    "function": "describe_connector_profiles",
+    "service": "appflow"
+  },
+  {
+    "function": "describe_connectors",
+    "service": "appflow"
+  },
+  {
+    "function": "describe_flow",
+    "service": "appflow"
+  },
+  {
+    "function": "describe_flow_execution_records",
+    "service": "appflow"
+  },
+  {
+    "function": "get_paginator",
+    "service": "appflow"
+  },
+  {
+    "function": "get_waiter",
+    "service": "appflow"
+  },
+  {
+    "function": "list_connector_entities",
+    "service": "appflow"
+  },
+  {
+    "function": "list_connectors",
+    "service": "appflow"
+  },
+  {
+    "function": "list_flows",
+    "service": "appflow"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "appflow"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "function": "describe_rescore_execution_plan",
+    "service": "kendra-ranking"
+  },
+  {
+    "function": "get_paginator",
+    "service": "kendra-ranking"
+  },
+  {
+    "function": "get_waiter",
+    "service": "kendra-ranking"
+  },
+  {
+    "function": "list_rescore_execution_plans",
+    "service": "kendra-ranking"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "kendra-ranking"
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "function": "describe_auto_scaling_configuration",
+    "service": "apprunner"
+  },
+  {
+    "function": "describe_custom_domains",
+    "service": "apprunner"
+  },
+  {
+    "function": "describe_observability_configuration",
+    "service": "apprunner"
+  },
+  {
+    "function": "describe_service",
+    "service": "apprunner"
+  },
+  {
+    "function": "describe_vpc_connector",
+    "service": "apprunner"
+  },
+  {
+    "function": "describe_vpc_ingress_connection",
+    "service": "apprunner"
+  },
+  {
+    "function": "get_paginator",
+    "service": "apprunner"
+  },
+  {
+    "function": "get_waiter",
+    "service": "apprunner"
+  },
+  {
+    "function": "list_auto_scaling_configurations",
+    "service": "apprunner"
+  },
+  {
+    "function": "list_connections",
+    "service": "apprunner"
+  },
+  {
+    "function": "list_observability_configurations",
+    "service": "apprunner"
+  },
+  {
+    "function": "list_operations",
+    "service": "apprunner"
+  },
+  {
+    "function": "list_services",
+    "service": "apprunner"
+  },
+  {
+    "function": "list_tags_for_resource",
+    "service": "apprunner"
+  },
+  {
+    "function": "list_vpc_connectors",
+    "service": "apprunner"
+  },
+  {
+    "function": "list_vpc_ingress_connections",
+    "service": "apprunner"
+  }
+]
