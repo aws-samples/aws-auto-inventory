@@ -36,26 +36,25 @@ def setup_logging(log_dir, log_level):
     return logging.getLogger(__name__)
 
 
-def _get_service_data(session, region_name, sheet, log):
-    service = sheet["service"]
-    function = sheet["function"]
-    result_key = sheet.get("result_key", None)
-    parameters = sheet.get("parameters", None)
+def _get_service_data(session, region_name, service, log):
+    function = service["function"]
+    result_key = service.get("result_key", None)
+    parameters = service.get("parameters", None)
 
     log.info(
         "Getting data on service %s with function %s in region %s",
-        service,
+        service["service"],
         function,
         region_name,
     )
 
     try:
-        client = session.client(service, region_name=region_name)
+        client = session.client(service["service"], region_name=region_name)
         if not hasattr(client, function):
             log.warning(
                 "Function %s does not exist for service %s in region %s",
                 function,
-                service,
+                service["service"],
                 region_name,
             )
             return None
@@ -73,7 +72,7 @@ def _get_service_data(session, region_name, sheet, log):
     except Exception as exception:
         log.error(
             "Error while processing %s, %s.\n%s: %s",
-            service,
+            service["service"],
             region_name,
             type(exception).__name__,
             exception,
@@ -84,28 +83,35 @@ def _get_service_data(session, region_name, sheet, log):
     log.info("Finished: AWS Get Service Data")
     log.debug(
         "Result for %s, function %s, region %s: %s",
-        service,
+        service["service"],
         function,
         region_name,
         response,
     )
-    return response
+    return {"region": region_name, "service": service["service"], "result": response}
 
 
 def process_region(region, services, session, log):
-    region_results = []
     log.info("Started processing for region: %s", region)
 
-    for service in services:
-        log.info("Started processing for service: %s", service["service"])
-        result = _get_service_data(session, region, service, log)
-        if result:
-            region_results.append(
-                {"region": region, "service": service["service"], "result": result}
-            )
-            log.info("Successfully processed service: %s", service["service"])
-        else:
-            log.info("No data found for service: %s", service["service"])
+    region_results = []
+    with concurrent.futures.ThreadPoolExecutor() as executor:
+        future_to_service = {
+            executor.submit(_get_service_data, session, region, service, log): service
+            for service in services
+        }
+        for future in concurrent.futures.as_completed(future_to_service):
+            service = future_to_service[future]
+            try:
+                result = future.result()
+                if result["result"]:
+                    region_results.append(result)
+                    log.info("Successfully processed service: %s", service["service"])
+                else:
+                    log.info("No data found for service: %s", service["service"])
+            except Exception as exc:
+                log.error("%r generated an exception: %s" % (service["service"], exc))
+                log.error(traceback.format_exc())
 
     log.info("Finished processing for region: %s", region)
     return region_results
