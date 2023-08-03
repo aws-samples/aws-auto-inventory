@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/aws-samples/aws-auto-inventory/compare/v1.0.0...v1.1.0) (2023-08-03)
+
+
+### Features
+
+* get json from URL ([114fdf9](https://github.com/aws-samples/aws-auto-inventory/commit/114fdf9e78e76b202e43351051aa9bf2099ecf4b))
+
 ## [1.0.0](https://github.com/aws-samples/aws-auto-inventory/compare/v0.7.0...v1.0.0) (2023-08-03)
 
 
