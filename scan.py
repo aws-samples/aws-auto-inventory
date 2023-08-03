@@ -15,6 +15,7 @@ MAX_RETRIES = 3
 # Get the current timestamp
 timestamp = datetime.now().isoformat(timespec="minutes")
 
+
 class DateTimeEncoder(json.JSONEncoder):
     def default(self, o):
         if isinstance(o, datetime):
@@ -38,6 +39,7 @@ def setup_logging(log_dir, log_level):
     logging.basicConfig(level=log_level)
     return logging.getLogger(__name__)
 
+
 def api_call_with_retry(client, function_name, parameters):
     def api_call():
         for attempt in range(MAX_RETRIES):
@@ -48,20 +50,21 @@ def api_call_with_retry(client, function_name, parameters):
                 else:
                     return function_to_call()
             except botocore.exceptions.ClientError as error:
-                error_code = error.response['Error']['Code']
-                if error_code == 'Throttling':
+                error_code = error.response["Error"]["Code"]
+                if error_code == "Throttling":
                     if attempt < (MAX_RETRIES - 1):  # no delay on last attempt
-                        time.sleep(2 ** attempt)
+                        time.sleep(2**attempt)
                     continue
                 else:
                     raise
             except botocore.exceptions.BotoCoreError:
                 if attempt < (MAX_RETRIES - 1):  # no delay on last attempt
-                    time.sleep(2 ** attempt)
+                    time.sleep(2**attempt)
                 continue
         return None
 
     return api_call
+
 
 def _get_service_data(session, region_name, service, log):
     function = service["function"]
@@ -139,11 +142,13 @@ def process_region(region, services, session, log):
     log.info("Finished processing for region: %s", region)
     return region_results
 
+
 def display_time(seconds):
     hours = seconds // 3600
     minutes = (seconds % 3600) // 60
     seconds = seconds % 60
     return f"{int(hours)}h:{int(minutes)}m:{int(seconds)}s"
+
 
 def main(scan, regions, output_dir, log_level):
     import time
@@ -190,7 +195,6 @@ def main(scan, regions, output_dir, log_level):
     end_time = time.time()
     elapsed_time = end_time - start_time
     print(f"Total elapsed time for scanning: {display_time(elapsed_time)}")
-
 
 
 if __name__ == "__main__":
