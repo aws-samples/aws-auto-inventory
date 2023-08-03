@@ -45,6 +45,20 @@ pip install -r requirements.txt
 
 ## Usage
 
+Before you start, make sure to set your AWS credentials either by using the AWS CLI:
+
+```bash
+aws configure
+```
+
+Or by setting the following environment variables:
+
+```bash
+export AWS_ACCESS_KEY_ID=<your_access_key>
+export AWS_SECRET_ACCESS_KEY=<your_secret_key>
+export AWS_SESSION_TOKEN=<your_session_token> # If using temporary credentials
+```
+
 You can run the AWS Auto Inventory using the command line. Here is the general syntax:
 
 ```bash
@@ -107,6 +121,10 @@ The AWS Auto Inventory requires a JSON file specifying which AWS services and re
 ```
 
 Each JSON object represents a single AWS service to scan. The `service` key specifies the service, and the `function` key specifies the boto3 client function to call. The optional `result_key` can be used to specify a key in the returned JSON object that contains the desired data. If not provided, the full JSON response will be used.
+
+## Releases
+
+You can download the latest releases [here](https://github.com/aws-samples/aws-auto-inventory/releases).
 
 ## References
 - [AWS Code Habits](https://github.com/awslabs/aws-code-habits) - A library with Make targets, Ansible playbooks, Jinja templates (and more) designed to boost common software development tasks and enhance governance.
