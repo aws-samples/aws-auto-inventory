@@ -7,6 +7,8 @@ import concurrent.futures
 import os
 from datetime import datetime
 import traceback
+import botocore
+import time
 
 # Get the current timestamp
 timestamp = datetime.now().isoformat(timespec="minutes")
@@ -35,6 +37,18 @@ def setup_logging(log_dir, log_level):
     logging.basicConfig(level=log_level)
     return logging.getLogger(__name__)
 
+def api_call_with_retry(client, method, **kwargs):
+    for i in range(10):
+        try:
+            return getattr(client, method)(**kwargs)
+        except botocore.exceptions.ClientError as error:
+            if error.response['Error']['Code'] == 'Throttling':
+                wait_time = 2 ** i
+                print(f"Throttling AWS API requests, will retry in {wait_time} seconds...")
+                time.sleep(wait_time)
+            else:
+                raise error
+    return None
 
 def _get_service_data(session, region_name, service, log):
     function = service["function"]
@@ -60,13 +74,13 @@ def _get_service_data(session, region_name, service, log):
             return None
         if parameters is not None:
             if result_key:
-                response = getattr(client, function)(**parameters).get(result_key)
+                response = api_call_with_retry(client, function, **parameters).get(result_key)
             else:
-                response = getattr(client, function)(**parameters)
+                response = api_call_with_retry(client, function, **parameters)
         elif result_key:
-            response = getattr(client, function)().get(result_key)
+            response = api_call_with_retry(client, function)().get(result_key)
         else:
-            response = getattr(client, function)()
+            response = api_call_with_retry(client, function)()
             if isinstance(response, dict):
                 response.pop("ResponseMetadata", None)
     except Exception as exception:
@@ -116,10 +130,18 @@ def process_region(region, services, session, log):
     log.info("Finished processing for region: %s", region)
     return region_results
 
+def display_time(seconds):
+    hours = seconds // 3600
+    minutes = (seconds % 3600) // 60
+    seconds = seconds % 60
+    return f"{int(hours)}h:{int(minutes)}m:{int(seconds)}s"
 
 def main(scan, regions, output_dir, log_level):
+    import time
+
     session = boto3.Session()
     log = setup_logging(output_dir, log_level)
+
     with open(scan, "r") as f:
         services = json.load(f)
     if not regions:
@@ -130,6 +152,8 @@ def main(scan, regions, output_dir, log_level):
             if region["OptInStatus"] == "opt-in-not-required"
             or region["OptInStatus"] == "opted-in"
         ]
+
+    start_time = time.time()
 
     results = []
     with concurrent.futures.ThreadPoolExecutor() as executor:
@@ -153,6 +177,11 @@ def main(scan, regions, output_dir, log_level):
             except Exception as exc:
                 log.error("%r generated an exception: %s" % (region, exc))
                 log.error(traceback.format_exc())
+
+    end_time = time.time()
+    elapsed_time = end_time - start_time
+    print(f"Total elapsed time for scanning: {display_time(elapsed_time)}")
+
 
 
 if __name__ == "__main__":
