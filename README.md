@@ -67,7 +67,7 @@ python scan.py -s <scanfile> [parameters]
 
 **Parameters:**
 
-* `--scan`: Path to the JSON file containing the AWS services to scan. This is a required parameter.
+* `--scan`: The path to the JSON file or URL containing the AWS services to scan.. This is a required parameter.
 * `--regions`: Optional parameter specifying a list of AWS regions to scan. If not provided, all accessible regions will be scanned.
 * `--output_dir`: Optional parameter specifying the directory to store the results. Default is "output".
 * `--log_level`: Optional parameter to set the logging level (e.g., DEBUG, INFO, WARNING, ERROR, CRITICAL). Default is "INFO".
@@ -86,6 +86,12 @@ Here are some examples of how to use the tool:
 python scan.py -s scanfile.json
 ```
 
+**Note:** `scanfile.json` can be local path or an URL, example:
+
+```bash
+python scan.py -s https://raw.githubusercontent.com/aws-samples/aws-auto-inventory/main/scan/sample/services/iam.json
+```
+
 2. Scan resources specified in `scanfile.json` across specific regions (us-east-1 and eu-west-1), with a maximum of 5 retries and a retry delay of 3 seconds:
 
 ```bash
@@ -100,7 +106,8 @@ python scan.py -s scanfile.json --concurrent-regions 3 --concurrent-services 5
 
 ### Samples
 
-In the [scan](scan) directory, you can find a list of several configuration that you could use. However, be aware that not all of the `function` properties were tested and might fail, so just use it as a reference.
+In the [scan](scan) directory, you'll find numerous configurations available for use. However, please note that not all `function` properties have been thoroughly tested and there's a possibility of failure. Thus, it's recommended to use this information as a reference only.
+
 
 ## Configuration
 

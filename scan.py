@@ -11,9 +11,26 @@ import os
 import time
 import traceback
 from datetime import datetime
+import requests
 
 # Define the timestamp as a string, which will be the same throughout the execution of the script.
 timestamp = datetime.now().isoformat(timespec="minutes")
+
+
+def get_json_from_url(url):
+    """Fetch JSON from a URL."""
+    try:
+        response = requests.get(url)
+        response.raise_for_status()  # Raises a HTTPError if the status is 4xx, 5xx
+    except requests.exceptions.RequestException as e:
+        print(f"Failed to fetch JSON from {url}: {e}")
+        return None
+
+    try:
+        return response.json()
+    except ValueError as e:
+        print(f"Failed to parse JSON from {url}: {e}")
+        return None
 
 
 class DateTimeEncoder(json.JSONEncoder):
@@ -237,7 +254,7 @@ def main(
     Main function to perform the AWS services scan.
 
     Arguments:
-    scan -- The path to the JSON file containing the AWS services to scan.
+    scan -- The path to the JSON file or URL containing the AWS services to scan.
     regions -- The AWS regions to scan.
     output_dir -- The directory to store the results.
     log_level -- The log level for the script.
@@ -254,8 +271,14 @@ def main(
 
     log = setup_logging(output_dir, log_level)
 
-    with open(scan, "r") as f:
-        services = json.load(f)
+    if scan.startswith("http://") or scan.startswith("https://"):
+        services = get_json_from_url(scan)
+        if services is None:
+            print(f"Failed to load services from {scan}. Exiting.")
+            return
+    else:
+        with open(scan, "r") as f:
+            services = json.load(f)
     if not regions:
         ec2_client = session.client("ec2")
         regions = [
@@ -313,7 +336,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "-s",
         "--scan",
-        help="JSON file containing the AWS services to scan",
+        help="The path to the JSON file or URL containing the AWS services to scan.",
         required=True,
     )
     parser.add_argument(
