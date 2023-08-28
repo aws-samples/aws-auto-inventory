@@ -13,8 +13,8 @@ import traceback
 from datetime import datetime
 import requests
 
-# Define the timestamp as a string, which will be the same throughout the execution of the script.
-timestamp = datetime.now().isoformat(timespec="minutes")
+# accomodate windows and unix path
+timestamp = datetime.now().isoformat(timespec="minutes").replace(":", "-")
 
 
 def get_json_from_url(url):
@@ -314,7 +314,10 @@ def main(
                 results.extend(region_results)
                 for service_result in region_results:
                     directory = os.path.join(output_dir, timestamp, region)
-                    os.makedirs(directory, exist_ok=True)
+                    try:
+                        os.makedirs(directory, exist_ok=True)
+                    except NotADirectoryError:
+                        log.error("Invalid directory name: %s", directory)
                     with open(
                         os.path.join(directory, f"{service_result['service']}.json"),
                         "w",
