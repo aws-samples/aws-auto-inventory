@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/aws-samples/aws-auto-inventory/compare/v1.1.0...v1.1.1) (2023-08-28)
+
+
+### Bug Fixes
+
+* log incorrect directory name ([a28cec7](https://github.com/aws-samples/aws-auto-inventory/commit/a28cec783ba51f4aa7c0604c01eb47fc1f9a21bc))
+
 ## [1.1.0](https://github.com/aws-samples/aws-auto-inventory/compare/v1.0.0...v1.1.0) (2023-08-03)
 
 
