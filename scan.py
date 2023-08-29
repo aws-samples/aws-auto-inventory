@@ -12,6 +12,7 @@ import time
 import traceback
 from datetime import datetime
 import requests
+from jq import jq
 
 # accomodate windows and unix path
 timestamp = datetime.now().isoformat(timespec="minutes").replace(":", "-")
@@ -163,6 +164,24 @@ def _get_service_data(session, region_name, service, log, max_retries, retry_del
         region_name,
         response,
     )
+
+    def filter_result_by_key(result, key_expression):
+        try:
+            if "|" in key_expression:  # JQ-based filter
+                return jq(key_expression).transform(result)
+            else:  # simple key-based filter
+                return result.get(key_expression)
+        except Exception as e:
+            log.error(f"Error while applying result_key filter: {e}")
+            return None
+
+    if result_key:
+        response = filter_result_by_key(api_call(), result_key)
+    else:
+        response = api_call()
+        if isinstance(response, dict):
+            response.pop("ResponseMetadata", None)
+
     return {"region": region_name, "service": service["service"], "result": response}
 
 
