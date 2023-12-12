@@ -163,7 +163,11 @@ def _get_service_data(session, region_name, service, log, max_retries, retry_del
         region_name,
         response,
     )
-    return {"region": region_name, "service": service["service"], "result": response}
+    return {
+        "region": region_name,
+        "service": service["service"],
+        "function": service["function"],
+        "result": response}
 
 
 def process_region(
@@ -319,7 +323,7 @@ def main(
                     except NotADirectoryError:
                         log.error("Invalid directory name: %s", directory)
                     with open(
-                        os.path.join(directory, f"{service_result['service']}.json"),
+                        os.path.join(directory, f"{service_result['service']}-{service_result['function']}.json"),
                         "w",
                     ) as f:
                         json.dump(service_result["result"], f, cls=DateTimeEncoder)
