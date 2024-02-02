@@ -14,6 +14,7 @@ from datetime import datetime
 import requests
 import pyjq
 
+# accomodate windows and unix path
 # Define the timestamp as a string, which will be the same throughout the execution of the script.
 timestamp = datetime.now().isoformat(timespec="minutes").replace(":", "-")
 
