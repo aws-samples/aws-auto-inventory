@@ -12,9 +12,10 @@ import time
 import traceback
 from datetime import datetime
 import requests
+import pyjq
 
-# accomodate windows and unix path
-timestamp = datetime.now().isoformat(timespec="minutes").replace(":", "-")
+# Define the timestamp as a string, which will be the same throughout the execution of the script.
+timestamp = datetime.now().isoformat(timespec="minutes")
 
 
 def get_json_from_url(url):
@@ -138,7 +139,10 @@ def _get_service_data(session, region_name, service, log, max_retries, retry_del
         api_call = api_call_with_retry(
             client, function, parameters, max_retries, retry_delay
         )
-        if result_key:
+        
+        if result_key and result_key.startswith('.'):
+            response = pyjq.all(result_key, json.loads(json.dumps(api_call(), default=str)))
+        elif result_key and not result_key.startswith('.'):
             response = api_call().get(result_key)
         else:
             response = api_call()
@@ -314,10 +318,8 @@ def main(
                 results.extend(region_results)
                 for service_result in region_results:
                     directory = os.path.join(output_dir, timestamp, region)
-                    try:
-                        os.makedirs(directory, exist_ok=True)
-                    except NotADirectoryError:
-                        log.error("Invalid directory name: %s", directory)
+                    
+                    os.makedirs(directory, exist_ok=True)
                     with open(
                         os.path.join(directory, f"{service_result['service']}.json"),
                         "w",
@@ -330,6 +332,7 @@ def main(
     end_time = time.time()
     elapsed_time = end_time - start_time
     print(f"Total elapsed time for scanning: {display_time(elapsed_time)}")
+    print(f"Result stored in  {output_dir}/{timestamp}")
 
 
 if __name__ == "__main__":

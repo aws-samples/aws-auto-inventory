@@ -1,0 +1,12 @@
+[
+  {
+    "function": "list_clusters",
+    "service": "emr",
+    "parameters": {
+      "ClusterStates": [
+            "WAITING"
+          ]
+        },
+    "result_key": ".Clusters[]|.Id, .Name"
+}
+]

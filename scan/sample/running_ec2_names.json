@@ -1,0 +1,32 @@
+[
+  {
+    "function": "describe_instances",
+    "parameters": {
+      "Filters": [
+        {
+          "Name": "instance-state-name",
+          "Values": [
+            "running"
+          ]
+        }
+      ]
+    },
+    "result_key": ".Reservations | .[] | .Instances | .[] | .Tags[]|select(.Key==\"Name\")|.Value",
+        "service": "ec2"
+  },
+  {
+    "function": "describe_instances",
+    "parameters": {
+      "Filters": [
+        {
+          "Name": "instance-state-name",
+          "Values": [
+            "running"
+          ]
+        }
+      ]
+    },
+  "result_key": ".Reservations|.[]|.Instances |.[]| select((.Tags[]|select(.Key==\"meghdoot_config_branch\"))) | (.Tags[]|select(.Key==\"Name\")|.Value)",
+    "service": "ec2"
+  }
+]
