@@ -26,7 +26,7 @@
         }
       ]
     },
-  "result_key": ".Reservations|.[]|.Instances |.[]| select((.Tags[]|select(.Key==\"meghdoot_config_branch\"))) | (.Tags[]|select(.Key==\"Name\")|.Value)",
+  "result_key": ".Reservations|.[]|.Instances |.[]| select((.Tags[]|select(.Key==\"managed_by_terraform\"))) | (.Tags[]|select(.Key==\"Name\")|.Value)",
     "service": "ec2"
   }
 ]
