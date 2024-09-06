@@ -14,4 +14,3 @@ s3transfer==0.6.1
 six==1.16.0
 urllib3==1.26.18
 virtualenv==20.24.2
-pyjq==2.6.0

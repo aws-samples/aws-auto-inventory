@@ -12,12 +12,10 @@ import time
 import traceback
 from datetime import datetime
 import requests
-import pyjq
 
 # accomodate windows and unix path
 # Define the timestamp as a string, which will be the same throughout the execution of the script.
-timestamp = datetime.now().isoformat(timespec="minutes").replace(":", "-")
-
+timestamp = datetime.now().strftime("%Y-%m-%dT%H-%M-%S")
 
 def get_json_from_url(url):
     """Fetch JSON from a URL."""
@@ -25,15 +23,14 @@ def get_json_from_url(url):
         response = requests.get(url)
         response.raise_for_status()  # Raises a HTTPError if the status is 4xx, 5xx
     except requests.exceptions.RequestException as e:
-        print(f"Failed to fetch JSON from {url}: {e}")
+        print("Failed to fetch JSON from {}: {}".format(url, e))
         return None
 
     try:
         return response.json()
     except ValueError as e:
-        print(f"Failed to parse JSON from {url}: {e}")
+        print("Failed to parse JSON from {}: {}".format(url, e))
         return None
-
 
 class DateTimeEncoder(json.JSONEncoder):
     """Custom JSONEncoder that supports encoding datetime objects."""
@@ -41,13 +38,13 @@ class DateTimeEncoder(json.JSONEncoder):
     def default(self, o):
         if isinstance(o, datetime):
             return o.isoformat()
-        return super().default(o)
-
+        return super(DateTimeEncoder, self).default(o)
 
 def setup_logging(log_dir, log_level):
     """Set up the logging system."""
-    os.makedirs(log_dir, exist_ok=True)
-    log_filename = f"aws_resources_{timestamp}.log"
+    if not os.path.exists(log_dir):
+        os.makedirs(log_dir)
+    log_filename = "aws_resources_{}.log".format(timestamp)
     log_file = os.path.join(log_dir, log_filename)
 
     # Configure the logger
@@ -61,8 +58,7 @@ def setup_logging(log_dir, log_level):
     handler.setFormatter(formatter)
     logger.addHandler(handler)
     logging.basicConfig(level=log_level)
-    return logging.getLogger(__name__)
-
+    return logger
 
 def api_call_with_retry(client, function_name, parameters, max_retries, retry_delay):
     """
@@ -99,81 +95,75 @@ def api_call_with_retry(client, function_name, parameters, max_retries, retry_de
 
     return api_call
 
-
 def _get_service_data(session, region_name, service, log, max_retries, retry_delay):
-    """
-    Get data for a specific AWS service in a region.
-
-    Arguments:
-    session -- The boto3 Session.
-    region_name -- The AWS region to process.
-    service -- The AWS service to scan.
-    log -- The logger object.
-    max_retries -- The maximum number of retries for each service.
-    retry_delay -- The delay before each retry.
-
-    Returns:
-    service_data -- The service data.
-    """
-
     function = service["function"]
     result_key = service.get("result_key", None)
     parameters = service.get("parameters", None)
 
     log.info(
-        "Getting data on service %s with function %s in region %s",
-        service["service"],
-        function,
-        region_name,
+        "Getting data on service {} with function {} in region {}".format(
+            service["service"], function, region_name
+        )
     )
 
     try:
         client = session.client(service["service"], region_name=region_name)
         if not hasattr(client, function):
             log.error(
-                "Function %s does not exist for service %s in region %s",
-                function,
-                service["service"],
-                region_name,
+                "Function {} does not exist for service {} in region {}".format(
+                    function, service["service"], region_name
+                )
             )
             return None
-        api_call = api_call_with_retry(
-            client, function, parameters, max_retries, retry_delay
-        )
         
-        if result_key and result_key.startswith('.'):
-            response = pyjq.all(result_key, json.loads(json.dumps(api_call(), default=str)))
-        elif result_key and not result_key.startswith('.'):
-            response = api_call().get(result_key)
-        else:
-            response = api_call()
-            if isinstance(response, dict):
-                response.pop("ResponseMetadata", None)
+        api_call = api_call_with_retry(client, function, parameters, max_retries, retry_delay)
+
+        # Handling the response and filtering manually
+        response = api_call()
+        if result_key:
+            if result_key.startswith('.'):
+                # If the result_key is a JQ-style query, it needs to be implemented manually
+                response = _manual_json_query(response, result_key)
+            else:
+                response = response.get(result_key)
+        
+        # Clean up the response if necessary
+        if isinstance(response, dict):
+            response.pop("ResponseMetadata", None)
+    
     except Exception as exception:
         log.error(
-            "Error while processing %s, %s.\n%s: %s",
-            service["service"],
-            region_name,
-            type(exception).__name__,
-            exception,
+            "Error while processing {}, {}.\n{}: {}".format(
+                service["service"], region_name, type(exception).__name__, exception
+            )
         )
         log.error(traceback.format_exc())
         return None
 
     log.info("Finished: AWS Get Service Data")
     log.debug(
-        "Result for %s, function %s, region %s: %s",
-        service["service"],
-        function,
-        region_name,
-        response,
+        "Result for {}, function {}, region {}: {}".format(
+            service["service"], function, region_name, response
+        )
     )
     return {
         "region": region_name,
         "service": service["service"],
         "function": service["function"],
-        "result": response}
+        "result": response,
+    }
 
+def _manual_json_query(data, query):
+    """
+    Simulate a basic JQ query for filtering JSON data manually.
+    This function assumes the query is very simple (e.g., '.key').
+    """
+    if not isinstance(data, dict):
+        return data
+    
+    # For a basic '.key' query
+    key = query.lstrip('.')
+    return data.get(key)
 
 def process_region(
     region, services, session, log, max_retries, retry_delay, concurrent_services
@@ -194,7 +184,7 @@ def process_region(
     region_results -- The scan results for the region.
     """
 
-    log.info("Started processing for region: %s", region)
+    log.info("Started processing for region: {}".format(region))
 
     region_results = []
     with concurrent.futures.ThreadPoolExecutor(
@@ -218,36 +208,33 @@ def process_region(
                 result = future.result()
                 if result is not None and result["result"]:
                     region_results.append(result)
-                    log.info("Successfully processed service: %s", service["service"])
+                    log.info("Successfully processed service: {}".format(service["service"]))
                 else:
-                    log.info("No data found for service: %s", service["service"])
+                    log.info("No data found for service: {}".format(service["service"]))
             except Exception as exc:
-                log.error("%r generated an exception: %s" % (service["service"], exc))
+                log.error("{} generated an exception: {}".format(service["service"], exc))
                 log.error(traceback.format_exc())
 
-    log.info("Finished processing for region: %s", region)
+    log.info("Finished processing for region: {}".format(region))
     return region_results
-
 
 def display_time(seconds):
     hours = seconds // 3600
     minutes = (seconds % 3600) // 60
     seconds = seconds % 60
-    return f"{int(hours)}h:{int(minutes)}m:{int(seconds)}s"
-
+    return "{}h:{}m:{}s".format(int(hours), int(minutes), int(seconds))
 
 def check_aws_credentials(session):
     """Check AWS credentials by calling the STS GetCallerIdentity operation."""
     try:
         sts = session.client("sts")
         identity = sts.get_caller_identity()
-        print(f"Authenticated as: {identity['Arn']}")
+        print("Authenticated as: {}".format(identity['Arn']))
     except botocore.exceptions.BotoCoreError as error:
-        print(f"Error verifying AWS credentials: {error}")
+        print("Error verifying AWS credentials: {}".format(error))
         return False
 
     return True
-
 
 def main(
     scan,
@@ -275,7 +262,7 @@ def main(
 
     session = boto3.Session()
     if not check_aws_credentials(session):
-        print("Invalid AWS credentials. Please configure your credentials.")
+        print "Invalid AWS credentials. Please configure your credentials."
         return
 
     log = setup_logging(output_dir, log_level)
@@ -283,7 +270,7 @@ def main(
     if scan.startswith("http://") or scan.startswith("https://"):
         services = get_json_from_url(scan)
         if services is None:
-            print(f"Failed to load services from {scan}. Exiting.")
+            print "Failed to load services from {}. Exiting.".format(scan)
             return
     else:
         with open(scan, "r") as f:
@@ -324,23 +311,27 @@ def main(
                 for service_result in region_results:
                     directory = os.path.join(output_dir, timestamp, region)
                     try:
-                        os.makedirs(directory, exist_ok=True)
-                    except NotADirectoryError:
-                        log.error("Invalid directory name: %s", directory)
-                    with open(
-                        os.path.join(directory, f"{service_result['service']}-{service_result['function']}.json"),
-                        "w",
-                    ) as f:
-                        json.dump(service_result["result"], f, cls=DateTimeEncoder)
+                        if not os.path.exists(directory):
+                            os.makedirs(directory)
+                    except OSError as e:
+                        log.error("Invalid directory name: {}".format(directory))
+                        log.error(str(e))
+                    try:
+                        with open(
+                            os.path.join(directory, "{}-{}.json".format(service_result['service'], service_result['function'])),
+                            "w"
+                        ) as f:
+                            json.dump(service_result["result"], f, cls=DateTimeEncoder)
+                    except IOError as e:
+                        log.error("Error writing file: {}".format(str(e)))
             except Exception as exc:
-                log.error("%r generated an exception: %s" % (region, exc))
+                log.error("{} generated an exception: {}".format(region, exc))
                 log.error(traceback.format_exc())
 
     end_time = time.time()
     elapsed_time = end_time - start_time
-    print(f"Total elapsed time for scanning: {display_time(elapsed_time)}")
-    print(f"Result stored in  {output_dir}/{timestamp}")
-
+    print "Total elapsed time for scanning: {}".format(display_time(elapsed_time))
+    print "Result stored in  {}/{}".format(output_dir, timestamp)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
@@ -364,7 +355,6 @@ if __name__ == "__main__":
         default="INFO",
         help="Set the logging level (e.g., DEBUG, INFO, WARNING, ERROR, CRITICAL)",
     )
-    # New arguments
     parser.add_argument(
         "--max-retries",
         type=int,
