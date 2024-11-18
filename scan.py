@@ -44,10 +44,10 @@ class DateTimeEncoder(json.JSONEncoder):
         return super().default(o)
 
 
-def setup_logging(log_dir, log_level):
+def setup_logging(log_dir, account_id, log_level):
     """Set up the logging system."""
     os.makedirs(log_dir, exist_ok=True)
-    log_filename = f"aws_resources_{timestamp}.log"
+    log_filename = f"aws_resources_{account_id}_{timestamp}.log"
     log_file = os.path.join(log_dir, log_filename)
 
     # Configure the logger
@@ -278,7 +278,10 @@ def main(
         print("Invalid AWS credentials. Please configure your credentials.")
         return
 
-    log = setup_logging(output_dir, log_level)
+    sts = boto3.client('sts')
+    account_id = sts.get_caller_identity()['Account']
+
+    log = setup_logging(output_dir, account_id, log_level)
 
     if scan.startswith("http://") or scan.startswith("https://"):
         services = get_json_from_url(scan)
@@ -296,7 +299,7 @@ def main(
             if region["OptInStatus"] == "opt-in-not-required"
             or region["OptInStatus"] == "opted-in"
         ]
-
+    
     start_time = time.time()
 
     results = []
@@ -322,7 +325,7 @@ def main(
                 region_results = future.result()
                 results.extend(region_results)
                 for service_result in region_results:
-                    directory = os.path.join(output_dir, timestamp, region)
+                    directory = os.path.join(output_dir, account_id, region)
                     try:
                         os.makedirs(directory, exist_ok=True)
                     except NotADirectoryError:
@@ -339,7 +342,7 @@ def main(
     end_time = time.time()
     elapsed_time = end_time - start_time
     print(f"Total elapsed time for scanning: {display_time(elapsed_time)}")
-    print(f"Result stored in  {output_dir}/{timestamp}")
+    print(f"Result stored in  {output_dir}/{account_id}")
 
 
 if __name__ == "__main__":
