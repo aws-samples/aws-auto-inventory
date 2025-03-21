@@ -12,7 +12,11 @@ import time
 import traceback
 from datetime import datetime
 import requests
-import pyjq
+# import pyjq  # Comment out pyjq import
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # accomodate windows and unix path
 # Define the timestamp as a string, which will be the same throughout the execution of the script.
@@ -142,7 +146,10 @@ def _get_service_data(session, region_name, service, log, max_retries, retry_del
         )
         
         if result_key and result_key.startswith('.'):
-            response = pyjq.all(result_key, json.loads(json.dumps(api_call(), default=str)))
+            # Use jmespath instead of pyjq
+            import jmespath
+            query = result_key[1:]  # Remove the leading dot
+            response = jmespath.search(query, json.loads(json.dumps(api_call(), default=str)))
         elif result_key and not result_key.startswith('.'):
             response = api_call().get(result_key)
         else:
@@ -249,40 +256,53 @@ def check_aws_credentials(session):
     return True
 
 
-def main(
-    scan,
-    regions,
-    output_dir,
-    log_level,
-    max_retries,
-    retry_delay,
-    concurrent_regions,
-    concurrent_services,
-    session=None,
-):
+def setup_logging(output_dir, log_level):
+    """
+    Set up logging for the script.
+
+    Arguments:
+    output_dir -- The directory to store the log file.
+    log_level -- The log level for the script.
+
+    Returns:
+    log -- The logger object.
+    """
+    # Configure logging
+    logging.basicConfig(
+        level=getattr(logging, log_level),
+        format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    )
+    log = logging.getLogger("aws-auto-inventory")
+    return log
+
+
+def main(args, log, session=None):
     """
     Main function to perform the AWS services scan.
 
     Arguments:
-    scan -- The path to the JSON file or URL containing the AWS services to scan.
-    regions -- The AWS regions to scan.
-    output_dir -- The directory to store the results.
-    log_level -- The log level for the script.
-    max_retries -- The maximum number of retries for each service.
-    retry_delay -- The delay before each retry.
-    concurrent_regions -- The number of regions to process concurrently.
-    concurrent_services -- The number of services to process concurrently for each region.
+    args -- The command line arguments.
+    log -- The logger object.
     session -- Optional boto3 Session to use. If not provided, a new session will be created.
     """
+    scan = args.scan
+    regions = args.regions
+    output_dir = args.output_dir
+    max_retries = args.max_retries
+    retry_delay = args.retry_delay
+    concurrent_regions = args.concurrent_regions
+    concurrent_services = args.concurrent_services
+    timestamp = args.timestamp
 
     if session is None:
         session = boto3.Session()
     
     if not check_aws_credentials(session):
-        print("Invalid AWS credentials. Please configure your credentials.")
+        log.error("Invalid AWS credentials. Please configure your credentials.")
         return
 
-    log = setup_logging(output_dir, log_level)
+    # Create output directory
+    os.makedirs(output_dir, exist_ok=True)
 
     if scan.startswith("http://") or scan.startswith("https://"):
         services = get_json_from_url(scan)
@@ -400,36 +420,29 @@ if __name__ == "__main__":
         help="Scan all accounts in the AWS Organization",
     )
     parser.add_argument(
-        "--org-role-name",
+        "--role-name",
         default="OrganizationAccountAccessRole",
         help="The IAM role name to assume in each account (default: OrganizationAccountAccessRole)",
     )
     
     args = parser.parse_args()
     
+    # Configure logging
+    logging.basicConfig(
+        level=getattr(logging, args.log_level),
+        format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    )
+    log = logging.getLogger("aws-auto-inventory")
+    
+    # Set timestamp for this run
+    args.timestamp = timestamp
+    
     if args.organization_scan:
         # Import organization scanner only when needed
         from organization_scanner import scan_organization
         
-        scan_organization(
-            args.org_role_name,
-            args.scan,
-            args.regions,
-            args.output_dir,
-            args.log_level,
-            args.max_retries,
-            args.retry_delay,
-            args.concurrent_regions,
-            args.concurrent_services,
-        )
+        scan_organization(args, log)
     else:
-        main(
-            args.scan,
-            args.regions,
-            args.output_dir,
-            args.log_level,
-            args.max_retries,
-            args.retry_delay,
-            args.concurrent_regions,
-            args.concurrent_services,
-        )
+        # Create a session for the current account
+        session = boto3.Session()
+        main(args, log, session)

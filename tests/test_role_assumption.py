@@ -1,63 +1,79 @@
 import pytest
-import botocore
+import boto3
 from organization_scanner import assume_role
+import logging
+from unittest.mock import patch, MagicMock
 
-def test_assume_role_success(mocker):
-    """Test successful role assumption."""
-    mock_session = mocker.MagicMock()
-    mock_sts_client = mocker.MagicMock()
-    mock_session.client.return_value = mock_sts_client
+@pytest.fixture
+def mock_logger():
+    return logging.getLogger("test")
+
+@patch('boto3.Session')
+def test_assume_role_success(mock_session_class, mock_logger):
+    # Create mock STS client
+    mock_sts = MagicMock()
     
-    # Mock successful assume_role response
-    mock_sts_client.assume_role.return_value = {
+    # Mock the assume_role response
+    mock_sts.assume_role.return_value = {
         'Credentials': {
-            'AccessKeyId': 'test-access-key',
-            'SecretAccessKey': 'test-secret-key',
-            'SessionToken': 'test-session-token'
+            'AccessKeyId': 'AKIAIOSFODNN7EXAMPLE',
+            'SecretAccessKey': 'wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY',
+            'SessionToken': 'AQoEXAMPLEH4aoAH0gNCAPyJxz4BlCFFxWNE1OPTgk5TthT+FvwqnKwRcOIfrRh3c/LTo6UDdyJwOOvEVPvLXCrrrUtdnniCEXAMPLE/IvU1dYUg2RVAJBanLiHb4IgRmpRV3zrkuWJOgQs8IZZaIv2BXIa2R4OlgkBN9bkUDNCJiBeb/AXlzBBko7b15fjrBs2+cTQtpZ3CYWFXG8C5zqx37wnOE49mRl/+OtkIKGO7fAE',
+            'Expiration': '2025-03-21T09:00:00Z'
+        },
+        'AssumedRoleUser': {
+            'AssumedRoleId': 'AROAIOSFODNN7EXAMPLE:aws-auto-inventory-123456789012',
+            'Arn': 'arn:aws:sts::123456789012:assumed-role/OrganizationAccountAccessRole/aws-auto-inventory-123456789012'
         }
     }
     
-    # Mock boto3.Session constructor
-    mock_boto3_session = mocker.patch('boto3.Session')
+    # Create a session
+    session = MagicMock()
+    session.client.return_value = mock_sts
     
-    result = assume_role(mock_session, '123456789012', 'TestRole')
+    # Mock the new session that will be created
+    new_session = MagicMock()
+    mock_session_class.return_value = new_session
     
-    # Verify assume_role was called with correct parameters
-    mock_sts_client.assume_role.assert_called_once_with(
+    # Call the function
+    result = assume_role(session, '123456789012', 'TestRole', mock_logger)
+    
+    # Verify the results
+    assert result is new_session
+    
+    # Verify that the client was created correctly
+    session.client.assert_called_once_with('sts')
+    mock_sts.assume_role.assert_called_once_with(
         RoleArn='arn:aws:iam::123456789012:role/TestRole',
-        RoleSessionName='AWSAutoInventorySession',
-        DurationSeconds=3600
+        RoleSessionName='aws-auto-inventory-123456789012'
     )
     
-    # Verify boto3.Session was created with credentials
-    mock_boto3_session.assert_called_once_with(
-        aws_access_key_id='test-access-key',
-        aws_secret_access_key='test-secret-key',
-        aws_session_token='test-session-token'
+    # Verify that the new session was created with the right credentials
+    credentials = mock_sts.assume_role.return_value['Credentials']
+    mock_session_class.assert_called_once_with(
+        aws_access_key_id=credentials['AccessKeyId'],
+        aws_secret_access_key=credentials['SecretAccessKey'],
+        aws_session_token=credentials['SessionToken']
     )
-    
-    assert result is not None
 
-def test_assume_role_failure(mocker):
-    """Test role assumption failure."""
-    mock_session = mocker.MagicMock()
-    mock_sts_client = mocker.MagicMock()
-    mock_session.client.return_value = mock_sts_client
+def test_assume_role_error(mock_logger):
+    # Create mock STS client that raises an exception
+    mock_sts = MagicMock()
+    mock_sts.assume_role.side_effect = Exception("Access denied")
     
-    # Mock assume_role to raise an exception
-    mock_sts_client.assume_role.side_effect = botocore.exceptions.ClientError(
-        {'Error': {'Code': 'AccessDenied', 'Message': 'Access denied'}},
-        'AssumeRole'
-    )
+    # Create a session
+    session = MagicMock()
+    session.client.return_value = mock_sts
     
-    # Mock print function
-    mock_print = mocker.patch('builtins.print')
+    # Call the function
+    result = assume_role(session, '123456789012', 'TestRole', mock_logger)
     
-    result = assume_role(mock_session, '123456789012', 'TestRole')
-    
-    # Verify error was printed
-    mock_print.assert_called_once()
-    assert "Failed to assume role" in mock_print.call_args[0][0]
-    
-    # Verify function returned None
+    # Verify the results
     assert result is None
+    
+    # Verify that the client was created correctly
+    session.client.assert_called_once_with('sts')
+    mock_sts.assume_role.assert_called_once_with(
+        RoleArn='arn:aws:iam::123456789012:role/TestRole',
+        RoleSessionName='aws-auto-inventory-123456789012'
+    )
