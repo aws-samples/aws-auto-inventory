@@ -258,6 +258,7 @@ def main(
     retry_delay,
     concurrent_regions,
     concurrent_services,
+    session=None,
 ):
     """
     Main function to perform the AWS services scan.
@@ -271,9 +272,12 @@ def main(
     retry_delay -- The delay before each retry.
     concurrent_regions -- The number of regions to process concurrently.
     concurrent_services -- The number of services to process concurrently for each region.
+    session -- Optional boto3 Session to use. If not provided, a new session will be created.
     """
 
-    session = boto3.Session()
+    if session is None:
+        session = boto3.Session()
+    
     if not check_aws_credentials(session):
         print("Invalid AWS credentials. Please configure your credentials.")
         return
@@ -389,14 +393,43 @@ if __name__ == "__main__":
         default=None,
         help="Number of services to process concurrently for each region. Default is None, which means the script will use as many as possible",
     )
-    args = parser.parse_args()
-    main(
-        args.scan,
-        args.regions,
-        args.output_dir,
-        args.log_level,
-        args.max_retries,
-        args.retry_delay,
-        args.concurrent_regions,
-        args.concurrent_services,
+    # Organization scanning arguments
+    parser.add_argument(
+        "--organization-scan",
+        action="store_true",
+        help="Scan all accounts in the AWS Organization",
     )
+    parser.add_argument(
+        "--org-role-name",
+        default="OrganizationAccountAccessRole",
+        help="The IAM role name to assume in each account (default: OrganizationAccountAccessRole)",
+    )
+    
+    args = parser.parse_args()
+    
+    if args.organization_scan:
+        # Import organization scanner only when needed
+        from organization_scanner import scan_organization
+        
+        scan_organization(
+            args.org_role_name,
+            args.scan,
+            args.regions,
+            args.output_dir,
+            args.log_level,
+            args.max_retries,
+            args.retry_delay,
+            args.concurrent_regions,
+            args.concurrent_services,
+        )
+    else:
+        main(
+            args.scan,
+            args.regions,
+            args.output_dir,
+            args.log_level,
+            args.max_retries,
+            args.retry_delay,
+            args.concurrent_regions,
+            args.concurrent_services,
+        )
