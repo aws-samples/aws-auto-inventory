@@ -1,0 +1,62 @@
+{
+  "inventories": [
+    {
+      "name": "my-aws-inventory",
+      "aws": {
+        "profile": "default",
+        "region": [
+          "us-east-1",
+          "us-west-2"
+        ],
+        "organization": false,
+        "role_name": "OrganizationAccountAccessRole"
+      },
+      "excel": {
+        "transpose": true,
+        "formatting": {
+          "header_style": {
+            "bold": true,
+            "bg_color": "#4F81BD",
+            "font_color": "#FFFFFF"
+          }
+        }
+      },
+      "sheets": [
+        {
+          "name": "EC2Instances",
+          "service": "ec2",
+          "function": "describe_instances",
+          "result_key": "Reservations",
+          "parameters": {
+            "Filters": [
+              {
+                "Name": "instance-state-name",
+                "Values": [
+                  "running"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "S3Buckets",
+          "service": "s3",
+          "function": "list_buckets",
+          "result_key": "Buckets"
+        },
+        {
+          "name": "IAMRoles",
+          "service": "iam",
+          "function": "list_roles",
+          "result_key": "Roles"
+        },
+        {
+          "name": "LambdaFunctions",
+          "service": "lambda",
+          "function": "list_functions",
+          "result_key": "Functions"
+        }
+      ]
+    }
+  ]
+}

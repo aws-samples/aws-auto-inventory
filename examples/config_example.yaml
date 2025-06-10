@@ -1,0 +1,61 @@
+# AWS Auto Inventory - Example YAML Configuration
+
+inventories:
+  - name: my-aws-inventory
+    aws:
+      # AWS profile to use (optional, uses default credentials if not specified)
+      profile: default
+      
+      # AWS regions to scan
+      region:
+        - us-east-1
+        - us-west-2
+      
+      # Set to true to scan across all accounts in the organization
+      organization: false
+      
+      # Role name to assume in each account (only used if organization is true)
+      role_name: OrganizationAccountAccessRole
+    
+    # Excel output configuration
+    excel:
+      # Whether to transpose data in Excel output
+      transpose: true
+      
+      # Additional formatting options
+      formatting:
+        header_style:
+          bold: true
+          bg_color: "#4F81BD"
+          font_color: "#FFFFFF"
+    
+    # Sheets to include in the inventory
+    sheets:
+      # EC2 Instances
+      - name: EC2Instances
+        service: ec2
+        function: describe_instances
+        result_key: Reservations
+        parameters:
+          Filters:
+            - Name: instance-state-name
+              Values:
+                - running
+      
+      # S3 Buckets
+      - name: S3Buckets
+        service: s3
+        function: list_buckets
+        result_key: Buckets
+      
+      # IAM Roles
+      - name: IAMRoles
+        service: iam
+        function: list_roles
+        result_key: Roles
+      
+      # Lambda Functions
+      - name: LambdaFunctions
+        service: lambda
+        function: list_functions
+        result_key: Functions

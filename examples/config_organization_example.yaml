@@ -1,0 +1,74 @@
+# AWS Auto Inventory - Example Organization-wide Scanning Configuration
+
+# Define common sheets to reuse across inventories
+Sheets: &sheets
+  - name: EC2Instances
+    service: ec2
+    function: describe_instances
+    result_key: Reservations
+    parameters:
+      Filters:
+        - Name: instance-state-name
+          Values:
+            - running
+  
+  - name: S3Buckets
+    service: s3
+    function: list_buckets
+    result_key: Buckets
+  
+  - name: IAMRoles
+    service: iam
+    function: list_roles
+    result_key: Roles
+  
+  - name: LambdaFunctions
+    service: lambda
+    function: list_functions
+    result_key: Functions
+
+inventories:
+  # Management account inventory
+  - name: management-account
+    aws:
+      # AWS profile for the management account
+      profile: management
+      
+      # AWS regions to scan
+      region:
+        - us-east-1
+        - us-west-2
+      
+      # Not scanning across organization for the management account itself
+      organization: false
+    
+    # Excel output configuration
+    excel:
+      transpose: true
+    
+    # Use the common sheets defined above
+    sheets: *sheets
+  
+  # Organization-wide inventory
+  - name: organization-wide
+    aws:
+      # AWS profile for the management account with organization access
+      profile: management
+      
+      # AWS regions to scan
+      region:
+        - us-east-1
+        - us-west-2
+      
+      # Enable organization scanning
+      organization: true
+      
+      # Role name to assume in each account
+      role_name: OrganizationAccountAccessRole
+    
+    # Excel output configuration
+    excel:
+      transpose: true
+    
+    # Use the common sheets defined above
+    sheets: *sheets
