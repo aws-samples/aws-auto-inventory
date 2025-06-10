@@ -11,6 +11,7 @@ A tool for scanning AWS services across regions and accounts to collect resource
 - **Robust Error Handling**: Retry logic for API throttling and transient errors
 - **Flexible Filtering**: Filter resources by tags, IDs, and other attributes
 - **Data Transformation**: Transform data for better analysis, including transposition in Excel
+- **Binary Data Support**: Proper handling of binary data (bytes) returned by AWS APIs
 
 ## Installation
 
@@ -167,6 +168,15 @@ AWS Auto Inventory generates output files in the specified output directory:
 
 - **JSON Output**: JSON files for each service in each region
 - **Excel Output**: Excel spreadsheets with one sheet per service
+
+### Handling of Binary Data
+
+Some AWS APIs (like CloudTrail.Client.list_public_keys) return binary data as bytes. AWS Auto Inventory handles this data as follows:
+
+- In JSON output: Binary data is encoded as base64 and stored in a special format: `{"__bytes_b64__": "base64-encoded-string"}`
+- In Excel output: Binary data is converted to a string in the format: `[BYTES: base64-encoded-string]`
+
+This ensures that all data can be properly serialized and deserialized without errors.
 
 ## Examples
 
