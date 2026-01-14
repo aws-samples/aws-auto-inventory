@@ -12,7 +12,7 @@ import time
 import traceback
 from datetime import datetime
 import requests
-import pyjq
+import jq
 
 # accomodate windows and unix path
 # Define the timestamp as a string, which will be the same throughout the execution of the script.
@@ -142,7 +142,7 @@ def _get_service_data(session, region_name, service, log, max_retries, retry_del
         )
         
         if result_key and result_key.startswith('.'):
-            response = pyjq.all(result_key, json.loads(json.dumps(api_call(), default=str)))
+            response = jq.compile(result_key).input_value(json.loads(json.dumps(api_call(), default=str))).all()
         elif result_key and not result_key.startswith('.'):
             response = api_call().get(result_key)
         else:

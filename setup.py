@@ -31,7 +31,7 @@ setup(
     install_requires=[
         'boto3>=1.20.0',
         'pydantic>=1.8.0',
-        'pyjq>=2.5.0',
+        'jq>=1.6.0',
         'pandas>=1.3.0',
         'xlsxwriter>=3.0.0',
         'pyyaml>=6.0',

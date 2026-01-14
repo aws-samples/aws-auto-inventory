@@ -8,7 +8,7 @@ from typing import Optional, Dict, Any, Union
 
 import boto3
 import botocore
-import pyjq
+import jq
 
 # Set up logger
 logger = logging.getLogger(__name__)
@@ -87,8 +87,8 @@ class AWSClient:
                 # Process the response
                 if result_key:
                     if result_key.startswith('.'):
-                        # Use pyjq for complex queries
-                        return pyjq.all(result_key, json.loads(json.dumps(response, default=str)))
+                        # Use jq for complex queries
+                        return jq.compile(result_key).input_value(json.loads(json.dumps(response, default=str))).all()
                     else:
                         # Simple key extraction
                         return response.get(result_key)
