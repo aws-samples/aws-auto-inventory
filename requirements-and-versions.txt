@@ -13,5 +13,5 @@ PyYAML==6.0.1
 s3transfer==0.6.1
 six==1.16.0
 urllib3==2.6.3
-virtualenv==20.26.6
+virtualenv==20.36.1
 jq==1.10.0
