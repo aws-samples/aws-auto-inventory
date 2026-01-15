@@ -2,7 +2,7 @@ boto3==1.28.18
 botocore==1.31.18
 cfgv==3.3.1
 distlib==0.3.7
-filelock==3.20.1
+filelock==3.20.3
 identify==2.5.26
 jmespath==1.0.1
 nodeenv==1.8.0
