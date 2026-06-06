@@ -1,0 +1,17 @@
+# CODEOWNERS for aws-samples/aws-auto-inventory
+#
+# Lines starting with `#` are comments. Each non-comment line is a glob
+# pattern followed by one or more GitHub usernames or team names. The last
+# matching pattern wins. See:
+# https://docs.github.com/en/repositories/managing-your-repositories-settings-and-security/customizing-your-repository/about-code-owners
+#
+# Owners listed here are determined best-effort from `git log` (top
+# committers). Please open a PR if you should be added or removed.
+
+# Default owner for everything in the repo.
+*       @valter-silva-au
+
+# CI / repo metadata changes benefit from a second pair of eyes.
+/.github/                @valter-silva-au
+/SECURITY.md             @valter-silva-au
+/CODEOWNERS              @valter-silva-au
