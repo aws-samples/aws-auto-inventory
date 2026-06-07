@@ -26,13 +26,13 @@ jobs:
       - run: pip install pyinstaller
       - run: pyinstaller --name aws-auto-inventory-${{ matrix.os }} --onefile scan.py
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v7
         if: matrix.os == 'windows-latest'
         with:
           name: aws-auto-inventory-${{ matrix.os }}
           path: dist\aws-auto-inventory-windows-latest.exe
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v7
         if: matrix.os != 'windows-latest'
         with:
           name: aws-auto-inventory-${{ matrix.os }}
