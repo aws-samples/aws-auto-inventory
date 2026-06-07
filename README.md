@@ -188,6 +188,22 @@ output/<timestamp>/<region>/<service>-<function>.json
 
 ## Architecture
 
+The following diagram shows the `scan.py` flow: a scan file and your credentials drive concurrent per-Region, per-service boto3 calls, and each result is written to its own JSON file.
+
+```mermaid
+flowchart LR
+    scanfile["Scan file: JSON list of API calls"]
+    creds["AWS credentials: boto3 chain"]
+    scanner["scan.py: resolve Regions, scan concurrently"]
+    api["boto3 client call per service and Region"]
+    json["JSON output, one file per service and function"]
+
+    scanfile --> scanner
+    creds --> scanner
+    scanner --> api
+    api --> json
+```
+
 For the design of the in-progress `aws_auto_inventory` package rewrite — configuration layer, scan engine, and output processor — see [Architecture](aws-auto-inventory-unified-architecture.md).
 
 ## Contributing
