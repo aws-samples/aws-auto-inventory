@@ -26,24 +26,28 @@ Both implementations call AWS APIs through boto3 and use the same retry and resu
 
 ### Data flow
 
-```text
-scan file (JSON list)        AWS credentials (boto3 chain)
-        |                              |
-        v                              v
-   main(): load scan file, verify credentials, resolve Regions
-        |
-        v
-   ThreadPoolExecutor over Regions  (--concurrent-regions)
-        |
-        v
-   process_region(): ThreadPoolExecutor over services  (--concurrent-services)
-        |
-        v
-   _get_service_data(): boto3 client.<function>(**parameters)
-        |  retry on Throttling / RequestLimitExceeded / BotoCoreError
-        |  extract result_key (plain key or jq filter)
-        v
-   write output/<timestamp>/<region>/<service>-<function>.json
+The following diagram shows how `scan.py` turns a scan file into JSON output.
+
+```mermaid
+flowchart TD
+    scanfile["Scan file: JSON list, local path or URL"]
+    creds["AWS credentials: boto3 chain"]
+    main["main: load scan file, verify credentials, resolve Regions"]
+    regionpool["ThreadPoolExecutor over Regions, bounded by --concurrent-regions"]
+    servicepool["process_region: ThreadPoolExecutor over services, bounded by --concurrent-services"]
+    apicall["_get_service_data: call boto3 client function with parameters"]
+    retry["api_call_with_retry: retry on Throttling, RequestLimitExceeded, BotoCoreError"]
+    extract["Extract result_key: plain key or jq filter"]
+    output["Write output/timestamp/region/service-function.json"]
+
+    scanfile --> main
+    creds --> main
+    main --> regionpool
+    regionpool --> servicepool
+    servicepool --> apicall
+    apicall --> retry
+    retry --> extract
+    extract --> output
 ```
 
 `main` reads the scan file from a local path or, when the value starts with `http://` or `https://`, fetches it over HTTP. If you do not pass `--regions`, it calls `ec2:DescribeRegions` and scans every Region whose opt-in status is `opt-in-not-required` or `opted-in`.
@@ -79,6 +83,32 @@ Each result is written as `output/<timestamp>/<region>/<service>-<function>.json
 3. `scan_organization` runs `scan.py`'s `main` against each account, writing results under `output/organization-<timestamp>/<account-id>/`.
 
 This lists accounts directly and does not walk the organizational unit (OU) tree, so OU structure does not affect which accounts are scanned.
+
+The following diagram shows the organization scan loop.
+
+```mermaid
+flowchart TD
+    start["scan_organization from management account"]
+    list["get_organization_accounts: page organizations:ListAccounts, keep ACTIVE accounts"]
+    summary["Write accounts.json summary"]
+    loop{"For each active account"}
+    assume["assume_role: sts:AssumeRole for OrganizationAccountAccessRole"]
+    check{"Assumed session?"}
+    scan["main: scan account with assumed session"]
+    out["Write output/organization-timestamp/account-id/"]
+    skip["Log and skip account"]
+
+    start --> list
+    list --> summary
+    summary --> loop
+    loop --> assume
+    assume --> check
+    check -- yes --> scan
+    scan --> out
+    check -- no --> skip
+    out --> loop
+    skip --> loop
+```
 
 ## In-progress implementation: aws_auto_inventory package
 
