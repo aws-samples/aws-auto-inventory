@@ -1,4 +1,4 @@
-boto3==1.28.18
+boto3==1.42.97
 botocore==1.31.18
 cfgv==3.3.1
 distlib==0.3.7
