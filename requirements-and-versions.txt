@@ -10,7 +10,7 @@ platformdirs==3.10.0
 pre-commit==3.3.3
 python-dateutil==2.8.2
 PyYAML==6.0.1
-s3transfer==0.6.1
+s3transfer==0.16.1
 six==1.16.0
 urllib3==2.6.3
 virtualenv==20.36.1
