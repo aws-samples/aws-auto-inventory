@@ -61,7 +61,7 @@ jobs:
       - run: mv aws-auto-inventory-windows-latest.exe aws-auto-inventory-windows.exe
 
       - name: Release
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v3
         if: startsWith(github.ref, 'refs/tags/')
         with:
           prerelease: true
